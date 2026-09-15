@@ -1,0 +1,51 @@
+{
+ "_comment": "Изтегляне от страници с браузър. Основният източник е СОБСТВЕНИЯТ ви лайвскор — там е целият ден наведнъж, по вашия лицензиран фийд, без чужди условия. Останалите са резерва.",
+ "enabled": true,
+ "daysAhead": 45,
+ "teamsOfInterest": [
+  "лудогорец",
+  "левски",
+  "цска",
+  "ботев",
+  "локомотив",
+  "черно море",
+  "арда",
+  "славия",
+  "берое",
+  "ludogorets",
+  "levski",
+  "cska"
+ ],
+ "sources": [
+  {
+   "name": "sportni-novini-livescore",
+   "enabled": true,
+   "waitMs": 9000,
+   "url": "https://sportni-novini.bg/livescore",
+   "comp": "",
+   "sport": "fut",
+   "weight": 2,
+   "_note": "ВАШИЯТ сайт. Дава днешния ден за всички спортове. Турнирът се взима от текста."
+  },
+  {
+   "name": "parva-liga-efbet",
+   "enabled": false,
+   "waitMs": 8000,
+   "url": "https://efbetleague.com/matches",
+   "comp": "Първа лига",
+   "sport": "fut",
+   "weight": 3,
+   "_note": "Резерва, ако TheSportsDB спре да дава Първа лига."
+  },
+  {
+   "name": "f1-calendar",
+   "enabled": true,
+   "waitMs": 6000,
+   "url": "https://www.formula1.com/en/racing/2026",
+   "comp": "Формула 1",
+   "sport": "mot",
+   "weight": 2,
+   "_note": "Календарът на сезона. Смени годината при нов сезон."
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+name: Неделна проверка на програмата
+
+# Проверява програмата за ИДНАТА седмица (понеделник–неделя) срещу
+# източниците и прави отчет: нови, преместени, отпаднали.
+#
+# Cron е в UTC и е точно както го поиска: "0 17" и "0 18" в неделя.
+# За протокола, това пада на:
+#     лятно време (UTC+3):  20:00 и 21:00 българско
+#     зимно време (UTC+2):  19:00 и 20:00 българско
+# Ако искаш наистина 18:00 БГ и в двата сезона, смени ги на
+#     - cron: "0 15 * * 0"   (= 18:00 лятно)
+#     - cron: "0 16 * * 0"   (= 18:00 зимно)
+#
+# Така или иначе вторият час е предпазен: скриптът пази
+# config/weekly-check-state.json и при второ пускане в същия ден излиза
+# веднага, тъй че дублиран отчет няма.
+
+on:
+  schedule:
+    - cron: "0 17 * * 0"
+    - cron: "0 18 * * 0"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Пусни пак, дори да е минала днес"
+        type: boolean
+        default: true
+      from:
+        description: "Начало на прозореца (ГГГГ-ММ-ДД, празно = идният понеделник)"
+        required: false
+        default: ""
+      remove_dropped:
+        description: "Махни отпадналите от таблицата (иначе само се маркират)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Инсталирай браузъра
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm install --no-fund --no-audit playwright@1.47.0
+          npx playwright install --with-deps chromium
+
+      - name: Провери програмата за идната седмица
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          SPORTSDB_KEY: ${{ secrets.SPORTSDB_KEY }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force && '1' || '' }}
+          WEEK_FROM: ${{ inputs.from }}
+          REMOVE_DROPPED: ${{ inputs.remove_dropped && '1' || '' }}
+        run: node scripts/weekly-check.mjs
+
+      - name: Качи диагностиката от лайвскора
+        if: always() && hashFiles('weekly-debug/**') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-check-debug
+          path: weekly-debug/
+          retention-days: 7
+
+      - name: Запиши отчета и програмата
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/events.json docs/data/weekly-check.json \
+                  config/weekly-check-state.json config/weekly-events.json reports/
+          if git diff --quiet --cached; then
+            echo "Няма промяна."
+          else
+            git commit -m "Неделна проверка ($(date -u +%Y-%m-%d))"
+            # друг работен процес може да е бутнал преди нас
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push
+          fi
+
+      - name: Прати резюме на редактора
+        if: always()
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          EDITOR_CHAT_ID: ${{ secrets.EDITOR_CHAT_ID }}
+        run: node scripts/notify-weekly-summary.mjs
+
+      - name: Обобщение в Actions
+        if: always()
+        run: |
+          if [ -f docs/data/weekly-check.json ]; then
+            node -e '
+              const r = require("./docs/data/weekly-check.json");
+              const t = r.totals;
+              console.log(`## Проверка ${r.window.from} – ${r.window.to}\n`);
+              console.log(`| | брой |\n|---|---|`);
+              console.log(`| Нови | ${t.added} |`);
+              console.log(`| Променен час/дата | ${t.moved} |`);
+              console.log(`| Отпаднали | ${t.dropped} |`);
+              console.log(`| Ръчни, непипнати | ${t.manualUntouched} |`);
+            ' >> "$GITHUB_STEP_SUMMARY"
+          fi

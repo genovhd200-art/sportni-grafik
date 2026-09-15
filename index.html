@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Спортен график · редакция</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#EEF0F3; --surface:#FFF; --surface-2:#F6F8FA; --surface-3:#EAEDF1;
+  --line:#D6DBE2; --line-strong:#BAC2CD;
+  --ink:#151A21; --ink-2:#49525F; --ink-3:#78828F;
+  --accent:#14487F; --accent-ink:#FFF; --accent-soft:#E2EAF4; --accent-line:#A9C2DF;
+  --ok:#0F6E45; --ok-soft:#DBF0E5; --warn:#8A5600; --warn-soft:#FBEBCE;
+  --crit:#A62B21; --crit-soft:#FADDDA;
+  --s-fut:#2F7D4E; --s-vol:#1F6FA8; --s-ten:#7B3FA0; --s-bas:#C2571C; --s-mot:#B01E56;
+  --shadow:0 1px 2px rgba(20,30,45,.06),0 4px 14px rgba(20,30,45,.05);
+  --shadow-lg:0 10px 40px rgba(15,25,40,.22); --r:7px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1218; --surface:#161C25; --surface-2:#1C2430; --surface-3:#232C38;
+  --line:#2A323E; --line-strong:#3C4653;
+  --ink:#E6EBF2; --ink-2:#A5B0BE; --ink-3:#7A8593;
+  --accent:#6BA5E8; --accent-ink:#0E1218; --accent-soft:#1A2A3E; --accent-line:#2F4A6B;
+  --ok:#4FBF8B; --ok-soft:#12301F; --warn:#E0A94A; --warn-soft:#33260F;
+  --crit:#EF7A6E; --crit-soft:#38191A;
+  --s-fut:#5FBE86; --s-vol:#5AAEE0; --s-ten:#B583DB; --s-bas:#E8894A; --s-mot:#E75A8C;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+  --shadow-lg:0 10px 40px rgba(0,0,0,.6);
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1218; --surface:#161C25; --surface-2:#1C2430; --surface-3:#232C38;
+  --line:#2A323E; --line-strong:#3C4653;
+  --ink:#E6EBF2; --ink-2:#A5B0BE; --ink-3:#7A8593;
+  --accent:#6BA5E8; --accent-ink:#0E1218; --accent-soft:#1A2A3E; --accent-line:#2F4A6B;
+  --ok:#4FBF8B; --ok-soft:#12301F; --warn:#E0A94A; --warn-soft:#33260F;
+  --crit:#EF7A6E; --crit-soft:#38191A;
+  --s-fut:#5FBE86; --s-vol:#5AAEE0; --s-ten:#B583DB; --s-bas:#E8894A; --s-mot:#E75A8C;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+  --shadow-lg:0 10px 40px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.45;
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-family:Oswald,"IBM Plex Sans",sans-serif;font-weight:500;text-wrap:balance}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.wrap{max-width:1440px;margin:0 auto;padding:0 20px}
+
+.masthead{background:var(--surface);border-bottom:1px solid var(--line-strong)}
+.mast-in{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;
+  justify-content:space-between;padding-top:16px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3)}
+h1{font-size:27px;line-height:1.1}
+.brand-sub{color:var(--ink-2);font-size:12.5px;margin-top:3px}
+.mast-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:20px;
+  font-size:11px;font-weight:600;border:1px solid var(--line-strong);color:var(--ink-2);
+  background:var(--surface-2);white-space:nowrap}
+.pill .dot{width:6px;height:6px;border-radius:50%;background:var(--ok)}
+.btn{padding:6px 12px;border-radius:var(--r);border:1px solid var(--line-strong);
+  background:var(--surface);font-size:12.5px;font-weight:600;cursor:pointer}
+.btn:hover{background:var(--surface-3);border-color:var(--ink-3)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.sm{padding:3px 8px;font-size:11.5px;font-weight:500}
+.btn.xs{padding:1px 6px;font-size:11px;font-weight:600;border-radius:4px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.arm{background:var(--crit)!important;color:#fff!important;border-color:var(--crit)!important}
+
+/* месечна лента */
+.monthstrip{display:flex;gap:3px;overflow-x:auto;padding:12px 0 2px;scrollbar-width:thin}
+.mday{flex:0 0 auto;width:42px;border:1px solid var(--line);border-radius:5px;
+  background:var(--surface-2);padding:4px 2px 5px;text-align:center;cursor:pointer;
+  font-family:"IBM Plex Mono",monospace;line-height:1.2}
+.mday:hover{border-color:var(--ink-3)}
+.mday .dw{display:block;font-size:8.5px;color:var(--ink-3);text-transform:uppercase}
+.mday .dn{display:block;font-size:13px;font-weight:600}
+.mday .bar{display:block;height:3px;border-radius:2px;margin-top:3px;background:var(--line-strong)}
+.mday.has .bar{background:var(--accent)}
+.mday.gap .bar{background:var(--crit)}
+.mday.cur{background:var(--accent-soft);border-color:var(--accent)}
+.mday.today .dn{color:var(--accent);text-decoration:underline}
+
+.weeknav{display:flex;align-items:center;gap:10px;padding:12px 0 0;flex-wrap:wrap}
+.weeknav h2{font-size:17px}
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--line-strong);flex-wrap:wrap;margin-top:12px}
+.tab{padding:8px 15px;border:1px solid transparent;border-bottom:none;background:none;
+  cursor:pointer;font-size:13px;font-weight:600;color:var(--ink-3);
+  border-radius:var(--r) var(--r) 0 0;margin-bottom:-1px}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--bg);border-color:var(--line-strong);
+  color:var(--accent);border-bottom:1px solid var(--bg)}
+.tab .badge{display:inline-block;margin-left:6px;padding:0 5px;border-radius:9px;font-size:10.5px;
+  background:var(--crit);color:#fff;font-family:"IBM Plex Mono",monospace}
+
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px;padding:14px 0 0}
+.stat{background:var(--surface-2);border:1px solid var(--line);padding:8px 11px;border-radius:var(--r)}
+.stat .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:2px}
+.stat .v{font-family:Oswald,sans-serif;font-size:23px;line-height:1;font-variant-numeric:tabular-nums}
+.stat.is-warn{border-color:var(--warn);background:var(--warn-soft)}
+.stat.is-warn .v,.stat.is-warn .k{color:var(--warn)}
+.stat.is-crit{border-color:var(--crit);background:var(--crit-soft)}
+.stat.is-crit .v,.stat.is-crit .k{color:var(--crit)}
+.stat.is-ok{border-color:var(--ok);background:var(--ok-soft)}
+.stat.is-ok .v,.stat.is-ok .k{color:var(--ok)}
+
+.app{display:grid;grid-template-columns:296px minmax(0,1fr);gap:18px;align-items:start;
+  padding:16px 0 60px}
+@media(max-width:940px){.app{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.panel-hd{padding:11px 13px;border-bottom:1px solid var(--line);display:flex;
+  align-items:center;justify-content:space-between;gap:8px}
+.panel-hd h2{font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2);
+  font-family:"IBM Plex Mono",monospace;font-weight:600}
+.sidebar{position:sticky;top:14px;display:flex;flex-direction:column;gap:14px}
+@media(max-width:940px){.sidebar{position:static}}
+
+.author{padding:11px 13px;border-bottom:1px solid var(--line)}
+.author:last-child{border-bottom:none}
+.a-top{display:flex;align-items:center;gap:8px}
+.swatch{width:11px;height:11px;border-radius:3px;flex:none}
+.a-name{font-weight:600;font-size:13.5px;flex:1;min-width:0;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
+.a-load{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-2);
+  background:var(--surface-3);padding:1px 6px;border-radius:9px;flex:none}
+.a-x{background:none;border:none;color:var(--ink-3);cursor:pointer;padding:2px 4px;
+  font-size:14px;line-height:1;border-radius:3px}
+.a-x:hover{color:var(--crit);background:var(--crit-soft)}
+.shifts{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:9px}
+.shift{border:1px solid var(--line);background:var(--surface-2);border-radius:4px;
+  padding:3px 1px 4px;cursor:pointer;text-align:center;position:relative;overflow:hidden;
+  font-family:"IBM Plex Mono",monospace;line-height:1.25}
+.shift .d{display:block;font-size:8.5px;color:var(--ink-3);text-transform:uppercase}
+.shift .s{display:block;font-size:9.5px;font-weight:600;color:var(--ink-3);white-space:nowrap}
+.shift .more{position:absolute;top:0;right:1px;font-size:7.5px;color:var(--accent);font-weight:700}
+.shift.on{background:var(--ok-soft);border-color:var(--ok)}
+.shift.on .s{color:var(--ok)}
+.legend{padding:9px 13px;font-size:11px;color:var(--ink-3);border-top:1px solid var(--line)}
+.form{padding:11px 13px;display:flex;flex-direction:column;gap:7px;
+  border-top:1px solid var(--line);background:var(--surface-2);border-radius:0 0 var(--r) var(--r)}
+.form.grid2{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.form.grid2 .full{grid-column:1/-1}
+input[type=text],input[type=time],select{width:100%;padding:6px 8px;
+  border:1px solid var(--line-strong);border-radius:5px;background:var(--surface);font-size:13px}
+label.fl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;display:block;margin-bottom:3px}
+.empty{padding:16px 13px;color:var(--ink-3);font-size:12.5px;text-align:center}
+
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:11px 13px}
+.chip{padding:4px 10px;border-radius:16px;border:1px solid var(--line-strong);
+  background:var(--surface);cursor:pointer;font-size:12px;font-weight:600;color:var(--ink-2);
+  display:inline-flex;align-items:center;gap:5px}
+.chip .cd{width:7px;height:7px;border-radius:2px}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip[aria-pressed="true"] .cd{background:currentColor!important}
+.search{flex:1;min-width:150px}
+
+.day{margin-bottom:16px}
+.day-hd{display:flex;align-items:baseline;gap:10px;padding:0 2px 7px;border-bottom:2px solid var(--ink)}
+.day-hd h3{font-size:18px}
+.day-hd .dnum{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3)}
+.day-hd .dcount{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+.day.today .day-hd{border-bottom-color:var(--accent)}
+.day.today .day-hd h3{color:var(--accent)}
+
+.row{display:grid;grid-template-columns:30px 58px 1fr 148px 128px;gap:10px;align-items:center;
+  padding:7px 10px 7px 8px;background:var(--surface);border:1px solid var(--line);
+  border-top:none;position:relative}
+.row:first-of-type{border-top:1px solid var(--line)}
+.row:hover{background:var(--surface-2)}
+.row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--sc,var(--line-strong))}
+.row.p3{background:var(--accent-soft)}
+.rtime{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;padding-left:5px}
+.rtime .prov{color:var(--warn);font-weight:400}
+.rtime .rend{display:block;font-size:9.5px;font-weight:400;color:var(--ink-3);letter-spacing:-.02em}
+.rmain{min-width:0}
+.rcomp{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--sc,var(--ink-3));font-weight:600}
+.rtitle{font-size:13.5px;line-height:1.3;overflow-wrap:anywhere}
+.row.p3 .rtitle{font-weight:600}
+.star{color:var(--accent);font-size:11px;margin-left:4px}
+.rnote{font-size:11px;color:var(--ink-3);margin-top:1px}
+.rsel select{padding:4px 6px;font-size:12.5px}
+.rsel select.assigned{border-color:var(--ok);background:var(--ok-soft);font-weight:600}
+.rflags{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
+.flag{font-size:10.5px;font-weight:600;padding:1px 6px;border-radius:3px;
+  font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+.flag.warn{background:var(--warn-soft);color:var(--warn)}
+.flag.crit{background:var(--crit-soft);color:var(--crit)}
+.flag.ok{background:var(--ok-soft);color:var(--ok)}
+.rdone{display:grid;place-items:center}
+.rdone input{width:17px;height:17px;cursor:pointer;accent-color:var(--ok)}
+.row.done{background:var(--surface-2)}
+.row.done .rtitle,.row.done .rcomp{opacity:.5;text-decoration:line-through}
+.row.done::before{background:var(--ok)!important}
+.arow.done span{opacity:.55}
+@media(max-width:760px){
+  .row{grid-template-columns:30px 52px 1fr;gap:6px}
+  .rsel{grid-column:2/-1}.rsel select{max-width:200px}
+}
+
+.acard{margin-bottom:14px;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.acard-hd{padding:10px 13px;display:flex;align-items:center;gap:9px;
+  border-bottom:2px solid var(--ac,var(--line-strong));background:var(--surface-2)}
+.acard-hd h3{font-size:16px}
+.acard-hd .cnt{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2)}
+.arow{display:grid;grid-template-columns:82px 52px 1fr auto;gap:9px;padding:6px 13px;
+  border-bottom:1px solid var(--line);align-items:center}
+.arow:last-child{border-bottom:none}
+.aday{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);text-transform:uppercase}
+@media(max-width:760px){.arow{grid-template-columns:70px 46px 1fr}}
+
+.issue{display:flex;gap:9px;padding:9px 13px;border-bottom:1px solid var(--line);align-items:flex-start}
+.issue:last-child{border-bottom:none}
+.issue .ic{flex:none;width:20px;height:20px;border-radius:4px;display:grid;place-items:center;
+  font-size:12px;font-weight:700;font-family:"IBM Plex Mono",monospace}
+.issue.warn .ic{background:var(--warn-soft);color:var(--warn)}
+.issue.crit .ic{background:var(--crit-soft);color:var(--crit)}
+.issue .sub{font-size:11.5px;color:var(--ink-3)}
+
+.overlay{position:fixed;inset:0;background:rgba(10,16,24,.55);display:grid;place-items:center;
+  padding:20px;z-index:50}
+.modal{background:var(--surface);border:1px solid var(--line-strong);border-radius:10px;
+  box-shadow:var(--shadow-lg);width:min(680px,100%);max-height:88vh;display:flex;flex-direction:column}
+.modal-hd{padding:13px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}
+.modal-hd h2{font-size:18px;flex:1}
+.modal-bd{padding:14px 16px;overflow:auto}
+.modal-ft{padding:11px 16px;border-top:1px solid var(--line);display:flex;gap:8px;
+  justify-content:flex-end;flex-wrap:wrap;background:var(--surface-2);border-radius:0 0 10px 10px}
+.modal-ft .left{margin-right:auto}
+.sh-row{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:9px 0;
+  border-bottom:1px solid var(--line);align-items:start}
+.sh-row:last-child{border-bottom:none}
+.sh-day{font-size:12.5px;font-weight:600;line-height:1.25}
+.sh-day span{display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  color:var(--ink-3);font-weight:400}
+.sh-ints{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sh-int{display:inline-flex;align-items:center;gap:4px;background:var(--surface-2);
+  border:1px solid var(--line-strong);border-radius:6px;padding:3px 4px 3px 6px}
+.sh-int input[type=time]{width:82px;padding:2px 4px;border:none;background:none;
+  font-size:12.5px;font-family:"IBM Plex Mono",monospace}
+.sh-int .rm{background:none;border:none;color:var(--ink-3);cursor:pointer;padding:0 3px;
+  font-size:12px;border-radius:3px}
+.sh-int .rm:hover{color:var(--crit);background:var(--crit-soft)}
+.sh-off{font-size:12px;color:var(--ink-3);font-style:italic}
+.sh-tools{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+@media(max-width:620px){.sh-row{grid-template-columns:1fr}.sh-tools{margin-left:0}}
+
+.notice{padding:10px 0 0}
+.notice .msg{padding:8px 12px;border-radius:var(--r);font-size:12.5px;line-height:1.4;
+  border:1px solid var(--warn);background:var(--warn-soft);color:var(--warn)}
+.footnote{padding:0 0 40px;color:var(--ink-3);font-size:12px}
+@media print{
+  .sidebar,.tabs,.filters,.mast-right,.board,.monthstrip,.weeknav .btn,.a-x,.overlay{display:none!important}
+  .app{grid-template-columns:1fr;padding:0}body{background:#fff}
+  .row,.acard{break-inside:avoid}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-in">
+      <div>
+        <span class="eyebrow">Редакционен график · sportni-novini.bg</span>
+        <h1>Спортен график</h1>
+        <div class="brand-sub" id="sub">Зареждане на програмата…</div>
+      </div>
+      <div class="mast-right">
+        <span class="pill" id="freshPill"><span class="dot"></span><span id="freshTxt">…</span></span>
+        <button class="btn" id="autoBtn">Разпредели автоматично</button>
+        <button class="btn" id="manBtn" title="Сваля събитията, които си добавил, за качване в config/manual-events.json">Свали моите събития</button>
+        <button class="btn" id="pubBtn" title="Сваля разпределението, за да се качи в хранилището и да тръгнат известията">Публикувай разпределението</button>
+        <button class="btn" id="csvBtn">Свали CSV</button>
+        <button class="btn" id="printBtn">Печат</button>
+      </div>
+    </div>
+    <div class="notice" id="notice" hidden><div class="msg" id="noticeMsg"></div></div>
+    <div class="monthstrip" id="monthstrip"></div>
+    <div class="weeknav">
+      <button class="btn sm" id="prevW">← предишна</button>
+      <h2 id="weekLabel">—</h2>
+      <button class="btn sm" id="nextW">следваща →</button>
+      <button class="btn sm" id="todayBtn">Днес</button>
+    </div>
+    <div class="board" id="board"></div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-view="day" aria-selected="true">По дни</button>
+      <button class="tab" role="tab" data-view="author" aria-selected="false">Кой какво хваща</button>
+      <button class="tab" role="tab" data-view="issues" aria-selected="false">Проверка <span class="badge" id="issueBadge" hidden>0</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="app">
+    <aside class="sidebar">
+      <section class="panel">
+        <div class="panel-hd"><h2>Автори</h2><span class="a-load" id="authorCount">0</span></div>
+        <div id="authorList"></div>
+        <div class="legend">Смените са за показаната седмица. Натиснете <b>Смени по часове</b> за точни интервали — може и по няколко на ден.</div>
+        <form class="form" id="authorForm">
+          <div><label class="fl" for="anName">Име</label>
+            <input type="text" id="anName" placeholder="напр. Мартин Петров" required maxlength="40"></div>
+          <div><label class="fl" for="anRole">Ресор (по избор)</label>
+            <input type="text" id="anRole" placeholder="напр. футбол" maxlength="40"></div>
+          <button class="btn primary" type="submit">Добави автор</button>
+        </form>
+      </section>
+      <section class="panel">
+        <div class="panel-hd"><h2>Добави събитие</h2></div>
+        <form class="form grid2" id="eventForm">
+          <div><label class="fl" for="evDate">Дата</label><select id="evDate"></select></div>
+          <div><label class="fl" for="evTime">Час</label><input type="time" id="evTime" value="19:00" required></div>
+          <div><label class="fl" for="evSport">Спорт</label>
+            <select id="evSport">
+              <option value="fut">Футбол</option><option value="vol">Волейбол</option>
+              <option value="ten">Тенис</option><option value="bas">Баскетбол</option>
+              <option value="mot">Моторни спортове</option><option value="oth">Друго</option>
+            </select></div>
+          <div><label class="fl" for="evPrio">Тежест</label>
+            <select id="evPrio"><option value="1">Стандартно</option>
+              <option value="2" selected>Важно</option><option value="3">Водещо</option></select></div>
+          <div class="full"><label class="fl" for="evComp">Турнир / рубрика</label>
+            <input type="text" id="evComp" placeholder="напр. Първа лига" maxlength="40"></div>
+          <div class="full"><label class="fl" for="evTitle">Събитие</label>
+            <input type="text" id="evTitle" placeholder="напр. Пресконференция" required maxlength="90"></div>
+          <button class="btn primary full" type="submit">Добави</button>
+        </form>
+      </section>
+    </aside>
+    <main>
+      <div class="panel" style="margin-bottom:14px">
+        <div class="filters" id="filters">
+          <input type="text" class="search" id="q" placeholder="Търси отбор, турнир, събитие…">
+        </div>
+      </div>
+      <div id="main"><div class="panel"><div class="empty">Зареждане…</div></div></div>
+    </main>
+  </div>
+  <div class="footnote" id="foot"></div>
+</div>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-hd"><h2 id="modalTitle"></h2>
+      <button class="a-x" id="modalClose" aria-label="Затвори">×</button></div>
+    <div class="modal-bd" id="modalBody"></div>
+    <div class="modal-ft" id="modalFoot"></div>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

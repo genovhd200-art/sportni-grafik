@@ -1,0 +1,90 @@
+name: Обнови програмата
+
+on:
+  schedule:
+    # 04:10 UTC = 07:10 българско време, всеки ден — плъзгащ прозорец напред
+    - cron: "10 4 * * *"
+    # 03:30 UTC на 1-во число — голямото теглене за целия следващ месец
+    - cron: "30 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "За колко дни напред (празно = както е в config)"
+        required: false
+        default: ""
+      from:
+        description: "От коя дата (ГГГГ-ММ-ДД, празно = от днес)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fixtures
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Определи прозореца
+        id: win
+        run: |
+          # Ръчното пускане бие всичко. На 1-во число се тегли целият месец напред.
+          DAYS="${{ github.event.inputs.days }}"
+          FROM="${{ github.event.inputs.from }}"
+          if [ -z "$DAYS" ] && [ "$(date -u +%d)" = "01" ]; then
+            DAYS=$(( $(date -u -d "$(date -u +%Y-%m-01) +2 month -1 day" +%j) - $(date -u +%j) ))
+            [ "$DAYS" -lt 31 ] && DAYS=62
+            echo "Първо число — тегля до края на следващия месец ($DAYS дни)."
+          fi
+          echo "days=$DAYS" >> "$GITHUB_OUTPUT"
+          echo "from=$FROM" >> "$GITHUB_OUTPUT"
+
+      - name: Инсталирай браузъра
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm install --no-fund --no-audit playwright@1.47.0
+          npx playwright install --with-deps chromium
+
+      - name: Прочети собствения лайвскор
+        continue-on-error: true
+        run: node scripts/weekly-scrape.mjs
+
+      - name: Качи диагностиката
+        if: always() && hashFiles('weekly-debug/**') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrape-debug
+          path: weekly-debug/
+          retention-days: 7
+
+      - name: Изтегли програмата
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          SPORTSDB_KEY: ${{ secrets.SPORTSDB_KEY }}
+          DAYS_AHEAD: ${{ steps.win.outputs.days }}
+          FROM_DATE: ${{ steps.win.outputs.from }}
+        run: node scripts/fetch-fixtures.mjs
+
+      - name: Запиши промените
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A config/weekly-events.json config/tennis-events.json 2>/dev/null || true
+          if git diff --quiet --cached && git diff --quiet -- docs/data/events.json; then
+            echo "Няма промяна в програмата."
+          else
+            git add docs/data/events.json config/weekly-events.json config/tennis-events.json
+            git commit -m "Обновена програма ($(date -u +%Y-%m-%d))"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push
+          fi

@@ -1,0 +1,31 @@
+name: Покажи Telegram ID-тата
+
+# Пуска се само на ръка: Actions → „Покажи Telegram ID-тата“ → Run workflow.
+# Показва кой е писал на бота и печата готов блок за config/people.json.
+#
+# Бележка: при публично хранилище този лог е видим за всеки, който отвори
+# страницата. Chat id-то само по себе си не върши работа без токена на бота,
+# но ако предпочиташ да не е публично — ползвай @userinfobot в Telegram.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ids:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Кой е писал на бота
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: |
+          if [ -z "$TELEGRAM_TOKEN" ]; then
+            echo "::error::Липсва secret TELEGRAM_TOKEN."
+            echo "Добави го от Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          node scripts/telegram-whoami.mjs

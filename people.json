@@ -1,0 +1,37 @@
+{
+ "_comment": "Кой автор на кой Telegram chat id. ИМЕТО трябва да съвпада буква по буква с името на автора в дъската (полето 'Автори'), иначе човекът се пропуска. Как се вадят id-тата: виж README, раздел 'Известия по Telegram'.",
+
+ "_editorChatId": "Чатът, в който отива неделното резюме от проверката на програмата. Може да е лично id или id на група (групите са с МИНУС отпред, напр. -1001234567890). Ако държиш да не е в хранилището, остави го 0 и сложи secret EDITOR_CHAT_ID — той бие тази стойност.",
+ "editorChatId": 0,
+
+ "_mode": "'morning' = един обзор сутрин в morningHour; 'before-shift' = leadMinutes преди всяка смяна; 'both' = и двете.",
+ "mode": "morning",
+ "morningHour": 8,
+ "leadMinutes": 30,
+ "windowMinutes": 45,
+
+ "_people": "Примерни записи. chatId е число (без кавички), enabled се вдига на true, когато човекът е писал на бота поне веднъж.",
+ "people": [
+  {
+   "name": "Мартин",
+   "chatId": 123456789,
+   "enabled": false,
+   "_note": "ПРИМЕР — смени chatId с истинското и вдигни enabled на true."
+  },
+  {
+   "name": "Денката",
+   "chatId": 0,
+   "enabled": false
+  },
+  {
+   "name": "НикиПавлов",
+   "chatId": 0,
+   "enabled": false
+  },
+  {
+   "name": "НикиПетков",
+   "chatId": 0,
+   "enabled": false
+  }
+ ]
+}

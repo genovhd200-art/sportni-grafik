@@ -1,0 +1,22 @@
+{
+  "_comment": "Кои турнири да се теглят. За football-data.org се ползва code, за API-Football се ползва search (скриптът сам намира id-то). Изключвай турнир с enabled:false.",
+  "daysAhead": 31,
+  "leagues": [
+    { "key": "pl",   "name": "Висша лига",       "sport": "fut", "fd": "PL",  "search": "Premier League",        "country": "England",  "weight": 2, "enabled": true },
+    { "key": "laliga","name": "Ла Лига",          "sport": "fut", "fd": "PD",  "search": "La Liga",               "country": "Spain",    "weight": 2, "enabled": true },
+    { "key": "seriea","name": "Серия А",          "sport": "fut", "fd": "SA",  "search": "Serie A",               "country": "Italy",    "weight": 2, "enabled": true },
+    { "key": "bundes","name": "Бундеслига",       "sport": "fut", "fd": "BL1", "search": "Bundesliga",            "country": "Germany",  "weight": 2, "enabled": true },
+    { "key": "ligue1","name": "Лига 1",           "sport": "fut", "fd": "FL1", "search": "Ligue 1",               "country": "France",   "weight": 2, "enabled": true },
+    { "key": "parva", "name": "Първа лига",       "sport": "fut", "fd": null,  "search": "First League",          "country": "Bulgaria", "weight": 3, "enabled": true },
+    { "key": "ucl",   "name": "Шампионска лига",  "sport": "fut", "fd": "CL",  "search": "UEFA Champions League", "country": "World",    "weight": 3, "enabled": true },
+    { "key": "uel",   "name": "Лига Европа",      "sport": "fut", "fd": null,  "search": "UEFA Europa League",    "country": "World",    "weight": 2, "enabled": true },
+    { "key": "uecl",  "name": "Лига на конф.",    "sport": "fut", "fd": null,  "search": "UEFA Europa Conference League", "country": "World", "weight": 2, "enabled": true },
+    { "key": "bgcup", "name": "Купа на България", "sport": "fut", "fd": null,  "search": "Cup",                   "country": "Bulgaria", "weight": 2, "enabled": true },
+    { "key": "facup", "name": "ФА Къп",           "sport": "fut", "fd": null,  "search": "FA Cup",                "country": "England",  "weight": 1, "enabled": false },
+    { "key": "efl",   "name": "Купа на лигата",   "sport": "fut", "fd": null,  "search": "League Cup",            "country": "England",  "weight": 1, "enabled": false }
+  ],
+  "_teamsOfInterest": {
+    "_comment": "Мачове на тези отбори автоматично стават водещи (тежест 3), в която и лига да са.",
+    "names": ["Ludogorets", "Levski", "CSKA Sofia", "Botev Plovdiv", "Lokomotiv Plovdiv", "Bulgaria"]
+  }
+}

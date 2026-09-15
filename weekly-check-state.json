@@ -1,0 +1,7 @@
+{
+ "_comment": "Пази се от scripts/weekly-check.mjs. lastRun е датата по софийско време на последното пускане — вторият неделен cron гледа нея и излиза, ако проверката вече е минала. Не се пипа на ръка; за повторно пускане ползвай FORCE=1 или бутона в Actions.",
+ "lastRun": null,
+ "lastRunAt": null,
+ "lastWindow": null,
+ "lastTotals": null
+}

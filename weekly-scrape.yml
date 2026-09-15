@@ -1,0 +1,53 @@
+name: Седмично изтегляне
+
+# Турнирите, които безплатните API-та не покриват — Първа лига, евротурнирите, F1.
+# Върви понеделник сутрин, преди дневното теглене.
+
+on:
+  workflow_dispatch:        # само на ръка — дневният процес вече чете лайвскора
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Инсталирай браузъра
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm install --no-fund --no-audit playwright@1.47.0
+          npx playwright install --with-deps chromium
+
+      - name: Изтегли от сайтовете
+        continue-on-error: true
+        run: node scripts/weekly-scrape.mjs
+
+      - name: Качи диагностиката
+        if: always() && hashFiles('weekly-debug/**') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-debug
+          path: weekly-debug/
+          retention-days: 7
+
+      - name: Запиши намереното
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- config/weekly-events.json; then
+            git add config/weekly-events.json
+            git commit -m "Седмично изтегляне ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "Няма промяна."
+          fi

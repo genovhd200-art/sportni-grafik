@@ -1,0 +1,42 @@
+name: Известия до авторите
+
+on:
+  schedule:
+    # Сутрешният обзор. Cron е в UTC, а София е +2 зимата и +3 лятото,
+    # затова се пуска и в двата часа — скриптът сам преценява по софийско
+    # време и пази какво вече е пратил, тъй че дубликат няма.
+    - cron: "0,20,40 5,6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: notify
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Прати известията
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: node scripts/notify-telegram.mjs
+
+      - name: Запомни какво е пратено
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- config/notify-state.json; then
+            git add config/notify-state.json
+            git commit -m "Известия: отбелязани като изпратени"
+            # дневното теглене може да е бутнало междувременно
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push
+          fi

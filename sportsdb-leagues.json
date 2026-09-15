@@ -1,0 +1,11 @@
+{
+  "_comment": "TheSportsDB покрива турнирите, които football-data.org няма. ID-тата се намират на thesportsdb.com/sport/soccer?all=1. Безплатният тестов ключ е 3; за свой сложи secret SPORTSDB_KEY.",
+  "enabled": true,
+  "leagues": [
+    { "id": 4626, "name": "Първа лига",            "sport": "fut", "weight": 3, "enabled": true },
+    { "id": 4481, "name": "Лига Европа",           "sport": "fut", "weight": 2, "enabled": true },
+    { "id": 5071, "name": "Лига на конференциите", "sport": "fut", "weight": 2, "enabled": true },
+    { "id": 5909, "name": "Суперкупа на България", "sport": "fut", "weight": 3, "enabled": true },
+    { "id": 4913, "name": "Втора лига",            "sport": "fut", "weight": 1, "enabled": false }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+ "_comment": "ИЗКЛЮЧЕН по желание — тенисът се добавя на ръка от дъската. За да го включиш пак: enabled=true. ATP блокира GitHub с Cloudflare, WTA работи.",
+ "enabled": false,
+ "daysAhead": 8,
+ "country": "Bulgaria",
+ "countryCodes": [
+  "BUL",
+  "BG"
+ ],
+ "weight": 3,
+ "players": [
+  {
+   "full": "Grigor Dimitrov",
+   "sur": "Dimitrov",
+   "bg": "Григор Димитров",
+   "w": 3
+  },
+  {
+   "full": "Dimitar Kuzmanov",
+   "sur": "Kuzmanov",
+   "bg": "Димитър Кузманов",
+   "w": 2
+  },
+  {
+   "full": "Adrian Andreev",
+   "sur": "Andreev",
+   "bg": "Адриан Андреев",
+   "w": 2
+  },
+  {
+   "full": "Iliyan Radulov",
+   "sur": "Radulov",
+   "bg": "Илиян Радулов",
+   "w": 2
+  },
+  {
+   "full": "Ivan Ivanov",
+   "sur": "Ivanov",
+   "bg": "Иван Иванов",
+   "w": 3
+  },
+  {
+   "full": "Alexander Vasilev",
+   "sur": "Vasilev",
+   "bg": "Александър Василев",
+   "w": 2
+  },
+  {
+   "full": "Pyotr Nesterov",
+   "sur": "Nesterov",
+   "bg": "Петър Нестеров",
+   "w": 1
+  },
+  {
+   "full": "Viktoriya Tomova",
+   "sur": "Tomova",
+   "bg": "Виктория Томова",
+   "w": 3
+  },
+  {
+   "full": "Isabella Shinikova",
+   "sur": "Shinikova",
+   "bg": "Изабелла Шиникова",
+   "w": 2
+  },
+  {
+   "full": "Gergana Topalova",
+   "sur": "Topalova",
+   "bg": "Гергана Топалова",
+   "w": 2
+  },
+  {
+   "full": "Rositsa Dencheva",
+   "sur": "Dencheva",
+   "bg": "Росица Денчева",
+   "w": 2
+  },
+  {
+   "full": "Elizara Yaneva",
+   "sur": "Yaneva",
+   "bg": "Елизара Янева",
+   "w": 2
+  },
+  {
+   "full": "Denislava Glushkova",
+   "sur": "Glushkova",
+   "bg": "Денислава Глушкова",
+   "w": 1
+  },
+  {
+   "full": "Lia Karatancheva",
+   "sur": "Karatancheva",
+   "bg": "Лия Каратанчева",
+   "w": 1
+  }
+ ],
+ "_howto": "Страниците се отварят с истински браузър в GitHub Actions. ATP блокира адресите на GitHub с Cloudflare — затова е изключен. WTA работи. При всяко пускане се записва диагностика в tennis-debug.",
+ "sources": [
+  {
+   "name": "wta-scores",
+   "enabled": true,
+   "waitMs": 8000,
+   "url": "https://www.wtatennis.com/scores",
+   "_note": "РАБОТИ — оттук идват засега резултатите."
+  },
+  {
+   "name": "wta-tournaments",
+   "enabled": true,
+   "waitMs": 8000,
+   "url": "https://www.wtatennis.com/tournaments",
+   "_note": "Турнирите в момента — за по-пълен обхват при дамите."
+  },
+  {
+   "name": "itf-calendar",
+   "enabled": true,
+   "waitMs": 9000,
+   "url": "https://www.itftennis.com/en/tournament-calendar/world-tennis-tour-calendar/",
+   "_note": "ITF — юноши и Futures. Тук са Иван Иванов, Василев, Радулов."
+  },
+  {
+   "name": "atp-scores",
+   "enabled": false,
+   "waitMs": 7000,
+   "url": "https://www.atptour.com/en/scores/current/",
+   "_note": "ИЗКЛЮЧЕН — Cloudflare блокира GitHub. Работи само от личен компютър."
+  },
+  {
+   "name": "atp-dimitrov",
+   "enabled": false,
+   "waitMs": 6000,
+   "url": "https://www.atptour.com/en/players/grigor-dimitrov/d875/player-activity",
+   "_note": "ИЗКЛЮЧЕН — същата причина."
+  }
+ ]
+}

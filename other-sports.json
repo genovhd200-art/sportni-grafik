@@ -1,0 +1,32 @@
+{
+ "_comment": "Волейбол и баскетбол със СЪЩИЯ ключ като API-Football (API_FOOTBALL_KEY). ВНИМАНИЕ: безплатният план дава само вчера/днес/утре, затова daysAhead е 2 — тези два спорта НЕ пълнят програмата за седмица напред. С платен план вдигни daysAhead на 31. Ако нямаш API_FOOTBALL_KEY, целият блок се пропуска мълчаливо.",
+
+ "_formula1": "МАХНАТА оттук. Безплатният план на api-sports.io пуска само сезони 2022-2024, тоест за текущия сезон връщаше празно. Формула 1 идва от config/weekly-sources.json (календара на formula1.com) и от config/manual-events.json.",
+
+ "volleyball": {
+  "enabled": true,
+  "daysAhead": 2,
+  "weight": 2,
+  "leagueFilter": [
+   "European Championship",
+   "Nations League",
+   "World Championship",
+   "Bulgaria",
+   "CEV",
+   "Champions League"
+  ]
+ },
+ "basketball": {
+  "enabled": true,
+  "daysAhead": 2,
+  "weight": 1,
+  "leagueFilter": [
+   "EuroLeague",
+   "EuroCup",
+   "Bulgaria",
+   "NBA",
+   "Basketball Champions League",
+   "World Cup"
+  ]
+ }
+}
