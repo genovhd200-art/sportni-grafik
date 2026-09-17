@@ -11,6 +11,7 @@ const REPO = "genovhd200-art/sportni-grafik";
 const PUB_PATH = "docs/data/assignments.json";
 const TOKEN_KEY = LS + "-editor";
 const MODE_KEY = LS + "-editor-mode";      // редактор без токен (публикува с файл)
+const AUTO_KEY = LS + "-autopub";          // само с токен: публикувай сам след всяка промяна
 const ls = k => { try{ return localStorage.getItem(k) || ""; }catch(e){ return ""; } };
 const getToken = () => ls(TOKEN_KEY);
 let EDITOR = !!getToken() || ls(MODE_KEY) === "1";
@@ -90,6 +91,16 @@ function saveLocal(dirty = true){
   if(dirty) S.dirty = true;
   try{ localStorage.setItem(LS, JSON.stringify(
     {authors:S.authors, assign:S.assign, custom:S.custom, done:S.done, dirty:S.dirty})); }catch(e){}
+  if(dirty) scheduleAutoPublish();
+}
+/* Със сложен токен дъската публикува сама — 8 секунди след последната
+   промяна, за да не праща по веднъж на всяко кликване. */
+const autoPubOn = () => !!getToken() && ls(AUTO_KEY) !== "0";
+let autoPubT = null;
+function scheduleAutoPublish(){
+  if(!autoPubOn()) return;
+  clearTimeout(autoPubT);
+  autoPubT = setTimeout(() => { if(S.dirty) publish(true); }, 8000);
 }
 /** true, ако в този браузър вече има въведени автори или разпределение. */
 function loadLocal(){
@@ -134,11 +145,11 @@ function publishByFile(){
     '<b>Commit changes</b>. След минута колегите го виждат.');
 }
 
-async function publish(){
+async function publish(auto = false){
   const token = getToken();
-  if(!token){ publishByFile(); return; }
+  if(!token){ if(!auto) publishByFile(); return; }
   const btn = document.getElementById("pubBtn");
-  btn.disabled = true; notice("Публикувам…");
+  btn.disabled = true; notice(auto ? "Публикувам промяната…" : "Публикувам…");
   const payload = { publishedAt: new Date().toISOString(),
     authors: S.authors, assign: S.assign, custom: S.custom, done: S.done };
   const api = "https://api.github.com/repos/"+REPO+"/contents/"+PUB_PATH;
@@ -157,10 +168,14 @@ async function publish(){
     }
     if(!res.ok) throw new Error(ghErr(res.status));
     S.published = payload; S.dirty = false; saveLocal(false); render();
-    notice("Публикувано. Колегите го виждат до около минута (страницата им се обновява сама), "+
-      "а известията в Telegram тръгват по него.");
+    notice(auto
+      ? "Публикувано автоматично в "+new Date().toLocaleTimeString("bg-BG",{hour:"2-digit",minute:"2-digit"})+
+        ". Колегите го виждат до около минута."
+      : "Публикувано. Колегите го виждат до около минута (страницата им се обновява сама), "+
+        "а известията в Telegram тръгват по него.");
   }catch(err){
-    notice("Не се публикува: "+esc(err.message)+".");
+    notice("Не се публикува: "+esc(err.message)+"."+
+      (auto ? " Промяната е запазена тук — натиснете „Публикувай“, за да опитате пак." : ""));
   }finally{ btn.disabled = false; }
 }
 
@@ -169,9 +184,15 @@ function openEditorLogin(){
   modalState = {type:"editor"};
   const body = EDITOR
     ? '<p style="margin:0 0 10px">Влезли сте като <b>редактор</b> в този браузър'+
-      (getToken() ? " (с токен — публикува се с едно натискане)"
-                  : " (без токен — „Публикувай“ сваля файл, който качвате в GitHub)")+
-      '. Промените се пазят тук, докато не натиснете <b>Публикувай</b>.</p>'+
+      (getToken() ? " (с токен)" : " (без токен — „Публикувай“ сваля файл, който качвате в GitHub)")+
+      '.</p>'+
+      (getToken()
+        ? '<label style="display:flex;gap:8px;align-items:flex-start;margin:0 0 10px">'+
+          '<input type="checkbox" id="autoPub"'+(autoPubOn()?" checked":"")+'>'+
+          '<span>Публикувай сам след всяка промяна<br>'+
+          '<span style="color:var(--ink-3);font-size:12px">Изчаква 8 секунди и качва — не се налага да натискате нищо.</span>'+
+          '</span></label>'
+        : '')+
       '<p style="margin:0;color:var(--ink-3);font-size:12.5px">„Зареди публикуваното“ заменя разпределението '+
       'в този браузър с последното публикувано — полезно на нов компютър.</p>'
     : '<p style="margin:0 0 10px">Само редакторът разпределя. Всички останали виждат публикуваното.</p>'+
@@ -207,10 +228,13 @@ async function saveToken(){
   }catch(e){ return fail("GitHub не отговори: "+e.message); }
   try{ localStorage.setItem(TOKEN_KEY, tok); }catch(e){ return fail("Браузърът не позволява запис (частен режим?)."); }
   EDITOR = true;
+  try{ if(!ls(AUTO_KEY)) localStorage.setItem(AUTO_KEY, "1"); }catch(e){}
   // първи вход в този браузър — започваме от публикуваното, ако има
   if(!loadLocal() && S.published) applyState(S.published);
   closeModal(); applyMode(); render();
-  notice("Влязохте като редактор. Разпределяйте и натиснете <b>Публикувай</b>, за да го видят всички.");
+  notice("Влязохте като редактор. Всяка промяна се публикува сама след 8 секунди — "+
+    "колегите я виждат до минута. Може да го изключите от <b>Редактор ✓</b>.");
+  if(S.dirty) scheduleAutoPublish();
 }
 function applyMode(){
   document.body.classList.toggle("ro", !EDITOR);
@@ -460,6 +484,11 @@ document.getElementById("modalBody").addEventListener("click", e => {
 });
 document.getElementById("modalBody").addEventListener("change", e => {
   const st = modalState, t = e.target;
+  if(t.id === "autoPub"){
+    try{ localStorage.setItem(AUTO_KEY, t.checked ? "1" : "0"); }catch(e2){}
+    if(t.checked && S.dirty) scheduleAutoPublish();
+    return;
+  }
   if(st && st.type==="shift" && t.dataset.f){
     const iv = st.shifts[t.dataset.d][+t.dataset.i];
     if(iv) iv[t.dataset.f] = t.value || "00:00";
@@ -511,7 +540,9 @@ function render(){
   b.hidden = !n; b.textContent = n;
   const pb = document.getElementById("pubBtn");
   pb.textContent = S.dirty ? "Публикувай ●" : "Публикувай";
-  pb.title = S.dirty ? "Има промени, които колегите още не виждат" : "Всичко е публикувано";
+  pb.title = S.dirty
+    ? (autoPubOn() ? "Публикува се само след няколко секунди" : "Има промени, които колегите още не виждат")
+    : "Всичко е публикувано";
   const pubAt = S.published && S.published.publishedAt;
   document.getElementById("modeTxt").textContent = (EDITOR ? "редактор" : "преглед") +
     (pubAt ? " · публикувано " + new Date(pubAt).toLocaleString("bg-BG",
