@@ -6,7 +6,7 @@
  * добавя в docs/data/events.json събитията от следените турнири, които
  * ЛИПСВАТ. Нищо не мести, нищо не трие, ръчното не го пипа.
  *
- *   прозорец:  от днес до неделя; в неделя — идната седмица (пон–нед)
+ *   прозорец:  от днес до края на идната седмица (в неделя — само тя)
  *   турнири:   config/fill.json
  *   отчет:     docs/data/fill-report.json (+ Telegram до редактора)
  *
@@ -66,9 +66,12 @@ if (!FORCE && Number(clock.slice(0, 2)) < 3) {
   process.exit(0);
 }
 
+/* От днес до края на ИДНАТА седмица — така другата седмица се пълни още от
+   понеделник, а не чак в неделя вечер. В неделя прозорецът е самата идна
+   седмица (понеделник–неделя). */
 const dow = new Date(today + "T12:00:00Z").getUTCDay();          // 0 = неделя
-const from = process.env.FILL_FROM || (dow === 0 ? addDays(today, 1) : today);
-const to = process.env.FILL_TO || (dow === 0 ? addDays(today, 7) : addDays(today, 7 - dow));
+const from = process.env.FILL_FROM || today;
+const to = process.env.FILL_TO || addDays(today, dow === 0 ? 7 : 14 - dow);
 console.log(`Дневно попълване · ${today} ${clock}`);
 console.log(`Прозорец: ${from} → ${to} (${TZ})\n`);
 
