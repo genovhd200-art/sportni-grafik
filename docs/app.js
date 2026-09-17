@@ -13,6 +13,25 @@ const SPORTS = {
   ten:{n:"Тенис",c:"var(--s-ten)"},  bas:{n:"Баскетбол",c:"var(--s-bas)"},
   mot:{n:"Моторни",c:"var(--s-mot)"},oth:{n:"Друго",c:"var(--ink-3)"}
 };
+/* Цвят на турнира (оттенък 0–360) — различен от цвета на спорта, който е
+   ивицата вляво. Непознатите турнири получават оттенък от името си, така
+   че един турнир е винаги в един и същ цвят. */
+const LEAGUE_HUES = {
+  "ла лига":0, "лига европа":22, "лига 1":45, "млс":68, "първа лига":112,
+  "лига на конференциите":135, "купа на италия":158, "купа на българия":180,
+  "серия а":202, "шампионска лига":225, "купа на германия":248, "висша лига":270,
+  "купа на лигата":292, "бундеслига":315, "купа на краля":338,
+  "евролига":22, "еврокъп":180, "нба":225, "нбл":112,
+  "формула 1":0, "формула 2":202,
+  "суперлига (волейбол)":112, "купа на българия (волейбол)":338, "суперкупа на българия (волейбол)":45,
+};
+function leagueHue(comp){
+  const k = String(comp||"").trim().toLowerCase();
+  if(k in LEAGUE_HUES) return LEAGUE_HUES[k];
+  let h = 0; for(const ch of k) h = (h*31 + ch.charCodeAt(0)) >>> 0;
+  return 11.25 + (h % 16) * 22.5;   // между оттенъците на познатите, за да не съвпадат
+}
+const compTag = e => '<span class="rcomp" style="--lh:'+leagueHue(e.comp)+'">'+esc(e.comp)+'</span>';
 const PRESETS = { day:[{s:"08:00",e:"17:00"}], eve:[{s:"16:00",e:"01:00"}],
                   full:[{s:"08:00",e:"01:00"}], off:[] };
 const PALETTE = ["#C2571C","#1F6FA8","#2F7D4E","#7B3FA0","#B01E56",
@@ -424,7 +443,7 @@ function rowHtml(e){
       ' title="Поето" aria-label="Поето"></div>'+
     '<div class="rtime mono">'+e.time+(e.provisional?'<span class="prov">?</span>':"")+
       '<span class="rend">→'+endLabel(e)+'</span></div>'+
-    '<div class="rmain"><div class="rcomp" style="--sc:'+sc+'">'+esc(e.comp)+'</div>'+
+    '<div class="rmain"><div>'+compTag(e)+'</div>'+
     '<div class="rtitle">'+esc(e.title)+(e.p===3?'<span class="star">★</span>':"")+'</div>'+
     (e.note?'<div class="rnote">'+esc(e.note)+'</div>':"")+'</div>'+
     '<div class="rsel"><select data-assign="'+e.id+'" class="'+(as?"assigned":"")+
@@ -460,8 +479,7 @@ function viewAuthors(){
       '<div class="arow'+(S.done[e.id]?" done":"")+'"><span class="aday mono">'+DAYSHORT[dayIdx(e.date)]+" "+
       parseISO(e.date).getDate()+"."+pad(parseISO(e.date).getMonth()+1)+'</span>'+
       '<span class="mono" style="font-weight:600">'+e.time+'</span>'+
-      '<span><span class="rcomp" style="--sc:'+(SPORTS[e.sport]||{}).c+'">'+esc(e.comp)+
-      '</span><br>'+esc(e.title)+'</span><span>'+
+      '<span>'+compTag(e)+'<br>'+esc(e.title)+'</span><span>'+
       (S.done[e.id]?'<span class="flag ok">✓ поето</span>':"")+
       (S.assign[e.id].format?'<span class="flag ok">'+esc(S.assign[e.id].format)+'</span>':"")+
       '</span></div>').join("") : '<div class="empty">Няма разпределени събития.</div>';
@@ -478,8 +496,7 @@ function viewAuthors(){
     (open.length ? open.map(e => '<div class="arow"><span class="aday mono">'+
       DAYSHORT[dayIdx(e.date)]+" "+parseISO(e.date).getDate()+"."+pad(parseISO(e.date).getMonth()+1)+
       '</span><span class="mono" style="font-weight:600">'+e.time+'</span>'+
-      '<span><span class="rcomp" style="--sc:'+(SPORTS[e.sport]||{}).c+'">'+esc(e.comp)+
-      '</span><br>'+esc(e.title)+'</span><span>'+
+      '<span>'+compTag(e)+'<br>'+esc(e.title)+'</span><span>'+
       (e.p===3?'<span class="flag crit">водещо</span>':"")+'</span></div>').join("")
       : '<div class="empty">Всичко е разпределено.</div>')+'</section>';
   return html;
