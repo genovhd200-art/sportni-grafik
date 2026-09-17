@@ -1,0 +1,139 @@
+name: Нощно попълване на пропуснатото
+
+# Всеки ден в 03:30 българско време добавя липсващите събития от следените
+# турнири (config/fill.json) — до неделя, а в неделя за идната седмица.
+#
+# Cron е в UTC, затова тръгва два пъти:
+#     00:30 UTC = 03:30 лятно (UTC+3)  /  02:30 зимно — скриптът излиза, рано е
+#     01:30 UTC = 04:30 лятно — вече е минал, излиза  /  03:30 зимно
+# Така е точно веднъж на ден в 03:30 и в двата сезона.
+# GitHub понякога закъснява с cron-а в натоварени часове — с до час.
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+    inputs:
+      from:
+        description: "Начало на прозореца (ГГГГ-ММ-ДД, празно = автоматично)"
+        required: false
+        default: ""
+      to:
+        description: "Край на прозореца (ГГГГ-ММ-ДД, празно = автоматично)"
+        required: false
+        default: ""
+      tennis:
+        description: "Потърси и българи в тениса (бавно, с браузър)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fixtures
+  cancel-in-progress: false
+
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Трябва ли да се пуска сега
+        id: gate
+        env:
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+        run: |
+          H=$(TZ=Europe/Sofia date +%H)
+          TODAY=$(TZ=Europe/Sofia date +%F)
+          LAST=$(node -e 'try{console.log(require("./config/fill-state.json").lastRun||"")}catch{console.log("")}')
+          if [ -n "$FORCE" ] || { [ "$H" -ge 3 ] && [ "$LAST" != "$TODAY" ]; }; then
+            echo "run=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "В София е $H ч., последно пускане $LAST — пропускам."
+            echo "run=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Инсталирай браузъра (за тениса)
+        if: steps.gate.outputs.run && (github.event_name != 'workflow_dispatch' || inputs.tennis)
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm install --no-fund --no-audit playwright@1.47.0
+          npx playwright install --with-deps chromium
+
+      - name: Потърси българи в тениса
+        if: steps.gate.outputs.run && (github.event_name != 'workflow_dispatch' || inputs.tennis)
+        continue-on-error: true
+        env:
+          TENNIS_OUT: tennis-debug/found.json
+        run: mkdir -p tennis-debug && node scripts/tennis-scrape.mjs
+
+      - name: Попълни липсващите
+        if: steps.gate.outputs.run
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          SPORTSDB_KEY: ${{ secrets.SPORTSDB_KEY }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+          FILL_FROM: ${{ inputs.from }}
+          FILL_TO: ${{ inputs.to }}
+          TENNIS_FOUND: tennis-debug/found.json
+        run: node scripts/fill-missing.mjs
+
+      - name: Качи диагностиката от тениса
+        if: always() && hashFiles('tennis-debug/**') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: fill-tennis-debug
+          path: tennis-debug/
+          retention-days: 7
+
+      - name: Запиши
+        if: steps.gate.outputs.run
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in docs/data/events.json docs/data/fill-report.json \
+                   config/fill-state.json config/tennis-candidates.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --quiet --cached; then
+            echo "Няма промяна."
+          else
+            git commit -m "Нощно попълване ($(TZ=Europe/Sofia date +%F))"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push
+          fi
+
+      - name: Прати резюме на редактора
+        if: always() && steps.gate.outputs.run
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          EDITOR_CHAT_ID: ${{ secrets.EDITOR_CHAT_ID }}
+        run: node scripts/notify-fill-summary.mjs
+
+      - name: Обобщение в Actions
+        if: always() && steps.gate.outputs.run
+        run: |
+          [ -f docs/data/fill-report.json ] || exit 0
+          node -e '
+            const r = require("./docs/data/fill-report.json");
+            console.log(`## Нощно попълване ${r.window.from} – ${r.window.to}\n`);
+            console.log(`Добавени: **${r.totals.added}** · тенис за проверка: ${r.totals.tennisNew} нови, ${r.totals.tennisPending} чакат\n`);
+            console.log("| Източник | Резултат |\n|---|---|");
+            for (const s of r.sources) console.log(`| ${s.name} | ${s.ok ? s.count : "⚠️ " + s.error} |`);
+            if (r.added.length) {
+              console.log("\n| Ден | Час | Турнир | Събитие | Откъде |\n|---|---|---|---|---|");
+              for (const e of r.added) console.log(`| ${e.date} | ${e.time} | ${e.comp} | ${e.title} | ${e.via} |`);
+            }
+            console.log("\n### Ръчна сверка в Sofascore\n");
+            for (const d of r.sofascore) console.log(`- ${d.date}: ` + d.links.map(l => `[${l.sport}](${l.url})`).join(" · "));
+          ' >> "$GITHUB_STEP_SUMMARY"

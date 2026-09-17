@@ -23,11 +23,14 @@ import path from "node:path";
 
 import { ROOT } from "./lib.mjs";
 const CFG = JSON.parse(await fs.readFile(path.join(ROOT, "config", "tennis.json"), "utf8"));
-const OUT = path.join(ROOT, "config", "tennis-events.json");
+/* TENNIS_OUT: дневното попълване иска находките в отделен файл, за да минат
+   през проверка, вместо направо в програмата. Тогава enabled не се гледа. */
+const REVIEW = !!process.env.TENNIS_OUT;
+const OUT = REVIEW ? path.resolve(process.env.TENNIS_OUT) : path.join(ROOT, "config", "tennis-events.json");
 const DEBUG_DIR = path.join(ROOT, "tennis-debug");
 const TZ = "Europe/Sofia";
 
-if (!CFG.enabled) { console.log("Тенисът е изключен в config/tennis.json."); process.exit(0); }
+if (!CFG.enabled && !REVIEW) { console.log("Тенисът е изключен в config/tennis.json."); process.exit(0); }
 
 const { chromium } = await import("playwright").catch(() => {
   console.error("Playwright липсва. В работния процес се инсталира автоматично.");
@@ -187,5 +190,5 @@ if (!events.length) {
 }
 
 await fs.writeFile(OUT, JSON.stringify(events, null, 1), "utf8");
-console.log(`\n✓ Записани ${events.length} тенис събития в config/tennis-events.json`);
+console.log(`\n✓ Записани ${events.length} тенис събития в ${path.relative(ROOT, OUT)}`);
 events.slice(0, 10).forEach(e => console.log(`   ${e.date} ${e.time}  ${e.comp} · ${e.title}`));

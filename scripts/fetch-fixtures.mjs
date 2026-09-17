@@ -14,7 +14,7 @@ import path from "node:path";
 import { volleyball, basketball } from "./other-sports.mjs";
 import { fromSportsDB } from "./sportsdb.mjs";
 import { fromFootballData } from "./football-data.mjs";
-import { ROOT, TZ, toSofia, sleep, pad } from "./lib.mjs";
+import { ROOT, TZ, toSofia, sleep, pad, matchKey } from "./lib.mjs";
 
 const OUT = path.join(ROOT, "docs", "data", "events.json");
 
@@ -119,6 +119,20 @@ async function tennisEvents() {
   } catch { return []; }
 }
 
+/** Добавеното от нощното попълване (source:"fill") се пренася, иначе всяко
+ *  сутрешно теглене би го изтрило. Пропуска се, ако тегленето вече го е хванало. */
+async function filledEvents(got) {
+  try {
+    const old = JSON.parse(await fs.readFile(OUT, "utf8")).events || [];
+    const ids = new Set(got.map(e => e.extId));
+    const keys = new Set(got.map(matchKey));
+    const keep = old.filter(e => e.source === "fill" && e.date >= from &&
+      !ids.has(e.extId) && !keys.has(matchKey(e)));
+    console.log(`  ✓ от нощното попълване: ${keep.length} събития`);
+    return keep;
+  } catch { return []; }
+}
+
 /* ---------- главно ---------- */
 const today = process.env.FROM_DATE ? new Date(process.env.FROM_DATE + "T12:00:00Z") : new Date();
 const from = iso(today);
@@ -166,6 +180,7 @@ try {
 events = events.concat(await weeklyEvents());
 events = events.concat(await tennisEvents());
 events = events.concat(await manualEvents());
+events = events.concat(await filledEvents(events));
 events.sort((a, b) => a.date === b.date ? a.time.localeCompare(b.time) : a.date.localeCompare(b.date));
 
 const payload = {

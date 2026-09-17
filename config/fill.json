@@ -1,0 +1,70 @@
+{
+ "_comment": "Дневното попълване (scripts/fill-missing.mjs). Добавя САМО липсващите събития — не мести часове, не трие, не пипа ръчното. Изключвай турнир с enabled:false.",
+
+ "_window": "Прозорецът е текущата седмица до неделя. В неделя се попълва идната седмица (понеделник–неделя).",
+
+ "_football": "fd = код във football-data.org (с FOOTBALL_DATA_KEY целият сезон). sdb = id в TheSportsDB — ползва се за турнирите без fd и като резерва, ако football-data не отговори.",
+ "football": [
+  { "name": "Висша лига",            "fd": "PL",  "sdb": 4328, "weight": 2, "enabled": true },
+  { "name": "Купа на лигата",        "fd": null,  "sdb": 4570, "weight": 1, "enabled": true },
+  { "name": "Шампионска лига",       "fd": "CL",  "sdb": 4480, "weight": 3, "enabled": true },
+  { "name": "Лига Европа",           "fd": null,  "sdb": 4481, "weight": 2, "enabled": true },
+  { "name": "Лига на конференциите", "fd": null,  "sdb": 5071, "weight": 2, "enabled": true },
+  { "name": "Ла Лига",               "fd": "PD",  "sdb": 4335, "weight": 2, "enabled": true },
+  { "name": "Купа на краля",         "fd": null,  "sdb": 4483, "weight": 1, "enabled": true },
+  { "name": "Серия А",               "fd": "SA",  "sdb": 4332, "weight": 2, "enabled": true },
+  { "name": "Купа на Италия",        "fd": null,  "sdb": 4506, "weight": 1, "enabled": true },
+  { "name": "Лига 1",                "fd": "FL1", "sdb": 4334, "weight": 2, "enabled": true },
+  { "name": "Бундеслига",            "fd": "BL1", "sdb": 4331, "weight": 2, "enabled": true },
+  { "name": "Купа на Германия",      "fd": null,  "sdb": 4485, "weight": 1, "enabled": true },
+  { "name": "Първа лига",            "fd": null,  "sdb": 4626, "weight": 3, "enabled": true },
+  { "name": "МЛС",                   "fd": null,  "sdb": 4346, "weight": 1, "season": "calendar", "enabled": true }
+ ],
+
+ "_basketball": "НБА и НБЛ от TheSportsDB. НБА няма кръгове и безплатният ключ дава до 3 мача на ден — останалите за днес и утре идват от API_FOOTBALL_KEY (api-basketball).",
+ "basketball": [
+  { "name": "НБА", "sdb": 4387, "weight": 2, "enabled": true },
+  { "name": "НБЛ", "sdb": 5128, "weight": 3, "enabled": true }
+ ],
+
+ "_euroleague": "Официалният API на EuroLeague Basketball: E = Евролига, U = Еврокъп. Целият сезон, с плейофите и финалната четворка.",
+ "euroleague": [
+  { "code": "E", "name": "Евролига", "weight": 2, "enabled": true },
+  { "code": "U", "name": "Еврокъп",  "weight": 1, "enabled": true }
+ ],
+
+ "_motorsport": "Формула 1 — всички сесии от Jolpica. Формула 2 — само състезанията от TheSportsDB, често без час (излизат като непотвърдени).",
+ "formula1": { "name": "Формула 1", "weight": 2, "enabled": true },
+ "formula2": { "name": "Формула 2", "sdb": 4486, "weight": 1, "season": "calendar", "enabled": true },
+
+ "_volleyball": "Официалната статистика на БФВ (bvf-web.dataproject.com). ID-тата се сменят всеки сезон — виждат се в адреса CompetitionHome.aspx?ID=… Женската Суперлига за 2026/27 още не е публикувана; добави я, когато се появи.",
+ "volleyball": [
+  { "id": 65, "pid": 66, "name": "Суперлига (волейбол)",     "weight": 2, "enabled": true },
+  { "id": 69, "name": "Купа на България (волейбол)",          "weight": 2, "enabled": true },
+  { "id": 64, "name": "Суперкупа на България (волейбол)",     "weight": 2, "enabled": true }
+ ],
+
+ "_apiSports": "Резерва с API_FOOTBALL_KEY за днес и утре — безплатният план не стига по-далеч. Филтърът е по името на лигата и държавата.",
+ "apiSports": {
+  "enabled": true,
+  "days": 2,
+  "basketball": { "enabled": true, "weight": 2, "leagueFilter": ["NBA", "Bulgaria"] },
+  "volleyball": { "enabled": true, "weight": 2, "leagueFilter": ["Bulgaria"] }
+ },
+
+ "_tennis": "Българите в големите турнири. НЕ влизат директно: намереното отива в config/tennis-candidates.json и чака проверка. Смени \"ok\": null на true (добави) или false (отхвърли) — при следващото пускане одобрените влизат в програмата.",
+ "tennis": {
+  "enabled": true,
+  "weight": 2,
+  "bigTournaments": [
+   "Australian Open", "Roland Garros", "French Open", "Wimbledon", "US Open",
+   "Indian Wells", "Miami", "Madrid", "Rome", "Internazionali", "Montreal", "Toronto",
+   "Canadian Open", "Cincinnati", "Shanghai", "Paris", "Doha", "Dubai", "Beijing", "Wuhan",
+   "ATP Finals", "WTA Finals", "Davis Cup", "Billie Jean King Cup", "United Cup",
+   "Olympic", "Sofia Open"
+  ]
+ },
+
+ "_sofascore": "Само линкове в отчета за ръчна сверка от човек. Скриптът НЕ отваря Sofascore — условията им забраняват автоматично четене.",
+ "sofascoreLinks": ["football", "basketball", "volleyball", "tennis", "motorsport"]
+}

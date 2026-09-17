@@ -14,7 +14,7 @@
  * Ползва се като модул от fetch-fixtures.mjs.
  */
 
-import { toSofia, sleep } from "./lib.mjs";
+import { toSofia, sleep, addDays } from "./lib.mjs";
 
 const KEY = process.env.SPORTSDB_KEY || "123";
 const FREE = !process.env.SPORTSDB_KEY;
@@ -115,6 +115,97 @@ export async function fromSportsDB(leagues, from, to, watch = []) {
     }
     console.log(`  ✓ ${lg.name}: ${kept} мача в прозореца (от ${rows.length} в отговора)`);
     await sleep(FREE ? 4500 : 500);   // 15 заявки/мин на безплатния ключ
+  }
+  return out;
+}
+
+/**
+ * Същото, но по дни и кръгове — работи и с БЕЗПЛАТНИЯ ключ.
+ *
+ * Безплатният ключ реже: eventsseason.php дава само първите 15 мача на
+ * сезона (тоест нищо след август), eventsday.php — най-много 3 мача на ден.
+ * eventsround.php обаче връща ЦЕЛИЯ кръг. Затова:
+ *   1) за всеки ден от прозореца питаме eventsday.php → номерата на кръговете
+ *   2) за всеки нов кръг питаме eventsround.php → всички мачове от него
+ *   3) дните, които кръгът вече е покрил, не ги питаме повторно
+ * Турнири без кръгове (НБА връща кръг 0) остават с до 3 мача на ден —
+ * с платен ключ ограничението изчезва.
+ *
+ * @param {Array} leagues  [{id, name, sport, weight, season?, enabled}]
+ *                         season: "2026" за турнирите в календарна година (MLS, F2)
+ */
+export async function fromSportsDBWindow(leagues, from, to, watch = []) {
+  const out = [];
+  const W = watch.map(s => s.toLowerCase());
+  const days = [];
+  for (let d = from; d <= to; d = addDays(d, 1)) days.push(d);
+  const pause = () => sleep(FREE ? 4200 : 300);
+
+  const toEvent = (ev, lg) => {
+    let stamp = ev.strTimestamp ||
+      (ev.dateEvent ? `${ev.dateEvent}T${(ev.strTime || "00:00:00").slice(0, 8)}` : null);
+    // TheSportsDB дава UTC без „Z“ — без него часът зависи от машината
+    if (stamp && !/(Z|[+-]\d\d:?\d\d)$/.test(stamp)) stamp += "Z";
+    const t = toSofia(stamp);
+    if (!t || t.date < from || t.date > to) return null;
+    const home = ev.strHomeTeam || "", away = ev.strAwayTeam || "";
+    const title = home && away ? `${home} – ${away}` : (ev.strEvent || "Събитие");
+    const hot = W.some(w => (home + " " + away).toLowerCase().includes(w));
+    return {
+      source: "thesportsdb",
+      extId: `sdb-${ev.idEvent}`,
+      date: t.date, time: t.time,
+      sport: lg.sport || "fut",
+      comp: lg.name,
+      title,
+      p: hot ? 3 : (lg.weight || 2),
+      venue: ev.strVenue || "",
+      round: Number(ev.intRound) > 0 ? `кръг ${ev.intRound}` : "",
+      provisional: !ev.strTime || ev.strTime === "00:00:00",
+    };
+  };
+
+  for (const lg of leagues.filter(l => l.enabled !== false)) {
+    const season = lg.season || seasonOf(from);
+    const byId = new Map();
+    const covered = new Set(), roundsDone = new Set();
+    let failed = null;
+
+    for (const day of days) {
+      if (covered.has(day)) continue;
+      let rows = [];
+      try {
+        const j = await get(`${BASE}/eventsday.php?d=${day}&l=${lg.id}`, lg.name);
+        rows = (j && j.events) || [];
+      } catch (e) { failed = e.message; if (/не се приема/.test(e.message)) break; }
+      await pause();
+
+      for (const ev of rows) {
+        const x = toEvent(ev, lg);
+        if (x) byId.set(x.extId, x);
+      }
+
+      const rounds = [...new Set(rows.map(e => Number(e.intRound)).filter(r => r > 0))];
+      for (const r of rounds) {
+        if (roundsDone.has(r)) continue;
+        roundsDone.add(r);
+        try {
+          const j = await get(`${BASE}/eventsround.php?id=${lg.id}&r=${r}&s=${season}`, `${lg.name} кръг ${r}`);
+          for (const ev of (j && j.events) || []) {
+            const x = toEvent(ev, lg);
+            if (!x) continue;
+            byId.set(x.extId, x);
+            covered.add(x.date);
+          }
+        } catch (e) { failed = e.message; }
+        await pause();
+      }
+    }
+
+    const got = [...byId.values()];
+    out.push(...got);
+    if (failed && !got.length) throw new Error(`${lg.name}: ${failed}`);
+    console.log(`  ✓ ${lg.name}: ${got.length}` + (roundsDone.size ? ` (кръг ${[...roundsDone].join(", ")})` : ""));
   }
   return out;
 }
