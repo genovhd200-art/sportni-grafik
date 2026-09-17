@@ -20,6 +20,7 @@
  */
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 import { ROOT } from "./lib.mjs";
 const CFG = JSON.parse(await fs.readFile(path.join(ROOT, "config", "tennis.json"), "utf8"));
@@ -167,7 +168,8 @@ for (const h of [...jsonHits, ...textHits]) {
   if (seen.has(key)) continue;
   seen.add(key);
   events.push({
-    extId: "ten-" + Buffer.from(key).toString("base64url").slice(0, 20),
+    // хеш от целия ключ — първите 20 знака base64 покриваха само датата и часа
+    extId: "ten-" + createHash("sha1").update(key).digest("base64url").slice(0, 20),
     date, time, sport: "ten",
     comp: h.tournament || "Тенис",
     title, p: weightOf(h.sur),

@@ -93,6 +93,8 @@ export async function basketball(key, from, days, cfg) {
       if (cfg.leagueFilter?.length &&
           !cfg.leagueFilter.some(f => (league + " " + country).toLowerCase().includes(f.toLowerCase())))
         continue;
+      // „NBA“ хваща и „NBA W“ (WNBA) — leagueExclude ги маха
+      if (cfg.leagueExclude?.some(f => league.toLowerCase() === f.toLowerCase())) continue;
       const home = pick(g, "teams.home.name") || "?";
       const away = pick(g, "teams.away.name") || "?";
       const t = toSofia(pick(g, "date")) || { date: day, time: "00:00" };

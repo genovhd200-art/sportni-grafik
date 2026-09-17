@@ -48,7 +48,7 @@
  "apiSports": {
   "enabled": true,
   "days": 2,
-  "basketball": { "enabled": true, "weight": 2, "leagueFilter": ["NBA", "Bulgaria"] },
+  "basketball": { "enabled": true, "weight": 2, "leagueFilter": ["NBA", "Bulgaria"], "leagueExclude": ["NBA W", "WNBA", "NBA - G League", "NBA Summer League"] },
   "volleyball": { "enabled": true, "weight": 2, "leagueFilter": ["Bulgaria"] }
  },
 
