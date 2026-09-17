@@ -4,8 +4,8 @@
  *
  * Чете:
  *   docs/data/events.json    програмата (пълни се автоматично)
- *   config/assignments.json  разпределението (сваля се от дъската с бутона
- *                            „Публикувай разпределението“ и се качва тук)
+ *   docs/data/assignments.json  разпределението (редакторът го публикува
+ *                               от дъската с бутона „Публикувай“)
  *   config/people.json       кой автор на кой chat id отговаря
  *
  * Два режима, задават се в people.json → mode:
@@ -31,7 +31,9 @@ const read = async (p, fb) => {
 };
 
 const feed = await read("docs/data/events.json", { events: [] });
-const asg = await read("config/assignments.json", { authors: {}, assign: {}, custom: {} });
+// публикуваното от дъската; config/ е старото място, остава като резерва
+const asg = await read("docs/data/assignments.json", null) ||
+            await read("config/assignments.json", { authors: {}, assign: {}, custom: {} });
 const ppl = await read("config/people.json", { mode: "before-shift", leadMinutes: 30, people: [] });
 const state = await read("config/notify-state.json", {});
 

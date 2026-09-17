@@ -1,9 +1,17 @@
 /* Спортен график — редакционна дъска.
    Програмата идва от data/events.json (пълни я GitHub Actions).
-   Авторите, смените и разпределението се пазят в браузъра (localStorage). */
+   Авторите, смените и разпределението:
+     · редакторът (влязъл с GitHub токен) ги редактира в браузъра си и ги
+       публикува в data/assignments.json с бутона „Публикувай“;
+     · всички останали виждат публикуваното, само за четене. */
 "use strict";
 
 const LS = "sn-grafik-v1";
+const REPO = "genovhd200-art/sportni-grafik";
+const PUB_PATH = "docs/data/assignments.json";
+const TOKEN_KEY = LS + "-editor";
+const getToken = () => { try{ return localStorage.getItem(TOKEN_KEY) || ""; }catch(e){ return ""; } };
+let EDITOR = !!getToken();
 const DAYFULL = ["Понеделник","Вторник","Сряда","Четвъртък","Петък","Събота","Неделя"];
 const DAYSHORT = ["пн","вт","ср","чт","пт","сб","нд"];
 const MONTHS = ["януари","февруари","март","април","май","юни",
@@ -47,6 +55,7 @@ const endLabel = e => { const m = endMins(e) % 1440;
   return pad(Math.floor(m/60)) + ":" + pad(m%60); };
 
 const S = { feed:null, all:[], custom:{}, authors:{}, assign:{}, done:{},
+            published:null, dirty:false,
             view:"day", q:"", sports:new Set(), onlyOpen:false, onlyTodo:false, weekStart:null };
 let DATES = [];
 
@@ -73,16 +82,121 @@ function weekDates(start){
 function dayIdx(iso){ return DATES.indexOf(iso); }
 
 /* ---------- съхранение ---------- */
-function saveLocal(){
+/* Всяка промяна минава оттук — затова тук се отбелязва и „има непубликувано“. */
+function saveLocal(dirty = true){
+  if(!EDITOR) return;
+  if(dirty) S.dirty = true;
   try{ localStorage.setItem(LS, JSON.stringify(
-    {authors:S.authors, assign:S.assign, custom:S.custom, done:S.done})); }catch(e){}
+    {authors:S.authors, assign:S.assign, custom:S.custom, done:S.done, dirty:S.dirty})); }catch(e){}
 }
+/** true, ако в този браузър вече има въведени автори или разпределение. */
 function loadLocal(){
   try{
-    const r = localStorage.getItem(LS); if(!r) return;
+    const r = localStorage.getItem(LS); if(!r) return false;
     const d = JSON.parse(r);
-    S.authors = d.authors||{}; S.assign = d.assign||{}; S.custom = d.custom||{}; S.done = d.done||{};
-  }catch(e){}
+    applyState(d); S.dirty = !!d.dirty;
+    return Object.keys(S.authors).length > 0 || Object.keys(S.assign).length > 0;
+  }catch(e){ return false; }
+}
+function applyState(d){
+  d = d || {};
+  S.authors = d.authors||{}; S.assign = d.assign||{}; S.custom = d.custom||{}; S.done = d.done||{};
+}
+async function loadPublished(){
+  try{
+    const r = await fetch("data/assignments.json?ts="+Date.now(), {cache:"no-store"});
+    return r.ok ? await r.json() : null;
+  }catch(e){ return null; }
+}
+
+/* ---------- публикуване (само редакторът) ---------- */
+const b64 = s => { let x = ""; for(const c of new TextEncoder().encode(s)) x += String.fromCharCode(c); return btoa(x); };
+const ghErr = s => s===401 ? "токенът не се приема — изтекъл е или е сгрешен"
+  : (s===403 || s===404) ? "токенът няма право да пише в хранилището"
+  : (s===409 || s===422) ? "някой друг публикува току-що — опитайте пак"
+  : "GitHub върна грешка "+s;
+
+async function publish(){
+  const token = getToken();
+  if(!token){ openEditorLogin(); return; }
+  const btn = document.getElementById("pubBtn");
+  btn.disabled = true; notice("Публикувам…");
+  const payload = { publishedAt: new Date().toISOString(),
+    authors: S.authors, assign: S.assign, custom: S.custom, done: S.done };
+  const api = "https://api.github.com/repos/"+REPO+"/contents/"+PUB_PATH;
+  const H = { Authorization: "Bearer "+token, Accept: "application/vnd.github+json" };
+  try{
+    let res;
+    for(let attempt = 0; attempt < 2; attempt++){      // втори опит, ако файлът се е сменил междувременно
+      const g = await fetch(api+"?ref=main&ts="+Date.now(), {headers:H, cache:"no-store"});
+      if(!g.ok && g.status!==404) throw new Error(ghErr(g.status));
+      const sha = g.ok ? (await g.json()).sha : undefined;
+      res = await fetch(api, { method:"PUT", headers:H, body: JSON.stringify({
+        message: "Разпределение от дъската",
+        content: b64(JSON.stringify(payload, null, 1)+"\n"),
+        branch: "main", ...(sha ? {sha} : {}) }) });
+      if(res.ok || (res.status!==409 && res.status!==422)) break;
+    }
+    if(!res.ok) throw new Error(ghErr(res.status));
+    S.published = payload; S.dirty = false; saveLocal(false); render();
+    notice("Публикувано. Колегите го виждат до около минута (страницата им се обновява сама), "+
+      "а известията в Telegram тръгват по него.");
+  }catch(err){
+    notice("Не се публикува: "+esc(err.message)+".");
+  }finally{ btn.disabled = false; }
+}
+
+/* ---------- вход за редактора ---------- */
+function openEditorLogin(){
+  modalState = {type:"editor"};
+  const body = EDITOR
+    ? '<p style="margin:0 0 10px">Влезли сте като <b>редактор</b> в този браузър. Промените се пазят тук, '+
+      'докато не натиснете <b>Публикувай</b>.</p>'+
+      '<p style="margin:0;color:var(--ink-3);font-size:12.5px">„Зареди публикуваното“ заменя разпределението '+
+      'в този браузър с последното публикувано — полезно на нов компютър.</p>'
+    : '<p style="margin:0 0 10px">Само редакторът разпределя. Всички останали виждат публикуваното.</p>'+
+      '<label class="fl" for="tokIn">GitHub токен</label>'+
+      '<input type="password" id="tokIn" autocomplete="off" spellcheck="false" placeholder="github_pat_…" style="width:100%">'+
+      '<p style="margin:10px 0 0;color:var(--ink-3);font-size:12.5px;line-height:1.45">'+
+      'GitHub → Settings → Developer settings → <b>Fine-grained tokens</b> → Generate. '+
+      'Repository access: само <b>'+REPO+'</b>; Permissions → <b>Contents: Read and write</b>. '+
+      'Токенът остава само в този браузър.</p>'+
+      '<p id="tokErr" style="margin:8px 0 0;color:var(--crit)" hidden></p>';
+  const foot = EDITOR
+    ? '<button class="btn left" data-act="logout">Изход</button>'+
+      '<button class="btn" data-act="loadPub">Зареди публикуваното</button>'+
+      '<button class="btn primary" data-act="cancel">Готово</button>'
+    : '<button class="btn" data-act="cancel">Отказ</button>'+
+      '<button class="btn primary" data-act="saveToken">Влез</button>';
+  openModal(EDITOR ? "Редактор" : "Вход за редактор", body, foot);
+}
+async function saveToken(){
+  const tok = (document.getElementById("tokIn").value || "").trim();
+  const err = document.getElementById("tokErr");
+  const fail = m => { err.hidden = false; err.textContent = m; };
+  if(!tok) return fail("Поставете токена.");
+  try{
+    const r = await fetch("https://api.github.com/repos/"+REPO,
+      {headers:{Authorization:"Bearer "+tok, Accept:"application/vnd.github+json"}});
+    if(!r.ok) return fail(ghErr(r.status)+".");
+    const j = await r.json();
+    if(!j.permissions || !j.permissions.push) return fail("Токенът може само да чете — трябва Contents: Read and write.");
+  }catch(e){ return fail("GitHub не отговори: "+e.message); }
+  try{ localStorage.setItem(TOKEN_KEY, tok); }catch(e){ return fail("Браузърът не позволява запис (частен режим?)."); }
+  EDITOR = true;
+  // първи вход в този браузър — започваме от публикуваното, ако има
+  if(!loadLocal() && S.published) applyState(S.published);
+  closeModal(); applyMode(); render();
+  notice("Влязохте като редактор. Разпределяйте и натиснете <b>Публикувай</b>, за да го видят всички.");
+}
+function applyMode(){
+  document.body.classList.toggle("ro", !EDITOR);
+  document.getElementById("editBtn").textContent = EDITOR ? "Редактор ✓" : "Вход за редактор";
+}
+/* В режим „преглед“ всичко, което би променило нещо, е изключено. */
+function lockUi(){
+  document.querySelectorAll("#main select, #main input[type=checkbox], #authorList button")
+    .forEach(x => { x.disabled = true; });
 }
 
 /* ---------- смени ---------- */
@@ -332,6 +446,20 @@ document.getElementById("modalFoot").addEventListener("click", e => {
   const b = e.target.closest("[data-act]"); if(!b) return;
   const act = b.dataset.act, st = modalState;
   if(act==="cancel"){ closeModal(); return; }
+  if(act==="saveToken"){ saveToken(); return; }
+  if(act==="logout"){
+    try{ localStorage.removeItem(TOKEN_KEY); }catch(e){}
+    EDITOR = false; applyState(S.published); closeModal(); applyMode(); render();
+    notice("Излязохте. Виждате публикуваното разпределение.");
+    return;
+  }
+  if(act==="loadPub"){
+    if(!S.published){ notice("Още няма публикувано разпределение."); closeModal(); return; }
+    if(!confirmBtn(b, "Замени тукашното?")) return;
+    applyState(S.published); S.dirty = false; saveLocal(false); closeModal(); render();
+    notice("Заредено е публикуваното разпределение.");
+    return;
+  }
   if(act==="saveShifts"){
     const a = S.authors[st.id];
     const shifts = Object.assign({}, a.shifts||{});
@@ -349,6 +477,14 @@ function render(){
   m.innerHTML = S.view==="day" ? viewDays() : S.view==="author" ? viewAuthors() : viewIssues();
   const n = issuesFor().length, b = document.getElementById("issueBadge");
   b.hidden = !n; b.textContent = n;
+  const pb = document.getElementById("pubBtn");
+  pb.textContent = S.dirty ? "Публикувай ●" : "Публикувай";
+  pb.title = S.dirty ? "Има промени, които колегите още не виждат" : "Всичко е публикувано";
+  const pubAt = S.published && S.published.publishedAt;
+  document.getElementById("modeTxt").textContent = (EDITOR ? "редактор" : "преглед") +
+    (pubAt ? " · публикувано " + new Date(pubAt).toLocaleString("bg-BG",
+      {day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"}) : " · нищо публикувано");
+  if(!EDITOR) lockUi();
 }
 function renderWeekLabel(){
   const a = parseISO(DATES[0]), b = parseISO(DATES[6]);
@@ -393,7 +529,10 @@ function renderAuthors(){
   document.getElementById("authorCount").textContent = list.length;
   const el = document.getElementById("authorList");
   if(!list.length){
-    el.innerHTML = '<div class="empty">Още няма автори.<br>Добавете първия отдолу.</div>'; return;
+    el.innerHTML = EDITOR
+      ? '<div class="empty">Още няма автори.<br>Добавете първия отдолу.</div>'
+      : '<div class="empty">Редакторът още не е публикувал разпределение.</div>';
+    return;
   }
   el.innerHTML = list.map(a => {
     const load = weekEvents().filter(e => S.assign[e.id] && S.assign[e.id].authorId===a.id).length;
@@ -532,6 +671,7 @@ document.addEventListener("click", e => {
   }
   if(t.dataset.open){ S.onlyOpen = !S.onlyOpen; t.setAttribute("aria-pressed", S.onlyOpen); render(); return; }
   if(t.dataset.todo){ S.onlyTodo = !S.onlyTodo; t.setAttribute("aria-pressed", S.onlyTodo); render(); return; }
+  if(!EDITOR) return;                       // по-долу са само редакции
   if(t.dataset.delAuthor){
     const a = S.authors[t.dataset.delAuthor]; if(!a) return;
     if(confirmBtn(t, "×?")){
@@ -544,7 +684,7 @@ document.addEventListener("click", e => {
   if(t.dataset.shift){ openShiftEditor(t.dataset.shift); return; }
 });
 document.addEventListener("change", e => {
-  const s = e.target; if(ov.contains(s)) return;
+  const s = e.target; if(ov.contains(s) || !EDITOR) return;
   if(s.dataset.done){
     if(s.checked) S.done[s.dataset.done] = true; else delete S.done[s.dataset.done];
     saveLocal(); render(); return;
@@ -562,6 +702,7 @@ document.addEventListener("change", e => {
 document.getElementById("q").addEventListener("input", e => { S.q = e.target.value.trim(); render(); });
 document.getElementById("authorForm").addEventListener("submit", e => {
   e.preventDefault();
+  if(!EDITOR) return;
   const name = document.getElementById("anName").value.trim(); if(!name) return;
   const n = Object.keys(S.authors).length, shifts = {};
   DATES.forEach(d => shifts[d] = PRESETS.full.map(x => ({s:x.s, e:x.e})));
@@ -572,6 +713,7 @@ document.getElementById("authorForm").addEventListener("submit", e => {
 });
 document.getElementById("eventForm").addEventListener("submit", e => {
   e.preventDefault();
+  if(!EDITOR) return;
   const title = document.getElementById("evTitle").value.trim(); if(!title) return;
   const id = "c"+uid();
   S.custom[id] = {id, date:document.getElementById("evDate").value,
@@ -597,7 +739,8 @@ document.getElementById("nextW").addEventListener("click", () => {
   const d = new Date(S.weekStart); d.setDate(d.getDate()+7); setWeek(d);
 });
 document.getElementById("todayBtn").addEventListener("click", () => setWeek(mondayOf(new Date())));
-document.getElementById("autoBtn").addEventListener("click", autoAssign);
+document.getElementById("autoBtn").addEventListener("click", () => { if(EDITOR) autoAssign(); });
+document.getElementById("editBtn").addEventListener("click", openEditorLogin);
 document.getElementById("printBtn").addEventListener("click", () => window.print());
 document.getElementById("manBtn").addEventListener("click", () => {
   const list = Object.values(S.custom).map(e => ({
@@ -614,18 +757,7 @@ document.getElementById("manBtn").addEventListener("click", () => {
   notice("Свален е <b>manual-events.json</b> с <b>"+list.length+"</b> събития. "+
     "Качи го в папка <b>config/</b> и ще се появяват при всички, при всяко обновяване.");
 });
-document.getElementById("pubBtn").addEventListener("click", () => {
-  const payload = { exportedAt: new Date().toISOString(),
-    authors: S.authors, assign: S.assign, custom: S.custom, done: S.done };
-  const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 1)],
-    {type:"application/json"}));
-  const a = document.createElement("a");
-  a.href = url; a.download = "assignments.json";
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-  notice("Свален е <b>assignments.json</b>. Качи го в хранилището в папка "+
-    "<b>config/</b> (Add file → Upload files) и известията тръгват.");
-});
+document.getElementById("pubBtn").addEventListener("click", publish);
 document.getElementById("csvBtn").addEventListener("click", () => {
   const rows = [["Дата","Ден","Час","Спорт","Турнир","Събитие","Автор","Формат","Поето","Часът потвърден"]];
   weekEvents().forEach(e => {
@@ -644,8 +776,12 @@ document.getElementById("csvBtn").addEventListener("click", () => {
 
 /* ---------- старт ---------- */
 (async function init(){
-  loadLocal();
-  const ok = await loadFeed();
+  const hadLocal = EDITOR && loadLocal();
+  const [ok, pub] = await Promise.all([loadFeed(), loadPublished()]);
+  S.published = pub;
+  // Прегледът вижда само публикуваното. Редакторът — своето, а на нов браузър публикуваното.
+  if(!hadLocal) applyState(pub);
+  applyMode();
   if(!ok) return;
   const gen = new Date(S.feed.generatedAt);
   document.getElementById("sub").textContent =
@@ -658,7 +794,14 @@ document.getElementById("csvBtn").addEventListener("click", () => {
     "и с етикет „часът не е потвърден“. Телевизионните избори обикновено се фиксират около 5–6 седмици предварително, "+
     "така че в далечния край на месеца очаквайте размествания.</p>"+
     "<p><strong>Къде се пазят данните.</strong> Програмата идва от хранилището и се обновява автоматично. "+
-    "Авторите, смените и разпределението се пазят в този браузър — не се виждат от колегите.</p>";
+    "Разпределението го прави редакторът и го публикува — всички останали виждат публикуваното "+
+    "и страницата им го обновява сама на всеки 2 минути.</p>";
   const t = new Date(), from = parseISO(S.feed.from), to = parseISO(S.feed.to);
   setWeek(mondayOf(t >= from && t <= to ? t : from));
+  // прегледът следи за ново публикуване
+  setInterval(async () => {
+    if(EDITOR || !ov.hidden) return;
+    const p = await loadPublished();
+    if(p && p.publishedAt !== (S.published||{}).publishedAt){ S.published = p; applyState(p); render(); }
+  }, 120000);
 })();

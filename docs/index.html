@@ -262,6 +262,12 @@ label.fl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:va
 .sh-tools{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 @media(max-width:620px){.sh-row{grid-template-columns:1fr}.sh-tools{margin-left:0}}
 
+/* режим „преглед“: без нищо, което редактира */
+body.ro .edit-only{display:none!important}
+body.ro .a-x,body.ro .author .btn.sm{display:none!important}
+body.ro #main select:disabled{opacity:1;cursor:default}
+body.ro #main input[type=checkbox]:disabled{cursor:default}
+body.ro .shift:disabled{cursor:default}
 .notice{padding:10px 0 0}
 .notice .msg{padding:8px 12px;border-radius:var(--r);font-size:12.5px;line-height:1.4;
   border:1px solid var(--warn);background:var(--warn-soft);color:var(--warn)}
@@ -285,11 +291,13 @@ label.fl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:va
       </div>
       <div class="mast-right">
         <span class="pill" id="freshPill"><span class="dot"></span><span id="freshTxt">…</span></span>
-        <button class="btn" id="autoBtn">Разпредели автоматично</button>
-        <button class="btn" id="manBtn" title="Сваля събитията, които си добавил, за качване в config/manual-events.json">Свали моите събития</button>
-        <button class="btn" id="pubBtn" title="Сваля разпределението, за да се качи в хранилището и да тръгнат известията">Публикувай разпределението</button>
+        <span class="pill" id="modePill"><span id="modeTxt">…</span></span>
+        <button class="btn edit-only" id="autoBtn">Разпредели автоматично</button>
+        <button class="btn edit-only" id="manBtn" title="Сваля събитията, които си добавил, за качване в config/manual-events.json">Свали моите събития</button>
+        <button class="btn primary edit-only" id="pubBtn">Публикувай</button>
         <button class="btn" id="csvBtn">Свали CSV</button>
         <button class="btn" id="printBtn">Печат</button>
+        <button class="btn sm" id="editBtn">Вход за редактор</button>
       </div>
     </div>
     <div class="notice" id="notice" hidden><div class="msg" id="noticeMsg"></div></div>
@@ -315,8 +323,8 @@ label.fl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:va
       <section class="panel">
         <div class="panel-hd"><h2>Автори</h2><span class="a-load" id="authorCount">0</span></div>
         <div id="authorList"></div>
-        <div class="legend">Смените са за показаната седмица. Натиснете <b>Смени по часове</b> за точни интервали — може и по няколко на ден.</div>
-        <form class="form" id="authorForm">
+        <div class="legend edit-only">Смените са за показаната седмица. Натиснете <b>Смени по часове</b> за точни интервали — може и по няколко на ден.</div>
+        <form class="form edit-only" id="authorForm">
           <div><label class="fl" for="anName">Име</label>
             <input type="text" id="anName" placeholder="напр. Мартин Петров" required maxlength="40"></div>
           <div><label class="fl" for="anRole">Ресор (по избор)</label>
@@ -324,7 +332,7 @@ label.fl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:va
           <button class="btn primary" type="submit">Добави автор</button>
         </form>
       </section>
-      <section class="panel">
+      <section class="panel edit-only">
         <div class="panel-hd"><h2>Добави събитие</h2></div>
         <form class="form grid2" id="eventForm">
           <div><label class="fl" for="evDate">Дата</label><select id="evDate"></select></div>
