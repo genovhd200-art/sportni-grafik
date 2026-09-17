@@ -333,15 +333,26 @@ DRY_RUN=1 node scripts/notify-telegram.mjs
 
 **Как се става редактор (веднъж, на всеки компютър):**
 
-1. GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate new token.
-2. Repository access: **Only select repositories** → `sportni-grafik`.
-3. Permissions → Repository → **Contents: Read and write**. Нищо друго.
-4. На дъската: **Вход за редактор** → поставяш токена → **Влез**.
+На дъската → **Вход за редактор**. Два начина:
 
-Токенът остава само в този браузър. Промените се пазят там, докато не
-натиснеш **Публикувай** (точката „●“ значи, че има непубликувано). Бутонът
-записва `docs/data/assignments.json` в хранилището — оттам го четат колегите
-и известията в Telegram. На нов компютър дъската тръгва от публикуваното.
+- **Без токен** (по-простият). Натискаш „Влез без токен“. При **Публикувай**
+  файлът `assignments.json` се сваля и се качва в GitHub: линкът към
+  `docs/data` → Add file → Upload files → Commit changes. Стъпките излизат и
+  на самата дъска.
+- **С токен** (публикува с едно натискане):
+  1. [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new)
+     (или GitHub → снимката горе вдясно → Settings → Developer settings →
+     Personal access tokens → **Fine-grained tokens** → Generate new token).
+  2. Име, срок на валидност; Repository access: **Only select repositories** →
+     `sportni-grafik`.
+  3. Permissions → Repository permissions → **Contents: Read and write**. Нищо друго.
+  4. Generate token, копираш го и го поставяш на дъската → **Влез с токен**.
+     Токенът остава само в този браузър.
+
+Промените се пазят в браузъра, докато не натиснеш **Публикувай** (точката „●“
+значи, че има непубликувано). Публикуваното отива в
+`docs/data/assignments.json` — оттам го четат колегите и известията в
+Telegram. На нов компютър дъската тръгва от публикуваното.
 
 > **Без публикувано разпределение известията не работят** — скриптът не знае
 > кой автор какво покрива и не праща нищо.

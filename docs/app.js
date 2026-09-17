@@ -10,8 +10,10 @@ const LS = "sn-grafik-v1";
 const REPO = "genovhd200-art/sportni-grafik";
 const PUB_PATH = "docs/data/assignments.json";
 const TOKEN_KEY = LS + "-editor";
-const getToken = () => { try{ return localStorage.getItem(TOKEN_KEY) || ""; }catch(e){ return ""; } };
-let EDITOR = !!getToken();
+const MODE_KEY = LS + "-editor-mode";      // редактор без токен (публикува с файл)
+const ls = k => { try{ return localStorage.getItem(k) || ""; }catch(e){ return ""; } };
+const getToken = () => ls(TOKEN_KEY);
+let EDITOR = !!getToken() || ls(MODE_KEY) === "1";
 const DAYFULL = ["Понеделник","Вторник","Сряда","Четвъртък","Петък","Събота","Неделя"];
 const DAYSHORT = ["пн","вт","ср","чт","пт","сб","нд"];
 const MONTHS = ["януари","февруари","март","април","май","юни",
@@ -116,9 +118,25 @@ const ghErr = s => s===401 ? "токенът не се приема — изте
   : (s===409 || s===422) ? "някой друг публикува току-що — опитайте пак"
   : "GitHub върна грешка "+s;
 
+/** Без токен: сваля файла, за да се качи през сайта на GitHub. */
+function publishByFile(){
+  const payload = { publishedAt: new Date().toISOString(),
+    authors: S.authors, assign: S.assign, custom: S.custom, done: S.done };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 1)+"\n"],
+    {type:"application/json"}));
+  const a = document.createElement("a");
+  a.href = url; a.download = "assignments.json";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  notice('Свален е <b>assignments.json</b>. Качи го в хранилището: '+
+    '<a href="https://github.com/'+REPO+'/upload/main/docs/data" target="_blank" rel="noopener">'+
+    'отвори docs/data → Add file → Upload files</a>, пусни файла вътре и натисни '+
+    '<b>Commit changes</b>. След минута колегите го виждат.');
+}
+
 async function publish(){
   const token = getToken();
-  if(!token){ openEditorLogin(); return; }
+  if(!token){ publishByFile(); return; }
   const btn = document.getElementById("pubBtn");
   btn.disabled = true; notice("Публикувам…");
   const payload = { publishedAt: new Date().toISOString(),
@@ -150,11 +168,15 @@ async function publish(){
 function openEditorLogin(){
   modalState = {type:"editor"};
   const body = EDITOR
-    ? '<p style="margin:0 0 10px">Влезли сте като <b>редактор</b> в този браузър. Промените се пазят тук, '+
-      'докато не натиснете <b>Публикувай</b>.</p>'+
+    ? '<p style="margin:0 0 10px">Влезли сте като <b>редактор</b> в този браузър'+
+      (getToken() ? " (с токен — публикува се с едно натискане)"
+                  : " (без токен — „Публикувай“ сваля файл, който качвате в GitHub)")+
+      '. Промените се пазят тук, докато не натиснете <b>Публикувай</b>.</p>'+
       '<p style="margin:0;color:var(--ink-3);font-size:12.5px">„Зареди публикуваното“ заменя разпределението '+
       'в този браузър с последното публикувано — полезно на нов компютър.</p>'
     : '<p style="margin:0 0 10px">Само редакторът разпределя. Всички останали виждат публикуваното.</p>'+
+      '<p style="margin:0 0 10px;color:var(--ink-3);font-size:12.5px">Може и <b>без токен</b>: '+
+      'натисни „Публикувай“, файлът се сваля и го качваш в GitHub. Токенът е само за да става с едно натискане.</p>'+
       '<label class="fl" for="tokIn">GitHub токен</label>'+
       '<input type="password" id="tokIn" autocomplete="off" spellcheck="false" placeholder="github_pat_…" style="width:100%">'+
       '<p style="margin:10px 0 0;color:var(--ink-3);font-size:12.5px;line-height:1.45">'+
@@ -166,8 +188,9 @@ function openEditorLogin(){
     ? '<button class="btn left" data-act="logout">Изход</button>'+
       '<button class="btn" data-act="loadPub">Зареди публикуваното</button>'+
       '<button class="btn primary" data-act="cancel">Готово</button>'
-    : '<button class="btn" data-act="cancel">Отказ</button>'+
-      '<button class="btn primary" data-act="saveToken">Влез</button>';
+    : '<button class="btn left" data-act="editorNoToken">Влез без токен</button>'+
+      '<button class="btn" data-act="cancel">Отказ</button>'+
+      '<button class="btn primary" data-act="saveToken">Влез с токен</button>';
   openModal(EDITOR ? "Редактор" : "Вход за редактор", body, foot);
 }
 async function saveToken(){
@@ -447,8 +470,17 @@ document.getElementById("modalFoot").addEventListener("click", e => {
   const act = b.dataset.act, st = modalState;
   if(act==="cancel"){ closeModal(); return; }
   if(act==="saveToken"){ saveToken(); return; }
+  if(act==="editorNoToken"){
+    try{ localStorage.setItem(MODE_KEY, "1"); }catch(e){}
+    EDITOR = true;
+    if(!loadLocal() && S.published) applyState(S.published);
+    closeModal(); applyMode(); render();
+    notice("Влязохте като редактор. При „Публикувай“ файлът се сваля и се качва в GitHub — "+
+      "стъпките излизат тук.");
+    return;
+  }
   if(act==="logout"){
-    try{ localStorage.removeItem(TOKEN_KEY); }catch(e){}
+    try{ localStorage.removeItem(TOKEN_KEY); localStorage.removeItem(MODE_KEY); }catch(e){}
     EDITOR = false; applyState(S.published); closeModal(); applyMode(); render();
     notice("Излязохте. Виждате публикуваното разпределение.");
     return;
