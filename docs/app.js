@@ -215,8 +215,8 @@ function autoAssign(){
   const btn = document.getElementById("autoBtn");
   const authors = Object.values(S.authors);
   if(!authors.length){ notice("Първо добавете автори и им задайте смени."); return; }
-  const evs = weekEvents().filter(e => !S.assign[e.id] && e.p>=2);
-  if(!evs.length){ notice("Няма неразпределени важни събития тази седмица."); return; }
+  const evs = weekEvents().filter(e => !S.assign[e.id] && !S.done[e.id]);
+  if(!evs.length){ notice("Няма неразпределени събития тази седмица."); return; }
   const byId = {}; weekEvents().forEach(e => byId[e.id]=e);
   const load = {}, taken = {};
   authors.forEach(a => { load[a.id]=0; taken[a.id]=[]; });
@@ -227,23 +227,29 @@ function autoAssign(){
   const order = evs.slice().sort((a,b) =>
     b.p-a.p || (a.date<b.date?-1 : a.date>b.date?1 : mins(a.time)-mins(b.time)));
   const plan = [];
-  const free = (a,e) => !taken[a.id].some(t =>
-    t.date===e.date && Math.abs(endMins(t)-endMins(e)) < 60);
+  let doubled = 0;
+  const busy = (a,e) => taken[a.id].filter(t =>
+    t.date===e.date && Math.abs(endMins(t)-endMins(e)) < 60).length;
   order.forEach(e => {
-    // 1) на смяна, когато мачът свършва — това е човекът, който ще пише
-    let cands = authors.filter(a => coversEnd(a,e) && free(a,e));
-    // 2) ако няма такъв — който е на смяна при започването
-    if(!cands.length) cands = authors.filter(a => coversStart(a,e) && free(a,e));
+    const cands = authors.filter(a => coversEnd(a,e) || coversStart(a,e));
     if(!cands.length) return;
-    cands.sort((x,y) => load[x.id]-load[y.id]);
+    // Редът на предпочитане:
+    //   1) свободният — ако всички вече имат мач по същото време, поема
+    //      най-малко заетият и застъпването излиза в „Проверка“
+    //   2) на смяна, когато мачът свършва — той ще пише; иначе този при започването
+    //   3) по-малко натовареният за седмицата
+    const endFirst = a => coversEnd(a,e) ? 0 : 1;
+    cands.sort((x,y) => busy(x,e)-busy(y,e) || endFirst(x)-endFirst(y) || load[x.id]-load[y.id]);
     const pick = cands[0];
+    if(busy(pick,e)) doubled++;
     load[pick.id]++; taken[pick.id].push(e); plan.push([e.id, pick.id]);
   });
-  if(!plan.length){ notice("Няма подходящ автор — проверете часовете на смените."); return; }
+  if(!plan.length){ notice("Никой не е на смяна по време на неразпределените събития — проверете смените."); return; }
   const skipped = order.length - plan.length;
   if(!confirmBtn(btn, "Потвърди ("+plan.length+")")){
     notice("Ще разпределя <b>"+plan.length+"</b> събития"+
-      (skipped ? ", а <b>"+skipped+"</b> остават без автор (никой не е на смяна)" : "")+
+      (doubled ? " — <b>"+doubled+"</b> от тях при автор, който вече има мач по същото време (виж „Проверка“)" : "")+
+      (skipped ? ". <b>"+skipped+"</b> остават без автор — никой не е на смяна тогава" : "")+
       ". Натиснете бутона отново за потвърждение.");
     return;
   }
