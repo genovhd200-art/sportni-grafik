@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:18:52.181Z",
+ "publishedAt": "2026-09-18T08:19:11.945Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -551,6 +551,17 @@
    "sport": "vol",
    "comp": "EuroVolley26",
    "title": "Белгия - Чехия",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6ot288sqgam": {
+   "id": "cmu6ot288sqgam",
+   "date": "2026-09-21",
+   "time": "22:00",
+   "sport": "vol",
+   "comp": "EuroVolley26",
+   "title": "Словения - Чехия",
    "p": 2,
    "note": "",
    "provisional": false
