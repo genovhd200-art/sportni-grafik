@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T15:40:03.165Z",
+ "publishedAt": "2026-09-18T15:40:14.969Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -676,6 +676,17 @@
    "sport": "ten",
    "comp": "WTA Sao Paulo 250",
    "title": "полуфинал 1",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu74k983l040y": {
+   "id": "cmu74k983l040y",
+   "date": "2026-09-19",
+   "time": "19:00",
+   "sport": "ten",
+   "comp": "WTA Sao Paulo, 250",
+   "title": "полуфинал 2",
    "p": 2,
    "note": "",
    "provisional": false
