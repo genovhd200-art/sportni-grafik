@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T15:32:16.690Z",
+ "publishedAt": "2026-09-18T15:32:35.371Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -639,6 +639,17 @@
    "sport": "ten",
    "comp": "гуадалахара WTA 500",
    "title": "Самсонова - Стърнс",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu74aelikys50": {
+   "id": "cmu74aelikys50",
+   "date": "2026-09-19",
+   "time": "02:00",
+   "sport": "ten",
+   "comp": "гуадалахара WTA 500",
+   "title": "Букса - Ива Йович",
    "p": 2,
    "note": "",
    "provisional": false
