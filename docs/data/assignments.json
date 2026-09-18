@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:12:17.551Z",
+ "publishedAt": "2026-09-18T08:12:40.198Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -466,17 +466,6 @@
    "note": "",
    "provisional": false
   },
-  "cmu6oibv4cjql2": {
-   "id": "cmu6oibv4cjql2",
-   "date": "2026-09-14",
-   "time": "17:00",
-   "sport": "bas",
-   "comp": "Суперкупа на Евролигата",
-   "title": "Олимпиакос срещу Фенербахче",
-   "p": 3,
-   "note": "",
-   "provisional": false
-  },
   "cmu6oj1bq0fw77": {
    "id": "cmu6oj1bq0fw77",
    "date": "2026-09-18",
@@ -506,6 +495,17 @@
    "sport": "ten",
    "comp": "Davis Cup",
    "title": "Рууд - Ригеле",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6okioyx2ey9": {
+   "id": "cmu6okioyx2ey9",
+   "date": "2026-09-18",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Davis Cup",
+   "title": "Мьолер - Григор Димитров",
    "p": 2,
    "note": "",
    "provisional": false
