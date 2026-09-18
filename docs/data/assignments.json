@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:10:51.221Z",
+ "publishedAt": "2026-09-18T08:11:24.223Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -485,6 +485,17 @@
    "comp": "Суперкупа на Евролигата",
    "title": "Олимпиакос срещу Фенербахче",
    "p": 3,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6oj1bq0fw77": {
+   "id": "cmu6oj1bq0fw77",
+   "date": "2026-09-18",
+   "time": "17:10",
+   "sport": "ten",
+   "comp": "Davis Cup",
+   "title": "Лехецка - Бен Шелтън",
+   "p": 2,
    "note": "",
    "provisional": false
   }
