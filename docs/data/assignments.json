@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:12:40.198Z",
+ "publishedAt": "2026-09-18T08:13:09.990Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -477,17 +477,6 @@
    "note": "",
    "provisional": false
   },
-  "cmu6ojetuwuqiu": {
-   "id": "cmu6ojetuwuqiu",
-   "date": "2026-09-14",
-   "time": "18:10",
-   "sport": "ten",
-   "comp": "Davis Cup",
-   "title": "Рун - Радулов",
-   "p": 3,
-   "note": "",
-   "provisional": false
-  },
   "cmu6ojq1gtyteh": {
    "id": "cmu6ojq1gtyteh",
    "date": "2026-09-19",
@@ -506,6 +495,17 @@
    "sport": "fut",
    "comp": "Davis Cup",
    "title": "Мьолер - Григор Димитров",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6ol5ukf26kf": {
+   "id": "cmu6ol5ukf26kf",
+   "date": "2026-09-18",
+   "time": "17:00",
+   "sport": "bas",
+   "comp": "Суперкупа Евролига",
+   "title": "Олимпиакос срещу Фенербахче★",
    "p": 2,
    "note": "",
    "provisional": false
