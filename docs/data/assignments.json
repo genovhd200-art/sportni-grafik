@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T15:32:35.371Z",
+ "publishedAt": "2026-09-18T15:33:07.107Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -650,6 +650,17 @@
    "sport": "ten",
    "comp": "гуадалахара WTA 500",
    "title": "Букса - Ива Йович",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu74b3335a2xe": {
+   "id": "cmu74b3335a2xe",
+   "date": "2026-09-20",
+   "time": "01:00",
+   "sport": "ten",
+   "comp": "гуадалахара WTA 500",
+   "title": "финал на турнира",
    "p": 2,
    "note": "",
    "provisional": false
