@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:11:41.721Z",
+ "publishedAt": "2026-09-18T08:11:56.246Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -507,6 +507,17 @@
    "comp": "Davis Cup",
    "title": "Рун - Радулов",
    "p": 3,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6ojq1gtyteh": {
+   "id": "cmu6ojq1gtyteh",
+   "date": "2026-09-19",
+   "time": "19:00",
+   "sport": "ten",
+   "comp": "Davis Cup",
+   "title": "Рууд - Ригеле",
+   "p": 2,
    "note": "",
    "provisional": false
   }
