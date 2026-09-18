@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T05:28:25.253Z",
+ "publishedAt": "2026-09-18T05:31:58.947Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -452,10 +452,6 @@
   "fd-559678": {
    "authorId": "mu5hhjkrjukxq",
    "format": ""
-  },
-  "sdb-2407086": {
-   "authorId": "mu5tf0qjb1j82",
-   "format": ""
   }
  },
  "custom": {},
@@ -472,5 +468,20 @@
   "sdb-2594903": true,
   "fd-564683": true,
   "sdb-2594885": true
+ },
+ "hidden": {
+  "sdb-2407093": true,
+  "sdb-2407094": true,
+  "sdb-2407095": true,
+  "sdb-2407084": true,
+  "sdb-2407085": true,
+  "sdb-2407086": true,
+  "sdb-2407087": true,
+  "sdb-2407088": true,
+  "sdb-2407089": true,
+  "sdb-2407090": true,
+  "sdb-2407091": true,
+  "sdb-2407092": true,
+  "sdb-2407096": true
  }
 }
