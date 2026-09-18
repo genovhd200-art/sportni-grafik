@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:07:40.460Z",
+ "publishedAt": "2026-09-18T08:09:37.875Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -454,7 +454,19 @@
    "format": ""
   }
  },
- "custom": {},
+ "custom": {
+  "cmu6ogr9ktizzc": {
+   "id": "cmu6ogr9ktizzc",
+   "date": "2026-09-18",
+   "time": "16:00",
+   "sport": "ten",
+   "comp": "Davis Cup",
+   "title": "Mensik - Tien",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  }
+ },
  "done": {
   "sdb-2594923": true,
   "sdb-2594932": true,
