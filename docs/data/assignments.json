@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T15:40:14.969Z",
+ "publishedAt": "2026-09-18T15:40:39.692Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -687,6 +687,17 @@
    "sport": "ten",
    "comp": "WTA Sao Paulo, 250",
    "title": "полуфинал 2",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu74ksan4121t": {
+   "id": "cmu74ksan4121t",
+   "date": "2026-09-20",
+   "time": "13:00",
+   "sport": "ten",
+   "comp": "W50 Пазарджик",
+   "title": "финал Янева играе",
    "p": 2,
    "note": "",
    "provisional": false
