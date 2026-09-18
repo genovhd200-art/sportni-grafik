@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T15:33:07.107Z",
+ "publishedAt": "2026-09-18T15:40:03.165Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -442,6 +442,10 @@
   "sdb-2407097": {
    "authorId": "mu5hhjkrjukxq",
    "format": ""
+  },
+  "cmu74b3335a2xe": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
   }
  },
  "custom": {
@@ -661,6 +665,17 @@
    "sport": "ten",
    "comp": "гуадалахара WTA 500",
    "title": "финал на турнира",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu74k04bvz8tx": {
+   "id": "cmu74k04bvz8tx",
+   "date": "2026-09-19",
+   "time": "19:00",
+   "sport": "ten",
+   "comp": "WTA Sao Paulo 250",
+   "title": "полуфинал 1",
    "p": 2,
    "note": "",
    "provisional": false
