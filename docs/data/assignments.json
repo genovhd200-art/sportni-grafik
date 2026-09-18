@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:13:24.427Z",
+ "publishedAt": "2026-09-18T08:13:53.427Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -518,6 +518,17 @@
    "comp": "Davis Cup",
    "title": "Рун - Радулов★",
    "p": 3,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6om8gbkiexq": {
+   "id": "cmu6om8gbkiexq",
+   "date": "2026-09-18",
+   "time": "20:00",
+   "sport": "bas",
+   "comp": "Суперкупа Евролига",
+   "title": "Дубай - Реал Мадрид",
+   "p": 2,
    "note": "",
    "provisional": false
   }
