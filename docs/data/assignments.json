@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:14:11.798Z",
+ "publishedAt": "2026-09-18T08:15:01.732Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -539,6 +539,17 @@
    "sport": "ten",
    "comp": "Davis Cup",
    "title": "Фонсека - Стрикер",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6onp5pqkbyy": {
+   "id": "cmu6onp5pqkbyy",
+   "date": "2026-09-18",
+   "time": "22:10",
+   "sport": "ten",
+   "comp": "Davis Cup",
+   "title": "Хейде - Вавринка",
    "p": 2,
    "note": "",
    "provisional": false
