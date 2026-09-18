@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:15:12.624Z",
+ "publishedAt": "2026-09-18T08:15:32.411Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -129,56 +129,6 @@
      {
       "s": "16:00",
       "e": "21:00"
-     }
-    ]
-   }
-  },
-  "mu5tf0qjb1j82": {
-   "id": "mu5tf0qjb1j82",
-   "name": "Даката",
-   "role": "",
-   "color": "#B01E56",
-   "shifts": {
-    "2026-09-14": [
-     {
-      "s": "08:00",
-      "e": "01:00"
-     }
-    ],
-    "2026-09-15": [
-     {
-      "s": "08:00",
-      "e": "01:00"
-     }
-    ],
-    "2026-09-16": [
-     {
-      "s": "08:00",
-      "e": "01:00"
-     }
-    ],
-    "2026-09-17": [
-     {
-      "s": "08:00",
-      "e": "01:00"
-     }
-    ],
-    "2026-09-18": [
-     {
-      "s": "08:00",
-      "e": "01:00"
-     }
-    ],
-    "2026-09-19": [
-     {
-      "s": "08:00",
-      "e": "01:00"
-     }
-    ],
-    "2026-09-20": [
-     {
-      "s": "08:00",
-      "e": "01:00"
      }
     ]
    }
@@ -453,40 +403,40 @@
    "authorId": "mu5hhjkrjukxq",
    "format": ""
   },
-  "cmu6olm2yijzuc": {
-   "authorId": "mu5tf0qjb1j82",
-   "format": ""
-  },
   "cmu6ogr9ktizzc": {
    "authorId": "mu5hhjkrjukxq",
-   "format": ""
-  },
-  "cmu6okioyx2ey9": {
-   "authorId": "mu5tf0qjb1j82",
    "format": ""
   },
   "cmu6ol5ukf26kf": {
    "authorId": "mu5hhjkrjukxq",
    "format": ""
   },
+  "cmu6olm2yijzuc": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "cmu6okioyx2ey9": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
   "cmu6oj1bq0fw77": {
-   "authorId": "mu5tf0qjb1j82",
+   "authorId": "mu5hhjkrjukxq",
    "format": ""
   },
   "cmu6om8gbkiexq": {
-   "authorId": "mu5tf0qjb1j82",
+   "authorId": "mu5hhjkrjukxq",
    "format": ""
   },
   "cmu6ommmm6oeqv": {
-   "authorId": "mu5tf0qjb1j82",
+   "authorId": "mu5hfevsksxfp",
    "format": ""
   },
   "cmu6onp5pqkbyy": {
-   "authorId": "mu5tf0qjb1j82",
+   "authorId": "mu5hfevsksxfp",
    "format": ""
   },
   "cmu6ojq1gtyteh": {
-   "authorId": "mu5tf0qjb1j82",
+   "authorId": "mu5hhjkrjukxq",
    "format": ""
   }
  },
