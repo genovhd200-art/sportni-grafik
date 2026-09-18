@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:25:35.791Z",
+ "publishedAt": "2026-09-18T08:25:47.280Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -617,6 +617,17 @@
    "sport": "mot",
    "comp": "Формула 2",
    "title": "Състезание 1",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6p1j9rib91w": {
+   "id": "cmu6p1j9rib91w",
+   "date": "2026-09-26",
+   "time": "10:00",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Състезание 2",
    "p": 2,
    "note": "",
    "provisional": false
