@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:13:53.427Z",
+ "publishedAt": "2026-09-18T08:14:11.798Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -528,6 +528,17 @@
    "sport": "bas",
    "comp": "Суперкупа Евролига",
    "title": "Дубай - Реал Мадрид",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6ommmm6oeqv": {
+   "id": "cmu6ommmm6oeqv",
+   "date": "2026-09-18",
+   "time": "21:00",
+   "sport": "ten",
+   "comp": "Davis Cup",
+   "title": "Фонсека - Стрикер",
    "p": 2,
    "note": "",
    "provisional": false
