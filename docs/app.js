@@ -9,6 +9,13 @@
 const LS = "sn-grafik-v1";
 const REPO = "genovhd200-art/sportni-grafik";
 const PUB_PATH = "docs/data/assignments.json";
+/* Общите отметки „поето“ — всеки може да ги слага, всички ги виждат.
+   Пазят се в безплатна база Supabase. Докато url е празно, отметките
+   ги слага само редакторът (като досега). Ключът е публичният „anon“
+   ключ на проекта — той е предвиден да стои в страницата; какво може
+   да се пише, решава политиката в базата (само таблицата done_marks). */
+const SHARED = { url: "", key: "" };
+const sharedOn = () => !!(SHARED.url && SHARED.key);
 const TOKEN_KEY = LS + "-editor";
 const MODE_KEY = LS + "-editor-mode";      // редактор без токен (публикува с файл)
 const AUTO_KEY = LS + "-autopub";          // само с токен: публикувай сам след всяка промяна
@@ -245,8 +252,8 @@ function applyMode(){
 }
 /* В режим „преглед“ всичко, което би променило нещо, е изключено. */
 function lockUi(){
-  document.querySelectorAll("#main select, #main input[type=checkbox], #authorList button")
-    .forEach(x => { x.disabled = true; });
+  const sel = "#main select, #authorList button" + (sharedOn() ? "" : ", #main input[type=checkbox]");
+  document.querySelectorAll(sel).forEach(x => { x.disabled = true; });
 }
 
 /* ---------- смени ---------- */
@@ -767,7 +774,10 @@ document.addEventListener("click", e => {
   if(t.dataset.shift){ openShiftEditor(t.dataset.shift); return; }
 });
 document.addEventListener("change", e => {
-  const s = e.target; if(ov.contains(s) || !EDITOR) return;
+  const s = e.target; if(ov.contains(s)) return;
+  // „поето“ е общо — всеки може да го слага, ако базата е вързана
+  if(s.dataset.done && sharedOn()){ setMark(s.dataset.done, s.checked); return; }
+  if(!EDITOR) return;
   if(s.dataset.done){
     if(s.checked) S.done[s.dataset.done] = true; else delete S.done[s.dataset.done];
     saveLocal(); render(); return;
@@ -857,6 +867,36 @@ document.getElementById("csvBtn").addEventListener("click", () => {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
 
+/* ---------- общи отметки „поето“ (Supabase) ---------- */
+const sbHeaders = () => ({ apikey: SHARED.key, Authorization: "Bearer "+SHARED.key,
+                           "Content-Type": "application/json" });
+/** Слага отметките от базата върху публикуваното — те са по-новото. */
+async function loadMarks(){
+  if(!sharedOn()) return false;
+  try{
+    const r = await fetch(SHARED.url+"/rest/v1/done_marks?select=event_id,done", {headers:sbHeaders(), cache:"no-store"});
+    if(!r.ok) return false;
+    for(const m of await r.json()){ if(m.done) S.done[m.event_id] = true; else delete S.done[m.event_id]; }
+    return true;
+  }catch(e){ return false; }
+}
+async function setMark(id, done){
+  const was = !!S.done[id];
+  if(done) S.done[id] = true; else delete S.done[id];
+  render();
+  try{
+    const r = await fetch(SHARED.url+"/rest/v1/done_marks", { method:"POST",
+      headers:{...sbHeaders(), Prefer:"resolution=merge-duplicates"},
+      body: JSON.stringify([{event_id:id, done, updated_at:new Date().toISOString()}]) });
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    if(EDITOR) saveLocal(false);
+  }catch(err){
+    if(was) S.done[id] = true; else delete S.done[id];
+    render();
+    notice("Отметката не се запази ("+esc(err.message)+"). Проверете връзката и опитайте пак.");
+  }
+}
+
 /* ---------- старт ---------- */
 (async function init(){
   const hadLocal = EDITOR && loadLocal();
@@ -864,6 +904,7 @@ document.getElementById("csvBtn").addEventListener("click", () => {
   S.published = pub;
   // Прегледът вижда само публикуваното. Редакторът — своето, а на нов браузър публикуваното.
   if(!hadLocal) applyState(pub);
+  await loadMarks();
   applyMode();
   if(!ok) return;
   const gen = new Date(S.feed.generatedAt);
@@ -885,6 +926,13 @@ document.getElementById("csvBtn").addEventListener("click", () => {
   setInterval(async () => {
     if(EDITOR || !ov.hidden) return;
     const p = await loadPublished();
-    if(p && p.publishedAt !== (S.published||{}).publishedAt){ S.published = p; applyState(p); render(); }
+    if(p && p.publishedAt !== (S.published||{}).publishedAt){
+      S.published = p; applyState(p); await loadMarks(); render();
+    }
   }, 120000);
+  // отметките „поето“ от колегите — всяка минута, за всички
+  if(sharedOn()) setInterval(async () => {
+    if(!ov.hidden || document.activeElement?.tagName === "SELECT") return;
+    if(await loadMarks()) render();
+  }, 60000);
 })();
