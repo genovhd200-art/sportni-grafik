@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:10:00.979Z",
+ "publishedAt": "2026-09-18T08:10:51.221Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -474,6 +474,17 @@
    "comp": "Davis Cup",
    "title": "Мьолер - Григор Димитров",
    "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6oibv4cjql2": {
+   "id": "cmu6oibv4cjql2",
+   "date": "2026-09-14",
+   "time": "17:00",
+   "sport": "bas",
+   "comp": "Суперкупа на Евролигата",
+   "title": "Олимпиакос срещу Фенербахче",
+   "p": 3,
    "note": "",
    "provisional": false
   }
