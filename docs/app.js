@@ -868,8 +868,9 @@ document.getElementById("csvBtn").addEventListener("click", () => {
 });
 
 /* ---------- общи отметки „поето“ (Supabase) ---------- */
-const sbHeaders = () => ({ apikey: SHARED.key, Authorization: "Bearer "+SHARED.key,
-                           "Content-Type": "application/json" });
+/* Новите ключове (sb_publishable_…) стигат само в apikey; старият anon е JWT и иска и Authorization. */
+const sbHeaders = () => ({ apikey: SHARED.key, "Content-Type": "application/json",
+  ...(SHARED.key.startsWith("sb_") ? {} : { Authorization: "Bearer "+SHARED.key }) });
 /** Слага отметките от базата върху публикуваното — те са по-новото. */
 async function loadMarks(){
   if(!sharedOn()) return false;
