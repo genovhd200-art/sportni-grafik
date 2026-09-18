@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-17T19:22:03.961Z",
+ "generatedAt": "2026-09-18T05:11:23.822Z",
  "from": "2026-09-13",
  "to": "2026-10-14",
  "timezone": "Europe/Sofia",
- "count": 144,
+ "count": 145,
  "events": [
   {
    "extId": "ten-MjAyNi0wOS0xMzAwOjAw",
@@ -1492,6 +1492,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2407097",
+   "date": "2026-09-21",
+   "time": "02:00",
+   "sport": "fut",
+   "comp": "МЛС",
+   "title": "Inter Miami – San Diego FC",
+   "p": 1,
+   "venue": "Nu Stadium",
+   "round": "кръг 26",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-09-18"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2406811",
    "date": "2026-09-24",
    "time": "04:30",
@@ -2121,5 +2136,5 @@
    "addedAt": "2026-09-17"
   }
  ],
- "lastFill": "2026-09-17"
+ "lastFill": "2026-09-18"
 }
