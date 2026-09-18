@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:13:09.990Z",
+ "publishedAt": "2026-09-18T08:13:24.427Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -507,6 +507,17 @@
    "comp": "Суперкупа Евролига",
    "title": "Олимпиакос срещу Фенербахче★",
    "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6olm2yijzuc": {
+   "id": "cmu6olm2yijzuc",
+   "date": "2026-09-18",
+   "time": "16:10",
+   "sport": "fut",
+   "comp": "Davis Cup",
+   "title": "Рун - Радулов★",
+   "p": 3,
    "note": "",
    "provisional": false
   }
