@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:25:47.280Z",
+ "publishedAt": "2026-09-18T15:32:16.690Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -628,6 +628,17 @@
    "sport": "mot",
    "comp": "Формула 2",
    "title": "Състезание 2",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu74a06iofjpt": {
+   "id": "cmu74a06iofjpt",
+   "date": "2026-09-19",
+   "time": "03:10",
+   "sport": "ten",
+   "comp": "гуадалахара WTA 500",
+   "title": "Самсонова - Стърнс",
    "p": 2,
    "note": "",
    "provisional": false
