@@ -16,6 +16,9 @@ const PUB_PATH = "docs/data/assignments.json";
    да се пише, решава политиката в базата (само таблицата done_marks). */
 const SHARED = { url: "https://jbldhyjdrtvzumqxxmfq.supabase.co", key: "sb_publishable_Dgd8fuVVrB3X0Dq-mcx6Iw_-HIBXt3V" };
 const sharedOn = () => !!(SHARED.url && SHARED.key);
+/* Смените идват от Google таблицата (публична, само за четене). Всеки месец е
+   отделен раздел с българското име на месеца — „Септември“, „Октомври“… */
+const SHEET = { id: "1K23f-JU4gRRTsm4es7mw5LxqyqNPMaO-zisEISy4hOc" };
 const TOKEN_KEY = LS + "-editor";
 const MODE_KEY = LS + "-editor-mode";      // редактор без токен (публикува с файл)
 const AUTO_KEY = LS + "-autopub";          // само с токен: публикувай сам след всяка промяна
@@ -246,6 +249,126 @@ async function saveToken(){
     "колегите я виждат до минута. Може да го изключите от <b>Редактор ✓</b>.");
   if(S.dirty) scheduleAutoPublish();
 }
+
+/* ---------- смени от Google таблицата ---------- */
+const normName = s => String(s||"").toLowerCase().replace(/[@\s.\-_]/g, "");
+/* „НикиПетков“ → „Ники Петков“ */
+const prettyName = s => {
+  const t = String(s).replace(/^@/, "").replace(/(\p{Ll})(\p{Lu})/gu, "$1 $2").trim();
+  return t.charAt(0).toUpperCase() + t.slice(1);
+};
+
+function parseCsv(text){
+  const rows = []; let row = [], cur = "", q = false;
+  for(let i = 0; i < text.length; i++){
+    const c = text[i];
+    if(q){ if(c === '"'){ if(text[i+1] === '"'){ cur += '"'; i++; } else q = false; } else cur += c; }
+    else if(c === '"') q = true;
+    else if(c === ","){ row.push(cur); cur = ""; }
+    else if(c === "\n" || c === "\r"){ if(c === "\r" && text[i+1] === "\n") i++; row.push(cur); rows.push(row); row = []; cur = ""; }
+    else cur += c;
+  }
+  if(cur || row.length){ row.push(cur); rows.push(row); }
+  return rows;
+}
+const sheetDate = s => { const m = String(s).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})$/);
+  return m ? (m[3].length === 2 ? "20"+m[3] : m[3])+"-"+pad(m[1])+"-"+pad(m[2]) : null; };
+const sheetTime = s => { const m = String(s).trim().match(/^(\d{1,2}):(\d{2})\s*([AP]M)?$/i);
+  if(!m) return null; let h = +m[1]; if(m[3]){ h %= 12; if(/pm/i.test(m[3])) h += 12; }
+  return h*60 + (+m[2]); };
+
+/** Един раздел → out.dates (покритите дни) и out.people[име].slots[ден] = [[от,до]]. */
+function parseSheet(rows, out){
+  let dates = null, step = 60;
+  for(const r of rows){
+    const iv = r.map(c => String(c).match(/^\s*(\d+)\s*MIN\s*$/i)).find(Boolean);
+    if(iv) step = +iv[1];
+    const ds = r.slice(2, 9).map(sheetDate);
+    if(ds.filter(Boolean).length >= 5){ dates = ds; ds.forEach(d => d && out.dates.add(d)); continue; }
+    const t = sheetTime(r[1]);
+    if(t == null || !dates) continue;
+    for(let i = 0; i < 7; i++){
+      const d = dates[i]; if(!d) continue;
+      for(const raw of String(r[2+i]||"").split(/[,;\/&+]|\s+и\s+/)){
+        const nm = raw.trim().replace(/^@/, "");
+        if(!nm || /^[-–—]+$/.test(nm)) continue;
+        const k = normName(nm);
+        const p = out.people[k] || (out.people[k] = {name: prettyName(nm), slots:{}});
+        (p.slots[d] = p.slots[d] || []).push([t, t + step]);
+      }
+    }
+  }
+}
+/** Слепва поредните часове в интервали: 9, 10, 11 → 09:00–12:00. */
+function toIntervals(slots){
+  const s = slots.slice().sort((a,b) => a[0]-b[0]), out = [];
+  for(const [a,b] of s){
+    const last = out[out.length-1];
+    if(last && a <= last[1]) last[1] = Math.max(last[1], b); else out.push([a,b]);
+  }
+  const hhmm = m => pad(Math.floor((m % 1440)/60)) + ":" + pad(m % 60);
+  return out.map(([a,b]) => ({s: hhmm(a), e: hhmm(b)}));
+}
+const MONTH_TABS = ["Януари","Февруари","Март","Април","Май","Юни","Юли",
+                    "Август","Септември","Октомври","Ноември","Декември"];
+/** Чете разделите на предния, текущия и следващия месец. Липсващ раздел не пречи. */
+async function loadSheetShifts(){
+  if(!SHEET.id) return null;
+  const now = new Date(), out = { dates:new Set(), people:{} };
+  const tabs = [-1, 0, 1].map(k => MONTH_TABS[(now.getMonth() + k + 12) % 12]);
+  let got = 0;
+  await Promise.all(tabs.map(async tab => {
+    try{
+      const r = await fetch("https://docs.google.com/spreadsheets/d/"+SHEET.id+
+        "/gviz/tq?tqx=out:csv&headers=0&sheet="+encodeURIComponent(tab), {cache:"no-store"});
+      if(!r.ok) return;
+      const tmp = { dates:new Set(), people:{} };
+      parseSheet(parseCsv(await r.text()), tmp);
+      // непознат раздел Google го заменя с първия — приемаме го само ако датите са от този месец
+      const want = MONTH_TABS.indexOf(tab) + 1;
+      if(![...tmp.dates].some(d => +d.slice(5,7) === want)) return;
+      tmp.dates.forEach(d => out.dates.add(d));
+      for(const [k,p] of Object.entries(tmp.people)){
+        const o = out.people[k] || (out.people[k] = {name:p.name, slots:{}});
+        for(const [d,sl] of Object.entries(p.slots)) o.slots[d] = (o.slots[d]||[]).concat(sl);
+      }
+      got++;
+    }catch(e){}
+  }));
+  return got ? out : null;
+}
+/** Смените от таблицата бият ръчните за дните, които таблицата покрива.
+    Нов човек в таблицата става автор сам. Връща true, ако нещо се е сменило. */
+function applySheetShifts(sh){
+  if(!sh) return false;
+  const before = JSON.stringify(S.authors);
+  const byNorm = {}; Object.values(S.authors).forEach(a => byNorm[normName(a.name)] = a);
+  for(const [k,p] of Object.entries(sh.people)){
+    if(byNorm[k]) continue;
+    const id = "sh-" + k, n = Object.keys(S.authors).length;
+    S.authors[id] = byNorm[k] = {id, name:p.name, role:"", color:PALETTE[n % PALETTE.length], shifts:{}};
+  }
+  for(const a of Object.values(S.authors)){
+    const p = sh.people[normName(a.name)];
+    const shifts = Object.assign({}, a.shifts || {});
+    sh.dates.forEach(d => { shifts[d] = p && p.slots[d] ? toIntervals(p.slots[d]) : []; });
+    a.shifts = shifts;
+  }
+  return JSON.stringify(S.authors) !== before;
+}
+async function syncSheet(){
+  const sh = await loadSheetShifts();
+  const changed = applySheetShifts(sh);
+  if(changed && EDITOR) saveLocal();       // редакторът го публикува (с токен — сам)
+  const el = document.getElementById("sheetInfo");
+  if(el) el.innerHTML = sh
+    ? 'Смените идват от <a href="https://docs.google.com/spreadsheets/d/'+SHEET.id+
+      '/edit" target="_blank" rel="noopener">Google таблицата</a> · прочетени в '+
+      new Date().toLocaleTimeString("bg-BG",{hour:"2-digit",minute:"2-digit"})
+    : 'Таблицата със смените не се прочете — показват се последните известни.';
+  return changed;
+}
+
 function applyMode(){
   document.body.classList.toggle("ro", !EDITOR);
   document.getElementById("editBtn").textContent = EDITOR ? "Редактор ✓" : "Вход за редактор";
@@ -905,7 +1028,7 @@ async function setMark(id, done){
   S.published = pub;
   // Прегледът вижда само публикуваното. Редакторът — своето, а на нов браузър публикуваното.
   if(!hadLocal) applyState(pub);
-  await loadMarks();
+  await Promise.all([loadMarks(), syncSheet()]);
   applyMode();
   if(!ok) return;
   const gen = new Date(S.feed.generatedAt);
@@ -928,9 +1051,14 @@ async function setMark(id, done){
     if(EDITOR || !ov.hidden) return;
     const p = await loadPublished();
     if(p && p.publishedAt !== (S.published||{}).publishedAt){
-      S.published = p; applyState(p); await loadMarks(); render();
+      S.published = p; applyState(p); await Promise.all([loadMarks(), syncSheet()]); render();
     }
   }, 120000);
+  // таблицата със смените — на всеки 5 минути, при всички
+  setInterval(async () => {
+    if(!ov.hidden || document.activeElement?.tagName === "SELECT") return;
+    if(await syncSheet()) render();
+  }, 300000);
   // отметките „поето“ от колегите — всяка минута, за всички
   if(sharedOn()) setInterval(async () => {
     if(!ov.hidden || document.activeElement?.tagName === "SELECT") return;

@@ -329,7 +329,8 @@ body.ro .shift:disabled{cursor:default}
       <section class="panel">
         <div class="panel-hd"><h2>Автори</h2><span class="a-load" id="authorCount">0</span></div>
         <div id="authorList"></div>
-        <div class="legend edit-only">Смените са за показаната седмица. Натиснете <b>Смени по часове</b> за точни интервали — може и по няколко на ден.</div>
+        <div class="legend" id="sheetInfo">Смените се четат от Google таблицата…</div>
+        <div class="legend edit-only">Ръчните смени важат само за дни, които таблицата не покрива.</div>
         <form class="form edit-only" id="authorForm">
           <div><label class="fl" for="anName">Име</label>
             <input type="text" id="anName" placeholder="напр. Мартин Петров" required maxlength="40"></div>
