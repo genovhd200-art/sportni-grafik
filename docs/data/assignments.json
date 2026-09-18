@@ -1,0 +1,475 @@
+{
+ "publishedAt": "2026-09-18T05:26:20.215Z",
+ "authors": {
+  "mu5hec9gl0lio": {
+   "id": "mu5hec9gl0lio",
+   "name": "Ники Петков",
+   "role": "всичко",
+   "color": "#C2571C",
+   "shifts": {
+    "2026-09-14": [],
+    "2026-09-15": [],
+    "2026-09-16": [],
+    "2026-09-17": [
+     {
+      "s": "16:00",
+      "e": "20:00"
+     }
+    ],
+    "2026-09-18": [
+     {
+      "s": "12:00",
+      "e": "16:00"
+     }
+    ],
+    "2026-09-19": [],
+    "2026-09-20": [
+     {
+      "s": "10:00",
+      "e": "12:00"
+     },
+     {
+      "s": "21:00",
+      "e": "00:00"
+     }
+    ]
+   }
+  },
+  "mu5hfevsksxfp": {
+   "id": "mu5hfevsksxfp",
+   "name": "Мартин",
+   "role": "всичко",
+   "color": "#1F6FA8",
+   "shifts": {
+    "2026-09-14": [],
+    "2026-09-15": [],
+    "2026-09-16": [],
+    "2026-09-17": [],
+    "2026-09-18": [
+     {
+      "s": "20:00",
+      "e": "00:00"
+     }
+    ],
+    "2026-09-19": [
+     {
+      "s": "10:00",
+      "e": "14:00"
+     }
+    ],
+    "2026-09-20": [
+     {
+      "s": "08:00",
+      "e": "10:00"
+     }
+    ]
+   }
+  },
+  "mu5hgiv07yguc": {
+   "id": "mu5hgiv07yguc",
+   "name": "Денката",
+   "role": "всичко",
+   "color": "#2F7D4E",
+   "shifts": {
+    "2026-09-14": [],
+    "2026-09-15": [],
+    "2026-09-16": [],
+    "2026-09-17": [
+     {
+      "s": "20:00",
+      "e": "00:00"
+     }
+    ],
+    "2026-09-18": [],
+    "2026-09-19": [
+     {
+      "s": "08:00",
+      "e": "10:00"
+     },
+     {
+      "s": "14:00",
+      "e": "16:00"
+     },
+     {
+      "s": "20:00",
+      "e": "00:00"
+     }
+    ],
+    "2026-09-20": [
+     {
+      "s": "12:00",
+      "e": "16:00"
+     }
+    ]
+   }
+  },
+  "mu5hhjkrjukxq": {
+   "id": "mu5hhjkrjukxq",
+   "name": "Ники Павлов",
+   "role": "всичко",
+   "color": "#7B3FA0",
+   "shifts": {
+    "2026-09-14": [],
+    "2026-09-15": [],
+    "2026-09-16": [],
+    "2026-09-17": [],
+    "2026-09-18": [
+     {
+      "s": "16:00",
+      "e": "20:00"
+     }
+    ],
+    "2026-09-19": [
+     {
+      "s": "16:00",
+      "e": "21:00"
+     }
+    ],
+    "2026-09-20": [
+     {
+      "s": "16:00",
+      "e": "21:00"
+     }
+    ]
+   }
+  },
+  "mu5tf0qjb1j82": {
+   "id": "mu5tf0qjb1j82",
+   "name": "Даката",
+   "role": "",
+   "color": "#B01E56",
+   "shifts": {
+    "2026-09-14": [
+     {
+      "s": "08:00",
+      "e": "01:00"
+     }
+    ],
+    "2026-09-15": [
+     {
+      "s": "08:00",
+      "e": "01:00"
+     }
+    ],
+    "2026-09-16": [
+     {
+      "s": "08:00",
+      "e": "01:00"
+     }
+    ],
+    "2026-09-17": [
+     {
+      "s": "08:00",
+      "e": "01:00"
+     }
+    ],
+    "2026-09-18": [
+     {
+      "s": "08:00",
+      "e": "01:00"
+     }
+    ],
+    "2026-09-19": [
+     {
+      "s": "08:00",
+      "e": "01:00"
+     }
+    ],
+    "2026-09-20": [
+     {
+      "s": "08:00",
+      "e": "01:00"
+     }
+    ]
+   }
+  }
+ },
+ "assign": {
+  "sdb-2594923": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2487335": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2487334": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2487336": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2487338": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2487339": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2487337": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2487333": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2594932": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594817": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-565804": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-560587": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564693": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558598": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-559679": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560589": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-558594": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-558591": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-564697": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-560582": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-565807": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558595": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564695": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-565803": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558597": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-564686": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594456": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594851": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594855": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594873": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594880": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-564683": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594903": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2594885": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-564692": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-560591": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-559682": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-558596": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-558589": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560584": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-565811": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-565810": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-565809": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-565808": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564691": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560588": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560586": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558593": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564694": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-565806": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-564690": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559683": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559681": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559680": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559677": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-560585": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560590": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558592": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558590": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-559676": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564688": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564689": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-559675": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-564696": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-565805": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560583": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-559678": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2407086": {
+   "authorId": "mu5tf0qjb1j82",
+   "format": ""
+  }
+ },
+ "custom": {},
+ "done": {
+  "sdb-2594923": true,
+  "sdb-2594932": true,
+  "fd-564686": true,
+  "sdb-2594456": true,
+  "sdb-2594817": true,
+  "sdb-2594851": true,
+  "sdb-2594855": true,
+  "sdb-2594873": true,
+  "sdb-2594880": true,
+  "sdb-2594903": true,
+  "fd-564683": true
+ }
+}
