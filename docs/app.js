@@ -57,7 +57,7 @@ const endMins = e => mins(e.time) + durationOf(e);
 const endLabel = e => { const m = endMins(e) % 1440;
   return pad(Math.floor(m/60)) + ":" + pad(m%60); };
 
-const S = { feed:null, all:[], custom:{}, authors:{}, assign:{}, done:{},
+const S = { feed:null, all:[], custom:{}, authors:{}, assign:{}, done:{}, hidden:{}, showHidden:false,
             published:null, dirty:false,
             view:"day", q:"", sports:new Set(), onlyOpen:false, onlyTodo:false, weekStart:null };
 let DATES = [];
@@ -90,7 +90,7 @@ function saveLocal(dirty = true){
   if(!EDITOR) return;
   if(dirty) S.dirty = true;
   try{ localStorage.setItem(LS, JSON.stringify(
-    {authors:S.authors, assign:S.assign, custom:S.custom, done:S.done, dirty:S.dirty})); }catch(e){}
+    {...stateOf(), dirty:S.dirty})); }catch(e){}
   if(dirty) scheduleAutoPublish();
 }
 /* Със сложен токен дъската публикува сама — 8 секунди след последната
@@ -114,7 +114,10 @@ function loadLocal(){
 function applyState(d){
   d = d || {};
   S.authors = d.authors||{}; S.assign = d.assign||{}; S.custom = d.custom||{}; S.done = d.done||{};
+  S.hidden = d.hidden||{};
 }
+/* Всичко, което редакторът притежава — пази се локално и се публикува. */
+const stateOf = () => ({ authors:S.authors, assign:S.assign, custom:S.custom, done:S.done, hidden:S.hidden });
 async function loadPublished(){
   try{
     const r = await fetch("data/assignments.json?ts="+Date.now(), {cache:"no-store"});
@@ -131,8 +134,7 @@ const ghErr = s => s===401 ? "токенът не се приема — изте
 
 /** Без токен: сваля файла, за да се качи през сайта на GitHub. */
 function publishByFile(){
-  const payload = { publishedAt: new Date().toISOString(),
-    authors: S.authors, assign: S.assign, custom: S.custom, done: S.done };
+  const payload = { publishedAt: new Date().toISOString(), ...stateOf() };
   const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 1)+"\n"],
     {type:"application/json"}));
   const a = document.createElement("a");
@@ -150,9 +152,8 @@ async function publish(auto = false){
   if(!token){ if(!auto) publishByFile(); return; }
   const btn = document.getElementById("pubBtn");
   btn.disabled = true; notice(auto ? "Публикувам промяната…" : "Публикувам…");
-  const payload = { publishedAt: new Date().toISOString(),
-    authors: S.authors, assign: S.assign, custom: S.custom, done: S.done };
-  const api = "https://api.github.com/repos/"+REPO+"/contents/"+PUB_PATH;
+  const payload = { publishedAt: new Date().toISOString(), ...stateOf() };
+  const api ="https://api.github.com/repos/"+REPO+"/contents/"+PUB_PATH;
   const H = { Authorization: "Bearer "+token, Accept: "application/vnd.github+json" };
   try{
     let res;
@@ -283,8 +284,10 @@ function weekHours(a){
 }
 
 /* ---------- събития ---------- */
+/* Махнатите от редактора не се виждат никъде — освен ако той не е пуснал „Махнати“. */
 function allEvents(){
   return S.all.concat(Object.values(S.custom))
+    .filter(e => !S.hidden[e.id] || (EDITOR && S.showHidden))
     .sort((a,b) => a.date===b.date ? mins(a.time)-mins(b.time) : (a.date<b.date?-1:1));
 }
 function weekEvents(){ return allEvents().filter(e => DATES.includes(e.date)); }
@@ -538,6 +541,8 @@ function render(){
   m.innerHTML = S.view==="day" ? viewDays() : S.view==="author" ? viewAuthors() : viewIssues();
   const n = issuesFor().length, b = document.getElementById("issueBadge");
   b.hidden = !n; b.textContent = n;
+  const hc = document.getElementById("hiddenCount");
+  if(hc) hc.textContent = S.all.filter(e => S.hidden[e.id] && DATES.includes(e.date)).length;
   const pb = document.getElementById("pubBtn");
   pb.textContent = S.dirty ? "Публикувай ●" : "Публикувай";
   pb.title = S.dirty
@@ -624,8 +629,15 @@ function renderFilters(){
       '<button class="chip" data-sport="'+k+'" aria-pressed="false">'+
       '<span class="cd" style="background:'+SPORTS[k].c+'"></span>'+SPORTS[k].n+'</button>').join("")+
     '<button class="chip" data-open="1" aria-pressed="false">Само свободни</button>'+
-    '<button class="chip" data-todo="1" aria-pressed="false">Само непоети</button>');
+    '<button class="chip" data-todo="1" aria-pressed="false">Само непоети</button>'+
+    '<button class="chip edit-only" data-showhidden="1" aria-pressed="false">Махнати <span id="hiddenCount">0</span></button>');
   box.dataset.built = "1";
+}
+function hideEvent(id){
+  if(S.custom[id]){ delete S.custom[id]; }          // собственото се трие наистина
+  else S.hidden[id] = true;                         // от програмата — само се скрива
+  delete S.assign[id]; delete S.done[id];
+  saveLocal(); render();
 }
 function authorOpts(evId){
   const cur = S.assign[evId] ? S.assign[evId].authorId : "";
@@ -645,10 +657,13 @@ function rowHtml(e){
   if(!as && e.p===3) flags += '<span class="flag crit">без автор</span>';
   if(e.provisional)  flags += '<span class="flag warn">часът не е потвърден</span>';
   if(a)              flags += '<span class="flag ok">'+esc(String(a.name).split(" ")[0])+'</span>';
-  const dn = !!S.done[e.id];
-  return '<div class="row'+(e.p===3?" p3":"")+(dn?" done":"")+'" style="--sc:'+sc+'">'+
+  const dn = !!S.done[e.id], hid = !!S.hidden[e.id];
+  const x = !EDITOR ? "" : hid
+    ? '<button class="rx" data-unhide="'+e.id+'" title="Върни в графика" aria-label="Върни">↺</button>'
+    : '<button class="rx" data-hide="'+e.id+'" title="Махни от графика" aria-label="Махни">×</button>';
+  return '<div class="row'+(e.p===3?" p3":"")+(dn?" done":"")+(hid?" hid":"")+'" style="--sc:'+sc+'">'+
     '<div class="rdone"><input type="checkbox" data-done="'+e.id+'"'+(dn?" checked":"")+
-      ' title="Поето" aria-label="Поето"></div>'+
+      ' title="Поето" aria-label="Поето">'+x+'</div>'+
     '<div class="rtime mono">'+e.time+(e.provisional?'<span class="prov">?</span>':"")+
       '<span class="rend">→'+endLabel(e)+'</span></div>'+
     '<div class="rmain"><div>'+compTag(e)+'</div>'+
@@ -719,7 +734,7 @@ function viewIssues(){
 
 /* ---------- взаимодействие ---------- */
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-sport],[data-open],[data-todo],[data-del-author],[data-shift],[data-jump],.tab");
+  const t = e.target.closest("[data-sport],[data-open],[data-todo],[data-showhidden],[data-hide],[data-unhide],[data-del-author],[data-shift],[data-jump],.tab");
   if(!t || ov.contains(t)) return;
   if(t.classList.contains("tab")){
     S.view = t.dataset.view;
@@ -735,6 +750,9 @@ document.addEventListener("click", e => {
   if(t.dataset.open){ S.onlyOpen = !S.onlyOpen; t.setAttribute("aria-pressed", S.onlyOpen); render(); return; }
   if(t.dataset.todo){ S.onlyTodo = !S.onlyTodo; t.setAttribute("aria-pressed", S.onlyTodo); render(); return; }
   if(!EDITOR) return;                       // по-долу са само редакции
+  if(t.dataset.showhidden){ S.showHidden = !S.showHidden; t.setAttribute("aria-pressed", S.showHidden); render(); return; }
+  if(t.dataset.hide){ hideEvent(t.dataset.hide); return; }
+  if(t.dataset.unhide){ delete S.hidden[t.dataset.unhide]; saveLocal(); render(); return; }
   if(t.dataset.delAuthor){
     const a = S.authors[t.dataset.delAuthor]; if(!a) return;
     if(confirmBtn(t, "×?")){

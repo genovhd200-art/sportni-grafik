@@ -203,7 +203,13 @@ label.fl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:va
 .flag.warn{background:var(--warn-soft);color:var(--warn)}
 .flag.crit{background:var(--crit-soft);color:var(--crit)}
 .flag.ok{background:var(--ok-soft);color:var(--ok)}
-.rdone{display:grid;place-items:center}
+.rdone{display:grid;place-items:center;gap:2px}
+.rx{background:none;border:none;color:var(--ink-3);cursor:pointer;font-size:15px;line-height:1;
+  padding:1px 5px;border-radius:4px;opacity:.45}
+.row:hover .rx,.rx:focus-visible{opacity:1}
+.rx:hover{color:var(--crit);background:var(--crit-soft)}
+.row.hid{opacity:.45}
+.row.hid .rtitle{text-decoration:line-through}
 .rdone input{width:17px;height:17px;cursor:pointer;accent-color:var(--ok)}
 .row.done{background:var(--surface-2)}
 .row.done .rtitle,.row.done .rcomp{opacity:.5;text-decoration:line-through}
