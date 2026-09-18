@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T15:40:39.692Z",
+ "publishedAt": "2026-09-18T15:41:01.592Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -446,6 +446,34 @@
   "cmu74b3335a2xe": {
    "authorId": "mu5hhjkrjukxq",
    "format": ""
+  },
+  "vb-215225": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "vb-215224": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "cmu74k04bvz8tx": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "cmu74k983l040y": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "cmu74ksan4121t": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "cmu74l4pdx7fp3": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "bb-495082": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
   }
  },
  "custom": {
@@ -698,6 +726,17 @@
    "sport": "ten",
    "comp": "W50 Пазарджик",
    "title": "финал Янева играе",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu74l4pdx7fp3": {
+   "id": "cmu74l4pdx7fp3",
+   "date": "2026-09-20",
+   "time": "18:00",
+   "sport": "ten",
+   "comp": "WTA Sao Paulo 250",
+   "title": "финал",
    "p": 2,
    "note": "",
    "provisional": false
