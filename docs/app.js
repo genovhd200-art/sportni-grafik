@@ -14,7 +14,7 @@ const PUB_PATH = "docs/data/assignments.json";
    ги слага само редакторът (като досега). Ключът е публичният „anon“
    ключ на проекта — той е предвиден да стои в страницата; какво може
    да се пише, решава политиката в базата (само таблицата done_marks). */
-const SHARED = { url: "", key: "" };
+const SHARED = { url: "https://jbldhyjdrtvzumqxxmfq.supabase.co", key: "sb_publishable_Dgd8fuVVrB3X0Dq-mcx6Iw_-HIBXt3V" };
 const sharedOn = () => !!(SHARED.url && SHARED.key);
 const TOKEN_KEY = LS + "-editor";
 const MODE_KEY = LS + "-editor-mode";      // редактор без токен (публикува с файл)
