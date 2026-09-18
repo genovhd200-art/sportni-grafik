@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-18T08:23:26.425Z",
+ "publishedAt": "2026-09-18T08:23:58.749Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -562,6 +562,17 @@
    "sport": "vol",
    "comp": "EuroVolley26",
    "title": "Словения - Чехия",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmu6oz7iv8r95w": {
+   "id": "cmu6oz7iv8r95w",
+   "date": "2026-09-24",
+   "time": "09:00",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Свободна тренировка",
    "p": 2,
    "note": "",
    "provisional": false
