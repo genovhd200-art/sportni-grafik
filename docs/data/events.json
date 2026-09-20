@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-19T08:48:28.376Z",
+ "generatedAt": "2026-09-20T05:24:50.366Z",
  "from": "2026-09-19",
  "to": "2026-10-20",
  "timezone": "Europe/Sofia",
- "count": 431,
+ "count": 435,
  "events": [
   {
    "source": "api-basketball",
@@ -1091,6 +1091,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2608041",
+   "date": "2026-09-24",
+   "time": "09:00",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Practice",
+   "p": 1,
+   "venue": "Baku City Circuit",
+   "round": "кръг 12",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-09-20"
+  },
+  {
+   "source": "fill",
    "extId": "f1-2026-15-FirstPractice",
    "date": "2026-09-24",
    "time": "11:30",
@@ -1103,6 +1118,36 @@
    "provisional": false,
    "via": "jolpica",
    "addedAt": "2026-09-17"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608042",
+   "date": "2026-09-24",
+   "time": "13:00",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Qualifying 1",
+   "p": 1,
+   "venue": "Baku City Circuit",
+   "round": "кръг 12",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-09-20"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608043",
+   "date": "2026-09-24",
+   "time": "13:30",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Qualifying 2",
+   "p": 1,
+   "venue": "Baku City Circuit",
+   "round": "кръг 12",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-09-20"
   },
   {
    "source": "fill",
@@ -1493,6 +1538,21 @@
    "provisional": false,
    "via": "jolpica",
    "addedAt": "2026-09-17"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608044",
+   "date": "2026-09-25",
+   "time": "13:15",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Feature Race 1",
+   "p": 1,
+   "venue": "Baku City Circuit",
+   "round": "кръг 12",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-09-20"
   },
   {
    "source": "fill",
@@ -6108,5 +6168,6 @@
    "round": "кръг 3",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-09-20"
 }

@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-09-19T05:05:18.645Z",
- "runDate": "2026-09-19",
+ "generatedAt": "2026-09-20T05:24:50.366Z",
+ "runDate": "2026-09-20",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-19",
+  "from": "2026-09-20",
   "to": "2026-09-27"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 43,
+   "count": 20,
    "error": null
   },
   {
@@ -58,13 +58,13 @@
   {
    "name": "thesportsdb · Първа лига",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 30,
+   "count": 29,
    "error": null
   },
   {
@@ -106,7 +106,7 @@
   {
    "name": "thesportsdb · Формула 2",
    "ok": true,
-   "count": 2,
+   "count": 6,
    "error": null
   },
   {
@@ -147,54 +147,66 @@
   }
  ],
  "totals": {
-  "fromSources": 164,
-  "added": 0,
+  "fromSources": 141,
+  "added": 4,
   "tennisNew": 2,
-  "tennisPending": 5
+  "tennisPending": 7
  },
- "added": [],
+ "added": [
+  {
+   "extId": "sdb-2608041",
+   "date": "2026-09-24",
+   "time": "09:00",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Practice",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608042",
+   "date": "2026-09-24",
+   "time": "13:00",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Qualifying 1",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608043",
+   "date": "2026-09-24",
+   "time": "13:30",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Qualifying 2",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608044",
+   "date": "2026-09-25",
+   "time": "13:15",
+   "sport": "mot",
+   "comp": "Формула 2",
+   "title": "Azerbaijan Feature Race 1",
+   "via": "thesportsdb"
+  }
+ ],
  "tennisNew": [
   {
-   "extId": "ten-0fT7znubHQgd8XM0qzp7",
-   "date": "2026-09-19",
+   "extId": "ten-rOeJ93xbTPKLbY62eV57",
+   "date": "2026-09-20",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Росица Денчева — мач"
   },
   {
-   "extId": "ten-FEriySJTAtTYQ-aHaOjY",
-   "date": "2026-09-19",
+   "extId": "ten-enx4WdgXGeVCI-xzK3pE",
+   "date": "2026-09-20",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-19",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-19"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-19"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-19"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-19"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-19"
-    }
-   ]
-  },
   {
    "date": "2026-09-20",
    "links": [
