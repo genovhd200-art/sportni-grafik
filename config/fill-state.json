@@ -1,14 +1,14 @@
 {
- "lastRun": "2026-09-20",
- "lastRunAt": "08:14",
+ "lastRun": "2026-09-21",
+ "lastRunAt": "08:18",
  "lastWindow": {
-  "from": "2026-09-20",
-  "to": "2026-09-27"
+  "from": "2026-09-21",
+  "to": "2026-10-04"
  },
  "lastTotals": {
-  "fromSources": 141,
-  "added": 4,
-  "tennisNew": 2,
-  "tennisPending": 7
+  "fromSources": 233,
+  "added": 0,
+  "tennisNew": 3,
+  "tennisPending": 10
  }
 }

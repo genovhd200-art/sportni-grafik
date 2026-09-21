@@ -1,16 +1,22 @@
 {
- "generatedAt": "2026-09-20T05:24:50.366Z",
- "runDate": "2026-09-20",
+ "generatedAt": "2026-09-21T05:40:19.413Z",
+ "runDate": "2026-09-21",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-20",
-  "to": "2026-09-27"
+  "from": "2026-09-21",
+  "to": "2026-10-04"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 20,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "thesportsdb · Висша лига",
+   "ok": true,
+   "count": 0,
    "error": null
   },
   {
@@ -38,13 +44,37 @@
    "error": null
   },
   {
+   "name": "thesportsdb · Ла Лига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
    "name": "thesportsdb · Купа на краля",
    "ok": true,
-   "count": 10,
+   "count": 20,
+   "error": null
+  },
+  {
+   "name": "thesportsdb · Серия А",
+   "ok": true,
+   "count": 0,
    "error": null
   },
   {
    "name": "thesportsdb · Купа на Италия",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "thesportsdb · Лига 1",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "thesportsdb · Бундеслига",
    "ok": true,
    "count": 0,
    "error": null
@@ -58,19 +88,19 @@
   {
    "name": "thesportsdb · Първа лига",
    "ok": true,
-   "count": 3,
+   "count": 0,
    "error": null
   },
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 29,
+   "count": 17,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите",
    "ok": true,
-   "count": 34,
+   "count": 86,
    "error": null
   },
   {
@@ -82,7 +112,7 @@
   {
    "name": "thesportsdb · Купа на африканските нации (квал.)",
    "ok": true,
-   "count": 24,
+   "count": 47,
    "error": null
   },
   {
@@ -94,7 +124,7 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -112,13 +142,13 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 10,
+   "count": 46,
    "error": null
   },
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 5,
+   "count": 10,
    "error": null
   },
   {
@@ -147,91 +177,36 @@
   }
  ],
  "totals": {
-  "fromSources": 141,
-  "added": 4,
-  "tennisNew": 2,
-  "tennisPending": 7
+  "fromSources": 233,
+  "added": 0,
+  "tennisNew": 3,
+  "tennisPending": 10
  },
- "added": [
-  {
-   "extId": "sdb-2608041",
-   "date": "2026-09-24",
-   "time": "09:00",
-   "sport": "mot",
-   "comp": "Формула 2",
-   "title": "Azerbaijan Practice",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608042",
-   "date": "2026-09-24",
-   "time": "13:00",
-   "sport": "mot",
-   "comp": "Формула 2",
-   "title": "Azerbaijan Qualifying 1",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608043",
-   "date": "2026-09-24",
-   "time": "13:30",
-   "sport": "mot",
-   "comp": "Формула 2",
-   "title": "Azerbaijan Qualifying 2",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608044",
-   "date": "2026-09-25",
-   "time": "13:15",
-   "sport": "mot",
-   "comp": "Формула 2",
-   "title": "Azerbaijan Feature Race 1",
-   "via": "thesportsdb"
-  }
- ],
+ "added": [],
  "tennisNew": [
   {
-   "extId": "ten-rOeJ93xbTPKLbY62eV57",
-   "date": "2026-09-20",
+   "extId": "ten-ZHZhG_cNMnQUxK5YQmVr",
+   "date": "2026-09-21",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Росица Денчева — мач"
   },
   {
-   "extId": "ten-enx4WdgXGeVCI-xzK3pE",
-   "date": "2026-09-20",
+   "extId": "ten-KFk4Qgt7D5doFKPdj8Qj",
+   "date": "2026-09-21",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Изабелла Шиникова — мач"
+  },
+  {
+   "extId": "ten-dzqEc7LwapTJmUALKr7g",
+   "date": "2026-09-21",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-20",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-20"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-20"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-20"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-20"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-20"
-    }
-   ]
-  },
   {
    "date": "2026-09-21",
    "links": [
@@ -404,6 +379,181 @@
     {
      "sport": "motorsport",
      "url": "https://www.sofascore.com/motorsport/2026-09-27"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-09-28"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-09-28"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-09-28"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-09-28"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-09-28"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-09-29"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-09-29"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-09-29"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-09-29"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-09-29"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-30",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-09-30"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-09-30"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-09-30"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-09-30"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-09-30"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-01",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-01"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-01"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-01"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-01"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-01"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-02",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-02"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-02"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-02"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-02"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-02"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-03",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-03"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-03"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-03"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-03"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-03"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-04",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-04"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-04"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-04"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-04"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-04"
     }
    ]
   }
