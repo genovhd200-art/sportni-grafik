@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-21T05:40:19.413Z",
- "runDate": "2026-09-21",
+ "generatedAt": "2026-09-22T05:37:12.642Z",
+ "runDate": "2026-09-22",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-21",
+  "from": "2026-09-22",
   "to": "2026-10-04"
  },
  "sources": [
@@ -180,58 +180,33 @@
   "fromSources": 233,
   "added": 0,
   "tennisNew": 3,
-  "tennisPending": 10
+  "tennisPending": 13
  },
  "added": [],
  "tennisNew": [
   {
-   "extId": "ten-ZHZhG_cNMnQUxK5YQmVr",
-   "date": "2026-09-21",
+   "extId": "ten-F8PfXMIN6Wuby0SCG6kB",
+   "date": "2026-09-22",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Росица Денчева — мач"
   },
   {
-   "extId": "ten-KFk4Qgt7D5doFKPdj8Qj",
-   "date": "2026-09-21",
-   "time": "00:00",
-   "comp": "Тенис",
-   "title": "Изабелла Шиникова — мач"
-  },
-  {
-   "extId": "ten-dzqEc7LwapTJmUALKr7g",
-   "date": "2026-09-21",
+   "extId": "ten-iaS52x7-lOC38s1QaTHH",
+   "date": "2026-09-22",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-D09lAe1dIPd5MzN7x_cK",
+   "date": "2026-09-22",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Изабелла Шиникова — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-21",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-21"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-21"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-21"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-21"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-21"
-    }
-   ]
-  },
   {
    "date": "2026-09-22",
    "links": [
