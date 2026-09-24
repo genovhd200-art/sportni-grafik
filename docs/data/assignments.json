@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-24T12:49:42.887Z",
+ "publishedAt": "2026-09-24T12:50:33.515Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -1875,16 +1875,8 @@
    "authorId": "sh-стажант",
    "format": ""
   },
-  "sdb-2475929": {
-   "authorId": "mu5hhjkrjukxq",
-   "format": ""
-  },
   "sdb-2475933": {
    "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "sdb-2475938": {
-   "authorId": "mu5hhjkrjukxq",
    "format": ""
   },
   "sdb-2475939": {
@@ -2346,6 +2338,8 @@
   "sdb-2608357": true,
   "bb-495102": true,
   "bb-495103": true,
-  "sdb-2475945": true
+  "sdb-2475945": true,
+  "sdb-2475929": true,
+  "sdb-2475938": true
  }
 }
