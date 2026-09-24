@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-23T05:19:33.600Z",
- "runDate": "2026-09-23",
+ "generatedAt": "2026-09-24T05:29:02.239Z",
+ "runDate": "2026-09-24",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-23",
+  "from": "2026-09-24",
   "to": "2026-10-04"
  },
  "sources": [
@@ -118,7 +118,7 @@
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 45,
+   "count": 43,
    "error": null
   },
   {
@@ -177,467 +177,36 @@
   }
  ],
  "totals": {
-  "fromSources": 278,
-  "added": 45,
+  "fromSources": 276,
+  "added": 0,
   "tennisNew": 3,
-  "tennisPending": 16
+  "tennisPending": 19
  },
- "added": [
-  {
-   "extId": "sdb-2608351",
-   "date": "2026-09-23",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Turks and Caicos Islands – Montserrat",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608352",
-   "date": "2026-09-23",
-   "time": "23:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Bahamas – St Martin",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608353",
-   "date": "2026-09-24",
-   "time": "02:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Aruba – Antigua and Barbuda",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608354",
-   "date": "2026-09-24",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Puerto Rico – Guyana",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608355",
-   "date": "2026-09-25",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Dominican Republic – Nicaragua",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608356",
-   "date": "2026-09-25",
-   "time": "03:10",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Cayman Islands – Dominica",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608357",
-   "date": "2026-09-25",
-   "time": "03:20",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Haiti – Trinidad and Tobago",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608358",
-   "date": "2026-09-25",
-   "time": "05:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Costa Rica – Curaçao",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608359",
-   "date": "2026-09-25",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Bermuda – Guadeloupe",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608361",
-   "date": "2026-09-26",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Jamaica – Guatemala",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608362",
-   "date": "2026-09-26",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Barbados – St Lucia",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608364",
-   "date": "2026-09-26",
-   "time": "04:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Honduras – Suriname",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608365",
-   "date": "2026-09-26",
-   "time": "06:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "El Salvador – Martinique",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608366",
-   "date": "2026-09-26",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Montserrat – British Virgin Islands",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608367",
-   "date": "2026-09-26",
-   "time": "23:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "St Martin – US Virgin Islands",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608369",
-   "date": "2026-09-27",
-   "time": "02:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Antigua and Barbuda – Anguilla",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608371",
-   "date": "2026-09-27",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Guyana – Cayman Islands",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608372",
-   "date": "2026-09-28",
-   "time": "02:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Haiti – Costa Rica",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608373",
-   "date": "2026-09-28",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Curaçao – Nicaragua",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608374",
-   "date": "2026-09-28",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Dominica – Puerto Rico",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608375",
-   "date": "2026-09-28",
-   "time": "04:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Trinidad and Tobago – Dominican Republic",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608376",
-   "date": "2026-09-28",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Guadeloupe – Barbados",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608378",
-   "date": "2026-09-29",
-   "time": "01:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Suriname – Martinique",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608379",
-   "date": "2026-09-29",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Jamaica – Honduras",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608381",
-   "date": "2026-09-29",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "St Lucia – Bermuda",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608382",
-   "date": "2026-09-29",
-   "time": "05:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Guatemala – El Salvador",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608383",
-   "date": "2026-09-29",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "British Virgin Islands – Turks and Caicos Islands",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608384",
-   "date": "2026-09-29",
-   "time": "23:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "US Virgin Islands – Bahamas",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608386",
-   "date": "2026-09-30",
-   "time": "02:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Anguilla – Aruba",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608388",
-   "date": "2026-10-01",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "British Virgin Islands – Montserrat",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608389",
-   "date": "2026-10-01",
-   "time": "23:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "US Virgin Islands – St Martin",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608390",
-   "date": "2026-10-02",
-   "time": "00:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Dominica – Guyana",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608391",
-   "date": "2026-10-02",
-   "time": "01:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Curaçao – Trinidad and Tobago",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608392",
-   "date": "2026-10-02",
-   "time": "02:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Anguilla – Antigua and Barbuda",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608393",
-   "date": "2026-10-02",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Dominican Republic – Haiti",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608394",
-   "date": "2026-10-02",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Cayman Islands – Puerto Rico",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608395",
-   "date": "2026-10-02",
-   "time": "05:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Nicaragua – Costa Rica",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608396",
-   "date": "2026-10-02",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "St Lucia – Guadeloupe",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608398",
-   "date": "2026-10-03",
-   "time": "01:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Suriname – Guatemala",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608399",
-   "date": "2026-10-03",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Barbados – Bermuda",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608400",
-   "date": "2026-10-03",
-   "time": "03:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Martinique – Honduras",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608402",
-   "date": "2026-10-03",
-   "time": "05:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "El Salvador – Jamaica",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608405",
-   "date": "2026-10-04",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Guyana – Dominica",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608406",
-   "date": "2026-10-04",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Turks and Caicos Islands – British Virgin Islands",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608407",
-   "date": "2026-10-04",
-   "time": "23:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Bahamas – US Virgin Islands",
-   "via": "thesportsdb"
-  }
- ],
+ "added": [],
  "tennisNew": [
   {
-   "extId": "ten-KfBdOSJHy-fHp8UZQD1b",
-   "date": "2026-09-23",
+   "extId": "ten-qucCNh_Yjdb1jvGtUVT_",
+   "date": "2026-09-24",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Росица Денчева — мач"
   },
   {
-   "extId": "ten-mkQNrXPkUb1BPEr5C021",
-   "date": "2026-09-23",
+   "extId": "ten-bu062GSktY3951EzI_r0",
+   "date": "2026-09-24",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   },
   {
-   "extId": "ten-150ZkRuVhtUoj0sDOuo_",
-   "date": "2026-09-23",
+   "extId": "ten-AFXYI6TvrpjpC_nxKHcp",
+   "date": "2026-09-24",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Изабелла Шиникова — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-23",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-23"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-23"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-23"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-23"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-23"
-    }
-   ]
-  },
   {
    "date": "2026-09-24",
    "links": [
