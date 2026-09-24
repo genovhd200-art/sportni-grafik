@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-24T12:50:33.515Z",
+ "publishedAt": "2026-09-24T12:50:47.319Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -1875,26 +1875,6 @@
    "authorId": "sh-стажант",
    "format": ""
   },
-  "sdb-2475933": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "sdb-2475939": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "sdb-2475940": {
-   "authorId": "mu5hhjkrjukxq",
-   "format": ""
-  },
-  "sdb-2475944": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "sdb-2475946": {
-   "authorId": "mu5hhjkrjukxq",
-   "format": ""
-  },
   "sdb-2475924": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
@@ -2340,6 +2320,11 @@
   "bb-495103": true,
   "sdb-2475945": true,
   "sdb-2475929": true,
-  "sdb-2475938": true
+  "sdb-2475938": true,
+  "sdb-2475933": true,
+  "sdb-2475939": true,
+  "sdb-2475940": true,
+  "sdb-2475944": true,
+  "sdb-2475946": true
  }
 }
