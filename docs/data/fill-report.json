@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-24T05:29:02.239Z",
- "runDate": "2026-09-24",
+ "generatedAt": "2026-09-25T05:29:44.999Z",
+ "runDate": "2026-09-25",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-24",
+  "from": "2026-09-25",
   "to": "2026-10-04"
  },
  "sources": [
@@ -94,13 +94,13 @@
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 17,
+   "count": 16,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите",
    "ok": true,
-   "count": 86,
+   "count": 78,
    "error": null
   },
   {
@@ -112,13 +112,13 @@
   {
    "name": "thesportsdb · Купа на африканските нации (квал.)",
    "ok": true,
-   "count": 47,
+   "count": 39,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 43,
+   "count": 40,
    "error": null
   },
   {
@@ -136,19 +136,19 @@
   {
    "name": "thesportsdb · Формула 2",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
    "name": "euroleague",
    "ok": true,
-   "count": 46,
+   "count": 39,
    "error": null
   },
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 10,
+   "count": 8,
    "error": null
   },
   {
@@ -177,61 +177,102 @@
   }
  ],
  "totals": {
-  "fromSources": 276,
-  "added": 0,
-  "tennisNew": 3,
-  "tennisPending": 19
+  "fromSources": 244,
+  "added": 8,
+  "tennisNew": 2,
+  "tennisPending": 21
  },
- "added": [],
+ "added": [
+  {
+   "extId": "sdb-2608360",
+   "date": "2026-09-26",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Grenada – Cuba",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608363",
+   "date": "2026-09-26",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Bonaire – St Kitts and Nevis",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608368",
+   "date": "2026-09-27",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Vincent and the Grenadines – French Guiana",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608370",
+   "date": "2026-09-27",
+   "time": "05:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Maarten – Belize",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608377",
+   "date": "2026-09-29",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Cuba – Bonaire",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608380",
+   "date": "2026-09-29",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Kitts and Nevis – Grenada",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608385",
+   "date": "2026-09-30",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "French Guiana – St Maarten",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608387",
+   "date": "2026-09-30",
+   "time": "05:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Belize – St Vincent and the Grenadines",
+   "via": "thesportsdb"
+  }
+ ],
  "tennisNew": [
   {
-   "extId": "ten-qucCNh_Yjdb1jvGtUVT_",
-   "date": "2026-09-24",
+   "extId": "ten-V6pFtmyh2sK2p00LIO9Y",
+   "date": "2026-09-25",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Росица Денчева — мач"
   },
   {
-   "extId": "ten-bu062GSktY3951EzI_r0",
-   "date": "2026-09-24",
+   "extId": "ten-2CDHNyBs5HWyvx4s8MXX",
+   "date": "2026-09-25",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
-  },
-  {
-   "extId": "ten-AFXYI6TvrpjpC_nxKHcp",
-   "date": "2026-09-24",
-   "time": "00:00",
-   "comp": "Тенис",
-   "title": "Изабелла Шиникова — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-24",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-24"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-24"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-24"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-24"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-24"
-    }
-   ]
-  },
   {
    "date": "2026-09-25",
    "links": [
