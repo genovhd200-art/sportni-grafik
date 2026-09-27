@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-26T05:33:21.873Z",
- "runDate": "2026-09-26",
+ "generatedAt": "2026-09-27T05:48:57.320Z",
+ "runDate": "2026-09-27",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-26",
+  "from": "2026-09-27",
   "to": "2026-10-04"
  },
  "sources": [
@@ -52,7 +52,7 @@
   {
    "name": "thesportsdb · Купа на краля",
    "ok": true,
-   "count": 20,
+   "count": 15,
    "error": null
   },
   {
@@ -100,7 +100,7 @@
   {
    "name": "thesportsdb · Лига на нациите",
    "ok": true,
-   "count": 70,
+   "count": 60,
    "error": null
   },
   {
@@ -112,13 +112,13 @@
   {
    "name": "thesportsdb · Купа на африканските нации (квал.)",
    "ok": true,
-   "count": 25,
+   "count": 23,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 35,
+   "count": 27,
    "error": null
   },
   {
@@ -136,7 +136,7 @@
   {
    "name": "thesportsdb · Формула 2",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -148,7 +148,7 @@
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -177,54 +177,36 @@
   }
  ],
  "totals": {
-  "fromSources": 210,
+  "fromSources": 183,
   "added": 0,
-  "tennisNew": 2,
-  "tennisPending": 23
+  "tennisNew": 3,
+  "tennisPending": 26
  },
  "added": [],
  "tennisNew": [
   {
-   "extId": "ten-Ia1fv1BorVU7JevbKve4",
-   "date": "2026-09-26",
+   "extId": "ten-pnBVJMiVvKtt18q3CGSG",
+   "date": "2026-09-27",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Росица Денчева — мач"
   },
   {
-   "extId": "ten-RATlDXjCu6iV7x9o6B-M",
-   "date": "2026-09-26",
+   "extId": "ten-ukJ3zYfLNkxXXYrhQiJo",
+   "date": "2026-09-27",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-murkVosD5YCIY3BhVKe7",
+   "date": "2026-09-27",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Изабелла Шиникова — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-26",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-26"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-26"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-26"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-26"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-26"
-    }
-   ]
-  },
   {
    "date": "2026-09-27",
    "links": [
