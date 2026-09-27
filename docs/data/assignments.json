@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-27T09:31:46.678Z",
+ "publishedAt": "2026-09-27T09:37:35.683Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2193,6 +2193,17 @@
    "comp": "2026 Porto 2, Portugal - Challenger",
    "title": "Григор Димитров - Грениер",
    "p": 3,
+   "note": "",
+   "provisional": false
+  },
+  "cmujmkiy43ot4r": {
+   "id": "cmujmkiy43ot4r",
+   "date": "2026-09-28",
+   "time": "11:00",
+   "sport": "ten",
+   "comp": "2026 Porto 2, Portugal - Challenger",
+   "title": "Блансанокс - Димитър Кузманов",
+   "p": 2,
    "note": "",
    "provisional": false
   }
