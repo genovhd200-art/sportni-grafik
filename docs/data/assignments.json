@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-28T14:25:58.904Z",
+ "publishedAt": "2026-09-28T14:36:19.237Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2649,6 +2649,17 @@
    "sport": "ten",
    "comp": "Challenger, Bari",
    "title": "Кузманов играе",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmulcok83i2zhb": {
+   "id": "cmulcok83i2zhb",
+   "date": "2026-09-29",
+   "time": "05:00",
+   "sport": "ten",
+   "comp": "ATP 500 TOKYO",
+   "title": "Циципас - Хийиката",
    "p": 2,
    "note": "",
    "provisional": false
