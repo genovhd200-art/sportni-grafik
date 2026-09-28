@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-28T14:25:15.616Z",
+ "publishedAt": "2026-09-28T14:25:58.904Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2638,6 +2638,17 @@
    "sport": "bas",
    "comp": "Суперкупа Баскетбол България",
    "title": "Суперкупа Баскетбол България",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmulcb9ko9rx3i": {
+   "id": "cmulcb9ko9rx3i",
+   "date": "2026-09-29",
+   "time": "11:00",
+   "sport": "ten",
+   "comp": "Challenger, Bari",
+   "title": "Кузманов играе",
    "p": 2,
    "note": "",
    "provisional": false
