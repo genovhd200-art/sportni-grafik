@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-28T14:19:11.234Z",
+ "publishedAt": "2026-09-28T14:25:15.616Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2627,6 +2627,17 @@
    "sport": "ten",
    "comp": "2026 Porto 2, Portugal - Challenger",
    "title": "Блансанокс - Димитър Кузманов",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmulcac61m0yj8": {
+   "id": "cmulcac61m0yj8",
+   "date": "2026-10-03",
+   "time": "16:00",
+   "sport": "bas",
+   "comp": "Суперкупа Баскетбол България",
+   "title": "Суперкупа Баскетбол България",
    "p": 2,
    "note": "",
    "provisional": false
