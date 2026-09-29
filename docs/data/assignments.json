@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-29T08:12:22.332Z",
+ "publishedAt": "2026-09-29T08:12:42.080Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2255,10 +2255,6 @@
    "authorId": "mu5hec9gl0lio",
    "format": ""
   },
-  "bb-508592": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
   "bb-503458": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
@@ -2268,10 +2264,6 @@
    "format": ""
   },
   "bb-508593": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-508594": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
   },
@@ -2967,6 +2959,8 @@
   "sdb-2608406": true,
   "sdb-2608407": true,
   "bb-524327": true,
-  "bb-524328": true
+  "bb-524328": true,
+  "bb-508592": true,
+  "bb-508594": true
  }
 }
