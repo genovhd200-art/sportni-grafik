@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-28T10:52:01.456Z",
+ "generatedAt": "2026-09-29T06:17:15.816Z",
  "from": "2026-09-28",
  "to": "2026-10-29",
  "timezone": "Europe/Sofia",
- "count": 472,
+ "count": 473,
  "events": [
   {
    "source": "api-basketball",
@@ -1397,6 +1397,21 @@
    "provisional": false,
    "via": "euroleague",
    "addedAt": "2026-09-18"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2407102",
+   "date": "2026-10-01",
+   "time": "02:30",
+   "sport": "fut",
+   "comp": "МЛС",
+   "title": "New York Red Bulls – St. Louis City SC",
+   "p": 1,
+   "venue": "Sports Illustrated Stadium",
+   "round": "кръг 27",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-09-29"
   },
   {
    "source": "fill",
@@ -6671,5 +6686,6 @@
    "round": "кръг 9",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-09-29"
 }
