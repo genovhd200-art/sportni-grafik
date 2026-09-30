@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-29T06:17:15.816Z",
- "runDate": "2026-09-29",
+ "generatedAt": "2026-09-30T06:05:33.562Z",
+ "runDate": "2026-09-30",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-29",
+  "from": "2026-09-30",
   "to": "2026-10-11"
  },
  "sources": [
@@ -70,7 +70,7 @@
   {
    "name": "thesportsdb · Лига на нациите",
    "ok": true,
-   "count": 62,
+   "count": 52,
    "error": null
   },
   {
@@ -82,13 +82,13 @@
   {
    "name": "thesportsdb · Купа на африканските нации (квал.)",
    "ok": true,
-   "count": 20,
+   "count": 3,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 22,
+   "count": 16,
    "error": null
   },
   {
@@ -112,7 +112,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 62,
+   "count": 49,
    "error": null
   },
   {
@@ -147,57 +147,22 @@
   }
  ],
  "totals": {
-  "fromSources": 284,
-  "added": 1,
+  "fromSources": 238,
+  "added": 0,
   "tennisNew": 1,
-  "tennisPending": 28
+  "tennisPending": 29
  },
- "added": [
-  {
-   "extId": "sdb-2407102",
-   "date": "2026-10-01",
-   "time": "02:30",
-   "sport": "fut",
-   "comp": "МЛС",
-   "title": "New York Red Bulls – St. Louis City SC",
-   "via": "thesportsdb"
-  }
- ],
+ "added": [],
  "tennisNew": [
   {
-   "extId": "ten-gn3riUu_NXDbnKMwsOOm",
-   "date": "2026-09-29",
+   "extId": "ten-CfnRuMbeDej4tIQJ2s4t",
+   "date": "2026-09-30",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-29",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-29"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-29"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-29"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-29"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-29"
-    }
-   ]
-  },
   {
    "date": "2026-09-30",
    "links": [
