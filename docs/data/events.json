@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-30T10:29:15.307Z",
+ "generatedAt": "2026-10-01T06:37:02.779Z",
  "from": "2026-09-30",
  "to": "2026-10-31",
  "timezone": "Europe/Sofia",
- "count": 457,
+ "count": 461,
  "events": [
   {
    "source": "fill",
@@ -1252,6 +1252,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2608397",
+   "date": "2026-10-03",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Kitts and Nevis – Cuba",
+   "p": 1,
+   "venue": "Hasely Crawford Stadium",
+   "round": "кръг 3",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-01"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2608398",
    "date": "2026-10-03",
    "time": "01:00",
@@ -1294,6 +1309,21 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-09-23"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608401",
+   "date": "2026-10-03",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Bonaire – Grenada",
+   "p": 1,
+   "venue": "Hasely Crawford Stadium",
+   "round": "кръг 3",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-01"
   },
   {
    "source": "fill",
@@ -1612,6 +1642,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2608403",
+   "date": "2026-10-04",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Maarten – St Vincent and the Grenadines",
+   "p": 1,
+   "venue": "FFB Field",
+   "round": "кръг 3",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-01"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601616",
    "date": "2026-10-04",
    "time": "02:00",
@@ -1624,6 +1669,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-09-18"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608404",
+   "date": "2026-10-04",
+   "time": "05:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Belize – French Guiana",
+   "p": 1,
+   "venue": "FFB Field",
+   "round": "кръг 3",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-01"
   },
   {
    "source": "fill",
@@ -6350,5 +6410,6 @@
    "round": "кръг 11",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-01"
 }

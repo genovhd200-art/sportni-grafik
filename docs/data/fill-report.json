@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-09-30T06:05:33.562Z",
- "runDate": "2026-09-30",
+ "generatedAt": "2026-10-01T06:37:02.779Z",
+ "runDate": "2026-10-01",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-09-30",
+  "from": "2026-10-01",
   "to": "2026-10-11"
  },
  "sources": [
@@ -64,7 +64,7 @@
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 17,
+   "count": 16,
    "error": null
   },
   {
@@ -82,13 +82,13 @@
   {
    "name": "thesportsdb · Купа на африканските нации (квал.)",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 16,
+   "count": 26,
    "error": null
   },
   {
@@ -112,7 +112,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 49,
+   "count": 36,
    "error": null
   },
   {
@@ -147,47 +147,59 @@
   }
  ],
  "totals": {
-  "fromSources": 238,
-  "added": 0,
+  "fromSources": 233,
+  "added": 4,
   "tennisNew": 1,
-  "tennisPending": 29
+  "tennisPending": 30
  },
- "added": [],
+ "added": [
+  {
+   "extId": "sdb-2608397",
+   "date": "2026-10-03",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Kitts and Nevis – Cuba",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608401",
+   "date": "2026-10-03",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Bonaire – Grenada",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608403",
+   "date": "2026-10-04",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Maarten – St Vincent and the Grenadines",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608404",
+   "date": "2026-10-04",
+   "time": "05:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Belize – French Guiana",
+   "via": "thesportsdb"
+  }
+ ],
  "tennisNew": [
   {
-   "extId": "ten-CfnRuMbeDej4tIQJ2s4t",
-   "date": "2026-09-30",
+   "extId": "ten-H1r9fTQstfO9wQvVBGmq",
+   "date": "2026-10-01",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-09-30",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-09-30"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-09-30"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-09-30"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-09-30"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-09-30"
-    }
-   ]
-  },
   {
    "date": "2026-10-01",
    "links": [
