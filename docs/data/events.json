@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-01T10:56:31.436Z",
+ "generatedAt": "2026-10-02T06:13:34.018Z",
  "from": "2026-10-01",
  "to": "2026-11-30",
  "timezone": "Europe/Sofia",
- "count": 625,
+ "count": 645,
  "events": [
   {
    "source": "api-basketball",
@@ -965,6 +965,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-511177",
+   "date": "2026-10-03",
+   "time": "16:00",
+   "sport": "bas",
+   "comp": "Super Cup",
+   "title": "Balkan – Cherno More",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2442797",
    "date": "2026-10-03",
    "time": "19:00",
@@ -1445,6 +1460,36 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2608408",
+   "date": "2026-10-05",
+   "time": "01:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Trinidad and Tobago – Curaçao",
+   "p": 1,
+   "venue": "Hasely Crawford Stadium",
+   "round": "кръг 4",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608409",
+   "date": "2026-10-05",
+   "time": "01:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Puerto Rico – Cayman Islands",
+   "p": 1,
+   "venue": "Estadio José Antonio Figueroa Freyre",
+   "round": "кръг 4",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2608410",
    "date": "2026-10-05",
    "time": "02:00",
@@ -1487,6 +1532,36 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-09-28"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608411",
+   "date": "2026-10-05",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Costa Rica – Haiti",
+   "p": 1,
+   "venue": "Estadio Ricardo Saprissa Aymá",
+   "round": "кръг 4",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608412",
+   "date": "2026-10-05",
+   "time": "05:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Nicaragua – Dominican Republic",
+   "p": 1,
+   "venue": "Estadio Nacional de Nicaragua",
+   "round": "кръг 4",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
   },
   {
    "source": "fill",
@@ -1610,6 +1685,36 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2608413",
+   "date": "2026-10-05",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Guadeloupe – St Lucia",
+   "p": 1,
+   "venue": "Wildey Astro Turf",
+   "round": "кръг 4",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608414",
+   "date": "2026-10-06",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Cuba – St Kitts and Nevis",
+   "p": 1,
+   "venue": "Hasely Crawford Stadium",
+   "round": "кръг 4",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2608415",
    "date": "2026-10-06",
    "time": "01:00",
@@ -1697,6 +1802,36 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-09-28"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608416",
+   "date": "2026-10-06",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Bermuda – Barbados",
+   "p": 1,
+   "venue": "Wildey Astro Turf",
+   "round": "кръг 4",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608418",
+   "date": "2026-10-06",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Grenada – Bonaire",
+   "p": 1,
+   "venue": "Hasely Crawford Stadium",
+   "round": "кръг 4",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
   },
   {
    "source": "fill",
@@ -2060,6 +2195,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2608422",
+   "date": "2026-10-07",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Vincent and the Grenadines – St Maarten",
+   "p": 1,
+   "venue": "FFB Field",
+   "round": "кръг 4",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2608423",
    "date": "2026-10-07",
    "time": "02:00",
@@ -2147,6 +2297,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-09-28"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2608424",
+   "date": "2026-10-07",
+   "time": "05:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "French Guiana – Belize",
+   "p": 1,
+   "venue": "FFB Field",
+   "round": "кръг 4",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
   },
   {
    "source": "fill",
@@ -2270,6 +2435,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2601626",
+   "date": "2026-10-08",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Indiana Pacers – Minnesota Timberwolves",
+   "p": 2,
+   "venue": "Gainbridge Fieldhouse",
+   "round": "кръг 500",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601627",
    "date": "2026-10-08",
    "time": "03:00",
@@ -2282,6 +2462,51 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-09-28"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601628",
+   "date": "2026-10-08",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Memphis Grizzlies – Orlando Magic",
+   "p": 2,
+   "venue": "FedExForum",
+   "round": "кръг 500",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601629",
+   "date": "2026-10-08",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Oklahoma City Thunder – Milwaukee Bucks",
+   "p": 2,
+   "venue": "Paycom Center",
+   "round": "кръг 500",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601630",
+   "date": "2026-10-08",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Portland Trail Blazers – Golden State Warriors",
+   "p": 2,
+   "venue": "Moda Center",
+   "round": "кръг 500",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
   },
   {
    "source": "fill",
@@ -2402,6 +2627,36 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-09-28"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601631",
+   "date": "2026-10-09",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "New York Knicks – Washington Wizards",
+   "p": 2,
+   "venue": "Madison Square Garden",
+   "round": "кръг 500",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601632",
+   "date": "2026-10-09",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Brooklyn Nets – Philadelphia 76ers",
+   "p": 2,
+   "venue": "Barclays Center",
+   "round": "кръг 500",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
   },
   {
    "source": "fill",
@@ -3131,6 +3386,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2601636",
+   "date": "2026-10-11",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Washington Wizards – Detroit Pistons",
+   "p": 2,
+   "venue": "Capital One Arena",
+   "round": "кръг 500",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2407115",
    "date": "2026-10-11",
    "time": "02:30",
@@ -3353,6 +3623,36 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-09-28"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601637",
+   "date": "2026-10-11",
+   "time": "05:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Phoenix Suns – San Antonio Spurs",
+   "p": 2,
+   "venue": "PHX Arena",
+   "round": "кръг 500",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2548859",
+   "date": "2026-10-11",
+   "time": "13:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Houston Rockets – Dallas Mavericks",
+   "p": 2,
+   "venue": "Toyota Center",
+   "round": "кръг 500",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-02"
   },
   {
    "source": "football-data",
@@ -8510,5 +8810,6 @@
    "round": "кръг 13",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-02"
 }

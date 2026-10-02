@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-01T06:37:02.779Z",
- "runDate": "2026-10-01",
+ "generatedAt": "2026-10-02T06:13:34.018Z",
+ "runDate": "2026-10-02",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-01",
+  "from": "2026-10-02",
   "to": "2026-10-11"
  },
  "sources": [
@@ -70,7 +70,7 @@
   {
    "name": "thesportsdb · Лига на нациите",
    "ok": true,
-   "count": 52,
+   "count": 44,
    "error": null
   },
   {
@@ -82,25 +82,25 @@
   {
    "name": "thesportsdb · Купа на африканските нации (квал.)",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 26,
+   "count": 23,
    "error": null
   },
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 24,
+   "count": 33,
    "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -112,7 +112,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 36,
+   "count": 32,
    "error": null
   },
   {
@@ -130,7 +130,7 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -147,84 +147,203 @@
   }
  ],
  "totals": {
-  "fromSources": 233,
-  "added": 4,
+  "fromSources": 226,
+  "added": 20,
   "tennisNew": 1,
-  "tennisPending": 30
+  "tennisPending": 31
  },
  "added": [
   {
-   "extId": "sdb-2608397",
+   "extId": "bb-511177",
    "date": "2026-10-03",
-   "time": "00:00",
+   "time": "16:00",
+   "sport": "bas",
+   "comp": "Super Cup",
+   "title": "Balkan – Cherno More",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "sdb-2608408",
+   "date": "2026-10-05",
+   "time": "01:00",
    "sport": "fut",
    "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "St Kitts and Nevis – Cuba",
+   "title": "Trinidad and Tobago – Curaçao",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2608401",
-   "date": "2026-10-03",
+   "extId": "sdb-2608409",
+   "date": "2026-10-05",
+   "time": "01:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Puerto Rico – Cayman Islands",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608411",
+   "date": "2026-10-05",
    "time": "03:00",
    "sport": "fut",
    "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Bonaire – Grenada",
+   "title": "Costa Rica – Haiti",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2608403",
-   "date": "2026-10-04",
-   "time": "00:00",
-   "sport": "fut",
-   "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "St Maarten – St Vincent and the Grenadines",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2608404",
-   "date": "2026-10-04",
+   "extId": "sdb-2608412",
+   "date": "2026-10-05",
    "time": "05:00",
    "sport": "fut",
    "comp": "Лига на нациите на КОНКАКАФ",
-   "title": "Belize – French Guiana",
+   "title": "Nicaragua – Dominican Republic",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608413",
+   "date": "2026-10-05",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Guadeloupe – St Lucia",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608414",
+   "date": "2026-10-06",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Cuba – St Kitts and Nevis",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608416",
+   "date": "2026-10-06",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Bermuda – Barbados",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608418",
+   "date": "2026-10-06",
+   "time": "03:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "Grenada – Bonaire",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608422",
+   "date": "2026-10-07",
+   "time": "00:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "St Vincent and the Grenadines – St Maarten",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2608424",
+   "date": "2026-10-07",
+   "time": "05:00",
+   "sport": "fut",
+   "comp": "Лига на нациите на КОНКАКАФ",
+   "title": "French Guiana – Belize",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601626",
+   "date": "2026-10-08",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Indiana Pacers – Minnesota Timberwolves",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601628",
+   "date": "2026-10-08",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Memphis Grizzlies – Orlando Magic",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601629",
+   "date": "2026-10-08",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Oklahoma City Thunder – Milwaukee Bucks",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601630",
+   "date": "2026-10-08",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Portland Trail Blazers – Golden State Warriors",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601631",
+   "date": "2026-10-09",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "New York Knicks – Washington Wizards",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601632",
+   "date": "2026-10-09",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Brooklyn Nets – Philadelphia 76ers",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601636",
+   "date": "2026-10-11",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Washington Wizards – Detroit Pistons",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601637",
+   "date": "2026-10-11",
+   "time": "05:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Phoenix Suns – San Antonio Spurs",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2548859",
+   "date": "2026-10-11",
+   "time": "13:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Houston Rockets – Dallas Mavericks",
    "via": "thesportsdb"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-H1r9fTQstfO9wQvVBGmq",
-   "date": "2026-10-01",
+   "extId": "ten-_k1Wm6drDwhVDAXLF5_3",
+   "date": "2026-10-02",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-01",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-01"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-01"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-01"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-01"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-01"
-    }
-   ]
-  },
   {
    "date": "2026-10-02",
    "links": [
