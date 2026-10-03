@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-03T10:20:13.849Z",
+ "publishedAt": "2026-10-03T10:24:00.526Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2666,6 +2666,17 @@
    "sport": "ten",
    "comp": "ATP 250 Hangzhou",
    "title": "Медведев - Рублев",
+   "p": 2,
+   "note": "",
+   "provisional": false
+  },
+  "cmus8vcfjnu5ck": {
+   "id": "cmus8vcfjnu5ck",
+   "date": "2026-10-06",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "ЕНБЛ",
+   "title": "Спартак Плевен - АЕЛ",
    "p": 2,
    "note": "",
    "provisional": false
