@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-03T10:05:35.234Z",
+ "publishedAt": "2026-10-03T10:05:52.306Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2981,7 +2981,13 @@
   "el-U2026_22": true,
   "el-U2026_25": true,
   "el-U2026_19": true,
-  "el-U2026_21": true
+  "el-U2026_21": true,
+  "el-U2026_23": true,
+  "el-U2026_26": true,
+  "el-U2026_17": true,
+  "el-U2026_18": true,
+  "el-U2026_29": true,
+  "el-U2026_31": true
  },
  "hiddenComps": {
   "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ"
