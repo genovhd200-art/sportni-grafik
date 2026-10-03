@@ -69,7 +69,8 @@ const endMins = e => mins(e.time) + durationOf(e);
 const endLabel = e => { const m = endMins(e) % 1440;
   return pad(Math.floor(m/60)) + ":" + pad(m%60); };
 
-const S = { feed:null, all:[], custom:{}, authors:{}, assign:{}, done:{}, hidden:{}, showHidden:false,
+const S = { feed:null, all:[], custom:{}, authors:{}, assign:{}, done:{},
+            hidden:{}, hiddenComps:{}, showHidden:false,
             published:null, dirty:false,
             view:"day", q:"", sports:new Set(), onlyOpen:false, onlyTodo:false, weekStart:null };
 let DATES = [];
@@ -126,10 +127,11 @@ function loadLocal(){
 function applyState(d){
   d = d || {};
   S.authors = d.authors||{}; S.assign = d.assign||{}; S.custom = d.custom||{}; S.done = d.done||{};
-  S.hidden = d.hidden||{};
+  S.hidden = d.hidden||{}; S.hiddenComps = d.hiddenComps||{};
 }
 /* Всичко, което редакторът притежава — пази се локално и се публикува. */
-const stateOf = () => ({ authors:S.authors, assign:S.assign, custom:S.custom, done:S.done, hidden:S.hidden });
+const stateOf = () => ({ authors:S.authors, assign:S.assign, custom:S.custom, done:S.done,
+                         hidden:S.hidden, hiddenComps:S.hiddenComps });
 async function loadPublished(){
   try{
     const r = await fetch("data/assignments.json?ts="+Date.now(), {cache:"no-store"});
@@ -419,7 +421,7 @@ function weekHours(a){
 /* Махнатите от редактора не се виждат никъде — освен ако той не е пуснал „Махнати“. */
 function allEvents(){
   return S.all.concat(Object.values(S.custom))
-    .filter(e => !S.hidden[e.id] || (EDITOR && S.showHidden))
+    .filter(e => !(S.hidden[e.id] || S.hiddenComps[compKey(e)]) || (EDITOR && S.showHidden))
     .sort((a,b) => a.date===b.date ? mins(a.time)-mins(b.time) : (a.date<b.date?-1:1));
 }
 function weekEvents(){ return allEvents().filter(e => DATES.includes(e.date)); }
@@ -674,7 +676,8 @@ function render(){
   const n = issuesFor().length, b = document.getElementById("issueBadge");
   b.hidden = !n; b.textContent = n;
   const hc = document.getElementById("hiddenCount");
-  if(hc) hc.textContent = S.all.filter(e => S.hidden[e.id] && DATES.includes(e.date)).length;
+  if(hc) hc.textContent = S.all.filter(e => DATES.includes(e.date) &&
+    (S.hidden[e.id] || S.hiddenComps[compKey(e)])).length;
   const pb = document.getElementById("pubBtn");
   pb.textContent = S.dirty ? "Публикувай ●" : "Публикувай";
   pb.title = S.dirty
@@ -765,11 +768,25 @@ function renderFilters(){
     '<button class="chip edit-only" data-showhidden="1" aria-pressed="false">Махнати <span id="hiddenCount">0</span></button>');
   box.dataset.built = "1";
 }
+const compKey = e => String(e.comp || "").trim().toLowerCase();
 function hideEvent(id){
+  const ev = allEvents().find(e => e.id === id);
   if(S.custom[id]){ delete S.custom[id]; }          // собственото се трие наистина
   else S.hidden[id] = true;                         // от програмата — само се скрива
   delete S.assign[id]; delete S.done[id];
   saveLocal(); render();
+  // един мач се маха сам; цял турнир — само ако се поиска, и тогава и бъдещите му мачове
+  if(ev && ev.comp) notice("Махнат е <b>"+esc(ev.title)+"</b>. "+
+    '<button class="btn xs" data-hidecomp="'+esc(ev.comp)+'">Махни целия турнир „'+esc(ev.comp)+'“</button>');
+}
+/** Махнат турнир: не се показва и занапред — новите му мачове също. */
+function hideComp(comp){
+  S.hiddenComps[compKey({comp})] = comp;
+  for(const e of S.all.concat(Object.values(S.custom)))
+    if(compKey(e) === compKey({comp})){ delete S.assign[e.id]; delete S.done[e.id]; }
+  saveLocal(); render();
+  notice("Турнирът <b>"+esc(comp)+"</b> е махнат — и бъдещите му мачове няма да влизат. "+
+    'Връща се от филтъра <b>Махнати</b>.');
 }
 function authorOpts(evId){
   const cur = S.assign[evId] ? S.assign[evId].authorId : "";
@@ -789,7 +806,7 @@ function rowHtml(e){
   if(!as && e.p===3) flags += '<span class="flag crit">без автор</span>';
   if(e.provisional)  flags += '<span class="flag warn">часът не е потвърден</span>';
   if(a)              flags += '<span class="flag ok">'+esc(String(a.name).split(" ")[0])+'</span>';
-  const dn = !!S.done[e.id], hid = !!S.hidden[e.id];
+  const dn = !!S.done[e.id], hid = !!(S.hidden[e.id] || S.hiddenComps[compKey(e)]);
   const x = !EDITOR ? "" : hid
     ? '<button class="rx" data-unhide="'+e.id+'" title="Върни в графика" aria-label="Върни">↺</button>'
     : '<button class="rx" data-hide="'+e.id+'" title="Махни от графика" aria-label="Махни">×</button>';
@@ -807,11 +824,22 @@ function rowHtml(e){
       formatOpts(e.id)+'</select>'+
       (flags?'<div class="rflags">'+flags+'</div>':"")+'</div></div>';
 }
+/** Лентата с махнатите турнири — вижда се, когато филтърът „Махнати“ е пуснат. */
+function hiddenCompsBar(){
+  const list = Object.entries(S.hiddenComps);
+  if(!EDITOR || !S.showHidden || !list.length) return "";
+  return '<div class="panel" style="margin-bottom:14px"><div class="legend" style="border-top:none">'+
+    '<b>Махнати турнири</b> — не влизат и занапред:<br>'+
+    list.map(([k,name]) => '<button class="btn xs" data-unhidecomp="'+esc(k)+'" '+
+      'title="Върни турнира" style="margin:4px 4px 0 0">↺ '+esc(name)+'</button>').join("")+
+    '</div></div>';
+}
 function viewDays(){
   const evs = weekEvents().filter(passes);
-  if(!evs.length) return '<div class="panel"><div class="empty">Няма събития по този филтър.</div></div>';
+  const bar = hiddenCompsBar();
+  if(!evs.length) return bar+'<div class="panel"><div class="empty">Няма събития по този филтър.</div></div>';
   const t = todayISO();
-  return DATES.map((d,i) => {
+  return bar + DATES.map((d,i) => {
     const list = evs.filter(e => e.date===d); if(!list.length) return "";
     const dt = parseISO(d);
     return '<section class="day'+(d===t?" today":"")+'"><div class="day-hd">'+
@@ -866,7 +894,8 @@ function viewIssues(){
 
 /* ---------- взаимодействие ---------- */
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-sport],[data-open],[data-todo],[data-showhidden],[data-hide],[data-unhide],[data-del-author],[data-shift],[data-jump],.tab");
+  const t = e.target.closest("[data-sport],[data-open],[data-todo],[data-showhidden],[data-hide],[data-unhide],"+
+    "[data-hidecomp],[data-unhidecomp],[data-del-author],[data-shift],[data-jump],.tab");
   if(!t || ov.contains(t)) return;
   if(t.classList.contains("tab")){
     S.view = t.dataset.view;
@@ -885,6 +914,8 @@ document.addEventListener("click", e => {
   if(t.dataset.showhidden){ S.showHidden = !S.showHidden; t.setAttribute("aria-pressed", S.showHidden); render(); return; }
   if(t.dataset.hide){ hideEvent(t.dataset.hide); return; }
   if(t.dataset.unhide){ delete S.hidden[t.dataset.unhide]; saveLocal(); render(); return; }
+  if(t.dataset.hidecomp){ notice(""); hideComp(t.dataset.hidecomp); return; }
+  if(t.dataset.unhidecomp){ delete S.hiddenComps[t.dataset.unhidecomp]; saveLocal(); render(); return; }
   if(t.dataset.delAuthor){
     const a = S.authors[t.dataset.delAuthor]; if(!a) return;
     if(confirmBtn(t, "×?")){
