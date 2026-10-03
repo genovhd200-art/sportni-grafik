@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-09-29T08:14:19.382Z",
+ "publishedAt": "2026-10-03T10:00:33.285Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2745,7 +2745,44 @@
   "sdb-2442772": true,
   "sdb-2442769": true,
   "sdb-2442768": true,
-  "sdb-2442766": true
+  "sdb-2442766": true,
+  "sdb-2442788": true,
+  "sdb-2442789": true,
+  "sdb-2442790": true,
+  "sdb-2442791": true,
+  "cmulcqe2fuqem4": true,
+  "sdb-2475293": true,
+  "sdb-2442779": true,
+  "sdb-2442774": true,
+  "sdb-2442773": true,
+  "el-E2026_14": true,
+  "el-E2026_16": true,
+  "bb-508598": true,
+  "bb-508595": true,
+  "bb-503457": true,
+  "el-E2026_19": true,
+  "el-E2026_22": true,
+  "el-E2026_21": true,
+  "el-E2026_23": true,
+  "sdb-2442782": true,
+  "sdb-2442781": true,
+  "sdb-2442783": true,
+  "sdb-2442784": true,
+  "sdb-2442785": true,
+  "sdb-2442786": true,
+  "el-E2026_24": true,
+  "bb-508605": true,
+  "bb-508602": true,
+  "el-E2026_25": true,
+  "bb-508607": true,
+  "bb-508611": true,
+  "bb-508609": true,
+  "el-E2026_30": true,
+  "el-E2026_28": true,
+  "sdb-2442792": true,
+  "sdb-2442793": true,
+  "bb-508608": true,
+  "el-E2026_26": true
  },
  "hidden": {
   "sdb-2407093": true,
@@ -2934,6 +2971,10 @@
   "bb-503467": true,
   "bb-503456": true,
   "bb-508599": true,
-  "bb-508597": true
+  "bb-508597": true,
+  "sdb-2608408": true
+ },
+ "hiddenComps": {
+  "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ"
  }
 }
