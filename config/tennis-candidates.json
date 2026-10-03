@@ -1,31 +1,5 @@
 [
  {
-  "extId": "ten-OiYMuabgZCzfpfffEkmC",
-  "date": "2026-09-18",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Росица Денчева — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-09-18"
- },
- {
-  "extId": "ten-1o5Hh5x5z6mAgHaRKkit",
-  "date": "2026-09-18",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-09-18"
- },
- {
   "extId": "ten-0fT7znubHQgd8XM0qzp7",
   "date": "2026-09-19",
   "time": "00:00",
@@ -388,5 +362,18 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-10-02"
+ },
+ {
+  "extId": "ten-wlB76oK1X2IZMn1IGrIR",
+  "date": "2026-10-03",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-03"
  }
 ]
