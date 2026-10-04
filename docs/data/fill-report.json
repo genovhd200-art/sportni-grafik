@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-03T05:47:45.296Z",
- "runDate": "2026-10-03",
+ "generatedAt": "2026-10-04T06:22:41.478Z",
+ "runDate": "2026-10-04",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-03",
+  "from": "2026-10-04",
   "to": "2026-10-11"
  },
  "sources": [
@@ -40,7 +40,7 @@
   {
    "name": "thesportsdb · Купа на краля",
    "ok": true,
-   "count": 10,
+   "count": 7,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "thesportsdb · Лига на нациите",
    "ok": true,
-   "count": 34,
+   "count": 26,
    "error": null
   },
   {
@@ -88,7 +88,7 @@
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 17,
+   "count": 22,
    "error": null
   },
   {
@@ -118,7 +118,7 @@
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
@@ -130,7 +130,7 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -147,47 +147,29 @@
   }
  ],
  "totals": {
-  "fromSources": 202,
+  "fromSources": 195,
   "added": 0,
-  "tennisNew": 1,
+  "tennisNew": 2,
   "tennisPending": 31
  },
  "added": [],
  "tennisNew": [
   {
-   "extId": "ten-wlB76oK1X2IZMn1IGrIR",
-   "date": "2026-10-03",
+   "extId": "ten-k5EV6GstOm1mgsEio59T",
+   "date": "2026-10-04",
    "time": "00:00",
+   "comp": "Тенис",
+   "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-DuxV0osBneHwVGd6kiFh",
+   "date": "2026-10-04",
+   "time": "1:02",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-03",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-03"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-03"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-03"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-03"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-03"
-    }
-   ]
-  },
   {
    "date": "2026-10-04",
    "links": [
