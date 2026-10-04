@@ -1,0 +1,60 @@
+{
+ "generatedAt": "2026-10-04T19:53:55.530Z",
+ "runDate": "2026-10-04",
+ "timezone": "Europe/Sofia",
+ "window": {
+  "from": "2026-10-05",
+  "to": "2026-10-11"
+ },
+ "sources": [
+  {
+   "name": "football-data",
+   "ok": true,
+   "count": 44,
+   "error": null
+  },
+  {
+   "name": "thesportsdb",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "weekly-scrape",
+   "ok": true,
+   "count": 0,
+   "error": null
+  }
+ ],
+ "totals": {
+  "fromSources": 44,
+  "inTable": 171,
+  "added": 0,
+  "moved": 0,
+  "dropped": 2,
+  "manualUntouched": 0
+ },
+ "added": [],
+ "moved": [],
+ "dropped": [
+  {
+   "extId": "bb-519485",
+   "title": "Denver Nuggets – Utah Jazz",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-05",
+   "time": "02:00",
+   "source": "api-basketball"
+  },
+  {
+   "extId": "bb-519486",
+   "title": "Los Angeles Clippers – Golden State Warriors",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-05",
+   "time": "02:00",
+   "source": "api-basketball"
+  }
+ ],
+ "droppedHandling": "маркирани с dropped:true"
+}
