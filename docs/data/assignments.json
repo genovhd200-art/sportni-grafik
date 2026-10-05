@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-05T15:02:19.592Z",
+ "publishedAt": "2026-10-05T15:02:36.029Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2890,6 +2890,10 @@
   },
   "sdb-2548850": {
    "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601634": {
+   "authorId": "mu5hgiv07yguc",
    "format": ""
   }
  },
