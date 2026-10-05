@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-05T15:08:03.473Z",
+ "publishedAt": "2026-10-05T15:08:41.713Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2608,10 +2608,6 @@
    "authorId": "mu5hec9gl0lio",
    "format": ""
   },
-  "fd-559667": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
   "fd-560598": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
@@ -2633,10 +2629,6 @@
    "format": ""
   },
   "fd-559671": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "fd-564705": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
   },
@@ -2792,23 +2784,7 @@
    "authorId": "mu5hfevsksxfp",
    "format": ""
   },
-  "fd-558581": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
   "fd-558583": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "fd-559670": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "fd-565814": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "fd-564707": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
   },
@@ -3619,7 +3595,13 @@
   "fd-559668": true,
   "sdb-2407117": true,
   "fd-565818": true,
-  "fd-565813": true
+  "fd-565813": true,
+  "fd-558581": true,
+  "fd-559670": true,
+  "fd-565814": true,
+  "fd-564707": true,
+  "fd-559667": true,
+  "fd-564705": true
  },
  "hiddenComps": {
   "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ",
