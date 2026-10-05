@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-05T14:55:10.084Z",
+ "publishedAt": "2026-10-05T14:55:25.754Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -3159,7 +3159,9 @@
   "sdb-2475301": true,
   "fd-559674": true,
   "sdb-2407114": true,
-  "sdb-2407113": true
+  "sdb-2407113": true,
+  "fd-559666": true,
+  "fd-559668": true
  },
  "hiddenComps": {
   "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ",
