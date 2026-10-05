@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-05T15:03:51.853Z",
+ "publishedAt": "2026-10-05T15:08:03.473Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2467,6 +2467,458 @@
   "sdb-2601616": {
    "authorId": "mu5hgiv07yguc",
    "format": ""
+  },
+  "bb-519485": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "bb-519486": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2442808": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442809": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442810": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442811": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442812": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442813": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475303": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2487344": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2487346": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "cmus8vcfjnu5ck": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442816": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442817": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442821": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475302": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475304": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_37": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_32": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_33": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_36": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_34": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_35": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2548854": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "el-E2026_40": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-565820": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_39": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_38": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-559669": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-564706": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "f1-2026-17-Sprint": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-560593": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-564698": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-558588": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "f1-2026-17-Qualifying": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-559667": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-560598": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-565816": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-558580": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-564701": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-558584": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-559671": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-564705": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503470": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503481": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503482": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503469": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503477": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-523151": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503471": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503473": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503475": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "f1-2026-17-SprintQualifying": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2487345": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2590083": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2590084": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2590085": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2590086": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2590087": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2590088": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2590566": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2487341": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2487343": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "f1-2026-17-Race": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2487342": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_31": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-565812": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-565817": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-565819": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560592": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560595": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560599": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560601": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564699": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558582": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-560600": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564700": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-565815": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564703": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-560594": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-560596": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-558581": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-558583": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-559670": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-565814": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-564707": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-503476": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-U2026_30": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "bb-506713": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "bb-519487": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "bb-519488": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "bb-519489": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "bb-519490": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "fd-558586": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "fd-559672": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559673": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-564702": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2548859": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558585": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601623": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601624": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2406928": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601625": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548850": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601634": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2601635": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548855": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601636": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2407115": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548856": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548857": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548858": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601637": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
   }
  },
  "custom": {
@@ -3159,7 +3611,15 @@
   "sdb-2442819": true,
   "sdb-2442820": true,
   "sdb-2442814": true,
-  "sdb-2475301": true
+  "sdb-2475301": true,
+  "fd-559674": true,
+  "sdb-2407114": true,
+  "sdb-2407113": true,
+  "fd-559666": true,
+  "fd-559668": true,
+  "sdb-2407117": true,
+  "fd-565818": true,
+  "fd-565813": true
  },
  "hiddenComps": {
   "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ",
