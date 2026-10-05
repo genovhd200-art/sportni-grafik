@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-05T14:59:00.763Z",
+ "publishedAt": "2026-10-05T15:02:19.592Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -1302,16 +1302,26 @@
      }
     ],
     "2026-10-06": [],
-    "2026-10-07": [],
+    "2026-10-07": [
+     {
+      "s": "12:00",
+      "e": "16:00"
+     }
+    ],
     "2026-10-08": [],
     "2026-10-09": [],
     "2026-10-10": [
      {
       "s": "16:00",
-      "e": "20:00"
+      "e": "22:00"
      }
     ],
-    "2026-10-11": []
+    "2026-10-11": [
+     {
+      "s": "10:00",
+      "e": "16:00"
+     }
+    ]
    }
   },
   "sh-стажант": {
@@ -2835,6 +2845,50 @@
    "format": ""
   },
   "bb-519490": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "fd-558586": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-559672": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-559673": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-564702": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2548859": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "fd-558585": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601623": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601624": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2406928": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601625": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548850": {
    "authorId": "mu74vfwbp1ux1",
    "format": ""
   }
