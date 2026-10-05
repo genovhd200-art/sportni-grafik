@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-05T15:03:04.115Z",
+ "publishedAt": "2026-10-05T15:03:23.826Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2895,6 +2895,38 @@
   "sdb-2601634": {
    "authorId": "mu5hgiv07yguc",
    "format": ""
+  },
+  "sdb-2601635": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548855": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601636": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2407115": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548856": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548857": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2548858": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
+  },
+  "sdb-2601637": {
+   "authorId": "mu74vfwbp1ux1",
+   "format": ""
   }
  },
  "custom": {
@@ -3592,7 +3624,8 @@
   "sdb-2407114": true,
   "sdb-2407113": true,
   "fd-559666": true,
-  "fd-559668": true
+  "fd-559668": true,
+  "sdb-2407117": true
  },
  "hiddenComps": {
   "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ",
