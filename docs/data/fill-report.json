@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-06T06:58:28.562Z",
- "runDate": "2026-10-06",
+ "generatedAt": "2026-10-07T06:33:00.114Z",
+ "runDate": "2026-10-07",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-06",
+  "from": "2026-10-07",
   "to": "2026-10-18"
  },
  "sources": [
@@ -64,7 +64,7 @@
   {
    "name": "thesportsdb · Лига на нациите",
    "ok": true,
-   "count": 10,
+   "count": 0,
    "error": null
   },
   {
@@ -76,19 +76,19 @@
   {
    "name": "thesportsdb · Купа на африканските нации (квал.)",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 11,
+   "count": 2,
    "error": null
   },
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 53,
+   "count": 48,
    "error": null
   },
   {
@@ -106,7 +106,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 62,
+   "count": 53,
    "error": null
   },
   {
@@ -141,47 +141,22 @@
   }
  ],
  "totals": {
-  "fromSources": 349,
+  "fromSources": 315,
   "added": 0,
   "tennisNew": 1,
-  "tennisPending": 29
+  "tennisPending": 27
  },
  "added": [],
  "tennisNew": [
   {
-   "extId": "ten-Y4km95QQjNzNf3GEdqyO",
-   "date": "2026-10-06",
+   "extId": "ten-eUL_CUVz3qgbxRTWQw74",
+   "date": "2026-10-07",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-06",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-06"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-06"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-06"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-06"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-06"
-    }
-   ]
-  },
   {
    "date": "2026-10-07",
    "links": [
