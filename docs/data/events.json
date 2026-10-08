@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-07T11:03:40.200Z",
+ "generatedAt": "2026-10-08T06:42:40.426Z",
  "from": "2026-10-07",
  "to": "2026-11-07",
  "timezone": "Europe/Sofia",
- "count": 496,
+ "count": 498,
  "events": [
   {
    "source": "fill",
@@ -1625,6 +1625,21 @@
    "provisional": false
   },
   {
+   "source": "fill",
+   "extId": "sdb-2603764",
+   "date": "2026-10-11",
+   "time": "14:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Atlético Unión Güímar – Sporting de Hortaleza",
+   "p": 1,
+   "venue": "",
+   "round": "кръг 1",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-08"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564703",
    "date": "2026-10-11",
@@ -1744,6 +1759,21 @@
    "venue": "",
    "round": "кръг 5",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2603763",
+   "date": "2026-10-11",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Prat – Sant Rafel",
+   "p": 1,
+   "venue": "",
+   "round": "кръг 1",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-08"
   },
   {
    "source": "football-data",
@@ -6823,5 +6853,6 @@
    "round": "кръг 12",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-08"
 }

@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-07T06:33:00.114Z",
- "runDate": "2026-10-07",
+ "generatedAt": "2026-10-08T06:42:40.426Z",
+ "runDate": "2026-10-08",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-07",
+  "from": "2026-10-08",
   "to": "2026-10-18"
  },
  "sources": [
@@ -34,7 +34,7 @@
   {
    "name": "thesportsdb · Купа на краля",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
@@ -58,7 +58,7 @@
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 45,
+   "count": 44,
    "error": null
   },
   {
@@ -82,13 +82,13 @@
   {
    "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 48,
+   "count": 44,
    "error": null
   },
   {
@@ -106,7 +106,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 53,
+   "count": 45,
    "error": null
   },
   {
@@ -124,7 +124,7 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 9,
+   "count": 12,
    "error": null
   },
   {
@@ -141,47 +141,41 @@
   }
  ],
  "totals": {
-  "fromSources": 315,
-  "added": 0,
+  "fromSources": 305,
+  "added": 2,
   "tennisNew": 1,
-  "tennisPending": 27
+  "tennisPending": 25
  },
- "added": [],
+ "added": [
+  {
+   "extId": "sdb-2603764",
+   "date": "2026-10-11",
+   "time": "14:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Atlético Unión Güímar – Sporting de Hortaleza",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2603763",
+   "date": "2026-10-11",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Prat – Sant Rafel",
+   "via": "thesportsdb"
+  }
+ ],
  "tennisNew": [
   {
-   "extId": "ten-eUL_CUVz3qgbxRTWQw74",
-   "date": "2026-10-07",
+   "extId": "ten-SHeSYIekXlK1Jh5uNILI",
+   "date": "2026-10-08",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-07",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-07"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-07"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-07"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-07"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-07"
-    }
-   ]
-  },
   {
    "date": "2026-10-08",
    "links": [
