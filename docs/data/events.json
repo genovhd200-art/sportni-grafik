@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-08T11:20:59.780Z",
+ "generatedAt": "2026-10-09T06:43:01.432Z",
  "from": "2026-10-08",
  "to": "2026-11-08",
  "timezone": "Europe/Sofia",
- "count": 497,
+ "count": 500,
  "events": [
   {
    "source": "api-basketball",
@@ -828,6 +828,21 @@
    "addedAt": "2026-09-28"
   },
   {
+   "source": "fill",
+   "extId": "bb-511171",
+   "date": "2026-10-10",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Botev 2012 – Balkan",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-09"
+  },
+  {
    "source": "football-data",
    "extId": "fd-559674",
    "date": "2026-10-10",
@@ -852,6 +867,36 @@
    "venue": "",
    "round": "кръг 6",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "bb-511172",
+   "date": "2026-10-10",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "CSKA Sofia – Polytechnica",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-09"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-511174",
+   "date": "2026-10-10",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Minyor – Shumen",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-09"
   },
   {
    "source": "football-data",
@@ -6804,5 +6849,6 @@
    "round": "кръг 10",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-09"
 }
