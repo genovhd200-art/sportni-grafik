@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-09T11:19:45.533Z",
+ "generatedAt": "2026-10-10T06:24:24.097Z",
  "from": "2026-10-09",
  "to": "2026-11-09",
  "timezone": "Europe/Sofia",
- "count": 484,
+ "count": 487,
  "events": [
   {
    "source": "api-basketball",
@@ -1135,6 +1135,21 @@
    "addedAt": "2026-10-02"
   },
   {
+   "source": "fill",
+   "extId": "bb-511175",
+   "date": "2026-10-11",
+   "time": "13:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Spartak Pleven – Lok. Plovdiv",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-10"
+  },
+  {
    "source": "football-data",
    "extId": "fd-558585",
    "date": "2026-10-11",
@@ -1327,6 +1342,21 @@
    "addedAt": "2026-09-28"
   },
   {
+   "source": "fill",
+   "extId": "bb-511170",
+   "date": "2026-10-11",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Botev Academic – Beroe",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-10"
+  },
+  {
    "source": "football-data",
    "extId": "fd-559667",
    "date": "2026-10-11",
@@ -1338,6 +1368,21 @@
    "venue": "",
    "round": "кръг 6",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "bb-511176",
+   "date": "2026-10-11",
+   "time": "18:20",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Yambol – Rilski Sportist",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-10"
   },
   {
    "source": "football-data",
@@ -6623,5 +6668,6 @@
    "round": "кръг 10",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-10"
 }
