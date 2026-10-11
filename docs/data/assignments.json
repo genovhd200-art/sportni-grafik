@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-11T14:08:37.837Z",
+ "publishedAt": "2026-10-11T14:08:55.067Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -3640,6 +3640,26 @@
   },
   "sdb-2601643": {
    "authorId": "sh-стефан",
+   "format": ""
+  },
+  "sdb-2601644": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601645": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601646": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601647": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601648": {
+   "authorId": "mu5hhjkrjukxq",
    "format": ""
   }
  },
