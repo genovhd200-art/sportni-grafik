@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-10T06:24:24.097Z",
- "runDate": "2026-10-10",
+ "generatedAt": "2026-10-11T06:22:33.713Z",
+ "runDate": "2026-10-11",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-10",
+  "from": "2026-10-11",
   "to": "2026-10-18"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 107,
+   "count": 83,
    "error": null
   },
   {
@@ -52,13 +52,13 @@
   {
    "name": "thesportsdb · Първа лига",
    "ok": true,
-   "count": 7,
+   "count": 4,
    "error": null
   },
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 44,
+   "count": 42,
    "error": null
   },
   {
@@ -88,13 +88,13 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 32,
+   "count": 31,
    "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
    "ok": true,
-   "count": 13,
+   "count": 9,
    "error": null
   },
   {
@@ -112,7 +112,7 @@
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
@@ -141,75 +141,46 @@
   }
  ],
  "totals": {
-  "fromSources": 282,
-  "added": 3,
-  "tennisNew": 1,
-  "tennisPending": 21
+  "fromSources": 246,
+  "added": 1,
+  "tennisNew": 3,
+  "tennisPending": 22
  },
  "added": [
   {
-   "extId": "bb-511175",
-   "date": "2026-10-11",
-   "time": "13:00",
+   "extId": "bb-511173",
+   "date": "2026-10-12",
+   "time": "19:00",
    "sport": "bas",
    "comp": "NBL",
-   "title": "Spartak Pleven – Lok. Plovdiv",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-511170",
-   "date": "2026-10-11",
-   "time": "18:00",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Botev Academic – Beroe",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-511176",
-   "date": "2026-10-11",
-   "time": "18:20",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Yambol – Rilski Sportist",
+   "title": "Levski – Cherno More",
    "via": "api-basketball"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-z6AHLOanJXOoXNJLJ_Ah",
-   "date": "2026-10-10",
+   "extId": "ten-cS6l8_T8CGY_jBPhA48N",
+   "date": "2026-10-11",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-BcGi7RX2hXhCsuXecLn2",
+   "date": "2026-10-11",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Изабелла Шиникова — мач"
+  },
+  {
+   "extId": "ten-k1Ptp1GiNUa4BZvT2RNw",
+   "date": "2026-10-11",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Лия Каратанчева — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-10",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-10"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-10"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-10"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-10"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-10"
-    }
-   ]
-  },
   {
    "date": "2026-10-11",
    "links": [
