@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-11T20:45:57.124Z",
- "runDate": "2026-10-11",
+ "generatedAt": "2026-10-11T21:09:21.685Z",
+ "runDate": "2026-10-12",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-12",
-  "to": "2026-10-18"
+  "from": "2026-10-19",
+  "to": "2026-10-25"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 66,
+   "count": 70,
    "error": null
   },
   {
@@ -27,134 +27,15 @@
   }
  ],
  "totals": {
-  "fromSources": 66,
-  "inTable": 134,
-  "added": 9,
+  "fromSources": 70,
+  "inTable": 70,
+  "added": 0,
   "moved": 0,
-  "dropped": 4,
+  "dropped": 0,
   "manualUntouched": 0
  },
- "added": [
-  {
-   "extId": "fd-564716",
-   "date": "2026-10-16",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Ла Лига",
-   "title": "Deportivo – Levante",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-564715",
-   "date": "2026-10-18",
-   "time": "15:00",
-   "sport": "fut",
-   "comp": "Ла Лига",
-   "title": "Osasuna – Santander",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-558573",
-   "date": "2026-10-16",
-   "time": "21:45",
-   "sport": "fut",
-   "comp": "Серия А",
-   "title": "Frosinone – Sassuolo",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-558574",
-   "date": "2026-10-18",
-   "time": "13:30",
-   "sport": "fut",
-   "comp": "Серия А",
-   "title": "Udinese – Lecce",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-565823",
-   "date": "2026-10-17",
-   "time": "16:30",
-   "sport": "fut",
-   "comp": "Бундеслига",
-   "title": "Bremen – SC Paderborn",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-559661",
-   "date": "2026-10-16",
-   "time": "21:45",
-   "sport": "fut",
-   "comp": "Лига 1",
-   "title": "Le Mans – Toulouse",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-559659",
-   "date": "2026-10-17",
-   "time": "21:45",
-   "sport": "fut",
-   "comp": "Лига 1",
-   "title": "Troyes – RC Lens",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-559658",
-   "date": "2026-10-18",
-   "time": "18:15",
-   "sport": "fut",
-   "comp": "Лига 1",
-   "title": "Paris FC – Stade Rennais",
-   "source": "football-data"
-  },
-  {
-   "extId": "fd-559663",
-   "date": "2026-10-18",
-   "time": "18:15",
-   "sport": "fut",
-   "comp": "Лига 1",
-   "title": "Le Havre – Auxerre",
-   "source": "football-data"
-  }
- ],
+ "added": [],
  "moved": [],
- "dropped": [
-  {
-   "extId": "bb-519506",
-   "title": "Cleveland Cavaliers – Orlando Magic",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-10-12",
-   "time": "01:30",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519507",
-   "title": "Charlotte Hornets – Milwaukee Bucks",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-10-12",
-   "time": "02:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519508",
-   "title": "Denver Nuggets – Chicago Bulls",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-10-12",
-   "time": "04:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-511173",
-   "title": "Levski – Cherno More",
-   "comp": "NBL",
-   "sport": "bas",
-   "date": "2026-10-12",
-   "time": "19:00",
-   "source": "api-basketball"
-  }
- ],
+ "dropped": [],
  "droppedHandling": "маркирани с dropped:true"
 }
