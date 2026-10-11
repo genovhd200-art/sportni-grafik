@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-11T10:48:48.693Z",
+ "generatedAt": "2026-10-11T20:45:57.125Z",
  "from": "2026-10-11",
  "to": "2026-11-11",
  "timezone": "Europe/Sofia",
- "count": 356,
+ "count": 365,
  "events": [
   {
    "source": "api-basketball",
@@ -377,7 +377,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-11"
   },
   {
    "source": "api-basketball",
@@ -390,7 +392,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-11"
   },
   {
    "source": "api-basketball",
@@ -403,7 +407,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-11"
   },
   {
    "source": "api-basketball",
@@ -416,7 +422,9 @@
    "p": 3,
    "venue": "Bulgaria",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-11"
   },
   {
    "source": "football-data",
@@ -1633,6 +1641,45 @@
    "addedAt": "2026-10-05"
   },
   {
+   "source": "football-data",
+   "extId": "fd-558573",
+   "date": "2026-10-16",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Серия А",
+   "title": "Frosinone – Sassuolo",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-559661",
+   "date": "2026-10-16",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Лига 1",
+   "title": "Le Mans – Toulouse",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-564716",
+   "date": "2026-10-16",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Ла Лига",
+   "title": "Deportivo – Levante",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 9",
+   "provisional": false
+  },
+  {
    "source": "fill",
    "extId": "sdb-2548863",
    "date": "2026-10-17",
@@ -1812,6 +1859,19 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-10-05"
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-565823",
+   "date": "2026-10-17",
+   "time": "16:30",
+   "sport": "fut",
+   "comp": "Бундеслига",
+   "title": "Bremen – SC Paderborn",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 6",
+   "provisional": false
   },
   {
    "source": "football-data",
@@ -2018,6 +2078,19 @@
   },
   {
    "source": "football-data",
+   "extId": "fd-559659",
+   "date": "2026-10-17",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Лига 1",
+   "title": "Troyes – RC Lens",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
    "extId": "fd-564711",
    "date": "2026-10-17",
    "time": "22:00",
@@ -2043,6 +2116,32 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-05"
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-558574",
+   "date": "2026-10-18",
+   "time": "13:30",
+   "sport": "fut",
+   "comp": "Серия А",
+   "title": "Udinese – Lecce",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-564715",
+   "date": "2026-10-18",
+   "time": "15:00",
+   "sport": "fut",
+   "comp": "Ла Лига",
+   "title": "Osasuna – Santander",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 9",
+   "provisional": false
   },
   {
    "source": "football-data",
@@ -2158,6 +2257,32 @@
    "sport": "fut",
    "comp": "Лига 1",
    "title": "Lorient – Monaco",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-559658",
+   "date": "2026-10-18",
+   "time": "18:15",
+   "sport": "fut",
+   "comp": "Лига 1",
+   "title": "Paris FC – Stade Rennais",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-559663",
+   "date": "2026-10-18",
+   "time": "18:15",
+   "sport": "fut",
+   "comp": "Лига 1",
+   "title": "Le Havre – Auxerre",
    "p": 2,
    "venue": "",
    "round": "кръг 7",
@@ -4789,5 +4914,6 @@
    "round": "кръг 10",
    "provisional": false
   }
- ]
+ ],
+ "lastWeeklyCheck": "2026-10-11"
 }
