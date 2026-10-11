@@ -15,6 +15,7 @@ import { volleyball, basketball } from "./other-sports.mjs";
 import { fromSportsDB } from "./sportsdb.mjs";
 import { fromFootballData } from "./football-data.mjs";
 import { ROOT, TZ, toSofia, sleep, pad, matchKey } from "./lib.mjs";
+import { loadHidden } from "./hidden.mjs";
 
 const OUT = path.join(ROOT, "docs", "data", "events.json");
 
@@ -181,6 +182,16 @@ events = events.concat(await weeklyEvents());
 events = events.concat(await tennisEvents());
 events = events.concat(await manualEvents());
 events = events.concat(await filledEvents(events));
+
+/* Махнатото от дъската не се връща: махнат турнир отпада цял, махнат мач — по id. */
+const HID = await loadHidden();
+if (HID.ids.size || HID.comps.size) {
+  const before = events.length;
+  events = events.filter(e => e.source === "manual" || !HID.event(e));
+  console.log(`  ✓ махнати от дъската: ${before - events.length} събития не влизат` +
+    (HID.names.length ? ` (турнири: ${HID.names.join(", ")})` : ""));
+}
+
 events.sort((a, b) => a.date === b.date ? a.time.localeCompare(b.time) : a.date.localeCompare(b.date));
 
 const payload = {

@@ -41,6 +41,7 @@ import { fromEuroleague } from "./euroleague.mjs";
 import { fromFormula1 } from "./formula1.mjs";
 import { fromVolleyBG } from "./volley-bg.mjs";
 import { volleyball, basketball } from "./other-sports.mjs";
+import { loadHidden } from "./hidden.mjs";
 
 const EVENTS_FILE = "docs/data/events.json";
 const REPORT_FILE = "docs/data/fill-report.json";
@@ -98,8 +99,13 @@ async function step(name, fn) {
   }
 }
 
+/* Махнатото от дъската не се тегли и не се добавя. */
+const HID = await loadHidden();
+if (HID.names.length) console.log(`Махнати турнири (от дъската): ${HID.names.join(", ")}\n`);
+const live = x => on(x) && !HID.comp(x.name);
+
 /* 2а. футбол — football-data, където има код и ключ */
-const football = (cfg.football || []).filter(on);
+const football = (cfg.football || []).filter(live);
 const FD_KEY = process.env.FOOTBALL_DATA_KEY;
 const fdFailed = new Set();
 const viaFd = FD_KEY ? football.filter(l => l.fd) : [];
@@ -117,24 +123,24 @@ if (viaFd.length) {
 const viaSdb = [
   ...football.filter(l => l.sdb && (!l.fd || !FD_KEY || fdFailed.has(l.name)))
     .map(l => ({ id: l.sdb, name: l.name, sport: "fut", weight: l.weight, season: l.season })),
-  ...(cfg.basketball || []).filter(on).map(l => ({ id: l.sdb, name: l.name, sport: "bas", weight: l.weight, season: l.season })),
-  ...(on(cfg.formula2) ? [{ id: cfg.formula2.sdb, name: cfg.formula2.name, sport: "mot", weight: cfg.formula2.weight, season: cfg.formula2.season }] : []),
+  ...(cfg.basketball || []).filter(live).map(l => ({ id: l.sdb, name: l.name, sport: "bas", weight: l.weight, season: l.season })),
+  ...(live(cfg.formula2) ? [{ id: cfg.formula2.sdb, name: cfg.formula2.name, sport: "mot", weight: cfg.formula2.weight, season: cfg.formula2.season }] : []),
 ].map(calendarSeason);
 
 for (const lg of viaSdb)
   await step(`thesportsdb · ${lg.name}`, () => fromSportsDBWindow([lg], from, to, WATCH));
 
 /* 2в. Евролига и Еврокъп */
-if ((cfg.euroleague || []).some(on))
-  await step("euroleague", () => fromEuroleague(cfg.euroleague, from, to, WATCH));
+if ((cfg.euroleague || []).some(live))
+  await step("euroleague", () => fromEuroleague((cfg.euroleague || []).filter(live), from, to, WATCH));
 
 /* 2г. Формула 1 */
-if (on(cfg.formula1))
+if (live(cfg.formula1))
   await step("jolpica · Формула 1", () => fromFormula1(from, to, cfg.formula1));
 
 /* 2д. българският волейбол */
-if ((cfg.volleyball || []).some(on))
-  await step("БФВ волейбол", () => fromVolleyBG(cfg.volleyball, from, to, WATCH));
+if ((cfg.volleyball || []).some(live))
+  await step("БФВ волейбол", () => fromVolleyBG((cfg.volleyball || []).filter(live), from, to, WATCH));
 
 /* 2е. api-sports — днес и утре, ако има ключ */
 const AF_KEY = process.env.API_FOOTBALL_KEY;
@@ -179,7 +185,8 @@ if (on(tennisCfg)) {
 }
 
 /* ---------- 3. кое липсва ---------- */
-fresh = fresh.filter(e => e.date >= from && e.date <= to);
+// махнатото от дъската не влиза обратно — и по id, и по турнир
+fresh = fresh.filter(e => e.date >= from && e.date <= to && !HID.event(e));
 
 const feed = (await readJSON(EVENTS_FILE, null)) || { generatedAt: null, timezone: TZ, events: [] };
 const table = feed.events || [];
