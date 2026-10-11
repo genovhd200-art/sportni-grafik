@@ -185,8 +185,21 @@ if (on(tennisCfg)) {
 }
 
 /* ---------- 3. кое липсва ---------- */
+/* Турнир с onlyTeams влиза само с мачовете на тези отбори (МЛС — само Интер
+   Маями, Еврокъп — само Балкан Ботевград). */
+const ONLY = new Map();
+for (const lg of [...(cfg.football||[]), ...(cfg.basketball||[]), ...(cfg.euroleague||[]), ...(cfg.volleyball||[])])
+  if (lg && lg.onlyTeams?.length) ONLY.set(String(lg.name).toLowerCase(), lg.onlyTeams.map(t => t.toLowerCase()));
+
+const wantedTeam = e => {
+  const only = ONLY.get(String(e.comp || "").toLowerCase());
+  return !only || only.some(t => String(e.title || "").toLowerCase().includes(t));
+};
+
 // махнатото от дъската не влиза обратно — и по id, и по турнир
-fresh = fresh.filter(e => e.date >= from && e.date <= to && !HID.event(e));
+const beforeFilter = fresh.length;
+fresh = fresh.filter(e => e.date >= from && e.date <= to && !HID.event(e) && wantedTeam(e));
+if (ONLY.size) console.log(`\nФилтри по отбор: ${[...ONLY.keys()].join(", ")} · отпаднаха ${beforeFilter - fresh.length} записа (с махнатите)`);
 
 const feed = (await readJSON(EVENTS_FILE, null)) || { generatedAt: null, timezone: TZ, events: [] };
 const table = feed.events || [];

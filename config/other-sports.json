@@ -27,6 +27,8 @@
    "NBA",
    "Basketball Champions League",
    "World Cup"
-  ]
+  ],
+  "_leagueExclude": "Женското първенство („NBA W“) и школите не влизат — филтърът по-горе ги лови заради думата NBA.",
+  "leagueExclude": ["NBA W", "WNBA", "NBA - G League", "NBA Summer League"]
  }
 }

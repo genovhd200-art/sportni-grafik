@@ -18,12 +18,14 @@
   { "name": "Бундеслига",            "fd": "BL1", "sdb": 4331, "weight": 2, "enabled": true },
   { "name": "Купа на Германия",      "fd": null,  "sdb": 4485, "weight": 1, "enabled": true },
   { "name": "Първа лига",            "fd": null,  "sdb": 4626, "weight": 3, "enabled": true },
-  { "name": "МЛС",                   "fd": null,  "sdb": 4346, "weight": 1, "season": "calendar", "enabled": true },
+  { "name": "МЛС",                   "fd": null,  "sdb": 4346, "weight": 1, "season": "calendar", "enabled": true, "onlyTeams": ["Inter Miami", "Интер Маями"] },
   { "name": "Лига на нациите",       "fd": null,  "sdb": 4490, "weight": 2, "enabled": true },
   { "name": "Купа на африканските нации", "fd": null, "sdb": 4496, "weight": 1, "season": "2027", "enabled": true },
   { "name": "Купа на африканските нации (квал.)", "fd": null, "sdb": 5520, "weight": 1, "season": "2027", "enabled": true },
   { "name": "Лига на нациите на КОНКАКАФ", "fd": null, "sdb": 5280, "weight": 1, "enabled": true }
  ],
+ "_onlyTeams": "Ако турнирът има onlyTeams, влизат само мачовете на тези отбори. Търси се в заглавието, без значение от главни букви и от езика — затова се изброяват и двата изписа.",
+
  "_nationalTeams": "Мачовете на България стават водещи сами (Bulgaria е в _teamsOfInterest в config/leagues.json). Сезонът на африканските турнири е годината на финалите — „2027“; сменя се при следващия цикъл.",
 
  "_basketball": "НБА и НБЛ от TheSportsDB. НБА няма кръгове и безплатният ключ дава до 3 мача на ден — останалите за днес и утре идват от API_FOOTBALL_KEY (api-basketball).",
@@ -35,7 +37,7 @@
  "_euroleague": "Официалният API на EuroLeague Basketball: E = Евролига, U = Еврокъп. Целият сезон, с плейофите и финалната четворка.",
  "euroleague": [
   { "code": "E", "name": "Евролига", "weight": 2, "enabled": true },
-  { "code": "U", "name": "Еврокъп",  "weight": 1, "enabled": true }
+  { "code": "U", "name": "Еврокъп",  "weight": 1, "enabled": true, "onlyTeams": ["Balkan", "Балкан"] }
  ],
 
  "_motorsport": "Формула 1 — всички сесии от Jolpica. Формула 2 — само състезанията от TheSportsDB, често без час (излизат като непотвърдени).",
