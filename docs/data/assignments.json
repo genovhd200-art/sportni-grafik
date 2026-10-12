@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-12T14:36:27.797Z",
+ "publishedAt": "2026-10-12T14:55:59.689Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -3707,59 +3707,11 @@
    "authorId": "mu5hgiv07yguc",
    "format": ""
   },
-  "bb-503486": {
-   "authorId": "mu5hhjkrjukxq",
-   "format": ""
-  },
-  "bb-503494": {
-   "authorId": "mu5hhjkrjukxq",
-   "format": ""
-  },
-  "bb-503496": {
-   "authorId": "mu5hhjkrjukxq",
-   "format": ""
-  },
-  "bb-503499": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-508622": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-503487": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
   "bb-503498": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
   },
-  "bb-508623": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-508624": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-508625": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-508626": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-508627": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
   "bb-508628": {
-   "authorId": "mu5hfevsksxfp",
-   "format": ""
-  },
-  "bb-525290": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
   }
@@ -4577,7 +4529,19 @@
   "fd-559663": true,
   "bb-519506": true,
   "bb-519507": true,
-  "bb-511173": true
+  "bb-511173": true,
+  "bb-503486": true,
+  "bb-503494": true,
+  "bb-503496": true,
+  "bb-503499": true,
+  "bb-508622": true,
+  "bb-503487": true,
+  "bb-508623": true,
+  "bb-508624": true,
+  "bb-508625": true,
+  "bb-508626": true,
+  "bb-508627": true,
+  "bb-525290": true
  },
  "hiddenComps": {
   "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ",
