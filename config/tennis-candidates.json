@@ -1,44 +1,5 @@
 [
  {
-  "extId": "ten-pnBVJMiVvKtt18q3CGSG",
-  "date": "2026-09-27",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Росица Денчева — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-09-27"
- },
- {
-  "extId": "ten-ukJ3zYfLNkxXXYrhQiJo",
-  "date": "2026-09-27",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-09-27"
- },
- {
-  "extId": "ten-murkVosD5YCIY3BhVKe7",
-  "date": "2026-09-27",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Изабелла Шиникова — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-09-27"
- },
- {
   "extId": "ten-DDmFQgAai9MMbikawLU7",
   "date": "2026-09-28",
   "time": "00:00",
@@ -258,5 +219,57 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-10-11"
+ },
+ {
+  "extId": "ten-dlhB6ALscf0hg5nj4uj2",
+  "date": "2026-10-12",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Изабелла Шиникова — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-12"
+ },
+ {
+  "extId": "ten-dPo42EWGXUk5n51uNsz2",
+  "date": "2026-10-12",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Лия Каратанчева — мач",
+  "p": 1,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-12"
+ },
+ {
+  "extId": "ten-q43zf4ZKBYP5YgVP9Y6g",
+  "date": "2026-10-12",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Елизара Янева — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-12"
+ },
+ {
+  "extId": "ten-JeYwt0utEOmFc9f6dvPD",
+  "date": "2026-10-12",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-12"
  }
 ]

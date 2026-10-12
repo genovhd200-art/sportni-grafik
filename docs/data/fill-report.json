@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-11T06:22:33.713Z",
- "runDate": "2026-10-11",
+ "generatedAt": "2026-10-12T06:35:28.495Z",
+ "runDate": "2026-10-12",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-11",
-  "to": "2026-10-18"
+  "from": "2026-10-12",
+  "to": "2026-10-25"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 83,
+   "count": 136,
    "error": null
   },
   {
@@ -22,19 +22,19 @@
   {
    "name": "thesportsdb · Лига Европа",
    "ok": true,
-   "count": 18,
+   "count": 36,
    "error": null
   },
   {
    "name": "thesportsdb · Лига на конференциите",
    "ok": true,
-   "count": 3,
+   "count": 6,
    "error": null
   },
   {
    "name": "thesportsdb · Купа на краля",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -52,13 +52,13 @@
   {
    "name": "thesportsdb · Първа лига",
    "ok": true,
-   "count": 4,
+   "count": 8,
    "error": null
   },
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 42,
+   "count": 45,
    "error": null
   },
   {
@@ -74,27 +74,15 @@
    "error": null
   },
   {
-   "name": "thesportsdb · Купа на африканските нации (квал.)",
-   "ok": true,
-   "count": 0,
-   "error": null
-  },
-  {
-   "name": "thesportsdb · Лига на нациите на КОНКАКАФ",
-   "ok": true,
-   "count": 0,
-   "error": null
-  },
-  {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 31,
+   "count": 40,
    "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
    "ok": true,
-   "count": 9,
+   "count": 13,
    "error": null
   },
   {
@@ -106,25 +94,25 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 36,
+   "count": 62,
    "error": null
   },
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 1,
+   "count": 5,
    "error": null
   },
   {
    "name": "БФВ волейбол",
    "ok": true,
-   "count": 2,
+   "count": 7,
    "error": null
   },
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 15,
+   "count": 8,
    "error": null
   },
   {
@@ -141,71 +129,692 @@
   }
  ],
  "totals": {
-  "fromSources": 246,
-  "added": 1,
-  "tennisNew": 3,
-  "tennisPending": 22
+  "fromSources": 285,
+  "added": 72,
+  "tennisNew": 4,
+  "tennisPending": 24
  },
  "added": [
   {
-   "extId": "bb-511173",
+   "extId": "sdb-2590085",
    "date": "2026-10-12",
    "time": "19:00",
    "sport": "bas",
-   "comp": "NBL",
-   "title": "Levski – Cherno More",
-   "via": "api-basketball"
+   "comp": "НБЛ",
+   "title": "BC Levski Sofia – BC Cherno More",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "el-U2026_61",
+   "date": "2026-10-20",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "Еврокъп",
+   "title": "Balkan – Lietkabelis",
+   "via": "euroleague"
+  },
+  {
+   "extId": "sdb-2601665",
+   "date": "2026-10-20",
+   "time": "22:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Detroit Pistons – Boston Celtics",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601666",
+   "date": "2026-10-21",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "New York Knicks – Philadelphia 76ers",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601667",
+   "date": "2026-10-21",
+   "time": "04:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "San Antonio Spurs – Oklahoma City Thunder",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "el-E2026_61",
+   "date": "2026-10-21",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Hapoel – Virtus",
+   "via": "euroleague"
+  },
+  {
+   "extId": "sdb-2601668",
+   "date": "2026-10-22",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Orlando Magic – Atlanta Hawks",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601669",
+   "date": "2026-10-22",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Washington Wizards – Milwaukee Bucks",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601673",
+   "date": "2026-10-22",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "New Orleans Pelicans – Indiana Pacers",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601674",
+   "date": "2026-10-22",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Memphis Grizzlies – Utah Jazz",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "bvf-65-2026-10-22-deyasport-neftohimik2010",
+   "date": "2026-10-22",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Суперлига (волейбол)",
+   "title": "Deya Sport – Neftohimik 2010",
+   "via": "bvf"
+  },
+  {
+   "extId": "sdb-2594862",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Lech Poznań – Sunderland",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594872",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Juventus – Rennes",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594909",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Dinamo Zagreb – NEC Nijmegen",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594916",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Sturm Graz – Marseille",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594927",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Ferencváros – Torreense",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594933",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "OFI – Bayer Leverkusen",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594939",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Union Saint-Gilloise – Hapoel Be'er Sheva",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594944",
+   "date": "2026-10-22",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Ararat-Armenia – AZ Alkmaar",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "el-E2026_64",
+   "date": "2026-10-22",
+   "time": "20:30",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Efes – Besiktas",
+   "via": "euroleague"
+  },
+  {
+   "extId": "el-E2026_65",
+   "date": "2026-10-22",
+   "time": "21:00",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Bayern – Dubai",
+   "via": "euroleague"
+  },
+  {
+   "extId": "el-E2026_62",
+   "date": "2026-10-22",
+   "time": "21:05",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Maccabi – Real",
+   "via": "euroleague"
+  },
+  {
+   "extId": "el-E2026_67",
+   "date": "2026-10-22",
+   "time": "21:15",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Panathinaikos – Baskonia",
+   "via": "euroleague"
+  },
+  {
+   "extId": "el-E2026_63",
+   "date": "2026-10-22",
+   "time": "21:30",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Milan – Barca",
+   "via": "euroleague"
+  },
+  {
+   "extId": "el-E2026_66",
+   "date": "2026-10-22",
+   "time": "21:45",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Partizan – Crvena",
+   "via": "euroleague"
+  },
+  {
+   "extId": "sdb-2594812",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Bournemouth – AC Milan",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594832",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Hoffenheim – Lyon",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594849",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Celtic – Celta Vigo",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594853",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Lillestrøm – Real Sociedad",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594858",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Jagiellonia Białystok – Anderlecht",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594884",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Beşiktaş – Crystal Palace",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594891",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Olympiacos – Sparta Prague",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594902",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Viktoria Plzeň – Levski Sofia",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594940",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Omonia Nicosia – Benfica",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594950",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига Европа",
+   "title": "Celje – Red Bull Salzburg",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594707",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига на конференциите",
+   "title": "Monaco – Freiburg",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594713",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига на конференциите",
+   "title": "Ajax – Atalanta",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2594716",
+   "date": "2026-10-22",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Лига на конференциите",
+   "title": "Braga – Gent",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601680",
+   "date": "2026-10-23",
+   "time": "04:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Oklahoma City Thunder – Denver Nuggets",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611774",
+   "date": "2026-10-23",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "Yambol – BC Balkan Botevgrad",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "bvf-65-2026-10-23-slavia-cska",
+   "date": "2026-10-23",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Суперлига (волейбол)",
+   "title": "Slavia – CSKA",
+   "via": "bvf"
+  },
+  {
+   "extId": "bvf-65-2026-10-23-beroe2016-metalurg",
+   "date": "2026-10-23",
+   "time": "18:30",
+   "sport": "vol",
+   "comp": "Суперлига (волейбол)",
+   "title": "Beroe 2016 – Metalurg",
+   "via": "bvf"
+  },
+  {
+   "extId": "bvf-65-2026-10-23-lokomotivavia-montanavolley",
+   "date": "2026-10-23",
+   "time": "19:30",
+   "sport": "vol",
+   "comp": "Суперлига (волейбол)",
+   "title": "Lokomotiv Avia – Montana Volley",
+   "via": "bvf"
+  },
+  {
+   "extId": "el-E2026_68",
+   "date": "2026-10-23",
+   "time": "20:00",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Zalgiris – ASVEL",
+   "via": "euroleague"
+  },
+  {
+   "extId": "f1-2026-18-FirstPractice",
+   "date": "2026-10-23",
+   "time": "20:30",
+   "sport": "mot",
+   "comp": "Формула 1",
+   "title": "ГП на United States — 1-ва тренировка",
+   "via": "jolpica"
+  },
+  {
+   "extId": "el-E2026_70",
+   "date": "2026-10-23",
+   "time": "21:15",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Olympiacos – Fenerbahce",
+   "via": "euroleague"
+  },
+  {
+   "extId": "el-E2026_69",
+   "date": "2026-10-23",
+   "time": "21:45",
+   "sport": "bas",
+   "comp": "Евролига",
+   "title": "Paris – Valencia",
+   "via": "euroleague"
+  },
+  {
+   "extId": "f1-2026-18-SecondPractice",
+   "date": "2026-10-24",
+   "time": "00:00",
+   "sport": "mot",
+   "comp": "Формула 1",
+   "title": "ГП на United States — 2-ра тренировка",
+   "via": "jolpica"
+  },
+  {
+   "extId": "sdb-2601681",
+   "date": "2026-10-24",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Washington Wizards – Toronto Raptors",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601682",
+   "date": "2026-10-24",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Orlando Magic – Minnesota Timberwolves",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601686",
+   "date": "2026-10-24",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Miami Heat – Detroit Pistons",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601688",
+   "date": "2026-10-24",
+   "time": "04:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "San Antonio Spurs – Houston Rockets",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611775",
+   "date": "2026-10-24",
+   "time": "17:30",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Levski Sofia – BC Shumen",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487347",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "Dunav Ruse – Spartak Varna",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487348",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "Cherno More – Septemvri Sofia",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487349",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "CSKA Sofia – Ludogorets Razgrad",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487350",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "Lokomotiv Plovdiv – Slavia Sofia",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487351",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "Lokomotiv Sofia – Botev Vratsa",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487352",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "CSKA 1948 – Botev Plovdiv",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487353",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "Arda Kardzhali – Levski Sofia",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611776",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Lokomotiv Plovdiv – Polytechnica Dupnitsa",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611777",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Minyor 2015 – BC Beroe",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611778",
+   "date": "2026-10-24",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC CSKA Sofia – BC Cherno More",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "bvf-65-2026-10-24-pirin-levski-sofia",
+   "date": "2026-10-24",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Суперлига (волейбол)",
+   "title": "Pirin – Levski-Sofia",
+   "via": "bvf"
+  },
+  {
+   "extId": "f1-2026-18-ThirdPractice",
+   "date": "2026-10-24",
+   "time": "20:30",
+   "sport": "mot",
+   "comp": "Формула 1",
+   "title": "ГП на United States — 3-та тренировка",
+   "via": "jolpica"
+  },
+  {
+   "extId": "f1-2026-18-Qualifying",
+   "date": "2026-10-25",
+   "time": "00:00",
+   "sport": "mot",
+   "comp": "Формула 1",
+   "title": "ГП на United States — Квалификация",
+   "via": "jolpica"
+  },
+  {
+   "extId": "sdb-2407159",
+   "date": "2026-10-25",
+   "time": "00:30",
+   "sport": "fut",
+   "comp": "МЛС",
+   "title": "New York Red Bulls – Inter Miami",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601696",
+   "date": "2026-10-25",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Atlanta Hawks – Houston Rockets",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601697",
+   "date": "2026-10-25",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Chicago Bulls – Washington Wizards",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601698",
+   "date": "2026-10-25",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Dallas Mavericks – San Antonio Spurs",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611779",
+   "date": "2026-10-25",
+   "time": "13:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Spartak Pleven – BC Rilski Sportist",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "f1-2026-18-Race",
+   "date": "2026-10-25",
+   "time": "22:00",
+   "sport": "mot",
+   "comp": "Формула 1",
+   "title": "ГП на United States — Състезание",
+   "via": "jolpica"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-cS6l8_T8CGY_jBPhA48N",
-   "date": "2026-10-11",
-   "time": "00:00",
-   "comp": "Тенис",
-   "title": "Адриан Андреев — мач"
-  },
-  {
-   "extId": "ten-BcGi7RX2hXhCsuXecLn2",
-   "date": "2026-10-11",
+   "extId": "ten-dlhB6ALscf0hg5nj4uj2",
+   "date": "2026-10-12",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Изабелла Шиникова — мач"
   },
   {
-   "extId": "ten-k1Ptp1GiNUa4BZvT2RNw",
-   "date": "2026-10-11",
+   "extId": "ten-dPo42EWGXUk5n51uNsz2",
+   "date": "2026-10-12",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Лия Каратанчева — мач"
+  },
+  {
+   "extId": "ten-q43zf4ZKBYP5YgVP9Y6g",
+   "date": "2026-10-12",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Елизара Янева — мач"
+  },
+  {
+   "extId": "ten-JeYwt0utEOmFc9f6dvPD",
+   "date": "2026-10-12",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-11",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-11"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-11"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-11"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-11"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-11"
-    }
-   ]
-  },
   {
    "date": "2026-10-12",
    "links": [
@@ -378,6 +987,181 @@
     {
      "sport": "motorsport",
      "url": "https://www.sofascore.com/motorsport/2026-10-18"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-19"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-19"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-19"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-19"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-19"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-20"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-20"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-20"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-20"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-20"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-21"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-21"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-21"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-21"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-21"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-22"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-22"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-22"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-22"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-22"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-23"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-23"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-23"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-23"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-23"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-24"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-24"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-24"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-24"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-24"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "links": [
+    {
+     "sport": "football",
+     "url": "https://www.sofascore.com/football/2026-10-25"
+    },
+    {
+     "sport": "basketball",
+     "url": "https://www.sofascore.com/basketball/2026-10-25"
+    },
+    {
+     "sport": "volleyball",
+     "url": "https://www.sofascore.com/volleyball/2026-10-25"
+    },
+    {
+     "sport": "tennis",
+     "url": "https://www.sofascore.com/tennis/2026-10-25"
+    },
+    {
+     "sport": "motorsport",
+     "url": "https://www.sofascore.com/motorsport/2026-10-25"
     }
    ]
   }
