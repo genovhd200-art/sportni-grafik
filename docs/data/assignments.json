@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-10-12T14:31:32.465Z",
+ "publishedAt": "2026-10-12T14:31:43.343Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -3195,10 +3195,6 @@
    "authorId": "mu5hgiv07yguc",
    "format": ""
   },
-  "bb-511173": {
-   "authorId": "mu5hgiv07yguc",
-   "format": ""
-  },
   "sdb-2487340": {
    "authorId": "mu5hgiv07yguc",
    "format": ""
@@ -4524,7 +4520,8 @@
   "fd-559658": true,
   "fd-559663": true,
   "bb-519506": true,
-  "bb-519507": true
+  "bb-519507": true,
+  "bb-511173": true
  },
  "hiddenComps": {
   "лига на нациите на конкакаф": "Лига на нациите на КОНКАКАФ",
