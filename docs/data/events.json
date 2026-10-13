@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-12T11:57:51.931Z",
+ "generatedAt": "2026-10-13T07:13:25.355Z",
  "from": "2026-10-12",
  "to": "2026-11-12",
  "timezone": "Europe/Sofia",
- "count": 413,
+ "count": 414,
  "events": [
   {
    "source": "api-basketball",
@@ -2485,6 +2485,21 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-10-12"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601675",
+   "date": "2026-10-22",
+   "time": "03:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Houston Rockets – Dallas Mavericks",
+   "p": 2,
+   "venue": "Toyota Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-13"
   },
   {
    "source": "fill",
@@ -5652,5 +5667,6 @@
    "round": "кръг 10",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-13"
 }
