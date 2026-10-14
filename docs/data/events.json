@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-13T11:44:21.597Z",
+ "generatedAt": "2026-10-14T05:26:45.980Z",
  "from": "2026-10-13",
  "to": "2026-11-13",
  "timezone": "Europe/Sofia",
- "count": 390,
+ "count": 392,
  "events": [
   {
    "source": "api-basketball",
@@ -580,6 +580,36 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-10-05"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519520",
+   "date": "2026-10-15",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "San Antonio Spurs – Phoenix Suns",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-14"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519521",
+   "date": "2026-10-15",
+   "time": "05:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Los Angeles Clippers – Denver Nuggets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-14"
   },
   {
    "source": "fill",
@@ -5341,5 +5371,6 @@
    "round": "кръг 12",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-14"
 }

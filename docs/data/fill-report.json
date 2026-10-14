@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-13T07:13:25.354Z",
- "runDate": "2026-10-13",
+ "generatedAt": "2026-10-14T05:26:45.979Z",
+ "runDate": "2026-10-14",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-13",
+  "from": "2026-10-14",
   "to": "2026-10-25"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 132,
+   "count": 123,
    "error": null
   },
   {
@@ -76,7 +76,7 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 37,
+   "count": 33,
    "error": null
   },
   {
@@ -94,7 +94,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 62,
+   "count": 50,
    "error": null
   },
   {
@@ -112,7 +112,7 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 9,
+   "count": 12,
    "error": null
   },
   {
@@ -129,64 +129,55 @@
   }
  ],
  "totals": {
-  "fromSources": 277,
-  "added": 1,
-  "tennisNew": 2,
-  "tennisPending": 23
+  "fromSources": 259,
+  "added": 2,
+  "tennisNew": 3,
+  "tennisPending": 25
  },
  "added": [
   {
-   "extId": "sdb-2601675",
-   "date": "2026-10-22",
-   "time": "03:30",
+   "extId": "bb-519520",
+   "date": "2026-10-15",
+   "time": "03:00",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Houston Rockets – Dallas Mavericks",
-   "via": "thesportsdb"
+   "comp": "NBA",
+   "title": "San Antonio Spurs – Phoenix Suns",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519521",
+   "date": "2026-10-15",
+   "time": "05:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Los Angeles Clippers – Denver Nuggets",
+   "via": "api-basketball"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-buNlGyYlBydNCdkHLZ8v",
-   "date": "2026-10-13",
+   "extId": "ten-uMtVlFG_ahugM1MWLQGf",
+   "date": "2026-10-14",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-ygAlByOMaDKjKQ_nJwqV",
+   "date": "2026-10-14",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Елизара Янева — мач"
   },
   {
-   "extId": "ten-1HCtiB1T4Fo270pbV7om",
-   "date": "2026-10-13",
+   "extId": "ten-POns1CmK78_Zfpz0Mabm",
+   "date": "2026-10-14",
    "time": "00:00",
    "comp": "Тенис",
-   "title": "Адриан Андреев — мач"
+   "title": "Лия Каратанчева — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-13",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-13"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-13"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-13"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-13"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-13"
-    }
-   ]
-  },
   {
    "date": "2026-10-14",
    "links": [
