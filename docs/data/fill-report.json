@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-14T05:26:45.979Z",
- "runDate": "2026-10-14",
+ "generatedAt": "2026-10-15T05:13:35.577Z",
+ "runDate": "2026-10-15",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-14",
+  "from": "2026-10-15",
   "to": "2026-10-25"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 123,
+   "count": 114,
    "error": null
   },
   {
@@ -76,7 +76,7 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 33,
+   "count": 28,
    "error": null
   },
   {
@@ -94,7 +94,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 50,
+   "count": 37,
    "error": null
   },
   {
@@ -112,13 +112,13 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 12,
+   "count": 11,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 0,
+   "count": 3,
    "error": null
   },
   {
@@ -129,80 +129,91 @@
   }
  ],
  "totals": {
-  "fromSources": 259,
-  "added": 2,
+  "fromSources": 244,
+  "added": 6,
   "tennisNew": 3,
-  "tennisPending": 25
+  "tennisPending": 27
  },
  "added": [
   {
-   "extId": "bb-519520",
-   "date": "2026-10-15",
-   "time": "03:00",
+   "extId": "bb-519522",
+   "date": "2026-10-16",
+   "time": "02:30",
    "sport": "bas",
    "comp": "NBA",
-   "title": "San Antonio Spurs – Phoenix Suns",
+   "title": "New York Knicks – Toronto Raptors",
    "via": "api-basketball"
   },
   {
-   "extId": "bb-519521",
-   "date": "2026-10-15",
-   "time": "05:30",
+   "extId": "vb-217378",
+   "date": "2026-10-16",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritza 2022 W – Dragoman W",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "bb-524572",
+   "date": "2026-10-16",
+   "time": "18:00",
    "sport": "bas",
-   "comp": "NBA",
-   "title": "Los Angeles Clippers – Denver Nuggets",
+   "comp": "NBL",
+   "title": "Balkan – Levski",
    "via": "api-basketball"
+  },
+  {
+   "extId": "vb-217379",
+   "date": "2026-10-16",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Slaviya Sofia W – Minyor Pernik W",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "bb-524573",
+   "date": "2026-10-16",
+   "time": "18:30",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Shumen – Botev 2012",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "vb-217380",
+   "date": "2026-10-16",
+   "time": "18:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritsa Plovdiv W – CPVC Volley W",
+   "via": "api-volleyball"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-uMtVlFG_ahugM1MWLQGf",
-   "date": "2026-10-14",
-   "time": "00:00",
-   "comp": "Тенис",
-   "title": "Адриан Андреев — мач"
-  },
-  {
-   "extId": "ten-ygAlByOMaDKjKQ_nJwqV",
-   "date": "2026-10-14",
+   "extId": "ten-V1TJ8YiECXN27P6r3Ogr",
+   "date": "2026-10-15",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Елизара Янева — мач"
   },
   {
-   "extId": "ten-POns1CmK78_Zfpz0Mabm",
-   "date": "2026-10-14",
+   "extId": "ten-oIHwraQes78DydOiGrBw",
+   "date": "2026-10-15",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Лия Каратанчева — мач"
+  },
+  {
+   "extId": "ten-If0GrgB0LpfTK1QJ-lwf",
+   "date": "2026-10-15",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-14",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-14"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-14"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-14"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-14"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-14"
-    }
-   ]
-  },
   {
    "date": "2026-10-15",
    "links": [

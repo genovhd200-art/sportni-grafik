@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-14T09:30:50.292Z",
+ "generatedAt": "2026-10-15T05:13:35.577Z",
  "from": "2026-10-14",
  "to": "2026-11-14",
  "timezone": "Europe/Sofia",
- "count": 373,
+ "count": 379,
  "events": [
   {
    "source": "api-basketball",
@@ -715,6 +715,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519522",
+   "date": "2026-10-16",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "New York Knicks – Toronto Raptors",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-15"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601655",
    "date": "2026-10-16",
    "time": "03:30",
@@ -727,6 +742,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-05"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217378",
+   "date": "2026-10-16",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritza 2022 W – Dragoman W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-15"
   },
   {
    "source": "fill",
@@ -757,6 +787,66 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-05"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524572",
+   "date": "2026-10-16",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Balkan – Levski",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-15"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217379",
+   "date": "2026-10-16",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Slaviya Sofia W – Minyor Pernik W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-15"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524573",
+   "date": "2026-10-16",
+   "time": "18:30",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Shumen – Botev 2012",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-15"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217380",
+   "date": "2026-10-16",
+   "time": "18:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritsa Plovdiv W – CPVC Volley W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-15"
   },
   {
    "source": "fill",
@@ -5098,5 +5188,6 @@
    "round": "кръг 12",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-15"
 }
