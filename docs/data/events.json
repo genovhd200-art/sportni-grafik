@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-16T08:59:59.092Z",
+ "generatedAt": "2026-10-17T05:01:19.791Z",
  "from": "2026-10-16",
  "to": "2026-11-16",
  "timezone": "Europe/Sofia",
- "count": 343,
+ "count": 344,
  "events": [
   {
    "source": "api-basketball",
@@ -812,6 +812,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-05"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217382",
+   "date": "2026-10-18",
+   "time": "14:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "CSKA Sofia W – Deya Volley W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-17"
   },
   {
    "source": "football-data",
@@ -4638,5 +4653,6 @@
    "round": "кръг 12",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-17"
 }

@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-15T05:13:35.577Z",
- "runDate": "2026-10-15",
+ "generatedAt": "2026-10-17T05:01:19.790Z",
+ "runDate": "2026-10-17",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-15",
+  "from": "2026-10-17",
   "to": "2026-10-25"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 114,
+   "count": 110,
    "error": null
   },
   {
@@ -21,27 +21,27 @@
   },
   {
    "name": "thesportsdb · Лига Европа",
-   "ok": true,
-   "count": 36,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Лига Европа: Лига Европа: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Лига на конференциите",
-   "ok": true,
-   "count": 6,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Лига на конференциите: Лига на конференциите: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Купа на краля",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Купа на краля: Купа на краля: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Купа на Италия",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Купа на Италия: Купа на Италия: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Купа на Германия",
@@ -51,50 +51,50 @@
   },
   {
    "name": "thesportsdb · Първа лига",
-   "ok": true,
-   "count": 7,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Първа лига: Първа лига: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · МЛС",
-   "ok": true,
-   "count": 45,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "МЛС: МЛС: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Лига на нациите",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Лига на нациите: Лига на нациите: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Купа на африканските нации",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Купа на африканските нации: Купа на африканските нации: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 28,
+   "count": 8,
    "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
-   "ok": true,
-   "count": 12,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "НБЛ: НБЛ: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Формула 2",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Формула 2: Формула 2: изчерпан лимит (429)"
   },
   {
    "name": "euroleague",
    "ok": true,
-   "count": 37,
+   "count": 26,
    "error": null
   },
   {
@@ -112,13 +112,13 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 11,
+   "count": 17,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -129,141 +129,39 @@
   }
  ],
  "totals": {
-  "fromSources": 244,
-  "added": 6,
-  "tennisNew": 3,
-  "tennisPending": 27
+  "fromSources": 156,
+  "added": 1,
+  "tennisNew": 2,
+  "tennisPending": 28
  },
  "added": [
   {
-   "extId": "bb-519522",
-   "date": "2026-10-16",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "New York Knicks – Toronto Raptors",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "vb-217378",
-   "date": "2026-10-16",
-   "time": "16:00",
+   "extId": "vb-217382",
+   "date": "2026-10-18",
+   "time": "14:30",
    "sport": "vol",
    "comp": "Superliga Women",
-   "title": "Maritza 2022 W – Dragoman W",
-   "via": "api-volleyball"
-  },
-  {
-   "extId": "bb-524572",
-   "date": "2026-10-16",
-   "time": "18:00",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Balkan – Levski",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "vb-217379",
-   "date": "2026-10-16",
-   "time": "18:00",
-   "sport": "vol",
-   "comp": "Superliga Women",
-   "title": "Slaviya Sofia W – Minyor Pernik W",
-   "via": "api-volleyball"
-  },
-  {
-   "extId": "bb-524573",
-   "date": "2026-10-16",
-   "time": "18:30",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Shumen – Botev 2012",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "vb-217380",
-   "date": "2026-10-16",
-   "time": "18:30",
-   "sport": "vol",
-   "comp": "Superliga Women",
-   "title": "Maritsa Plovdiv W – CPVC Volley W",
+   "title": "CSKA Sofia W – Deya Volley W",
    "via": "api-volleyball"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-V1TJ8YiECXN27P6r3Ogr",
-   "date": "2026-10-15",
+   "extId": "ten-TBNgUggIm1Ipj9ZryV22",
+   "date": "2026-10-17",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Елизара Янева — мач"
   },
   {
-   "extId": "ten-oIHwraQes78DydOiGrBw",
-   "date": "2026-10-15",
-   "time": "00:00",
-   "comp": "Тенис",
-   "title": "Лия Каратанчева — мач"
-  },
-  {
-   "extId": "ten-If0GrgB0LpfTK1QJ-lwf",
-   "date": "2026-10-15",
+   "extId": "ten-jLgFlj5nI_NymAqdBshS",
+   "date": "2026-10-17",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-15",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-15"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-15"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-15"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-15"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-15"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-16",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-16"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-16"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-16"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-16"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-16"
-    }
-   ]
-  },
   {
    "date": "2026-10-17",
    "links": [
