@@ -22,7 +22,16 @@
   { "name": "Лига на нациите",       "fd": null,  "sdb": 4490, "weight": 2, "enabled": true },
   { "name": "Купа на африканските нации", "fd": null, "sdb": 4496, "weight": 1, "season": "2027", "enabled": true },
   { "name": "Купа на африканските нации (квал.)", "fd": null, "sdb": 5520, "weight": 1, "season": "2027", "enabled": true },
-  { "name": "Лига на нациите на КОНКАКАФ", "fd": null, "sdb": 5280, "weight": 1, "enabled": true }
+  { "name": "Лига на нациите на КОНКАКАФ", "fd": null, "sdb": 5280, "weight": 1, "enabled": true },
+  { "name": "Гръцка Супер лига",     "fd": null, "sdb": 4336, "weight": 1, "enabled": true, "onlyTeams": ["PAOK", "AEK Athens", "Kifisia"] },
+  { "name": "Нидерландска Ередивизи","fd": null, "sdb": 4337, "weight": 1, "enabled": true, "onlyTeams": ["PEC Zwolle", "Heerenveen"] },
+  { "name": "Израелска Премиер лига","fd": null, "sdb": 4644, "weight": 1, "enabled": true, "onlyTeams": ["Hapoel Tel-Aviv", "Hapoel Tel Aviv", "er Sheva"] },
+  { "name": "Датска Суперлига",      "fd": null, "sdb": 4340, "weight": 1, "enabled": true, "onlyTeams": ["nderjyske"] },
+  { "name": "Полска Екстракласа",    "fd": null, "sdb": 4422, "weight": 1, "enabled": true, "onlyTeams": ["Cracovia"] },
+  { "name": "Унгарска НБ I",         "fd": null, "sdb": 4690, "weight": 1, "enabled": true, "onlyTeams": ["Debrecen"] },
+  { "name": "Втора Бундеслига",      "fd": null, "sdb": 4399, "weight": 1, "enabled": true, "onlyTeams": ["Darmstadt", "Pauli", "Elversberg", "sseldorf"] },
+  { "name": "Турска Супер лига",     "fd": null, "sdb": 4339, "weight": 1, "enabled": true, "onlyTeams": ["ztepe"] },
+  { "name": "Португалска Примейра",  "fd": null, "sdb": 4344, "weight": 1, "enabled": true, "onlyTeams": ["Estrela Amadora"] }
  ],
  "_onlyTeams": "Ако турнирът има onlyTeams, влизат само мачовете на тези отбори. Търси се в заглавието, без значение от главни букви и от езика — затова се изброяват и двата изписа.",
 
@@ -42,7 +51,9 @@
 
  "_volleyballIntl": "Чужд волейбол от TheSportsDB. onlyTeams е ЗАДЪЛЖИТЕЛНО — иначе влиза цялата лига, а ние искаме само клубовете с българи. Имената се пишат ТАКА, КАКТО ГИ ДАВА ИЗТОЧНИКЪТ (напр. „Volley Lube“, не „Кучине Лубе Чивитанова“) — виж config/bulgarians-abroad.json.",
  "volleyballIntl": [
-  { "name": "Италианска СуперЛега", "sdb": 4544, "weight": 2, "enabled": true, "onlyTeams": ["Volley Lube", "Powervolley Milano", "Volley Milano"] }
+  { "name": "Италианска СуперЛега", "sdb": 4544, "weight": 2, "enabled": true, "onlyTeams": ["Volley Lube", "Powervolley Milano", "Volley Milano"] },
+  { "name": "Турска Ефелер лига",    "sdb": 4543, "weight": 2, "enabled": true, "onlyTeams": ["Halkbank", "stanbul BB"] },
+  { "name": "Полска ПлюсЛига",       "sdb": 5619, "weight": 2, "enabled": true, "onlyTeams": ["Bogdanka LUK Lublin", "lepsk Suwa"] }
  ],
 
  "_motorsport": "Формула 1 — всички сесии от Jolpica. Формула 2 — само състезанията от TheSportsDB, често без час (излизат като непотвърдени).",
