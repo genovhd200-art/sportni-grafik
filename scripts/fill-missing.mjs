@@ -102,7 +102,9 @@ async function step(name, fn) {
 /* Махнатото от дъската не се тегли и не се добавя. */
 const HID = await loadHidden();
 if (HID.names.length) console.log(`Махнати турнири (от дъската): ${HID.names.join(", ")}\n`);
-const live = x => on(x) && !HID.comp(x.name);
+/* Лигите с "weekly": true (клубовете на българите в чужбина) НЕ влизат тук —
+   те се теглят от неделната проверка, scripts/weekly-check.mjs. */
+const live = x => on(x) && !x.weekly && !HID.comp(x.name);
 
 /* 2а. футбол — football-data, където има код и ключ */
 const football = (cfg.football || []).filter(live);
@@ -124,7 +126,6 @@ const viaSdb = [
   ...football.filter(l => l.sdb && (!l.fd || !FD_KEY || fdFailed.has(l.name)))
     .map(l => ({ id: l.sdb, name: l.name, sport: "fut", weight: l.weight, season: l.season })),
   ...(cfg.basketball || []).filter(live).map(l => ({ id: l.sdb, name: l.name, sport: "bas", weight: l.weight, season: l.season })),
-  ...(cfg.volleyballIntl || []).filter(live).map(l => ({ id: l.sdb, name: l.name, sport: "vol", weight: l.weight, season: l.season })),
   ...(live(cfg.formula2) ? [{ id: cfg.formula2.sdb, name: cfg.formula2.name, sport: "mot", weight: cfg.formula2.weight, season: cfg.formula2.season }] : []),
 ].map(calendarSeason);
 
