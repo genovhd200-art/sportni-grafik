@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-17T08:33:15.213Z",
+ "generatedAt": "2026-10-18T05:06:20.921Z",
  "from": "2026-10-17",
  "to": "2026-11-17",
  "timezone": "Europe/Sofia",
- "count": 329,
+ "count": 331,
  "events": [
   {
    "source": "api-basketball",
@@ -785,6 +785,21 @@
    "venue": "",
    "round": "кръг 9",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "bvf-64-2026-10-18-levski-sofia-neftohimik2010",
+   "date": "2026-10-18",
+   "time": "19:30",
+   "sport": "vol",
+   "comp": "Суперкупа на България (волейбол)",
+   "title": "Levski-Sofia – Neftohimik 2010",
+   "p": 3,
+   "venue": "Levski-Sofia",
+   "round": "",
+   "provisional": false,
+   "via": "bvf",
+   "addedAt": "2026-10-18"
   },
   {
    "source": "football-data",
@@ -1968,6 +1983,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-12"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601689",
+   "date": "2026-10-24",
+   "time": "04:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Utah Jazz – New Orleans Pelicans",
+   "p": 2,
+   "venue": "Delta Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-18"
   },
   {
    "source": "football-data",
@@ -4440,5 +4470,6 @@
    "round": "кръг 12",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-18"
 }

@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-17T05:01:19.790Z",
- "runDate": "2026-10-17",
+ "generatedAt": "2026-10-18T05:06:20.921Z",
+ "runDate": "2026-10-18",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-17",
+  "from": "2026-10-18",
   "to": "2026-10-25"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 110,
+   "count": 89,
    "error": null
   },
   {
@@ -45,9 +45,9 @@
   },
   {
    "name": "thesportsdb · Купа на Германия",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Купа на Германия: Купа на Германия: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Първа лига",
@@ -76,14 +76,14 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 8,
+   "count": 17,
    "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
-   "ok": false,
-   "count": 0,
-   "error": "НБЛ: НБЛ: изчерпан лимит (429)"
+   "ok": true,
+   "count": 7,
+   "error": null
   },
   {
    "name": "thesportsdb · Формула 2",
@@ -106,19 +106,19 @@
   {
    "name": "БФВ волейбол",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 17,
+   "count": 1,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 4,
+   "count": 1,
    "error": null
   },
   {
@@ -129,64 +129,48 @@
   }
  ],
  "totals": {
-  "fromSources": 156,
-  "added": 1,
+  "fromSources": 133,
+  "added": 2,
   "tennisNew": 2,
   "tennisPending": 28
  },
  "added": [
   {
-   "extId": "vb-217382",
+   "extId": "bvf-64-2026-10-18-levski-sofia-neftohimik2010",
    "date": "2026-10-18",
-   "time": "14:30",
+   "time": "19:30",
    "sport": "vol",
-   "comp": "Superliga Women",
-   "title": "CSKA Sofia W – Deya Volley W",
-   "via": "api-volleyball"
+   "comp": "Суперкупа на България (волейбол)",
+   "title": "Levski-Sofia – Neftohimik 2010",
+   "via": "bvf"
+  },
+  {
+   "extId": "sdb-2601689",
+   "date": "2026-10-24",
+   "time": "04:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Utah Jazz – New Orleans Pelicans",
+   "via": "thesportsdb"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-TBNgUggIm1Ipj9ZryV22",
-   "date": "2026-10-17",
-   "time": "00:00",
-   "comp": "Тенис",
-   "title": "Елизара Янева — мач"
-  },
-  {
-   "extId": "ten-jLgFlj5nI_NymAqdBshS",
-   "date": "2026-10-17",
+   "extId": "ten-nopeq5GwWA-FK5cOt7-f",
+   "date": "2026-10-18",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-6138kMMDv27Ot1j9W7kV",
+   "date": "2026-10-18",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "PARTNER Mercedes – Benz PARTNERS"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-17",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-17"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-17"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-17"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-17"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-17"
-    }
-   ]
-  },
   {
    "date": "2026-10-18",
    "links": [

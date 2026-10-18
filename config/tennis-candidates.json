@@ -1,18 +1,5 @@
 [
  {
-  "extId": "ten-wlB76oK1X2IZMn1IGrIR",
-  "date": "2026-10-03",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-10-03"
- },
- {
   "extId": "ten-k5EV6GstOm1mgsEio59T",
   "date": "2026-10-04",
   "time": "00:00",
@@ -336,5 +323,31 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-10-17"
+ },
+ {
+  "extId": "ten-nopeq5GwWA-FK5cOt7-f",
+  "date": "2026-10-18",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-18"
+ },
+ {
+  "extId": "ten-6138kMMDv27Ot1j9W7kV",
+  "date": "2026-10-18",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "PARTNER Mercedes – Benz PARTNERS",
+  "p": 2,
+  "note": "o TOURNAMENT NEWS Wuhan draw: Sabalenka, Swiatek eye first 2026 meeting in quarterfinals 4",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-18"
  }
 ]
