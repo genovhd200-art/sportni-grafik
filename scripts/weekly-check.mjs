@@ -113,6 +113,35 @@ if (sdb.enabled) {
   note("thesportsdb", false, 0, "изключен в config/sportsdb-leagues.json");
 }
 
+/* 3в-бис. Клубовете на българите в чужбина.
+   Лигите стоят в config/fill.json, маркирани с "weekly": true, и се теглят
+   САМО тук — нощното попълване нарочно ги прескача. onlyTeams оставя от всяка
+   лига единствено мачовете на клуба с българин; имената са както ги пише
+   източникът, виж config/bulgarians-abroad.json. */
+{
+  const fill = (await readJSON("config/fill.json", {})) || {};
+  const pick = (arr, sport) => (arr || [])
+    .filter(l => l.weekly && l.enabled !== false && l.sdb)
+    .map(l => ({ ...l, _sport: sport }));
+  const abroad = [...pick(fill.football, "fut"), ...pick(fill.volleyballIntl, "vol")];
+  if (abroad.length) {
+    console.log("\nБългари в чужбина:");
+    for (const lg of abroad) {
+      try {
+        const rows = await fromSportsDB(
+          [{ id: lg.sdb, name: lg.name, sport: lg._sport, weight: lg.weight, enabled: true }],
+          from, to, WATCH);
+        const only = (lg.onlyTeams || []).map(t => t.toLowerCase());
+        const kept = only.length
+          ? rows.filter(e => only.some(t => String(e.title || "").toLowerCase().includes(t)))
+          : rows;
+        fresh = fresh.concat(kept);
+        note(lg.name, true, kept.length);
+      } catch (e) { note(lg.name, false, 0, e.message); }
+    }
+  }
+}
+
 /* 3в. собственият лайвскор, през scripts/weekly-scrape.mjs */
 if (SKIP_SCRAPE) {
   note("weekly-scrape", false, 0, "пропуснат (SKIP_SCRAPE=1)");
@@ -144,6 +173,21 @@ function run(cmd, args) {
     seen.add(k); return true;
   });
 }
+/* Бележка под мача: кой българин играе в този отбор. */
+{
+  const bgN = (await readJSON("config/bulgarians-abroad.json", {})) || {};
+  const pairs = Object.entries(bgN.notes || {}).map(([k, v]) => [k.toLowerCase(), v]);
+  if (pairs.length) {
+    let marked = 0;
+    for (const e of fresh) {
+      const t = String(e.title || "").toLowerCase();
+      const who = [...new Set(pairs.filter(([k]) => t.includes(k)).map(([, v]) => v))];
+      if (who.length) { e.note = who.join(" · "); marked++; }
+    }
+    console.log(`Българи в чужбина: отбелязани ${marked} мача`);
+  }
+}
+
 console.log(`\nОт източниците: ${fresh.length} събития в прозореца.`);
 
 /* ПРЕДПАЗИТЕЛ. Ако всички източници са мълчали, всяко събитие в таблицата
