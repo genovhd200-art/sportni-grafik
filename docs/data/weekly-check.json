@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-18T13:02:38.725Z",
+ "generatedAt": "2026-10-18T13:16:11.975Z",
  "runDate": "2026-10-18",
  "timezone": "Europe/Sofia",
  "window": {
@@ -22,43 +22,43 @@
   {
    "name": "Гръцка Супер лига",
    "ok": true,
-   "count": 0,
+   "count": 3,
    "error": null
   },
   {
    "name": "Нидерландска Ередивизи",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Нидерландска Ередивизи: Нидерландска Ередивизи: изчерпан лимит (429)"
   },
   {
    "name": "Израелска Премиер лига",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Израелска Премиер лига: Израелска Премиер лига: изчерпан лимит (429)"
   },
   {
    "name": "Датска Суперлига",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Датска Суперлига: Датска Суперлига: изчерпан лимит (429)"
   },
   {
    "name": "Полска Екстракласа",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Полска Екстракласа: Полска Екстракласа: изчерпан лимит (429)"
   },
   {
    "name": "Унгарска НБ I",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "name": "Втора Бундеслига",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -69,21 +69,21 @@
   },
   {
    "name": "Турска Първа лига",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Турска Първа лига: Турска Първа лига: изчерпан лимит (429)"
   },
   {
    "name": "Португалска Примейра",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Португалска Примейра: Португалска Примейра: изчерпан лимит (429)"
   },
   {
    "name": "Италианска СуперЛега",
-   "ok": true,
-   "count": 3,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Италианска СуперЛега: Италианска СуперЛега: изчерпан лимит (429)"
   },
   {
    "name": "Турска Ефелер лига",
@@ -94,7 +94,7 @@
   {
    "name": "Полска ПлюсЛига",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -105,52 +105,98 @@
   }
  ],
  "totals": {
-  "fromSources": 74,
-  "inTable": 143,
-  "added": 4,
+  "fromSources": 77,
+  "inTable": 147,
+  "added": 6,
   "moved": 0,
-  "dropped": 0,
+  "dropped": 3,
   "manualUntouched": 0
  },
  "added": [
   {
-   "extId": "sdb-2554186",
-   "date": "2026-10-25",
-   "time": "19:00",
-   "sport": "vol",
-   "comp": "Италианска СуперЛега",
-   "title": "Volley Lube – Pallavolo Padova",
+   "extId": "sdb-2539969",
+   "date": "2026-10-24",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "AEK Athens – Panetolikos",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2554187",
-   "date": "2026-10-25",
+   "extId": "sdb-2539974",
+   "date": "2026-10-24",
    "time": "19:00",
-   "sport": "vol",
-   "comp": "Италианска СуперЛега",
-   "title": "Volley Milano – Verona Volley",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Iraklis 1908 – Kifisia",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2554292",
+   "extId": "sdb-2539972",
    "date": "2026-10-25",
    "time": "20:00",
-   "sport": "vol",
-   "comp": "Италианска СуперЛега",
-   "title": "Powervolley Milano – Cuneo Volley",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "OFI – PAOK",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2616604",
+   "extId": "sdb-2498379",
    "date": "2026-10-24",
-   "time": "16:00",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Унгарска НБ I",
+   "title": "Budapest Honvéd – Debrecen",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2511814",
+   "date": "2026-10-23",
+   "time": "19:30",
+   "sport": "fut",
+   "comp": "Втора Бундеслига",
+   "title": "Darmstadt – St Pauli",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2553921",
+   "date": "2026-10-24",
+   "time": "19:00",
    "sport": "vol",
-   "comp": "Турска Ефелер лига",
-   "title": "Spor Toto – Halkbank Ankara",
+   "comp": "Полска ПлюсЛига",
+   "title": "Ślepsk Suwałki – GKS Katowice",
    "source": "thesportsdb"
   }
  ],
  "moved": [],
- "dropped": [],
+ "dropped": [
+  {
+   "extId": "sdb-2554186",
+   "title": "Volley Lube – Pallavolo Padova",
+   "comp": "Италианска СуперЛега",
+   "sport": "vol",
+   "date": "2026-10-25",
+   "time": "19:00",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2554187",
+   "title": "Volley Milano – Verona Volley",
+   "comp": "Италианска СуперЛега",
+   "sport": "vol",
+   "date": "2026-10-25",
+   "time": "19:00",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2554292",
+   "title": "Powervolley Milano – Cuneo Volley",
+   "comp": "Италианска СуперЛега",
+   "sport": "vol",
+   "date": "2026-10-25",
+   "time": "20:00",
+   "source": "thesportsdb"
+  }
+ ],
  "droppedHandling": "маркирани с dropped:true"
 }

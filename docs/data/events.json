@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-18T13:02:38.726Z",
+ "generatedAt": "2026-10-18T13:16:11.977Z",
  "from": "2026-10-18",
  "to": "2026-11-18",
  "timezone": "Europe/Sofia",
- "count": 293,
+ "count": 299,
  "events": [
   {
    "source": "fill",
@@ -1229,6 +1229,20 @@
    "addedAt": "2026-10-12"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2511814",
+   "date": "2026-10-23",
+   "time": "19:30",
+   "sport": "fut",
+   "comp": "Втора Бундеслига",
+   "title": "Darmstadt – St Pauli",
+   "p": 3,
+   "venue": "Merck-Stadion am Böllenfalltor",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "Ф. Нюрнбергер · Д. Митов"
+  },
+  {
    "source": "fill",
    "extId": "el-E2026_68",
    "date": "2026-10-23",
@@ -1764,6 +1778,20 @@
    "addedAt": "2026-10-12"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2498379",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Унгарска НБ I",
+   "title": "Budapest Honvéd – Debrecen",
+   "p": 3,
+   "venue": "Bozsik Aréna",
+   "round": "кръг 11",
+   "provisional": false,
+   "note": "Пл. Андреев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-559655",
    "date": "2026-10-24",
@@ -1820,6 +1848,34 @@
    "addedAt": "2026-10-12"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2539974",
+   "date": "2026-10-24",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Iraklis 1908 – Kifisia",
+   "p": 3,
+   "venue": "Kaftanzoglio Stadium",
+   "round": "кръг 8",
+   "provisional": false,
+   "note": "Ал. Петков"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2553921",
+   "date": "2026-10-24",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Полска ПлюсЛига",
+   "title": "Ślepsk Suwałki – GKS Katowice",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 2",
+   "provisional": false,
+   "note": "А. Аспарухов"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560617",
    "date": "2026-10-24",
@@ -1857,6 +1913,20 @@
    "venue": "",
    "round": "кръг 7",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539969",
+   "date": "2026-10-24",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "AEK Athens – Panetolikos",
+   "p": 3,
+   "venue": "Allwyn Arena",
+   "round": "кръг 8",
+   "provisional": false,
+   "note": "М. Георгиев"
   },
   {
    "source": "fill",
@@ -2248,7 +2318,9 @@
    "venue": "",
    "round": "кръг 2",
    "provisional": false,
-   "note": "Ал. Николов, С. Николов"
+   "note": "Ал. Николов, С. Николов",
+   "dropped": true,
+   "droppedAt": "2026-10-18"
   },
   {
    "source": "thesportsdb",
@@ -2262,7 +2334,9 @@
    "venue": "",
    "round": "кръг 2",
    "provisional": false,
-   "note": "Г. Татаров"
+   "note": "Г. Татаров",
+   "dropped": true,
+   "droppedAt": "2026-10-18"
   },
   {
    "source": "football-data",
@@ -2289,7 +2363,23 @@
    "venue": "",
    "round": "кръг 2",
    "provisional": false,
-   "note": "Г. Татаров"
+   "note": "Г. Татаров",
+   "dropped": true,
+   "droppedAt": "2026-10-18"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539972",
+   "date": "2026-10-25",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "OFI – PAOK",
+   "p": 3,
+   "venue": "Pankritio Stadium",
+   "round": "кръг 8",
+   "provisional": false,
+   "note": "К. Десподов"
   },
   {
    "source": "football-data",
