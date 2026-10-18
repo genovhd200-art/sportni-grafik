@@ -31,6 +31,7 @@
   { "name": "Унгарска НБ I",         "fd": null, "sdb": 4690, "weight": 1, "enabled": true, "onlyTeams": ["Debrecen"] },
   { "name": "Втора Бундеслига",      "fd": null, "sdb": 4399, "weight": 1, "enabled": true, "onlyTeams": ["Darmstadt", "Pauli", "Elversberg", "sseldorf"] },
   { "name": "Турска Супер лига",     "fd": null, "sdb": 4339, "weight": 1, "enabled": true, "onlyTeams": ["ztepe"] },
+  { "name": "Турска Първа лига",     "fd": null, "sdb": 4676, "weight": 1, "enabled": true, "onlyTeams": ["stanbulspor", "Mardin 1969"] },
   { "name": "Португалска Примейра",  "fd": null, "sdb": 4344, "weight": 1, "enabled": true, "onlyTeams": ["Estrela Amadora"] }
  ],
  "_onlyTeams": "Ако турнирът има onlyTeams, влизат само мачовете на тези отбори. Търси се в заглавието, без значение от главни букви и от езика — затова се изброяват и двата изписа.",
