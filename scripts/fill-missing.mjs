@@ -124,6 +124,7 @@ const viaSdb = [
   ...football.filter(l => l.sdb && (!l.fd || !FD_KEY || fdFailed.has(l.name)))
     .map(l => ({ id: l.sdb, name: l.name, sport: "fut", weight: l.weight, season: l.season })),
   ...(cfg.basketball || []).filter(live).map(l => ({ id: l.sdb, name: l.name, sport: "bas", weight: l.weight, season: l.season })),
+  ...(cfg.volleyballIntl || []).filter(live).map(l => ({ id: l.sdb, name: l.name, sport: "vol", weight: l.weight, season: l.season })),
   ...(live(cfg.formula2) ? [{ id: cfg.formula2.sdb, name: cfg.formula2.name, sport: "mot", weight: cfg.formula2.weight, season: cfg.formula2.season }] : []),
 ].map(calendarSeason);
 
@@ -188,7 +189,8 @@ if (on(tennisCfg)) {
 /* Турнир с onlyTeams влиза само с мачовете на тези отбори (МЛС — само Интер
    Маями, Еврокъп — само Балкан Ботевград). */
 const ONLY = new Map();
-for (const lg of [...(cfg.football||[]), ...(cfg.basketball||[]), ...(cfg.euroleague||[]), ...(cfg.volleyball||[])])
+for (const lg of [...(cfg.football||[]), ...(cfg.basketball||[]), ...(cfg.euroleague||[]),
+                  ...(cfg.volleyball||[]), ...(cfg.volleyballIntl||[])])
   if (lg && lg.onlyTeams?.length) ONLY.set(String(lg.name).toLowerCase(), lg.onlyTeams.map(t => t.toLowerCase()));
 
 const wantedTeam = e => {
@@ -200,6 +202,22 @@ const wantedTeam = e => {
 const beforeFilter = fresh.length;
 fresh = fresh.filter(e => e.date >= from && e.date <= to && !HID.event(e) && wantedTeam(e));
 if (ONLY.size) console.log(`\nФилтри по отбор: ${[...ONLY.keys()].join(", ")} · отпаднаха ${beforeFilter - fresh.length} записа (с махнатите)`);
+
+/* Бележка под мача: кой българин играе в този отбор. Имената на клубовете са
+   както ги пише ИЗТОЧНИКЪТ — виж config/bulgarians-abroad.json. */
+{
+  const bg = (await readJSON("config/bulgarians-abroad.json", {})) || {};
+  const pairs = Object.entries(bg.notes || {}).map(([k, v]) => [k.toLowerCase(), v]);
+  if (pairs.length) {
+    let marked = 0;
+    for (const e of fresh) {
+      const t = String(e.title || "").toLowerCase();
+      const who = [...new Set(pairs.filter(([k]) => t.includes(k)).map(([, v]) => v))];
+      if (who.length) { e.note = who.join(" · "); marked++; }
+    }
+    console.log(`Българи в чужбина: отбелязани ${marked} мача`);
+  }
+}
 
 const feed = (await readJSON(EVENTS_FILE, null)) || { generatedAt: null, timezone: TZ, events: [] };
 const table = feed.events || [];
