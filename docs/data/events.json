@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-18T08:51:06.804Z",
+ "generatedAt": "2026-10-18T13:02:38.726Z",
  "from": "2026-10-18",
  "to": "2026-11-18",
  "timezone": "Europe/Sofia",
- "count": 289,
+ "count": 293,
  "events": [
   {
    "source": "fill",
@@ -1496,6 +1496,20 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2616604",
+   "date": "2026-10-24",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Spor Toto – Halkbank Ankara",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 2",
+   "provisional": false,
+   "note": "М. Казийски, Д. Бърдаров · треньор Р. Стойчев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-565830",
    "date": "2026-10-24",
@@ -2223,6 +2237,34 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2554186",
+   "date": "2026-10-25",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Lube – Pallavolo Padova",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 2",
+   "provisional": false,
+   "note": "Ал. Николов, С. Николов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554187",
+   "date": "2026-10-25",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Milano – Verona Volley",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 2",
+   "provisional": false,
+   "note": "Г. Татаров"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564726",
    "date": "2026-10-25",
@@ -2234,6 +2276,20 @@
    "venue": "",
    "round": "кръг 10",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554292",
+   "date": "2026-10-25",
+   "time": "20:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Powervolley Milano – Cuneo Volley",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 2",
+   "provisional": false,
+   "note": "Г. Татаров"
   },
   {
    "source": "football-data",
@@ -3914,5 +3970,6 @@
    "round": "кръг 10",
    "provisional": false
   }
- ]
+ ],
+ "lastWeeklyCheck": "2026-10-18"
 }

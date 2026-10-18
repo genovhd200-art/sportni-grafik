@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-11T21:09:21.685Z",
- "runDate": "2026-10-12",
+ "generatedAt": "2026-10-18T13:02:38.725Z",
+ "runDate": "2026-10-18",
  "timezone": "Europe/Sofia",
  "window": {
   "from": "2026-10-19",
@@ -20,6 +20,84 @@
    "error": null
   },
   {
+   "name": "Гръцка Супер лига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Нидерландска Ередивизи",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Израелска Премиер лига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Датска Суперлига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Полска Екстракласа",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Унгарска НБ I",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Втора Бундеслига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Турска Супер лига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Турска Първа лига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Португалска Примейра",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
+   "name": "Италианска СуперЛега",
+   "ok": true,
+   "count": 3,
+   "error": null
+  },
+  {
+   "name": "Турска Ефелер лига",
+   "ok": true,
+   "count": 1,
+   "error": null
+  },
+  {
+   "name": "Полска ПлюсЛига",
+   "ok": true,
+   "count": 0,
+   "error": null
+  },
+  {
    "name": "weekly-scrape",
    "ok": true,
    "count": 0,
@@ -27,14 +105,51 @@
   }
  ],
  "totals": {
-  "fromSources": 70,
-  "inTable": 70,
-  "added": 0,
+  "fromSources": 74,
+  "inTable": 143,
+  "added": 4,
   "moved": 0,
   "dropped": 0,
   "manualUntouched": 0
  },
- "added": [],
+ "added": [
+  {
+   "extId": "sdb-2554186",
+   "date": "2026-10-25",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Lube – Pallavolo Padova",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2554187",
+   "date": "2026-10-25",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Milano – Verona Volley",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2554292",
+   "date": "2026-10-25",
+   "time": "20:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Powervolley Milano – Cuneo Volley",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2616604",
+   "date": "2026-10-24",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Spor Toto – Halkbank Ankara",
+   "source": "thesportsdb"
+  }
+ ],
  "moved": [],
  "dropped": [],
  "droppedHandling": "маркирани с dropped:true"
