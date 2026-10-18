@@ -36,7 +36,7 @@ import {
   readJSON, writeJSON, matchKey,
 } from "./lib.mjs";
 import { fromFootballData } from "./football-data.mjs";
-import { fromSportsDB } from "./sportsdb.mjs";
+import { fromSportsDB, fromSportsDBWindow } from "./sportsdb.mjs";
 
 const STATE_FILE = "config/weekly-check-state.json";
 const EVENTS_FILE = "docs/data/events.json";
@@ -128,7 +128,11 @@ if (sdb.enabled) {
     console.log("\nБългари в чужбина:");
     for (const lg of abroad) {
       try {
-        const rows = await fromSportsDB(
+        /* fromSportsDBWindow, НЕ fromSportsDB: безплатният ключ реже
+           eventsseason.php до първите 15 мача от сезона, което за лига,
+           започнала през август, значи нула попадения в октомврийски
+           прозорец. Версията с кръгове заобикаля това. */
+        const rows = await fromSportsDBWindow(
           [{ id: lg.sdb, name: lg.name, sport: lg._sport, weight: lg.weight, enabled: true }],
           from, to, WATCH);
         const only = (lg.onlyTeams || []).map(t => t.toLowerCase());
