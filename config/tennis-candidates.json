@@ -1,31 +1,5 @@
 [
  {
-  "extId": "ten-k5EV6GstOm1mgsEio59T",
-  "date": "2026-10-04",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-10-04"
- },
- {
-  "extId": "ten-DuxV0osBneHwVGd6kiFh",
-  "date": "2026-10-04",
-  "time": "1:02",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "t. Sunday 04 Oct LIVE 6 FINISHED UPCOMING ALL BEIJING CHINA OPEN • CHN HARD ROUND OF 32 LO",
-  "provisional": false,
-  "ok": null,
-  "foundAt": "2026-10-04"
- },
- {
   "extId": "ten-I5rEQNubqQNFiGEdb97X",
   "date": "2026-10-05",
   "time": "00:00",
@@ -349,5 +323,31 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-10-18"
+ },
+ {
+  "extId": "ten-i5fa75vxNbGQybsYjjCo",
+  "date": "2026-10-19",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-19"
+ },
+ {
+  "extId": "ten-U_lxswFSI1-YqyvYUUtu",
+  "date": "2026-10-19",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "PARTNER Mercedes – Benz PARTNERS",
+  "p": 2,
+  "note": "o TOURNAMENT NEWS Wuhan draw: Sabalenka, Swiatek eye first 2026 meeting in quarterfinals 4",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-19"
  }
 ]
