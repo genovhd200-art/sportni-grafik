@@ -1,62 +1,10 @@
 {
- "generatedAt": "2026-10-19T09:51:51.614Z",
- "from": "2026-10-19",
- "to": "2026-11-19",
+ "generatedAt": "2026-10-20T09:25:04.736Z",
+ "from": "2026-10-20",
+ "to": "2026-11-20",
  "timezone": "Europe/Sofia",
- "count": 366,
+ "count": 368,
  "events": [
-  {
-   "source": "football-data",
-   "extId": "fd-558576",
-   "date": "2026-10-19",
-   "time": "19:30",
-   "sport": "fut",
-   "comp": "Серия А",
-   "title": "Monza – Cagliari",
-   "p": 3,
-   "venue": "",
-   "round": "кръг 7",
-   "provisional": false
-  },
-  {
-   "source": "football-data",
-   "extId": "fd-558578",
-   "date": "2026-10-19",
-   "time": "21:45",
-   "sport": "fut",
-   "comp": "Серия А",
-   "title": "Parma – Torino",
-   "p": 2,
-   "venue": "",
-   "round": "кръг 7",
-   "provisional": false
-  },
-  {
-   "source": "football-data",
-   "extId": "fd-560606",
-   "date": "2026-10-19",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Висша лига",
-   "title": "Tottenham – Coventry City",
-   "p": 2,
-   "venue": "",
-   "round": "кръг 7",
-   "provisional": false
-  },
-  {
-   "source": "football-data",
-   "extId": "fd-564717",
-   "date": "2026-10-19",
-   "time": "22:00",
-   "sport": "fut",
-   "comp": "Ла Лига",
-   "title": "Getafe – Rayo Vallecano",
-   "p": 2,
-   "venue": "",
-   "round": "кръг 9",
-   "provisional": false
-  },
   {
    "source": "api-volleyball",
    "extId": "vb-211684",
@@ -229,34 +177,43 @@
    "provisional": false
   },
   {
-   "source": "fill",
-   "extId": "sdb-2601666",
+   "source": "api-basketball",
+   "extId": "bb-519534",
    "date": "2026-10-21",
    "time": "02:00",
    "sport": "bas",
-   "comp": "НБА",
+   "comp": "NBA",
    "title": "New York Knicks – Philadelphia 76ers",
-   "p": 2,
-   "venue": "Madison Square Garden",
+   "p": 1,
+   "venue": "USA",
    "round": "",
-   "provisional": false,
-   "via": "thesportsdb",
-   "addedAt": "2026-10-12"
+   "provisional": false
   },
   {
-   "source": "fill",
-   "extId": "sdb-2601667",
+   "source": "api-basketball",
+   "extId": "bb-519535",
    "date": "2026-10-21",
    "time": "04:30",
    "sport": "bas",
-   "comp": "НБА",
+   "comp": "NBA",
    "title": "San Antonio Spurs – Oklahoma City Thunder",
-   "p": 2,
-   "venue": "Frost Bank Center",
+   "p": 1,
+   "venue": "USA",
    "round": "",
-   "provisional": false,
-   "via": "thesportsdb",
-   "addedAt": "2026-10-12"
+   "provisional": false
+  },
+  {
+   "source": "api-volleyball",
+   "extId": "vb-210902",
+   "date": "2026-10-21",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Champions League",
+   "title": "Fino Kaposvar SE – Napredak",
+   "p": 2,
+   "venue": "Europe",
+   "round": "",
+   "provisional": false
   },
   {
    "source": "fill",
@@ -300,6 +257,32 @@
    "provisional": false
   },
   {
+   "source": "api-volleyball",
+   "extId": "vb-211631",
+   "date": "2026-10-21",
+   "time": "20:00",
+   "sport": "vol",
+   "comp": "Champions League Women",
+   "title": "Herceg Novi W – Maritsa Plovdiv W",
+   "p": 2,
+   "venue": "Europe",
+   "round": "",
+   "provisional": false
+  },
+  {
+   "source": "api-volleyball",
+   "extId": "vb-211630",
+   "date": "2026-10-21",
+   "time": "20:30",
+   "sport": "vol",
+   "comp": "Champions League Women",
+   "title": "Asterix Avo W – OTP Banka Branik W",
+   "p": 2,
+   "venue": "Europe",
+   "round": "",
+   "provisional": false
+  },
+  {
    "source": "football-data",
    "extId": "fd-564685",
    "date": "2026-10-21",
@@ -310,6 +293,19 @@
    "p": 2,
    "venue": "",
    "round": "кръг 6",
+   "provisional": false
+  },
+  {
+   "source": "api-volleyball",
+   "extId": "vb-210904",
+   "date": "2026-10-21",
+   "time": "21:00",
+   "sport": "vol",
+   "comp": "Champions League",
+   "title": "Orion Stars – OK Stip",
+   "p": 2,
+   "venue": "Europe",
+   "round": "",
    "provisional": false
   },
   {
@@ -5097,6 +5093,32 @@
    "p": 2,
    "venue": "",
    "round": "кръг 12",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-565859",
+   "date": "2026-11-20",
+   "time": "21:30",
+   "sport": "fut",
+   "comp": "Бундеслига",
+   "title": "Bayern – 1. FC Köln",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 10",
+   "provisional": false
+  },
+  {
+   "source": "football-data",
+   "extId": "fd-559622",
+   "date": "2026-11-20",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Лига 1",
+   "title": "Troyes – Le Havre",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 11",
    "provisional": false
   }
  ]
