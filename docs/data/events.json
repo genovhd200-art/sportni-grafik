@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-21T09:21:40.494Z",
+ "generatedAt": "2026-10-22T05:25:17.532Z",
  "from": "2026-10-21",
  "to": "2026-11-21",
  "timezone": "Europe/Sofia",
- "count": 407,
+ "count": 415,
  "events": [
   {
    "source": "api-basketball",
@@ -819,6 +819,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519547",
+   "date": "2026-10-23",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Philadelphia 76ers – Cleveland Cavaliers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-22"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601680",
    "date": "2026-10-23",
    "time": "04:30",
@@ -864,6 +879,66 @@
   },
   {
    "source": "fill",
+   "extId": "bb-524579",
+   "date": "2026-10-23",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Yambol – Balkan",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-22"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217383",
+   "date": "2026-10-23",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritsa Plovdiv W – Maritza 2022 W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-22"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217386",
+   "date": "2026-10-23",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Dragoman W – Stoychev-Kaziyski W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-22"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217462",
+   "date": "2026-10-23",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Slaviya Sofia – CSKA Sofia",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-22"
+  },
+  {
+   "source": "fill",
    "extId": "bvf-65-2026-10-23-beroe2016-metalurg",
    "date": "2026-10-23",
    "time": "18:30",
@@ -876,6 +951,36 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-10-12"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217463",
+   "date": "2026-10-23",
+   "time": "18:30",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Beroe – Pernik",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-22"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524583",
+   "date": "2026-10-23",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Minyor – Beroe",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-22"
   },
   {
    "source": "fill",
@@ -1016,6 +1121,21 @@
    "venue": "",
    "round": "кръг 10",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519555",
+   "date": "2026-10-23",
+   "time": "23:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Milwaukee Bucks – Chicago Bulls",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-22"
   },
   {
    "source": "fill",
@@ -5640,5 +5760,6 @@
    "round": "кръг 13",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-22"
 }
