@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-22T09:26:31.106Z",
+ "generatedAt": "2026-10-23T05:24:01.307Z",
  "from": "2026-10-22",
  "to": "2026-11-22",
  "timezone": "Europe/Sofia",
- "count": 411,
+ "count": 422,
  "events": [
   {
    "source": "api-basketball",
@@ -956,6 +956,51 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519551",
+   "date": "2026-10-24",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Indiana Pacers – Dallas Mavericks",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519552",
+   "date": "2026-10-24",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Charlotte Hornets – Atlanta Hawks",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519553",
+   "date": "2026-10-24",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Boston Celtics – New York Knicks",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601686",
    "date": "2026-10-24",
    "time": "03:00",
@@ -998,6 +1043,51 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-18"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519558",
+   "date": "2026-10-24",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Golden State Warriors – Memphis Grizzlies",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519559",
+   "date": "2026-10-24",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Los Angeles Lakers – Los Angeles Clippers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519560",
+   "date": "2026-10-24",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Sacramento Kings – Portland Trail Blazers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
   },
   {
    "source": "football-data",
@@ -1050,6 +1140,21 @@
    "venue": "",
    "round": "кръг 8",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217384",
+   "date": "2026-10-24",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "CSKA Sofia W – Minyor Pernik W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-23"
   },
   {
    "source": "football-data",
@@ -1169,6 +1274,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-12"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524580",
+   "date": "2026-10-24",
+   "time": "17:30",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Levski – Shumen",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
   },
   {
    "source": "fill",
@@ -1306,6 +1426,21 @@
    "addedAt": "2026-10-12"
   },
   {
+   "source": "fill",
+   "extId": "bb-524581",
+   "date": "2026-10-24",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Botev 2012 – Botev Academic",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
+  },
+  {
    "source": "football-data",
    "extId": "fd-558564",
    "date": "2026-10-24",
@@ -1347,6 +1482,36 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-10-12"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524582",
+   "date": "2026-10-24",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Lok. Plovdiv – Polytechnica",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-23"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-212867",
+   "date": "2026-10-24",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Pirin Razlog – Levski Sofia",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-23"
   },
   {
    "source": "football-data",
@@ -5688,5 +5853,6 @@
    "round": "кръг 11",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-23"
 }
