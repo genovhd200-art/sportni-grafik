@@ -1,18 +1,5 @@
 [
  {
-  "extId": "ten-huGAR504FcC9MJg9f-Pp",
-  "date": "2026-10-09",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-10-09"
- },
- {
   "extId": "ten-z6AHLOanJXOoXNJLJ_Ah",
   "date": "2026-10-10",
   "time": "00:00",
@@ -362,5 +349,18 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-10-23"
+ },
+ {
+  "extId": "ten-mX2pdhi1MrCY9a9mbHfK",
+  "date": "2026-10-24",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-24"
  }
 ]

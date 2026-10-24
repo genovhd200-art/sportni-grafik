@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-23T09:20:52.024Z",
+ "generatedAt": "2026-10-24T05:05:05.882Z",
  "from": "2026-10-23",
  "to": "2026-11-23",
  "timezone": "Europe/Sofia",
- "count": 384,
+ "count": 391,
  "events": [
   {
    "source": "api-basketball",
@@ -1030,6 +1030,51 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519561",
+   "date": "2026-10-25",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Charlotte Hornets – Miami Heat",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-24"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519562",
+   "date": "2026-10-25",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Cleveland Cavaliers – Brooklyn Nets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-24"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519563",
+   "date": "2026-10-25",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Philadelphia 76ers – Milwaukee Bucks",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-24"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601696",
    "date": "2026-10-25",
    "time": "03:00",
@@ -1075,6 +1120,36 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519567",
+   "date": "2026-10-25",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Denver Nuggets – New Orleans Pelicans",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-24"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519568",
+   "date": "2026-10-25",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Phoenix Suns – Golden State Warriors",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-24"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2611779",
    "date": "2026-10-25",
    "time": "13:00",
@@ -1100,6 +1175,21 @@
    "venue": "",
    "round": "кръг 8",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217387",
+   "date": "2026-10-25",
+   "time": "13:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Slaviya Sofia W – Levski Sofia W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-24"
   },
   {
    "source": "football-data",
@@ -1401,6 +1491,21 @@
    "provisional": false,
    "via": "jolpica",
    "addedAt": "2026-10-12"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519569",
+   "date": "2026-10-25",
+   "time": "23:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Utah Jazz – Los Angeles Lakers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-24"
   },
   {
    "source": "football-data",
@@ -5271,5 +5376,6 @@
    "round": "кръг 13",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-24"
 }
