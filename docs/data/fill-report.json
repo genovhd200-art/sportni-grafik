@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-24T05:05:05.882Z",
- "runDate": "2026-10-24",
+ "generatedAt": "2026-10-25T05:16:00.575Z",
+ "runDate": "2026-10-25",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-24",
+  "from": "2026-10-25",
   "to": "2026-11-01"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 97,
+   "count": 78,
    "error": null
   },
   {
@@ -39,9 +39,9 @@
   },
   {
    "name": "thesportsdb · Купа на краля",
-   "ok": true,
-   "count": 50,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Купа на краля: Купа на краля: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · Купа на Италия",
@@ -51,9 +51,9 @@
   },
   {
    "name": "thesportsdb · Купа на Германия",
-   "ok": false,
-   "count": 0,
-   "error": "Купа на Германия: Купа на Германия: изчерпан лимит (429)"
+   "ok": true,
+   "count": 16,
+   "error": null
   },
   {
    "name": "thesportsdb · Първа лига",
@@ -81,15 +81,15 @@
   },
   {
    "name": "thesportsdb · НБА",
-   "ok": false,
-   "count": 0,
-   "error": "НБА: НБА: изчерпан лимит (429)"
+   "ok": true,
+   "count": 24,
+   "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
-   "ok": false,
-   "count": 0,
-   "error": "НБЛ: НБЛ: изчерпан лимит (429)"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "thesportsdb · Формула 2",
@@ -106,25 +106,25 @@
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 9,
+   "count": 7,
    "error": null
   },
   {
    "name": "БФВ волейбол",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 25,
+   "count": 16,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
@@ -135,111 +135,347 @@
   }
  ],
  "totals": {
-  "fromSources": 219,
-  "added": 7,
+  "fromSources": 177,
+  "added": 36,
   "tennisNew": 1,
   "tennisPending": 29
  },
  "added": [
   {
-   "extId": "bb-519561",
-   "date": "2026-10-25",
+   "extId": "bb-519570",
+   "date": "2026-10-26",
+   "time": "00:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Brooklyn Nets – Indiana Pacers",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519571",
+   "date": "2026-10-26",
    "time": "01:00",
    "sport": "bas",
    "comp": "NBA",
-   "title": "Charlotte Hornets – Miami Heat",
+   "title": "Oklahoma City Thunder – Los Angeles Clippers",
    "via": "api-basketball"
   },
   {
-   "extId": "bb-519562",
-   "date": "2026-10-25",
+   "extId": "bb-519572",
+   "date": "2026-10-26",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Minnesota Timberwolves – Toronto Raptors",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519573",
+   "date": "2026-10-26",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "New York Knicks – Orlando Magic",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519574",
+   "date": "2026-10-26",
+   "time": "01:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Philadelphia 76ers – Detroit Pistons",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "sdb-2601707",
+   "date": "2026-10-26",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Sacramento Kings – Memphis Grizzlies",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601708",
+   "date": "2026-10-27",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Charlotte Hornets – Washington Wizards",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601709",
+   "date": "2026-10-27",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Cleveland Cavaliers – Minnesota Timberwolves",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601712",
+   "date": "2026-10-27",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Milwaukee Bucks – Indiana Pacers",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601713",
+   "date": "2026-10-27",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Oklahoma City Thunder – Phoenix Suns",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601714",
+   "date": "2026-10-27",
    "time": "02:30",
    "sport": "bas",
-   "comp": "NBA",
-   "title": "Cleveland Cavaliers – Brooklyn Nets",
-   "via": "api-basketball"
+   "comp": "НБА",
+   "title": "Houston Rockets – Atlanta Hawks",
+   "via": "thesportsdb"
   },
   {
-   "extId": "bb-519563",
-   "date": "2026-10-25",
-   "time": "02:30",
+   "extId": "sdb-2600208",
+   "date": "2026-10-27",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Hamburg – Eintracht Frankfurt",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600209",
+   "date": "2026-10-27",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Bochum – Mainz",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600214",
+   "date": "2026-10-27",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Sonnenhof Großaspach – Augsburg",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600215",
+   "date": "2026-10-27",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Rot-Weiss Essen – RB Leipzig",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600204",
+   "date": "2026-10-27",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Borussia Mönchengladbach – Karlsruhe",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600205",
+   "date": "2026-10-27",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Borussia Dortmund – Werder Bremen",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600213",
+   "date": "2026-10-27",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Köln – Union Berlin",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600217",
+   "date": "2026-10-27",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Elversberg – Darmstadt",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601718",
+   "date": "2026-10-28",
+   "time": "02:00",
    "sport": "bas",
-   "comp": "NBA",
-   "title": "Philadelphia 76ers – Milwaukee Bucks",
-   "via": "api-basketball"
+   "comp": "НБА",
+   "title": "New York Knicks – Detroit Pistons",
+   "via": "thesportsdb"
   },
   {
-   "extId": "bb-519567",
-   "date": "2026-10-25",
+   "extId": "sdb-2601719",
+   "date": "2026-10-28",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "San Antonio Spurs – Sacramento Kings",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601720",
+   "date": "2026-10-28",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Los Angeles Lakers – Portland Trail Blazers",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600203",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Freiburg – Wolfsburg",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600210",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Dynamo Dresden – Schalke 04",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600211",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Paderborn – Stuttgart",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600216",
+   "date": "2026-10-28",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Jeddeloh II – Hertha",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600202",
+   "date": "2026-10-28",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Bayern Munich – Magdeburg",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600206",
+   "date": "2026-10-28",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Hannover 96 – Kaiserslautern",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600207",
+   "date": "2026-10-28",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Bayer Leverkusen – Nürnberg",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2600212",
+   "date": "2026-10-28",
+   "time": "21:45",
+   "sport": "fut",
+   "comp": "Купа на Германия",
+   "title": "Holstein Kiel – Hoffenheim",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601726",
+   "date": "2026-10-29",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Chicago Bulls – New York Knicks",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601727",
+   "date": "2026-10-29",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Milwaukee Bucks – Houston Rockets",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601728",
+   "date": "2026-10-29",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Minnesota Timberwolves – Golden State Warriors",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601734",
+   "date": "2026-10-30",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "New Orleans Pelicans – Sacramento Kings",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601735",
+   "date": "2026-10-30",
    "time": "04:00",
    "sport": "bas",
-   "comp": "NBA",
-   "title": "Denver Nuggets – New Orleans Pelicans",
-   "via": "api-basketball"
+   "comp": "НБА",
+   "title": "Portland Trail Blazers – Memphis Grizzlies",
+   "via": "thesportsdb"
   },
   {
-   "extId": "bb-519568",
-   "date": "2026-10-25",
-   "time": "04:00",
+   "extId": "sdb-2601736",
+   "date": "2026-10-31",
+   "time": "01:00",
    "sport": "bas",
-   "comp": "NBA",
-   "title": "Phoenix Suns – Golden State Warriors",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "vb-217387",
-   "date": "2026-10-25",
-   "time": "13:30",
-   "sport": "vol",
-   "comp": "Superliga Women",
-   "title": "Slaviya Sofia W – Levski Sofia W",
-   "via": "api-volleyball"
-  },
-  {
-   "extId": "bb-519569",
-   "date": "2026-10-25",
-   "time": "23:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Utah Jazz – Los Angeles Lakers",
-   "via": "api-basketball"
+   "comp": "НБА",
+   "title": "Washington Wizards – Charlotte Hornets",
+   "via": "thesportsdb"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-mX2pdhi1MrCY9a9mbHfK",
-   "date": "2026-10-24",
+   "extId": "ten-wwyrmEG_TLvT25GzFUmD",
+   "date": "2026-10-25",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-24",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-24"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-24"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-24"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-24"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-24"
-    }
-   ]
-  },
   {
    "date": "2026-10-25",
    "links": [
