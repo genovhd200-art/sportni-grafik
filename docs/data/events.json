@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-25T09:09:08.316Z",
+ "generatedAt": "2026-10-25T19:33:54.978Z",
  "from": "2026-10-25",
  "to": "2026-11-25",
  "timezone": "Europe/Sofia",
- "count": 373,
+ "count": 384,
  "events": [
   {
    "source": "fill",
@@ -505,7 +505,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-25"
   },
   {
    "source": "api-basketball",
@@ -518,7 +520,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-25"
   },
   {
    "source": "api-basketball",
@@ -531,7 +535,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-25"
   },
   {
    "source": "api-basketball",
@@ -544,7 +550,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-25"
   },
   {
    "source": "api-basketball",
@@ -557,7 +565,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-25"
   },
   {
    "source": "api-basketball",
@@ -570,7 +580,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-10-25"
   },
   {
    "source": "football-data",
@@ -672,6 +684,34 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-25"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2616609",
+   "date": "2026-10-27",
+   "time": "13:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "İstanbul GSK – İstanbul BB",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 3",
+   "provisional": false,
+   "note": "Г. Сеганов, Кр. Алексов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2616607",
+   "date": "2026-10-27",
+   "time": "14:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Altekma – Halkbank Ankara",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 3",
+   "provisional": false,
+   "note": "М. Казийски, Д. Бърдаров · треньор Р. Стойчев"
   },
   {
    "source": "fill",
@@ -2582,6 +2622,20 @@
    "addedAt": "2026-10-21"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2616612",
+   "date": "2026-10-31",
+   "time": "12:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Halkbank Ankara – Onikişubat Belediyespor",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 4",
+   "provisional": false,
+   "note": "М. Казийски, Д. Бърдаров · треньор Р. Стойчев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560626",
    "date": "2026-10-31",
@@ -2914,6 +2968,20 @@
    "addedAt": "2026-10-21"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2498388",
+   "date": "2026-10-31",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Унгарска НБ I",
+   "title": "Puskás Akadémia – Debrecen",
+   "p": 3,
+   "venue": "Pancho Aréna",
+   "round": "кръг 12",
+   "provisional": false,
+   "note": "Пл. Андреев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-559646",
    "date": "2026-10-31",
@@ -2970,6 +3038,34 @@
    "addedAt": "2026-10-21"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2539980",
+   "date": "2026-10-31",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Kifisia – Olympiacos",
+   "p": 3,
+   "venue": "Apostolos Nikolaidis Stadium",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "Ал. Петков"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554193",
+   "date": "2026-10-31",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Milano – Volley Perugia",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 3",
+   "provisional": false,
+   "note": "Г. Татаров"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560627",
    "date": "2026-10-31",
@@ -3022,6 +3118,20 @@
    "provisional": false,
    "via": "jolpica",
    "addedAt": "2026-10-19"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2489158",
+   "date": "2026-10-31",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Нидерландска Ередивизи",
+   "title": "Heerenveen – NEC Nijmegen",
+   "p": 3,
+   "venue": "Abe Lenstra Stadion",
+   "round": "кръг 11",
+   "provisional": false,
+   "note": "Хр. Петров"
   },
   {
    "source": "football-data",
@@ -3303,6 +3413,62 @@
    "venue": "",
    "round": "кръг 10",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539975",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Panathinaikos – AEK Athens",
+   "p": 3,
+   "venue": "Olympic Stadium Athens",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "М. Георгиев"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539976",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "PAOK – Asteras Tripolis",
+   "p": 3,
+   "venue": "Toumba Stadium",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "К. Десподов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554194",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Powervolley Milano – Pallavolo Padova",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 3",
+   "provisional": false,
+   "note": "Г. Татаров"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554293",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Cuneo Volley – Volley Lube",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 3",
+   "provisional": false,
+   "note": "Ал. Николов, С. Николов"
   },
   {
    "source": "football-data",
@@ -5139,5 +5305,6 @@
    "round": "кръг 5",
    "provisional": false
   }
- ]
+ ],
+ "lastWeeklyCheck": "2026-10-25"
 }

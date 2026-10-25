@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-18T13:16:11.975Z",
- "runDate": "2026-10-18",
+ "generatedAt": "2026-10-25T19:33:54.976Z",
+ "runDate": "2026-10-25",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-19",
-  "to": "2026-10-25"
+  "from": "2026-10-26",
+  "to": "2026-11-01"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 70,
+   "count": 56,
    "error": null
   },
   {
@@ -27,9 +27,9 @@
   },
   {
    "name": "Нидерландска Ередивизи",
-   "ok": false,
-   "count": 0,
-   "error": "Нидерландска Ередивизи: Нидерландска Ередивизи: изчерпан лимит (429)"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "Израелска Премиер лига",
@@ -58,20 +58,20 @@
   {
    "name": "Втора Бундеслига",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "name": "Турска Супер лига",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Турска Супер лига: Турска Супер лига: изчерпан лимит (429)"
   },
   {
    "name": "Турска Първа лига",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "error": "Турска Първа лига: Турска Първа лига: изчерпан лимит (429)"
+   "error": null
   },
   {
    "name": "Португалска Примейра",
@@ -81,21 +81,21 @@
   },
   {
    "name": "Италианска СуперЛега",
-   "ok": false,
-   "count": 0,
-   "error": "Италианска СуперЛега: Италианска СуперЛега: изчерпан лимит (429)"
+   "ok": true,
+   "count": 3,
+   "error": null
   },
   {
    "name": "Турска Ефелер лига",
    "ok": true,
-   "count": 1,
+   "count": 3,
    "error": null
   },
   {
    "name": "Полска ПлюсЛига",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Полска ПлюсЛига: Полска ПлюсЛига: изчерпан лимит (429)"
   },
   {
    "name": "weekly-scrape",
@@ -105,97 +105,169 @@
   }
  ],
  "totals": {
-  "fromSources": 77,
-  "inTable": 147,
-  "added": 6,
+  "fromSources": 67,
+  "inTable": 200,
+  "added": 11,
   "moved": 0,
-  "dropped": 3,
+  "dropped": 6,
   "manualUntouched": 0
  },
  "added": [
   {
-   "extId": "sdb-2539969",
-   "date": "2026-10-24",
-   "time": "20:00",
-   "sport": "fut",
-   "comp": "Гръцка Супер лига",
-   "title": "AEK Athens – Panetolikos",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2539974",
-   "date": "2026-10-24",
+   "extId": "sdb-2539980",
+   "date": "2026-10-31",
    "time": "19:00",
    "sport": "fut",
    "comp": "Гръцка Супер лига",
-   "title": "Iraklis 1908 – Kifisia",
+   "title": "Kifisia – Olympiacos",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2539972",
-   "date": "2026-10-25",
-   "time": "20:00",
+   "extId": "sdb-2539975",
+   "date": "2026-11-01",
+   "time": "19:00",
    "sport": "fut",
    "comp": "Гръцка Супер лига",
-   "title": "OFI – PAOK",
+   "title": "Panathinaikos – AEK Athens",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2498379",
-   "date": "2026-10-24",
+   "extId": "sdb-2539976",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "PAOK – Asteras Tripolis",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2489158",
+   "date": "2026-10-31",
+   "time": "19:45",
+   "sport": "fut",
+   "comp": "Нидерландска Ередивизи",
+   "title": "Heerenveen – NEC Nijmegen",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2498388",
+   "date": "2026-10-31",
    "time": "18:00",
    "sport": "fut",
    "comp": "Унгарска НБ I",
-   "title": "Budapest Honvéd – Debrecen",
+   "title": "Puskás Akadémia – Debrecen",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2511814",
-   "date": "2026-10-23",
-   "time": "19:30",
-   "sport": "fut",
-   "comp": "Втора Бундеслига",
-   "title": "Darmstadt – St Pauli",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2553921",
-   "date": "2026-10-24",
+   "extId": "sdb-2554193",
+   "date": "2026-10-31",
    "time": "19:00",
    "sport": "vol",
-   "comp": "Полска ПлюсЛига",
-   "title": "Ślepsk Suwałki – GKS Katowice",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Milano – Volley Perugia",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2554194",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Powervolley Milano – Pallavolo Padova",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2554293",
+   "date": "2026-11-01",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Cuneo Volley – Volley Lube",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2616607",
+   "date": "2026-10-27",
+   "time": "14:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Altekma – Halkbank Ankara",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2616609",
+   "date": "2026-10-27",
+   "time": "13:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "İstanbul GSK – İstanbul BB",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2616612",
+   "date": "2026-10-31",
+   "time": "12:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Halkbank Ankara – Onikişubat Belediyespor",
    "source": "thesportsdb"
   }
  ],
  "moved": [],
  "dropped": [
   {
-   "extId": "sdb-2554186",
-   "title": "Volley Lube – Pallavolo Padova",
-   "comp": "Италианска СуперЛега",
-   "sport": "vol",
-   "date": "2026-10-25",
-   "time": "19:00",
-   "source": "thesportsdb"
+   "extId": "bb-519570",
+   "title": "Brooklyn Nets – Indiana Pacers",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-26",
+   "time": "00:00",
+   "source": "api-basketball"
   },
   {
-   "extId": "sdb-2554187",
-   "title": "Volley Milano – Verona Volley",
-   "comp": "Италианска СуперЛега",
-   "sport": "vol",
-   "date": "2026-10-25",
-   "time": "19:00",
-   "source": "thesportsdb"
+   "extId": "bb-519571",
+   "title": "Oklahoma City Thunder – Los Angeles Clippers",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-26",
+   "time": "01:00",
+   "source": "api-basketball"
   },
   {
-   "extId": "sdb-2554292",
-   "title": "Powervolley Milano – Cuneo Volley",
-   "comp": "Италианска СуперЛега",
-   "sport": "vol",
-   "date": "2026-10-25",
-   "time": "20:00",
-   "source": "thesportsdb"
+   "extId": "bb-519572",
+   "title": "Minnesota Timberwolves – Toronto Raptors",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-26",
+   "time": "01:00",
+   "source": "api-basketball"
+  },
+  {
+   "extId": "bb-519573",
+   "title": "New York Knicks – Orlando Magic",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-26",
+   "time": "01:00",
+   "source": "api-basketball"
+  },
+  {
+   "extId": "bb-519574",
+   "title": "Philadelphia 76ers – Detroit Pistons",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-26",
+   "time": "01:30",
+   "source": "api-basketball"
+  },
+  {
+   "extId": "bb-519575",
+   "title": "Sacramento Kings – Memphis Grizzlies",
+   "comp": "NBA",
+   "sport": "bas",
+   "date": "2026-10-26",
+   "time": "03:00",
+   "source": "api-basketball"
   }
  ],
  "droppedHandling": "маркирани с dropped:true"
