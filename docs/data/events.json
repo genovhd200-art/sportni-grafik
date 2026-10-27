@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-26T10:16:26.445Z",
+ "generatedAt": "2026-10-27T05:37:37.085Z",
  "from": "2026-10-26",
  "to": "2026-11-26",
  "timezone": "Europe/Sofia",
- "count": 375,
+ "count": 390,
  "events": [
   {
    "source": "api-basketball",
@@ -803,6 +803,21 @@
    "provisional": false,
    "via": "euroleague",
    "addedAt": "2026-10-19"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519585",
+   "date": "2026-10-28",
+   "time": "01:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Boston Celtics – Brooklyn Nets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-27"
   },
   {
    "source": "fill",
@@ -2938,6 +2953,51 @@
    "addedAt": "2026-10-19"
   },
   {
+   "source": "fill",
+   "extId": "sdb-2407200",
+   "date": "2026-11-02",
+   "time": "02:00",
+   "sport": "fut",
+   "comp": "МЛС",
+   "title": "New England Revolution – Inter Miami",
+   "p": 1,
+   "venue": "Gillette Stadium",
+   "round": "кръг 33",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601755",
+   "date": "2026-11-02",
+   "time": "03:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Golden State Warriors – Los Angeles Clippers",
+   "p": 2,
+   "venue": "Chase Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601756",
+   "date": "2026-11-02",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Los Angeles Lakers – Toronto Raptors",
+   "p": 2,
+   "venue": "Crypto.com Arena",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
    "source": "football-data",
    "extId": "fd-558541",
    "date": "2026-11-02",
@@ -2988,6 +3048,51 @@
    "venue": "",
    "round": "кръг 11",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601757",
+   "date": "2026-11-03",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Cleveland Cavaliers – Oklahoma City Thunder",
+   "p": 3,
+   "venue": "Rocket Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601758",
+   "date": "2026-11-03",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Philadelphia 76ers – Chicago Bulls",
+   "p": 2,
+   "venue": "Xfinity Mobile Arena",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601759",
+   "date": "2026-11-03",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Orlando Magic – Washington Wizards",
+   "p": 2,
+   "venue": "Kia Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
   },
   {
    "source": "fill",
@@ -3315,6 +3420,51 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2601772",
+   "date": "2026-11-05",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Detroit Pistons – Philadelphia 76ers",
+   "p": 2,
+   "venue": "Little Caesars Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601773",
+   "date": "2026-11-05",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Washington Wizards – Atlanta Hawks",
+   "p": 2,
+   "venue": "Capital One Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601774",
+   "date": "2026-11-05",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Boston Celtics – Milwaukee Bucks",
+   "p": 2,
+   "venue": "TD Garden",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
    "extId": "el-E2026_95",
    "date": "2026-11-05",
    "time": "19:15",
@@ -3387,6 +3537,36 @@
    "provisional": false,
    "via": "euroleague",
    "addedAt": "2026-10-26"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601786",
+   "date": "2026-11-06",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Phoenix Suns – Orlando Magic",
+   "p": 2,
+   "venue": "PHX Arena",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601787",
+   "date": "2026-11-06",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Golden State Warriors – Miami Heat",
+   "p": 2,
+   "venue": "Chase Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
   },
   {
    "source": "fill",
@@ -3557,6 +3737,51 @@
    "venue": "",
    "round": "кръг 12",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601788",
+   "date": "2026-11-07",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Charlotte Hornets – Boston Celtics",
+   "p": 2,
+   "venue": "Spectrum Center",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601789",
+   "date": "2026-11-07",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Atlanta Hawks – Washington Wizards",
+   "p": 2,
+   "venue": "State Farm Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601790",
+   "date": "2026-11-07",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Cleveland Cavaliers – Philadelphia 76ers",
+   "p": 2,
+   "venue": "Rocket Arena",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-10-27"
   },
   {
    "source": "football-data",
@@ -5215,5 +5440,6 @@
    "round": "кръг 5",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-27"
 }
