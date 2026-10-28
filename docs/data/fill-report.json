@@ -1,22 +1,22 @@
 {
- "generatedAt": "2026-10-27T05:37:37.085Z",
- "runDate": "2026-10-27",
+ "generatedAt": "2026-10-28T06:16:22.010Z",
+ "runDate": "2026-10-28",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-27",
+  "from": "2026-10-28",
   "to": "2026-11-08"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 124,
+   "count": 121,
    "error": null
   },
   {
    "name": "thesportsdb · Купа на лигата",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
@@ -51,14 +51,14 @@
   },
   {
    "name": "thesportsdb · Първа лига",
-   "ok": true,
-   "count": 7,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Първа лига: Първа лига: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 29,
+   "count": 44,
    "error": null
   },
   {
@@ -76,14 +76,14 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 31,
+   "count": 14,
    "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
-   "ok": false,
-   "count": 0,
-   "error": "НБЛ: НБЛ: изчерпан лимит (429)"
+   "ok": true,
+   "count": 6,
+   "error": null
   },
   {
    "name": "thesportsdb · Формула 2",
@@ -94,7 +94,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 62,
+   "count": 50,
    "error": null
   },
   {
@@ -112,13 +112,13 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 13,
+   "count": 16,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -129,197 +129,163 @@
   }
  ],
  "totals": {
-  "fromSources": 242,
-  "added": 15,
+  "fromSources": 215,
+  "added": 14,
   "tennisNew": 3,
-  "tennisPending": 31
+  "tennisPending": 30
  },
  "added": [
   {
-   "extId": "bb-519585",
-   "date": "2026-10-28",
-   "time": "01:30",
+   "extId": "bb-519589",
+   "date": "2026-10-29",
+   "time": "01:00",
    "sport": "bas",
    "comp": "NBA",
-   "title": "Boston Celtics – Brooklyn Nets",
+   "title": "Indiana Pacers – Philadelphia 76ers",
    "via": "api-basketball"
   },
   {
-   "extId": "sdb-2407200",
-   "date": "2026-11-02",
-   "time": "02:00",
-   "sport": "fut",
-   "comp": "МЛС",
-   "title": "New England Revolution – Inter Miami",
-   "via": "thesportsdb"
+   "extId": "bb-519590",
+   "date": "2026-10-29",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Cleveland Cavaliers – Washington Wizards",
+   "via": "api-basketball"
   },
   {
-   "extId": "sdb-2601755",
-   "date": "2026-11-02",
+   "extId": "bb-519591",
+   "date": "2026-10-29",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Detroit Pistons – Charlotte Hornets",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519592",
+   "date": "2026-10-29",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Atlanta Hawks – Miami Heat",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519593",
+   "date": "2026-10-29",
+   "time": "01:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Toronto Raptors – Orlando Magic",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519597",
+   "date": "2026-10-29",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "New Orleans Pelicans – Denver Nuggets",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519598",
+   "date": "2026-10-29",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Utah Jazz – San Antonio Spurs",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519599",
+   "date": "2026-10-29",
    "time": "03:30",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Golden State Warriors – Los Angeles Clippers",
-   "via": "thesportsdb"
+   "comp": "NBA",
+   "title": "Dallas Mavericks – Oklahoma City Thunder",
+   "via": "api-basketball"
   },
   {
-   "extId": "sdb-2601756",
-   "date": "2026-11-02",
-   "time": "04:00",
+   "extId": "bb-519600",
+   "date": "2026-10-29",
+   "time": "04:30",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Los Angeles Lakers – Toronto Raptors",
-   "via": "thesportsdb"
+   "comp": "NBA",
+   "title": "Los Angeles Clippers – Los Angeles Lakers",
+   "via": "api-basketball"
   },
   {
-   "extId": "sdb-2601757",
-   "date": "2026-11-03",
-   "time": "02:00",
+   "extId": "sdb-2611785",
+   "date": "2026-11-04",
+   "time": "18:30",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Cleveland Cavaliers – Oklahoma City Thunder",
+   "comp": "НБЛ",
+   "title": "BC Shumen – Yambol",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601758",
-   "date": "2026-11-03",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Philadelphia 76ers – Chicago Bulls",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601759",
-   "date": "2026-11-03",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Orlando Magic – Washington Wizards",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601772",
-   "date": "2026-11-05",
-   "time": "02:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Detroit Pistons – Philadelphia 76ers",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601773",
-   "date": "2026-11-05",
-   "time": "02:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Washington Wizards – Atlanta Hawks",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601774",
-   "date": "2026-11-05",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Boston Celtics – Milwaukee Bucks",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601786",
-   "date": "2026-11-06",
-   "time": "04:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Phoenix Suns – Orlando Magic",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601787",
-   "date": "2026-11-06",
-   "time": "05:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Golden State Warriors – Miami Heat",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601788",
+   "extId": "sdb-2407202",
    "date": "2026-11-07",
-   "time": "02:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Charlotte Hornets – Boston Celtics",
+   "time": "23:00",
+   "sport": "fut",
+   "comp": "МЛС",
+   "title": "Inter Miami – Charlotte FC",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601789",
-   "date": "2026-11-07",
-   "time": "02:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Atlanta Hawks – Washington Wizards",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601790",
-   "date": "2026-11-07",
+   "extId": "sdb-2601798",
+   "date": "2026-11-08",
    "time": "02:30",
    "sport": "bas",
    "comp": "НБА",
-   "title": "Cleveland Cavaliers – Philadelphia 76ers",
+   "title": "Atlanta Hawks – Brooklyn Nets",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601799",
+   "date": "2026-11-08",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Cleveland Cavaliers – New York Knicks",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2601800",
+   "date": "2026-11-08",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Oklahoma City Thunder – Washington Wizards",
    "via": "thesportsdb"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-5-mRPEmcd-mmKJvKW6db",
-   "date": "2026-10-27",
-   "time": "00:00",
-   "comp": "Тенис",
-   "title": "Росица Денчева — мач"
-  },
-  {
-   "extId": "ten-i28-MidIwUXN0wq-iX2m",
-   "date": "2026-10-27",
+   "extId": "ten-Z4z_48susVJz3qzrMzMA",
+   "date": "2026-10-28",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Елизара Янева — мач"
   },
   {
-   "extId": "ten-OSiU8gAEQVG4r3P4oltJ",
-   "date": "2026-10-27",
+   "extId": "ten-sdjru9DEv-WfGVsJP9zD",
+   "date": "2026-10-28",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-jTFjqr7-G8CUY8j4YSSD",
+   "date": "2026-10-28",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "Росица Денчева — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-10-27",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-10-27"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-10-27"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-10-27"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-10-27"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-10-27"
-    }
-   ]
-  },
   {
    "date": "2026-10-28",
    "links": [
