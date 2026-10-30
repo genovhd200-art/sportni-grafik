@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-29T10:54:03.272Z",
+ "generatedAt": "2026-10-30T06:26:50.978Z",
  "from": "2026-10-29",
  "to": "2026-11-29",
  "timezone": "Europe/Sofia",
- "count": 360,
+ "count": 369,
  "events": [
   {
    "source": "api-basketball",
@@ -899,6 +899,51 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519605",
+   "date": "2026-10-31",
+   "time": "01:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Boston Celtics – Chicago Bulls",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519606",
+   "date": "2026-10-31",
+   "time": "01:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Brooklyn Nets – Detroit Pistons",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519607",
+   "date": "2026-10-31",
+   "time": "01:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Philadelphia 76ers – New York Knicks",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601741",
    "date": "2026-10-31",
    "time": "02:00",
@@ -941,6 +986,36 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-10-21"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519612",
+   "date": "2026-10-31",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Golden State Warriors – Los Angeles Lakers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519613",
+   "date": "2026-10-31",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Phoenix Suns – Denver Nuggets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
   },
   {
    "source": "football-data",
@@ -1112,6 +1187,21 @@
    "provisional": false
   },
   {
+   "source": "fill",
+   "extId": "vb-217391",
+   "date": "2026-10-31",
+   "time": "17:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Deya Volley W – Minyor Pernik W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-10-30"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564735",
    "date": "2026-10-31",
@@ -1275,6 +1365,21 @@
    "addedAt": "2026-10-21"
   },
   {
+   "source": "fill",
+   "extId": "bb-524589",
+   "date": "2026-10-31",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Rilski Sportist – Lok. Plovdiv",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
+  },
+  {
    "source": "football-data",
    "extId": "fd-558542",
    "date": "2026-10-31",
@@ -1316,6 +1421,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-21"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524591",
+   "date": "2026-10-31",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Beroe – Polytechnica",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
   },
   {
    "source": "football-data",
@@ -1370,6 +1490,21 @@
    "provisional": false,
    "via": "jolpica",
    "addedAt": "2026-10-19"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519614",
+   "date": "2026-10-31",
+   "time": "21:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Utah Jazz – Portland Trail Blazers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-10-30"
   },
   {
    "source": "football-data",
@@ -4895,5 +5030,6 @@
    "round": "кръг 12",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-10-30"
 }
