@@ -362,5 +362,44 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-10-30"
+ },
+ {
+  "extId": "ten-42yTYLU_bfXNKjp7neK_",
+  "date": "2026-10-31",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Елизара Янева — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-31"
+ },
+ {
+  "extId": "ten-vXZjhImPg0aAlTVSkXfA",
+  "date": "2026-10-31",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Росица Денчева — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-31"
+ },
+ {
+  "extId": "ten-hhWt9j2Bb6JxB3fCRUkD",
+  "date": "2026-10-31",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-10-31"
  }
 ]
