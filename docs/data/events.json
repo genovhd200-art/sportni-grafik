@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-31T10:22:00.375Z",
+ "generatedAt": "2026-11-01T06:47:31.587Z",
  "from": "2026-10-31",
  "to": "2026-12-01",
  "timezone": "Europe/Sofia",
- "count": 318,
+ "count": 320,
  "events": [
   {
    "source": "fill",
@@ -1053,6 +1053,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519622",
+   "date": "2026-11-02",
+   "time": "00:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Indiana Pacers – Brooklyn Nets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-01"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2407200",
    "date": "2026-11-02",
    "time": "02:00",
@@ -1095,6 +1110,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-10-27"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524588",
+   "date": "2026-11-02",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Minyor – Botev 2012",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-01"
   },
   {
    "source": "football-data",
@@ -4279,5 +4309,6 @@
    "round": "кръг 13",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-01"
 }

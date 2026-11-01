@@ -1,31 +1,5 @@
 [
  {
-  "extId": "ten-TBNgUggIm1Ipj9ZryV22",
-  "date": "2026-10-17",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Елизара Янева — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-10-17"
- },
- {
-  "extId": "ten-jLgFlj5nI_NymAqdBshS",
-  "date": "2026-10-17",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-10-17"
- },
- {
   "extId": "ten-nopeq5GwWA-FK5cOt7-f",
   "date": "2026-10-18",
   "time": "00:00",
@@ -401,5 +375,18 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-10-31"
+ },
+ {
+  "extId": "ten-TnTNkRyblSgHqw7bOU8v",
+  "date": "2026-11-01",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-01"
  }
 ]
