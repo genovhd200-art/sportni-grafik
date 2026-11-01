@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-01T11:15:46.676Z",
+ "generatedAt": "2026-11-01T21:04:31.594Z",
  "from": "2026-11-01",
  "to": "2026-12-31",
  "timezone": "Europe/Sofia",
- "count": 450,
+ "count": 458,
  "events": [
   {
    "source": "api-basketball",
@@ -343,7 +343,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-01"
   },
   {
    "source": "fill",
@@ -371,7 +373,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-01"
   },
   {
    "source": "api-basketball",
@@ -384,7 +388,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-01"
   },
   {
    "source": "api-basketball",
@@ -397,7 +403,9 @@
    "p": 3,
    "venue": "Bulgaria",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-01"
   },
   {
    "source": "football-data",
@@ -1255,6 +1263,34 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2619055",
+   "date": "2026-11-07",
+   "time": "15:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Ziraat Bankası – İstanbul BB",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 5",
+   "provisional": false,
+   "note": "Г. Сеганов, Кр. Алексов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2619057",
+   "date": "2026-11-07",
+   "time": "15:30",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Sungurlu Belediyespor – Halkbank Ankara",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 5",
+   "provisional": false,
+   "note": "М. Казийски, Д. Бърдаров · треньор Р. Стойчев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-558532",
    "date": "2026-11-07",
@@ -1372,6 +1408,20 @@
    "venue": "",
    "round": "кръг 10",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539987",
+   "date": "2026-11-07",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Volos – Kifisia",
+   "p": 3,
+   "venue": "Panthessaliko Stadium",
+   "round": "кръг 10",
+   "provisional": false,
+   "note": "Ал. Петков"
   },
   {
    "source": "football-data",
@@ -1891,6 +1941,48 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2498393",
+   "date": "2026-11-08",
+   "time": "16:30",
+   "sport": "fut",
+   "comp": "Унгарска НБ I",
+   "title": "Debrecen – Újpest",
+   "p": 3,
+   "venue": "Nagyerdei Stadion",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "Пл. Андреев"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539983",
+   "date": "2026-11-08",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "AEK Athens – Levadiakos",
+   "p": 3,
+   "venue": "Allwyn Arena",
+   "round": "кръг 10",
+   "provisional": false,
+   "note": "М. Георгиев"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554202",
+   "date": "2026-11-08",
+   "time": "17:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Powervolley Milano – Volley Lube",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 5",
+   "provisional": false,
+   "note": "Ал. Николов, С. Николов · Г. Татаров"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564743",
    "date": "2026-11-08",
@@ -2047,6 +2139,34 @@
    "venue": "",
    "round": "кръг 9",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539982",
+   "date": "2026-11-08",
+   "time": "21:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Olympiacos – PAOK",
+   "p": 3,
+   "venue": "Karaiskakis Stadium",
+   "round": "кръг 10",
+   "provisional": false,
+   "note": "К. Десподов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554203",
+   "date": "2026-11-08",
+   "time": "21:30",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Milano – Modena Volley",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 5",
+   "provisional": false,
+   "note": "Г. Татаров"
   },
   {
    "source": "football-data",
@@ -5961,5 +6081,6 @@
    "round": "кръг 18",
    "provisional": false
   }
- ]
+ ],
+ "lastWeeklyCheck": "2026-11-01"
 }

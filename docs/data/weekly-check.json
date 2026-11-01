@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-25T19:33:54.976Z",
- "runDate": "2026-10-25",
+ "generatedAt": "2026-11-01T21:04:31.593Z",
+ "runDate": "2026-11-01",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-10-26",
-  "to": "2026-11-01"
+  "from": "2026-11-02",
+  "to": "2026-11-08"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 56,
+   "count": 71,
    "error": null
   },
   {
@@ -27,9 +27,9 @@
   },
   {
    "name": "Нидерландска Ередивизи",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Нидерландска Ередивизи: Нидерландска Ередивизи: изчерпан лимит (429)"
   },
   {
    "name": "Израелска Премиер лига",
@@ -69,9 +69,9 @@
   },
   {
    "name": "Турска Първа лига",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Турска Първа лига: Турска Първа лига: изчерпан лимит (429)"
   },
   {
    "name": "Португалска Примейра",
@@ -82,13 +82,13 @@
   {
    "name": "Италианска СуперЛега",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
    "name": "Турска Ефелер лига",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -105,168 +105,123 @@
   }
  ],
  "totals": {
-  "fromSources": 67,
-  "inTable": 200,
-  "added": 11,
+  "fromSources": 79,
+  "inTable": 127,
+  "added": 8,
   "moved": 0,
-  "dropped": 6,
+  "dropped": 4,
   "manualUntouched": 0
  },
  "added": [
   {
-   "extId": "sdb-2539980",
-   "date": "2026-10-31",
-   "time": "19:00",
+   "extId": "sdb-2539987",
+   "date": "2026-11-07",
+   "time": "17:00",
    "sport": "fut",
    "comp": "Гръцка Супер лига",
-   "title": "Kifisia – Olympiacos",
+   "title": "Volos – Kifisia",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2539975",
-   "date": "2026-11-01",
-   "time": "19:00",
+   "extId": "sdb-2539982",
+   "date": "2026-11-08",
+   "time": "21:00",
    "sport": "fut",
    "comp": "Гръцка Супер лига",
-   "title": "Panathinaikos – AEK Athens",
+   "title": "Olympiacos – PAOK",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2539976",
-   "date": "2026-11-01",
-   "time": "19:00",
+   "extId": "sdb-2539983",
+   "date": "2026-11-08",
+   "time": "17:00",
    "sport": "fut",
    "comp": "Гръцка Супер лига",
-   "title": "PAOK – Asteras Tripolis",
+   "title": "AEK Athens – Levadiakos",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2489158",
-   "date": "2026-10-31",
-   "time": "19:45",
-   "sport": "fut",
-   "comp": "Нидерландска Ередивизи",
-   "title": "Heerenveen – NEC Nijmegen",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2498388",
-   "date": "2026-10-31",
-   "time": "18:00",
+   "extId": "sdb-2498393",
+   "date": "2026-11-08",
+   "time": "16:30",
    "sport": "fut",
    "comp": "Унгарска НБ I",
-   "title": "Puskás Akadémia – Debrecen",
+   "title": "Debrecen – Újpest",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2554193",
-   "date": "2026-10-31",
-   "time": "19:00",
+   "extId": "sdb-2554202",
+   "date": "2026-11-08",
+   "time": "17:00",
    "sport": "vol",
    "comp": "Италианска СуперЛега",
-   "title": "Volley Milano – Volley Perugia",
+   "title": "Powervolley Milano – Volley Lube",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2554194",
-   "date": "2026-11-01",
-   "time": "19:00",
+   "extId": "sdb-2554203",
+   "date": "2026-11-08",
+   "time": "21:30",
    "sport": "vol",
    "comp": "Италианска СуперЛега",
-   "title": "Powervolley Milano – Pallavolo Padova",
+   "title": "Volley Milano – Modena Volley",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2554293",
-   "date": "2026-11-01",
-   "time": "19:00",
-   "sport": "vol",
-   "comp": "Италианска СуперЛега",
-   "title": "Cuneo Volley – Volley Lube",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2616607",
-   "date": "2026-10-27",
-   "time": "14:00",
+   "extId": "sdb-2619055",
+   "date": "2026-11-07",
+   "time": "15:00",
    "sport": "vol",
    "comp": "Турска Ефелер лига",
-   "title": "Altekma – Halkbank Ankara",
+   "title": "Ziraat Bankası – İstanbul BB",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2616609",
-   "date": "2026-10-27",
-   "time": "13:00",
+   "extId": "sdb-2619057",
+   "date": "2026-11-07",
+   "time": "15:30",
    "sport": "vol",
    "comp": "Турска Ефелер лига",
-   "title": "İstanbul GSK – İstanbul BB",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2616612",
-   "date": "2026-10-31",
-   "time": "12:00",
-   "sport": "vol",
-   "comp": "Турска Ефелер лига",
-   "title": "Halkbank Ankara – Onikişubat Belediyespor",
+   "title": "Sungurlu Belediyespor – Halkbank Ankara",
    "source": "thesportsdb"
   }
  ],
  "moved": [],
  "dropped": [
   {
-   "extId": "bb-519570",
-   "title": "Brooklyn Nets – Indiana Pacers",
+   "extId": "bb-519622",
+   "title": "Indiana Pacers – Brooklyn Nets",
    "comp": "NBA",
    "sport": "bas",
-   "date": "2026-10-26",
+   "date": "2026-11-02",
    "time": "00:00",
    "source": "api-basketball"
   },
   {
-   "extId": "bb-519571",
-   "title": "Oklahoma City Thunder – Los Angeles Clippers",
+   "extId": "bb-519623",
+   "title": "Golden State Warriors – Los Angeles Clippers",
    "comp": "NBA",
    "sport": "bas",
-   "date": "2026-10-26",
-   "time": "01:00",
+   "date": "2026-11-02",
+   "time": "03:30",
    "source": "api-basketball"
   },
   {
-   "extId": "bb-519572",
-   "title": "Minnesota Timberwolves – Toronto Raptors",
+   "extId": "bb-519624",
+   "title": "Los Angeles Lakers – Toronto Raptors",
    "comp": "NBA",
    "sport": "bas",
-   "date": "2026-10-26",
-   "time": "01:00",
+   "date": "2026-11-02",
+   "time": "04:00",
    "source": "api-basketball"
   },
   {
-   "extId": "bb-519573",
-   "title": "New York Knicks – Orlando Magic",
-   "comp": "NBA",
+   "extId": "bb-524588",
+   "title": "Minyor – Botev 2012",
+   "comp": "NBL",
    "sport": "bas",
-   "date": "2026-10-26",
-   "time": "01:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519574",
-   "title": "Philadelphia 76ers – Detroit Pistons",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-10-26",
-   "time": "01:30",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519575",
-   "title": "Sacramento Kings – Memphis Grizzlies",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-10-26",
-   "time": "03:00",
+   "date": "2026-11-02",
+   "time": "19:00",
    "source": "api-basketball"
   }
  ],
