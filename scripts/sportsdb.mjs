@@ -20,8 +20,22 @@ const KEY = process.env.SPORTSDB_KEY || "123";
 const FREE = !process.env.SPORTSDB_KEY;
 const BASE = `https://www.thesportsdb.com/api/v1/json/${KEY}`;
 
+/* При 429 лимитът обикновено се освобождава до минута, затова чакаме и опитваме
+   пак, вместо да изгубим целия турнир. Общото чакане за едно пускане е с таван,
+   за да не изяде времето на задачата, ако блокирането е за по-дълго. */
+const RETRY_MS = +process.env.SPORTSDB_RETRY_MS || 65000;
+const RETRY_BUDGET_MS = +process.env.SPORTSDB_RETRY_BUDGET_MS || 15 * 60000;
+let waitedMs = 0;
+
 async function get(url, label) {
-  const r = await fetch(url, { headers: { "User-Agent": "sportni-grafik/1.0" } });
+  let r;
+  for (;;) {
+    r = await fetch(url, { headers: { "User-Agent": "sportni-grafik/1.0" } });
+    if (r.status !== 429 || waitedMs + RETRY_MS > RETRY_BUDGET_MS) break;
+    console.warn(`  … ${label}: лимит (429), чакам ${Math.round(RETRY_MS / 1000)} с и опитвам пак`);
+    waitedMs += RETRY_MS;
+    await sleep(RETRY_MS);
+  }
   if (r.status === 429) throw new Error(`${label}: изчерпан лимит (429)`);
   if (r.status === 401 || r.status === 403)
     throw new Error(`${label}: ключът не се приема (HTTP ${r.status}) — провери SPORTSDB_KEY`);
