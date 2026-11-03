@@ -104,7 +104,7 @@ function saveLocal(dirty = true){
   if(!EDITOR) return;
   if(dirty) S.dirty = true;
   try{ localStorage.setItem(LS, JSON.stringify(
-    {...stateOf(), dirty:S.dirty})); }catch(e){}
+    {...stateOf(), dirty:S.dirty, basedOn:S.basedOn})); }catch(e){}
   if(dirty) scheduleAutoPublish();
 }
 /* Със сложен токен дъската публикува сама — 8 секунди след последната
@@ -129,6 +129,8 @@ function applyState(d){
   d = d || {};
   S.authors = d.authors||{}; S.assign = d.assign||{}; S.custom = d.custom||{}; S.done = d.done||{};
   S.hidden = d.hidden||{}; S.hiddenComps = d.hiddenComps||{};
+  // от коя публикация тръгва това копие — за да не я презапишем със стара версия
+  S.basedOn = d.basedOn || d.publishedAt || "";
 }
 /* Всичко, което редакторът притежава — пази се локално и се публикува. */
 const stateOf = () => ({ authors:S.authors, assign:S.assign, custom:S.custom, done:S.done,
@@ -175,7 +177,17 @@ async function publish(auto = false){
     for(let attempt = 0; attempt < 2; attempt++){      // втори опит, ако файлът се е сменил междувременно
       const g = await fetch(api+"?ref=main&ts="+Date.now(), {headers:H, cache:"no-store"});
       if(!g.ok && g.status!==404) throw new Error(ghErr(g.status));
-      const sha = g.ok ? (await g.json()).sha : undefined;
+      const cur = g.ok ? await g.json() : null;
+      const sha = cur ? cur.sha : undefined;
+      if(cur && cur.content){
+        let remote = "";
+        try{
+          const bytes = Uint8Array.from(atob(cur.content.replace(/\s/g, "")), c => c.charCodeAt(0));
+          remote = JSON.parse(new TextDecoder().decode(bytes)).publishedAt || "";
+        }catch(e){}
+        if(remote && remote !== S.basedOn) throw new Error(
+          "в GitHub има по-нова версия и няма да я презапиша. Отвори Редактор ✓ и натисни „Зареди публикуваното“");
+      }
       res = await fetch(api, { method:"PUT", headers:H, body: JSON.stringify({
         message: "Разпределение от дъската",
         content: b64(JSON.stringify(payload, null, 1)+"\n"),
@@ -183,7 +195,7 @@ async function publish(auto = false){
       if(res.ok || (res.status!==409 && res.status!==422)) break;
     }
     if(!res.ok) throw new Error(ghErr(res.status));
-    S.published = payload; S.dirty = false; saveLocal(false); render();
+    S.published = payload; S.basedOn = payload.publishedAt; S.dirty = false; saveLocal(false); render();
     notice(auto
       ? "Публикувано автоматично в "+new Date().toLocaleTimeString("bg-BG",{hour:"2-digit",minute:"2-digit"})+
         ". Колегите го виждат до около минута."
@@ -1065,6 +1077,7 @@ async function setMark(id, done){
   S.published = pub;
   // Прегледът вижда само публикуваното. Редакторът — своето, а на нов браузър публикуваното.
   if(!hadLocal) applyState(pub);
+  else if(pub && !S.dirty && pub.publishedAt !== S.basedOn){ applyState(pub); saveLocal(false); }
   await Promise.all([loadMarks(), syncSheet()]);
   applyMode();
   if(!ok) return;
