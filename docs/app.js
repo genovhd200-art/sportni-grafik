@@ -209,8 +209,11 @@ function openEditorLogin(){
           '<span style="color:var(--ink-3);font-size:12px">Изчаква 8 секунди и качва — не се налага да натискате нищо.</span>'+
           '</span></label>'
         : '')+
-      '<p style="margin:0;color:var(--ink-3);font-size:12.5px">„Зареди публикуваното“ заменя разпределението '+
-      'в този браузър с последното публикувано — полезно на нов компютър.</p>'
+      '<p style="margin:0 0 10px;color:var(--ink-3);font-size:12.5px">„Зареди публикуваното“ заменя разпределението '+
+      'в този браузър с последното публикувано — полезно на нов компютър.</p>'+
+      '<label class="fl" for="tokIn">'+(getToken() ? "Нов GitHub токен, ако старият е изтекъл" : "GitHub токен")+'</label>'+
+      '<input type="password" id="tokIn" autocomplete="off" spellcheck="false" placeholder="github_pat_…" style="width:100%">'+
+      '<p id="tokErr" style="margin:8px 0 0;color:var(--crit)" hidden></p>'
     : '<p style="margin:0 0 10px">Само редакторът разпределя. Всички останали виждат публикуваното.</p>'+
       '<p style="margin:0 0 10px;color:var(--ink-3);font-size:12.5px">Може и <b>без токен</b>: '+
       'натисни „Публикувай“, файлът се сваля и го качваш в GitHub. Токенът е само за да става с едно натискане.</p>'+
@@ -224,6 +227,7 @@ function openEditorLogin(){
   const foot = EDITOR
     ? '<button class="btn left" data-act="logout">Изход</button>'+
       '<button class="btn" data-act="loadPub">Зареди публикуваното</button>'+
+      '<button class="btn" data-act="saveToken">Запази токена</button>'+
       '<button class="btn primary" data-act="cancel">Готово</button>'
     : '<button class="btn left" data-act="editorNoToken">Влез без токен</button>'+
       '<button class="btn" data-act="cancel">Отказ</button>'+
