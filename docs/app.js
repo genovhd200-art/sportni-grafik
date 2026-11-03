@@ -16,9 +16,10 @@ const PUB_PATH = "docs/data/assignments.json";
    да се пише, решава политиката в базата (само таблицата done_marks). */
 const SHARED = { url: "https://jbldhyjdrtvzumqxxmfq.supabase.co", key: "sb_publishable_Dgd8fuVVrB3X0Dq-mcx6Iw_-HIBXt3V" };
 const sharedOn = () => !!(SHARED.url && SHARED.key);
-/* Смените идват от Google таблицата (публична, само за четене). Всеки месец е
-   отделен раздел с българското име на месеца — „Септември“, „Октомври“… */
-const SHEET = { id: "1K23f-JU4gRRTsm4es7mw5LxqyqNPMaO-zisEISy4hOc" };
+/* Смените идват от Google таблицата (публична, само за четене). Раздел „Септември“
+   продължава и в следващите месеци, затова се чете винаги; нов раздел с българско
+   име на месец („Октомври“…) също се хваща сам. */
+const SHEET = { id: "1K23f-JU4gRRTsm4es7mw5LxqyqNPMaO-zisEISy4hOc", tabs: ["Септември"] };
 const TOKEN_KEY = LS + "-editor";
 const MODE_KEY = LS + "-editor-mode";      // редактор без токен (публикува с файл)
 const AUTO_KEY = LS + "-autopub";          // само с токен: публикувай сам след всяка промяна
@@ -317,7 +318,8 @@ const MONTH_TABS = ["Януари","Февруари","Март","Април","�
 async function loadSheetShifts(){
   if(!SHEET.id) return null;
   const now = new Date(), out = { dates:new Set(), people:{} };
-  const tabs = [-1, 0, 1].map(k => MONTH_TABS[(now.getMonth() + k + 12) % 12]);
+  const months = [-1, 0, 1].map(k => (now.getMonth() + k + 12) % 12);
+  const tabs = [...new Set([...SHEET.tabs, ...months.map(m => MONTH_TABS[m])])];
   let got = 0;
   await Promise.all(tabs.map(async tab => {
     try{
@@ -326,9 +328,8 @@ async function loadSheetShifts(){
       if(!r.ok) return;
       const tmp = { dates:new Set(), people:{} };
       parseSheet(parseCsv(await r.text()), tmp);
-      // непознат раздел Google го заменя с първия — приемаме го само ако датите са от този месец
-      const want = MONTH_TABS.indexOf(tab) + 1;
-      if(![...tmp.dates].some(d => +d.slice(5,7) === want)) return;
+      // непознат раздел Google го заменя с първия — приемаме го само ако има дати от тези месеци
+      if(![...tmp.dates].some(d => months.includes(+d.slice(5,7) - 1))) return;
       tmp.dates.forEach(d => out.dates.add(d));
       for(const [k,p] of Object.entries(tmp.people)){
         const o = out.people[k] || (out.people[k] = {name:p.name, slots:{}});
