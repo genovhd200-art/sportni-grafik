@@ -76,6 +76,51 @@ export async function writeJSON(rel, data, indent = 1) {
 }
 
 /**
+ * Един и същ мач от api-sports и от друг източник. api-sports дава само
+ * днес и утре и пише отборите различно („Beroe – CSKA Sofia“ и
+ * „Beroe 2016 – CSKA“, „Pernik – Dunav“ и „Metalurg – Dunav“), затова ключът
+ * по заглавие не ги хваща. Само волейбол и баскетбол, само двойка „api-sports
+ * срещу друг източник“, в същия ден и час и с поне един общ отбор: отбор не
+ * играе два мача едновременно. Женските („W“, „Women“) не се сливат с мъжките.
+ * Остава записът от другия източник, защото той е за целия сезон.
+ */
+const SAME_TEAM_STOP = new Set(["sofi", "plov", "varn", "burg", "voll", "spor", "club", "bask"]);
+const isApiSports = e => /^api-/.test(e.source || "") || /^api-/.test(e.via || "");
+const isWomen = t => /\b(w|women|feminin|жени)\b/i.test(t);
+const teamWords = side => String(side).toLowerCase().normalize("NFD").replace(/\p{M}/gu, "")
+  .split(/[^\p{L}]+/u).filter(w => w.length >= 4).map(w => w.slice(0, 4))
+  .filter(w => !SAME_TEAM_STOP.has(w));
+const shareTeam = (a, b) => a.some(w => b.includes(w));
+export function mergeSourceDuplicates(events) {
+  const parts = e => {
+    const p = String(e.title || "").split(/\s+[-–—]\s+/);
+    return p.length === 2 ? p.map(teamWords) : null;
+  };
+  const drop = new Set(), pairs = [];
+  const groups = new Map();
+  for (const e of events) {
+    if (e.sport !== "vol" && e.sport !== "bas") continue;
+    const k = e.date + "|" + e.time + "|" + e.sport;
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(e);
+  }
+  for (const list of groups.values()) {
+    for (const api of list.filter(isApiSports)) {
+      const a = parts(api);
+      if (!a) continue;
+      const other = list.find(o => {
+        if (isApiSports(o) || isWomen(o.title) !== isWomen(api.title)) return false;
+        const b = parts(o);
+        return b && (shareTeam(a[0], b[0]) || shareTeam(a[1], b[1]) ||
+                     shareTeam(a[0], b[1]) || shareTeam(a[1], b[0]));
+      });
+      if (other) { drop.add(api); pairs.push([api, other]); }
+    }
+  }
+  return { events: events.filter(e => !drop.has(e)), pairs };
+}
+
+/**
  * Ключ за сравняване на едно и също събитие между два източника или между
  * два дни. Часът и датата нарочно НЕ влизат — иначе преместен мач излиза
  * като „нов“ и „отпаднал“ едновременно.

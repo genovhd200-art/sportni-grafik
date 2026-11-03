@@ -14,7 +14,7 @@ import path from "node:path";
 import { volleyball, basketball } from "./other-sports.mjs";
 import { fromSportsDB } from "./sportsdb.mjs";
 import { fromFootballData } from "./football-data.mjs";
-import { ROOT, TZ, toSofia, sleep, pad, matchKey } from "./lib.mjs";
+import { ROOT, TZ, toSofia, sleep, pad, matchKey, mergeSourceDuplicates } from "./lib.mjs";
 import { loadHidden } from "./hidden.mjs";
 
 const OUT = path.join(ROOT, "docs", "data", "events.json");
@@ -182,6 +182,12 @@ events = events.concat(await weeklyEvents());
 events = events.concat(await tennisEvents());
 events = events.concat(await manualEvents());
 events = events.concat(await filledEvents(events));
+{
+  const merged = mergeSourceDuplicates(events);
+  events = merged.events;
+  for (const [a, b] of merged.pairs)
+    console.log(`  ✓ слято: ${a.date} ${a.time} ${a.title} = ${b.title}`);
+}
 
 /* Махнатото от дъската не се връща: махнат турнир отпада цял, махнат мач — по id. */
 const HID = await loadHidden();
