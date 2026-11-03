@@ -537,12 +537,13 @@ function autoAssign(){
     const cands = authors.filter(a => coversEnd(a,e) || coversStart(a,e));
     if(!cands.length) return;
     // Редът на предпочитане:
-    //   1) свободният — ако всички вече имат мач по същото време, поема
+    //   1) на смяна, когато мачът свършва — той ще пише; този, чиято смяна
+    //      свършва преди края на мача, поема само ако в края няма никой
+    //   2) свободният — ако всички вече имат мач по същото време, поема
     //      най-малко заетият и застъпването излиза в „Проверка“
-    //   2) на смяна, когато мачът свършва — той ще пише; иначе този при започването
     //   3) по-малко натовареният за седмицата
     const endFirst = a => coversEnd(a,e) ? 0 : 1;
-    cands.sort((x,y) => busy(x,e)-busy(y,e) || endFirst(x)-endFirst(y) || load[x.id]-load[y.id]);
+    cands.sort((x,y) => endFirst(x)-endFirst(y) || busy(x,e)-busy(y,e) || load[x.id]-load[y.id]);
     const pick = cands[0];
     if(busy(pick,e)) doubled++;
     load[pick.id]++; taken[pick.id].push(e); plan.push([e.id, pick.id]);
