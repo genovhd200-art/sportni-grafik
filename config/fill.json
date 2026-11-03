@@ -32,7 +32,15 @@
   { "name": "Втора Бундеслига",      "fd": null, "sdb": 4399, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Darmstadt", "Pauli", "Elversberg", "sseldorf"] },
   { "name": "Турска Супер лига",     "fd": null, "sdb": 4339, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["ztepe"] },
   { "name": "Турска Първа лига",     "fd": null, "sdb": 4676, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["stanbulspor", "Mardin 1969"] },
-  { "name": "Португалска Примейра",  "fd": null, "sdb": 4344, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Estrela Amadora"] }
+  { "name": "Португалска Примейра",  "fd": null, "sdb": 4344, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Estrela Amadora"] },
+  { "name": "Сръбска Супер лига",  "fd": null, "sdb": 4671, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Crvena Zvezda"] },
+  { "name": "Руска Премиер лига",  "fd": null, "sdb": 4355, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Orenburg"] },
+  { "name": "Румънска лига, жени",  "fd": null, "sdb": 5946, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Farul"] },
+  { "name": "Саудитска Про лига",  "fd": null, "sdb": 4668, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Taawoun"] },
+  { "name": "Хонконгска Премиер лига",  "fd": null, "sdb": 4825, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Lee Man"] },
+  { "name": "Грузинска Еровнули лига",  "fd": null, "sdb": 4638, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Batumi"] },
+  { "name": "Молдовска Национална дивизия",  "fd": null, "sdb": 4655, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Sheriff"] },
+  { "name": "Виетнамска V.League 1",  "fd": null, "sdb": 4803, "weight": 1, "weekly": true, "enabled": true, "onlyTeams": ["Viettel"] }
  ],
  "_onlyTeams": "Ако турнирът има onlyTeams, влизат само мачовете на тези отбори. Търси се в заглавието, без значение от главни букви и от езика — затова се изброяват и двата изписа.",
 
@@ -54,7 +62,8 @@
  "volleyballIntl": [
   { "name": "Италианска СуперЛега", "sdb": 4544, "weight": 2, "weekly": true, "enabled": true, "onlyTeams": ["Volley Lube", "Powervolley Milano", "Volley Milano"] },
   { "name": "Турска Ефелер лига",    "sdb": 4543, "weight": 2, "weekly": true, "enabled": true, "onlyTeams": ["Halkbank", "stanbul BB"] },
-  { "name": "Полска ПлюсЛига",       "sdb": 5619, "weight": 2, "weekly": true, "enabled": true, "onlyTeams": ["Bogdanka LUK Lublin", "lepsk Suwa"] }
+  { "name": "Полска ПлюсЛига",       "sdb": 5619, "weight": 2, "weekly": true, "enabled": true, "onlyTeams": ["Bogdanka LUK Lublin", "lepsk Suwa"] },
+  { "name": "Руска Суперлига (волейбол)", "sdb": 4545, "weight": 2, "weekly": true, "enabled": true, "onlyTeams": ["Novosibirsk"] }
  ],
 
  "_motorsport": "Формула 1 — всички сесии от Jolpica. Формула 2 — само състезанията от TheSportsDB, често без час (излизат като непотвърдени).",
