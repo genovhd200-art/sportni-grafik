@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-04T12:04:10.138Z",
+ "generatedAt": "2026-11-05T07:38:28.415Z",
  "from": "2026-11-04",
  "to": "2026-12-05",
  "timezone": "Europe/Sofia",
- "count": 378,
+ "count": 386,
  "events": [
   {
    "source": "api-volleyball",
@@ -1126,6 +1126,21 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-10-26"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217474",
+   "date": "2026-11-06",
+   "time": "19:30",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "CSKA Sofia – Pernik",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-05"
   },
   {
    "source": "fill",
@@ -2264,6 +2279,21 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2615680",
+   "date": "2026-11-10",
+   "time": "21:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Mijas-Las Lagunas – Real Jaén",
+   "p": 1,
+   "venue": "Estadio Municipal Francisco Muñoz Pérez",
+   "round": "кръг 128",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-05"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2615686",
    "date": "2026-11-10",
    "time": "22:00",
@@ -2774,6 +2804,51 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2601839",
+   "date": "2026-11-14",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Indiana Pacers – New York Knicks",
+   "p": 2,
+   "venue": "Gainbridge Fieldhouse",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-05"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601840",
+   "date": "2026-11-14",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Orlando Magic – Milwaukee Bucks",
+   "p": 2,
+   "venue": "Kia Center",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-05"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601841",
+   "date": "2026-11-14",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Chicago Bulls – Atlanta Hawks",
+   "p": 2,
+   "venue": "United Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-05"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2442835",
    "date": "2026-11-14",
    "time": "16:00",
@@ -2966,6 +3041,51 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-02"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601848",
+   "date": "2026-11-15",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "New Orleans Pelicans – Denver Nuggets",
+   "p": 2,
+   "venue": "Smoothie King Center",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-05"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601849",
+   "date": "2026-11-15",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Cleveland Cavaliers – Dallas Mavericks",
+   "p": 2,
+   "venue": "Rocket Arena",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-05"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601850",
+   "date": "2026-11-15",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Memphis Grizzlies – Brooklyn Nets",
+   "p": 2,
+   "venue": "FedExForum",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-05"
   },
   {
    "source": "fill",
@@ -5197,5 +5317,6 @@
    "round": "кръг 15",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-05"
 }
