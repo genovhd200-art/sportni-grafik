@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-07T11:02:02.116Z",
+ "generatedAt": "2026-11-08T06:55:48.014Z",
  "from": "2026-11-07",
  "to": "2026-12-08",
  "timezone": "Europe/Sofia",
- "count": 348,
+ "count": 355,
  "events": [
   {
    "source": "api-basketball",
@@ -1179,6 +1179,111 @@
    "venue": "USA",
    "round": "",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519673",
+   "date": "2026-11-09",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Detroit Pistons – Los Angeles Lakers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-08"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519674",
+   "date": "2026-11-09",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Minnesota Timberwolves – Utah Jazz",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-08"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519675",
+   "date": "2026-11-09",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Dallas Mavericks – Brooklyn Nets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-08"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519676",
+   "date": "2026-11-09",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Milwaukee Bucks – Boston Celtics",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-08"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519677",
+   "date": "2026-11-09",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Los Angeles Clippers – New Orleans Pelicans",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-08"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519678",
+   "date": "2026-11-09",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Sacramento Kings – Miami Heat",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-08"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217401",
+   "date": "2026-11-09",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Slaviya Sofia W – Maritza 2022 W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-08"
   },
   {
    "source": "fill",
@@ -4734,5 +4839,6 @@
    "round": "кръг 6",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-08"
 }
