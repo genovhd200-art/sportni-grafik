@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-08T11:16:28.875Z",
+ "generatedAt": "2026-11-08T21:16:27.390Z",
  "from": "2026-11-08",
  "to": "2026-12-09",
  "timezone": "Europe/Sofia",
- "count": 318,
+ "count": 325,
  "events": [
   {
    "source": "api-basketball",
@@ -516,7 +516,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-08"
   },
   {
    "source": "api-basketball",
@@ -529,7 +531,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-08"
   },
   {
    "source": "api-basketball",
@@ -542,7 +546,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-08"
   },
   {
    "source": "api-basketball",
@@ -555,7 +561,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-08"
   },
   {
    "source": "api-basketball",
@@ -568,7 +576,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-08"
   },
   {
    "source": "api-basketball",
@@ -581,7 +591,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-08"
   },
   {
    "source": "api-volleyball",
@@ -594,7 +606,37 @@
    "p": 2,
    "venue": "Bulgaria",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-08"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2553940",
+   "date": "2026-11-09",
+   "time": "18:30",
+   "sport": "vol",
+   "comp": "Полска ПлюсЛига",
+   "title": "AZS Olsztyn – Bogdanka LUK Lublin",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 5",
+   "provisional": false,
+   "note": "Ал. Грозданов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2557676",
+   "date": "2026-11-10",
+   "time": "14:00",
+   "sport": "vol",
+   "comp": "Руска Суперлига (волейбол)",
+   "title": "Lokomotiv Novosibirsk – Nova",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 6",
+   "provisional": false,
+   "note": "треньор Пл. Константинов"
   },
   {
    "source": "fill",
@@ -1408,6 +1450,34 @@
    "addedAt": "2026-11-05"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2598965",
+   "date": "2026-11-14",
+   "time": "13:00",
+   "sport": "fut",
+   "comp": "Румънска лига, жени",
+   "title": "Farul Constanţa Women – Universitatea Olimpia Cluj Feminin",
+   "p": 1,
+   "venue": "Stadionul Central Ovidiu",
+   "round": "кръг 12",
+   "provisional": false,
+   "note": "Д. Иванова, Н. Бойчева"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2619063",
+   "date": "2026-11-14",
+   "time": "15:30",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "İstanbul BB – Gaziantep Gençlik",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 6",
+   "provisional": false,
+   "note": "Г. Сеганов, Кр. Алексов"
+  },
+  {
    "source": "fill",
    "extId": "sdb-2442835",
    "date": "2026-11-14",
@@ -1528,6 +1598,34 @@
    "addedAt": "2026-11-02"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2553950",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Полска ПлюсЛига",
+   "title": "Bogdanka LUK Lublin – Asseco Resovia",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 6",
+   "provisional": false,
+   "note": "Ал. Грозданов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2553952",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Полска ПлюсЛига",
+   "title": "Ślepsk Suwałki – ZAKSA Kędzierzyn-Koźle",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 6",
+   "provisional": false,
+   "note": "А. Аспарухов"
+  },
+  {
    "source": "fill",
    "extId": "sdb-2442838",
    "date": "2026-11-14",
@@ -1646,6 +1744,20 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-05"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2557684",
+   "date": "2026-11-15",
+   "time": "14:00",
+   "sport": "vol",
+   "comp": "Руска Суперлига (волейбол)",
+   "title": "Lokomotiv Novosibirsk – Enisey Krasnoyarsk",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false,
+   "note": "треньор Пл. Константинов"
   },
   {
    "source": "fill",
@@ -4306,5 +4418,6 @@
    "round": "кръг 6",
    "provisional": false
   }
- ]
+ ],
+ "lastWeeklyCheck": "2026-11-08"
 }
