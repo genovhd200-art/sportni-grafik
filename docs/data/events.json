@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10T08:06:45.853Z",
+ "generatedAt": "2026-11-10T12:33:41.438Z",
  "from": "2026-11-10",
  "to": "2026-12-11",
  "timezone": "Europe/Sofia",
@@ -4971,6 +4971,5 @@
    "round": "кръг 14",
    "provisional": false
   }
- ],
- "lastFill": "2026-11-10"
+ ]
 }
