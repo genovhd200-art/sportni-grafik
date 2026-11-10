@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-11-10T08:16:38.993Z",
+ "publishedAt": "2026-11-10T08:16:53.277Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -5274,6 +5274,274 @@
   },
   "sdb-2407202": {
    "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-U2026_111": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-E2026_107": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2611792": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442833": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2611796": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2611797": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "vb-218195": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "vb-218182": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sofa-17101115": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sofa-15923108": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "vb-218194": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "vb-218190": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sofa-16461756": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "vb-210909": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_102": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_101": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442822": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442823": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_103": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_105": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_104": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442824": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442825": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442826": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442827": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442828": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475305": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_106": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bvf-65-2026-11-13-slavia-deyasport": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442832": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_109": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bvf-65-2026-11-13-dunav-cska": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_110": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_108": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442829": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442830": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442831": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442834": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475306": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475307": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475308": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475309": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442835": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sofa-15923157": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442836": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442837": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "bvf-65-2026-11-14-beroe2016-neftohimik2010": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442838": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442839": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442840": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442841": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442842": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442843": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475310": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bvf-65-2026-11-15-metalurg-montanavolley": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bvf-65-2026-11-15-lokomotivavia-pirin": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442844": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442845": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442846": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442847": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442848": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442849": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2615659": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2615680": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2615686": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2615637": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2615652": {
+   "authorId": "mu5hfevsksxfp",
    "format": ""
   }
  },
