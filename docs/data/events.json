@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-10T12:33:41.438Z",
+ "generatedAt": "2026-11-11T07:24:35.353Z",
  "from": "2026-11-10",
  "to": "2026-12-11",
  "timezone": "Europe/Sofia",
- "count": 361,
+ "count": 371,
  "events": [
   {
    "source": "api-basketball",
@@ -465,6 +465,96 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-11-07"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519696",
+   "date": "2026-11-12",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Chicago Bulls – San Antonio Spurs",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519697",
+   "date": "2026-11-12",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Memphis Grizzlies – Denver Nuggets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519698",
+   "date": "2026-11-12",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Milwaukee Bucks – Los Angeles Lakers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519699",
+   "date": "2026-11-12",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "New Orleans Pelicans – Brooklyn Nets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519700",
+   "date": "2026-11-12",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Utah Jazz – Orlando Magic",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519701",
+   "date": "2026-11-12",
+   "time": "04:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Houston Rockets – Golden State Warriors",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-11"
   },
   {
    "source": "fill",
@@ -2697,6 +2787,51 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2601901",
+   "date": "2026-11-22",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "New York Knicks – Portland Trail Blazers",
+   "p": 2,
+   "venue": "Madison Square Garden",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601902",
+   "date": "2026-11-22",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Dallas Mavericks – Los Angeles Clippers",
+   "p": 2,
+   "venue": "American Airlines Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601903",
+   "date": "2026-11-22",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Minnesota Timberwolves – Memphis Grizzlies",
+   "p": 2,
+   "venue": "Target Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
    "extId": "f1-2026-21-Race",
    "date": "2026-11-22",
    "time": "06:00",
@@ -2888,6 +3023,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-10"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2611803",
+   "date": "2026-11-22",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Lokomotiv Plovdiv – BC Shumen",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-11"
   },
   {
    "source": "football-data",
@@ -4971,5 +5121,6 @@
    "round": "кръг 14",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-11"
 }
