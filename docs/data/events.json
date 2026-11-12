@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-11T11:51:42.890Z",
+ "generatedAt": "2026-11-12T07:59:25.115Z",
  "from": "2026-11-11",
  "to": "2026-12-12",
  "timezone": "Europe/Sofia",
- "count": 383,
+ "count": 390,
  "events": [
   {
    "source": "api-basketball",
@@ -615,6 +615,36 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519706",
+   "date": "2026-11-13",
+   "time": "04:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Phoenix Suns – Charlotte Hornets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-12"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217402",
+   "date": "2026-11-13",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritza 2022 W – CSKA Sofia W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-12"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2611792",
    "date": "2026-11-13",
    "time": "18:00",
@@ -642,6 +672,51 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-11-02"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524600",
+   "date": "2026-11-13",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Balkan – Lok. Plovdiv",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-12"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217479",
+   "date": "2026-11-13",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Slaviya Sofia – Deya Volley",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-12"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217403",
+   "date": "2026-11-13",
+   "time": "18:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritsa Plovdiv W – Deya Volley W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-12"
   },
   {
    "source": "fill",
@@ -687,6 +762,21 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-11-02"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217480",
+   "date": "2026-11-13",
+   "time": "19:30",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Dunav – CSKA Sofia",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-12"
   },
   {
    "source": "fill",
@@ -2556,6 +2646,21 @@
    "venue": "",
    "round": "кръг 13",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2627206",
+   "date": "2026-11-22",
+   "time": "01:00",
+   "sport": "fut",
+   "comp": "МЛС",
+   "title": "Inter Miami – Columbus Crew",
+   "p": 1,
+   "venue": "Nu Stadium",
+   "round": "кръг 16",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-12"
   },
   {
    "source": "fill",
@@ -5244,5 +5349,6 @@
    "round": "кръг 16",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-12"
 }

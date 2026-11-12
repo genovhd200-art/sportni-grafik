@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-11T07:24:35.352Z",
- "runDate": "2026-11-11",
+ "generatedAt": "2026-11-12T07:59:25.115Z",
+ "runDate": "2026-11-12",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-11-11",
+  "from": "2026-11-12",
   "to": "2026-11-22"
  },
  "sources": [
@@ -64,7 +64,7 @@
   {
    "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 9,
+   "count": 3,
    "error": null
   },
   {
@@ -100,7 +100,7 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 54,
+   "count": 45,
    "error": null
   },
   {
@@ -118,13 +118,13 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 16,
+   "count": 15,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 0,
+   "count": 4,
    "error": null
   },
   {
@@ -135,138 +135,93 @@
   }
  ],
  "totals": {
-  "fromSources": 161,
-  "added": 10,
-  "tennisNew": 1,
-  "tennisPending": 33
+  "fromSources": 157,
+  "added": 7,
+  "tennisNew": 2,
+  "tennisPending": 32
  },
  "added": [
   {
-   "extId": "bb-519696",
-   "date": "2026-11-12",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Chicago Bulls – San Antonio Spurs",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519697",
-   "date": "2026-11-12",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Memphis Grizzlies – Denver Nuggets",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519698",
-   "date": "2026-11-12",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Milwaukee Bucks – Los Angeles Lakers",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519699",
-   "date": "2026-11-12",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "New Orleans Pelicans – Brooklyn Nets",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519700",
-   "date": "2026-11-12",
+   "extId": "bb-519706",
+   "date": "2026-11-13",
    "time": "04:00",
    "sport": "bas",
    "comp": "NBA",
-   "title": "Utah Jazz – Orlando Magic",
+   "title": "Phoenix Suns – Charlotte Hornets",
    "via": "api-basketball"
   },
   {
-   "extId": "bb-519701",
-   "date": "2026-11-12",
-   "time": "04:30",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Houston Rockets – Golden State Warriors",
-   "via": "api-basketball"
+   "extId": "vb-217402",
+   "date": "2026-11-13",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritza 2022 W – CSKA Sofia W",
+   "via": "api-volleyball"
   },
   {
-   "extId": "sdb-2601901",
-   "date": "2026-11-22",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "New York Knicks – Portland Trail Blazers",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601902",
-   "date": "2026-11-22",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Dallas Mavericks – Los Angeles Clippers",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601903",
-   "date": "2026-11-22",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Minnesota Timberwolves – Memphis Grizzlies",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2611803",
-   "date": "2026-11-22",
+   "extId": "bb-524600",
+   "date": "2026-11-13",
    "time": "18:00",
    "sport": "bas",
-   "comp": "НБЛ",
-   "title": "BC Lokomotiv Plovdiv – BC Shumen",
+   "comp": "NBL",
+   "title": "Balkan – Lok. Plovdiv",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "vb-217479",
+   "date": "2026-11-13",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Slaviya Sofia – Deya Volley",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "vb-217403",
+   "date": "2026-11-13",
+   "time": "18:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritsa Plovdiv W – Deya Volley W",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "vb-217480",
+   "date": "2026-11-13",
+   "time": "19:30",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Dunav – CSKA Sofia",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "sdb-2627206",
+   "date": "2026-11-22",
+   "time": "01:00",
+   "sport": "fut",
+   "comp": "МЛС",
+   "title": "Inter Miami – Columbus Crew",
    "via": "thesportsdb"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-0UcSnG0x4RUvmckRmNh-",
-   "date": "2026-11-11",
+   "extId": "ten-9UlJI85WF_W5HszbKR0E",
+   "date": "2026-11-12",
    "time": "00:00",
+   "comp": "Тенис",
+   "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-k0sjzzM5odsBluDBwNMs",
+   "date": "2026-11-12",
+   "time": "2:01",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-11-11",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-11-11"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-11-11"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-11-11"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-11-11"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-11-11"
-    }
-   ]
-  },
   {
    "date": "2026-11-12",
    "links": [
