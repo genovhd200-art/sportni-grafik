@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-13T12:08:34.694Z",
+ "generatedAt": "2026-11-14T07:18:04.372Z",
  "from": "2026-11-13",
  "to": "2026-12-14",
  "timezone": "Europe/Sofia",
- "count": 394,
+ "count": 407,
  "events": [
   {
    "date": "2026-11-11",
@@ -588,6 +588,51 @@
    "addedAt": "2026-11-02"
   },
   {
+   "source": "fill",
+   "extId": "bb-524601",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Botev 2012 – Levski",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524603",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Cherno More – Polytechnica",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524604",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Minyor – Yambol",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
+  },
+  {
    "date": "2026-11-14",
    "time": "19:00",
    "sport": "bas",
@@ -657,6 +702,21 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-11-02"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217481",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Beroe – Neftohimic Burgas",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-14"
   },
   {
    "source": "fill",
@@ -780,6 +840,51 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519719",
+   "date": "2026-11-15",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Miami Heat – Detroit Pistons",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519720",
+   "date": "2026-11-15",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Minnesota Timberwolves – Chicago Bulls",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217406",
+   "date": "2026-11-15",
+   "time": "15:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Levski Sofia W – CPVC Volley W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2442843",
    "date": "2026-11-15",
    "time": "16:00",
@@ -855,6 +960,51 @@
   },
   {
    "source": "fill",
+   "extId": "vb-217482",
+   "date": "2026-11-15",
+   "time": "17:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Lokomotiv Avia – Pirin Razlog",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217483",
+   "date": "2026-11-15",
+   "time": "17:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Pernik – Montana",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524602",
+   "date": "2026-11-15",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Botev Academic – CSKA Sofia",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2442844",
    "date": "2026-11-15",
    "time": "19:00",
@@ -882,6 +1032,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-02"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519721",
+   "date": "2026-11-15",
+   "time": "20:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Philadelphia 76ers – Indiana Pacers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
   },
   {
    "source": "fill",
@@ -942,6 +1107,36 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-02"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519722",
+   "date": "2026-11-15",
+   "time": "23:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Phoenix Suns – Los Angeles Lakers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519723",
+   "date": "2026-11-15",
+   "time": "23:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Los Angeles Clippers – Charlotte Hornets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-14"
   },
   {
    "source": "fill",
@@ -5377,5 +5572,6 @@
    "round": "кръг 15",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-14"
 }
