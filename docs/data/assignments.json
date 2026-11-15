@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-11-15T19:55:49.192Z",
+ "publishedAt": "2026-11-15T19:56:26.920Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -2717,112 +2717,6 @@
       "e": "18:00"
      }
     ],
-    "2026-11-20": [],
-    "2026-11-21": [],
-    "2026-11-22": [],
-    "2026-11-23": [],
-    "2026-11-24": [],
-    "2026-11-25": [],
-    "2026-11-26": [],
-    "2026-11-27": [],
-    "2026-11-28": [],
-    "2026-11-29": [],
-    "2026-11-30": [],
-    "2026-12-01": [],
-    "2026-12-02": [],
-    "2026-12-03": [],
-    "2026-12-04": [],
-    "2026-12-05": [],
-    "2026-12-06": []
-   }
-  },
-  "sh-венци": {
-   "id": "sh-венци",
-   "name": "Венци",
-   "role": "",
-   "color": "#14487F",
-   "shifts": {
-    "2026-08-31": [],
-    "2026-09-01": [],
-    "2026-09-02": [],
-    "2026-09-03": [],
-    "2026-09-04": [],
-    "2026-09-05": [],
-    "2026-09-06": [],
-    "2026-09-07": [],
-    "2026-09-08": [],
-    "2026-09-09": [],
-    "2026-09-10": [],
-    "2026-09-11": [],
-    "2026-09-12": [],
-    "2026-09-13": [],
-    "2026-09-14": [],
-    "2026-09-15": [],
-    "2026-09-16": [],
-    "2026-09-17": [],
-    "2026-09-18": [],
-    "2026-09-19": [],
-    "2026-09-20": [],
-    "2026-09-21": [],
-    "2026-09-22": [],
-    "2026-09-23": [],
-    "2026-09-24": [],
-    "2026-09-25": [],
-    "2026-09-26": [],
-    "2026-09-27": [],
-    "2026-09-28": [],
-    "2026-09-29": [],
-    "2026-09-30": [],
-    "2026-10-01": [],
-    "2026-10-02": [],
-    "2026-10-03": [],
-    "2026-10-04": [],
-    "2026-10-05": [],
-    "2026-10-06": [],
-    "2026-10-07": [],
-    "2026-10-08": [],
-    "2026-10-09": [],
-    "2026-10-10": [],
-    "2026-10-11": [],
-    "2026-10-12": [],
-    "2026-10-13": [],
-    "2026-10-14": [],
-    "2026-10-15": [],
-    "2026-10-16": [],
-    "2026-10-17": [],
-    "2026-10-18": [],
-    "2026-10-19": [],
-    "2026-10-20": [],
-    "2026-10-21": [],
-    "2026-10-22": [],
-    "2026-10-23": [],
-    "2026-10-24": [],
-    "2026-10-25": [],
-    "2026-10-26": [],
-    "2026-10-27": [],
-    "2026-10-28": [],
-    "2026-10-29": [],
-    "2026-10-30": [],
-    "2026-10-31": [],
-    "2026-11-01": [],
-    "2026-11-02": [],
-    "2026-11-03": [],
-    "2026-11-04": [],
-    "2026-11-05": [],
-    "2026-11-06": [],
-    "2026-11-07": [],
-    "2026-11-08": [],
-    "2026-11-09": [],
-    "2026-11-10": [],
-    "2026-11-11": [],
-    "2026-11-12": [],
-    "2026-11-13": [],
-    "2026-11-14": [],
-    "2026-11-15": [],
-    "2026-11-16": [],
-    "2026-11-17": [],
-    "2026-11-18": [],
-    "2026-11-19": [],
     "2026-11-20": [],
     "2026-11-21": [],
     "2026-11-22": [],
@@ -5680,6 +5574,422 @@
    "format": ""
   },
   "sdb-2615652": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442852": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_113": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2611799": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2487372": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_130": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2487371": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-565860": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-560642": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "sdb-2487374": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "sdb-2611798": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "sdb-2611801": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "sdb-2611802": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "bvf-65-2026-11-21-levski-sofia-beroe2016": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "f1-2026-21-Race": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2487373": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2487370": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "sdb-2611800": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "sdb-2487369": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "sdb-2611803": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-558523": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442850": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442851": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "sdb-2442853": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475311": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442854": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442855": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475312": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475313": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2475314": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_111": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sofa-15923105": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_117": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_112": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_116": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_115": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_114": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_118": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442856": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442857": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442858": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442859": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442860": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442861": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442862": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "sdb-2442863": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_119": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_120": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_122": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-E2026_121": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-E2026_124": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-E2026_123": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-E2026_126": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "el-E2026_125": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "bvf-65-2026-11-20-montanavolley-dunav": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-E2026_127": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-565859": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "el-E2026_128": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-559622": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "el-E2026_129": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-564748": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-560643": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-564755": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-558525": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-558528": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-565857": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-565858": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-565862": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-565865": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-560644": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-560647": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-560648": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-560650": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-564751": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-559628": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-558526": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "bvf-65-2026-11-21-neftohimik2010-metalurg": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-560651": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-564756": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-565861": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-558527": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559621": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559623": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559624": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-559627": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-564754": {
+   "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "fd-558521": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "fd-564749": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-560646": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-558522": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-558524": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-559625": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-565864": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "bvf-65-2026-11-22-lokomotivavia-slavia": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-564750": {
+   "authorId": "sh-габо",
+   "format": ""
+  },
+  "fd-559626": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-560645": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-565863": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bvf-65-2026-11-22-pirin-cska": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-564752": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-558520": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-559629": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "fd-564753": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "bb-519724": {
+   "authorId": "mu5hfevsksxfp",
+   "format": ""
+  },
+  "el-U2026_127": {
    "authorId": "mu5hfevsksxfp",
    "format": ""
   }
