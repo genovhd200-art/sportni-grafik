@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-11-15T21:52:49.163Z",
- "runDate": "2026-11-15",
+ "generatedAt": "2026-11-15T22:36:45.470Z",
+ "runDate": "2026-11-16",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-11-16",
-  "to": "2026-11-22"
+  "from": "2026-11-23",
+  "to": "2026-11-29"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 45,
+   "count": 66,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Израелска Премиер лига",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
@@ -46,7 +46,7 @@
   {
    "name": "Полска Екстракласа",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -64,7 +64,7 @@
   {
    "name": "Турска Супер лига",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -76,7 +76,7 @@
   {
    "name": "Португалска Примейра",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -87,33 +87,33 @@
   },
   {
    "name": "Руска Премиер лига",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Руска Премиер лига: Руска Премиер лига: изчерпан лимит (429)"
   },
   {
    "name": "Румънска лига, жени",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "Румънска лига, жени: Румънска лига, жени: изчерпан лимит (429)"
   },
   {
    "name": "Саудитска Про лига",
-   "ok": false,
-   "count": 0,
-   "error": "Саудитска Про лига: Саудитска Про лига: изчерпан лимит (429)"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "Хонконгска Премиер лига",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "name": "Грузинска Еровнули лига",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Грузинска Еровнули лига: Грузинска Еровнули лига: изчерпан лимит (429)"
   },
   {
    "name": "Молдовска Национална дивизия",
@@ -129,27 +129,27 @@
   },
   {
    "name": "Италианска СуперЛега",
-   "ok": false,
-   "count": 0,
-   "error": "Италианска СуперЛега: Италианска СуперЛега: изчерпан лимит (429)"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "Турска Ефелер лига",
-   "ok": false,
-   "count": 0,
-   "error": "Турска Ефелер лига: Турска Ефелер лига: изчерпан лимит (429)"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "Полска ПлюсЛига",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "Руска Суперлига (волейбол)",
-   "ok": true,
-   "count": 2,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "Руска Суперлига (волейбол): Руска Суперлига (волейбол): изчерпан лимит (429)"
   },
   {
    "name": "weekly-scrape",
@@ -159,251 +159,196 @@
   }
  ],
  "totals": {
-  "fromSources": 65,
-  "inTable": 134,
+  "fromSources": 86,
+  "inTable": 66,
   "added": 20,
   "moved": 0,
-  "dropped": 6,
-  "manualUntouched": 1
+  "dropped": 0,
+  "manualUntouched": 0
  },
  "added": [
   {
-   "extId": "sdb-2539995",
-   "date": "2026-11-21",
-   "time": "19:30",
+   "extId": "sdb-2540000",
+   "date": "2026-11-28",
+   "time": "20:00",
    "sport": "fut",
    "comp": "Гръцка Супер лига",
-   "title": "Kalamata – AEK Athens",
+   "title": "Kifisia – Kalamata",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2539991",
-   "date": "2026-11-22",
-   "time": "19:30",
+   "extId": "sdb-2539996",
+   "date": "2026-11-29",
+   "time": "21:00",
    "sport": "fut",
    "comp": "Гръцка Супер лига",
-   "title": "PAOK – Kifisia",
+   "title": "AEK Athens – PAOK",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2489175",
-   "date": "2026-11-21",
-   "time": "22:00",
+   "extId": "sdb-2489183",
+   "date": "2026-11-29",
+   "time": "17:45",
    "sport": "fut",
    "comp": "Нидерландска Ередивизи",
-   "title": "Groningen – Heerenveen",
+   "title": "PEC Zwolle – AZ Alkmaar",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2489182",
-   "date": "2026-11-21",
-   "time": "22:00",
+   "extId": "sdb-2489188",
+   "date": "2026-11-29",
+   "time": "15:30",
    "sport": "fut",
    "comp": "Нидерландска Ередивизи",
-   "title": "Telstar – PEC Zwolle",
+   "title": "Fortuna Sittard – Heerenveen",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2481876",
-   "date": "2026-11-22",
-   "time": "17:00",
+   "extId": "sdb-2493623",
+   "date": "2026-11-28",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Израелска Премиер лига",
+   "title": "Maccabi Petah Tikva – Hapoel Tel-Aviv",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2493624",
+   "date": "2026-11-28",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Израелска Премиер лига",
+   "title": "Maccabi Netanya – Hapoel Be'er Sheva",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2481882",
+   "date": "2026-11-27",
+   "time": "20:00",
    "sport": "fut",
    "comp": "Датска Суперлига",
-   "title": "Sønderjyske – Odense BK",
+   "title": "Sønderjyske – Brøndby",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2490319",
-   "date": "2026-11-21",
-   "time": "15:45",
-   "sport": "fut",
-   "comp": "Полска Екстракласа",
-   "title": "Cracovia – Jagiellonia Białystok",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2498401",
-   "date": "2026-11-22",
-   "time": "17:00",
+   "extId": "sdb-2498408",
+   "date": "2026-11-27",
+   "time": "20:30",
    "sport": "fut",
    "comp": "Унгарска НБ I",
-   "title": "Nyíregyháza – Debrecen",
+   "title": "Győri ETO – Debrecen",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2511839",
-   "date": "2026-11-20",
+   "extId": "sdb-2511846",
+   "date": "2026-11-27",
    "time": "19:30",
    "sport": "fut",
    "comp": "Втора Бундеслига",
-   "title": "Darmstadt – Heidenheim",
+   "title": "Bochum – Darmstadt",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2511840",
-   "date": "2026-11-21",
-   "time": "21:30",
+   "extId": "sdb-2511850",
+   "date": "2026-11-28",
+   "time": "14:00",
    "sport": "fut",
    "comp": "Втора Бундеслига",
-   "title": "St Pauli – Bochum",
+   "title": "Dynamo Dresden – St Pauli",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2527829",
-   "date": "2026-11-22",
-   "time": "12:30",
-   "sport": "fut",
-   "comp": "Турска Супер лига",
-   "title": "Erzurumspor – Göztepe",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2528954",
-   "date": "2026-11-21",
-   "time": "12:30",
+   "extId": "sdb-2528969",
+   "date": "2026-11-29",
+   "time": "19:00",
    "sport": "fut",
    "comp": "Турска Първа лига",
-   "title": "İstanbulspor – Ankara Keçiörengücü",
+   "title": "Sarıyer – İstanbulspor",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2528958",
-   "date": "2026-11-21",
-   "time": "12:30",
+   "extId": "sdb-2528971",
+   "date": "2026-11-29",
+   "time": "19:00",
    "sport": "fut",
    "comp": "Турска Първа лига",
-   "title": "Mardin 1969 – Bandırmaspor",
+   "title": "Muğlaspor – Mardin 1969",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2491298",
-   "date": "2026-11-21",
+   "extId": "sdb-2514037",
+   "date": "2026-11-28",
+   "time": "22:30",
+   "sport": "fut",
+   "comp": "Португалска Примейра",
+   "title": "Vitória de Guimarães – Estrela Amadora",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2491307",
+   "date": "2026-11-28",
    "time": "19:00",
    "sport": "fut",
    "comp": "Сръбска Супер лига",
-   "title": "Crvena Zvezda – Radnik Surdulica",
+   "title": "Novi Pazar – Crvena Zvezda",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2501972",
-   "date": "2026-11-21",
-   "time": "12:00",
+   "extId": "sdb-2573409",
+   "date": "2026-11-28",
+   "time": "19:30",
    "sport": "fut",
-   "comp": "Руска Премиер лига",
-   "title": "Orenburg – Baltika Kaliningrad",
+   "comp": "Саудитска Про лига",
+   "title": "Al-Ahli – Al-Taawoun",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2553777",
-   "date": "2026-11-20",
-   "time": "14:00",
-   "sport": "fut",
-   "comp": "Хонконгска Премиер лига",
-   "title": "Lee Man – North District",
+   "extId": "sdb-2554214",
+   "date": "2026-11-29",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Milano – Powervolley Milano",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2420129",
-   "date": "2026-11-21",
-   "time": "17:00",
-   "sport": "fut",
-   "comp": "Грузинска Еровнули лига",
-   "title": "Dinamo Batumi – Rustavi",
+   "extId": "sdb-2554215",
+   "date": "2026-11-29",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Lube – You Energy Volley",
    "source": "thesportsdb"
   },
   {
-   "extId": "sdb-2553960",
-   "date": "2026-11-18",
+   "extId": "sdb-2619073",
+   "date": "2026-11-28",
+   "time": "13:00",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Halkbank Ankara – Fenerbahçe Volleyball",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2619075",
+   "date": "2026-11-28",
+   "time": "15:30",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "İstanbul BB – Altekma",
+   "source": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2553961",
+   "date": "2026-11-23",
    "time": "21:30",
    "sport": "vol",
    "comp": "Полска ПлюсЛига",
-   "title": "Cuprum Stilon Gorzów – Bogdanka LUK Lublin",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2553955",
-   "date": "2026-11-21",
-   "time": "19:00",
-   "sport": "vol",
-   "comp": "Полска ПлюсЛига",
-   "title": "Ślepsk Suwałki – Aluron CMC Warta Zawiercie",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2557687",
-   "date": "2026-11-18",
-   "time": "14:00",
-   "sport": "vol",
-   "comp": "Руска Суперлига (волейбол)",
-   "title": "Lokomotiv Novosibirsk – Dynamo Moscow",
-   "source": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2557698",
-   "date": "2026-11-22",
-   "time": "14:00",
-   "sport": "vol",
-   "comp": "Руска Суперлига (волейбол)",
-   "title": "Lokomotiv Novosibirsk – Yaroslavich Yaroslavl",
+   "title": "Bogdanka LUK Lublin – Ślepsk Suwałki",
    "source": "thesportsdb"
   }
  ],
  "moved": [],
- "dropped": [
-  {
-   "extId": "bb-519724",
-   "title": "Utah Jazz – San Antonio Spurs",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-11-16",
-   "time": "00:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519725",
-   "title": "Boston Celtics – Dallas Mavericks",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-11-16",
-   "time": "01:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519726",
-   "title": "Toronto Raptors – New York Knicks",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-11-16",
-   "time": "01:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519727",
-   "title": "Washington Wizards – Houston Rockets",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-11-16",
-   "time": "02:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519728",
-   "title": "Milwaukee Bucks – Atlanta Hawks",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-11-16",
-   "time": "03:00",
-   "source": "api-basketball"
-  },
-  {
-   "extId": "bb-519729",
-   "title": "Sacramento Kings – Oklahoma City Thunder",
-   "comp": "NBA",
-   "sport": "bas",
-   "date": "2026-11-16",
-   "time": "04:00",
-   "source": "api-basketball"
-  }
- ],
+ "dropped": [],
  "droppedHandling": "маркирани с dropped:true"
 }
