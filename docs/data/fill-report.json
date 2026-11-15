@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-14T07:18:04.371Z",
- "runDate": "2026-11-14",
+ "generatedAt": "2026-11-15T07:22:46.612Z",
+ "runDate": "2026-11-15",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-11-14",
+  "from": "2026-11-15",
   "to": "2026-11-22"
  },
  "sources": [
@@ -69,9 +69,9 @@
   },
   {
    "name": "thesportsdb · Лига на нациите",
-   "ok": false,
-   "count": 0,
-   "error": "Лига на нациите: Лига на нациите: изчерпан лимит (429)"
+   "ok": true,
+   "count": 26,
+   "error": null
   },
   {
    "name": "thesportsdb · Купа на африканските нации",
@@ -81,21 +81,21 @@
   },
   {
    "name": "thesportsdb · НБА",
-   "ok": true,
-   "count": 24,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "НБА: НБА: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · НБЛ",
-   "ok": false,
-   "count": 0,
-   "error": "НБЛ: НБЛ: изчерпан лимит (429)"
+   "ok": true,
+   "count": 6,
+   "error": null
   },
   {
    "name": "thesportsdb · Формула 2",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "error": "Формула 2: Формула 2: изчерпан лимит (429)"
+   "error": null
   },
   {
    "name": "euroleague",
@@ -112,19 +112,19 @@
   {
    "name": "БФВ волейбол",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 23,
+   "count": 16,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
@@ -135,75 +135,12 @@
   }
  ],
  "totals": {
-  "fromSources": 142,
-  "added": 13,
+  "fromSources": 139,
+  "added": 4,
   "tennisNew": 2,
-  "tennisPending": 29
+  "tennisPending": 28
  },
  "added": [
-  {
-   "extId": "bb-524601",
-   "date": "2026-11-14",
-   "time": "18:00",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Botev 2012 – Levski",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-524603",
-   "date": "2026-11-14",
-   "time": "18:00",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Cherno More – Polytechnica",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-524604",
-   "date": "2026-11-14",
-   "time": "18:00",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Minyor – Yambol",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "vb-217481",
-   "date": "2026-11-14",
-   "time": "19:00",
-   "sport": "vol",
-   "comp": "SuperLiga",
-   "title": "Beroe – Neftohimic Burgas",
-   "via": "api-volleyball"
-  },
-  {
-   "extId": "bb-519719",
-   "date": "2026-11-15",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Miami Heat – Detroit Pistons",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519720",
-   "date": "2026-11-15",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Minnesota Timberwolves – Chicago Bulls",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "vb-217406",
-   "date": "2026-11-15",
-   "time": "15:00",
-   "sport": "vol",
-   "comp": "Superliga Women",
-   "title": "Levski Sofia W – CPVC Volley W",
-   "via": "api-volleyball"
-  },
   {
    "extId": "vb-217482",
    "date": "2026-11-15",
@@ -223,84 +160,41 @@
    "via": "api-volleyball"
   },
   {
-   "extId": "bb-524602",
-   "date": "2026-11-15",
-   "time": "18:00",
+   "extId": "bb-519724",
+   "date": "2026-11-16",
+   "time": "00:00",
    "sport": "bas",
-   "comp": "NBL",
-   "title": "Botev Academic – CSKA Sofia",
+   "comp": "NBA",
+   "title": "Utah Jazz – San Antonio Spurs",
    "via": "api-basketball"
   },
   {
-   "extId": "bb-519721",
-   "date": "2026-11-15",
-   "time": "20:00",
+   "extId": "bb-519725",
+   "date": "2026-11-16",
+   "time": "01:00",
    "sport": "bas",
    "comp": "NBA",
-   "title": "Philadelphia 76ers – Indiana Pacers",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519722",
-   "date": "2026-11-15",
-   "time": "23:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Phoenix Suns – Los Angeles Lakers",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519723",
-   "date": "2026-11-15",
-   "time": "23:30",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Los Angeles Clippers – Charlotte Hornets",
+   "title": "Boston Celtics – Dallas Mavericks",
    "via": "api-basketball"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-1MYhtMOQgt8bBeQwghEV",
-   "date": "2026-11-14",
+   "extId": "ten-TFR7vCJf2JiYrzmr1pNV",
+   "date": "2026-11-15",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   },
   {
-   "extId": "ten-riX1890VgpkK4sj96S8L",
-   "date": "2026-11-14",
-   "time": "1:53",
+   "extId": "ten-ITpNc5Xizp2sY2dZecpL",
+   "date": "2026-11-15",
+   "time": "1:05",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-11-14",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-11-14"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-11-14"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-11-14"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-11-14"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-11-14"
-    }
-   ]
-  },
   {
    "date": "2026-11-15",
    "links": [
