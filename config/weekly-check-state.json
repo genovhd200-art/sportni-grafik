@@ -1,16 +1,16 @@
 {
- "lastRun": "2026-11-08",
- "lastRunAt": "23:16",
+ "lastRun": "2026-11-15",
+ "lastRunAt": "23:52",
  "lastWindow": {
-  "from": "2026-11-09",
-  "to": "2026-11-15"
+  "from": "2026-11-16",
+  "to": "2026-11-22"
  },
  "lastTotals": {
-  "fromSources": 7,
-  "inTable": 87,
-  "added": 7,
+  "fromSources": 65,
+  "inTable": 134,
+  "added": 20,
   "moved": 0,
-  "dropped": 7,
-  "manualUntouched": 0
+  "dropped": 6,
+  "manualUntouched": 1
  }
 }

@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-15T11:56:49.578Z",
+ "generatedAt": "2026-11-15T21:52:49.165Z",
  "from": "2026-11-15",
  "to": "2026-12-16",
  "timezone": "Europe/Sofia",
- "count": 355,
+ "count": 375,
  "events": [
   {
    "date": "2026-11-11",
@@ -355,7 +355,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-15"
   },
   {
    "source": "api-basketball",
@@ -368,7 +370,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-15"
   },
   {
    "source": "api-basketball",
@@ -381,7 +385,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-15"
   },
   {
    "source": "api-basketball",
@@ -394,7 +400,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-15"
   },
   {
    "source": "api-basketball",
@@ -407,7 +415,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-15"
   },
   {
    "source": "api-basketball",
@@ -420,7 +430,9 @@
    "p": 1,
    "venue": "USA",
    "round": "",
-   "provisional": false
+   "provisional": false,
+   "dropped": true,
+   "droppedAt": "2026-11-15"
   },
   {
    "source": "fill",
@@ -929,6 +941,20 @@
    "addedAt": "2026-11-10"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2557687",
+   "date": "2026-11-18",
+   "time": "14:00",
+   "sport": "vol",
+   "comp": "Руска Суперлига (волейбол)",
+   "title": "Lokomotiv Novosibirsk – Dynamo Moscow",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 8",
+   "provisional": false,
+   "note": "треньор Пл. Константинов"
+  },
+  {
    "source": "fill",
    "extId": "el-E2026_120",
    "date": "2026-11-18",
@@ -987,6 +1013,20 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-09"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2553960",
+   "date": "2026-11-18",
+   "time": "21:30",
+   "sport": "vol",
+   "comp": "Полска ПлюсЛига",
+   "title": "Cuprum Stilon Gorzów – Bogdanka LUK Lublin",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false,
+   "note": "Ал. Грозданов"
   },
   {
    "source": "fill",
@@ -1199,6 +1239,20 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2553777",
+   "date": "2026-11-20",
+   "time": "14:00",
+   "sport": "fut",
+   "comp": "Хонконгска Премиер лига",
+   "title": "Lee Man – North District",
+   "p": 3,
+   "venue": "Mong Kok Stadium",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "Б. Краев"
+  },
+  {
    "source": "fill",
    "extId": "sdb-2611799",
    "date": "2026-11-20",
@@ -1257,6 +1311,20 @@
    "provisional": false,
    "via": "euroleague",
    "addedAt": "2026-11-09"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2511839",
+   "date": "2026-11-20",
+   "time": "19:30",
+   "sport": "fut",
+   "comp": "Втора Бундеслига",
+   "title": "Darmstadt – Heidenheim",
+   "p": 3,
+   "venue": "Merck-Stadion am Böllenfalltor",
+   "round": "кръг 12",
+   "provisional": false,
+   "note": "Ф. Нюрнбергер"
   },
   {
    "source": "fill",
@@ -1418,6 +1486,48 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2501972",
+   "date": "2026-11-21",
+   "time": "12:00",
+   "sport": "fut",
+   "comp": "Руска Премиер лига",
+   "title": "Orenburg – Baltika Kaliningrad",
+   "p": 3,
+   "venue": "Stadion Gazovik",
+   "round": "кръг 15",
+   "provisional": false,
+   "note": "Е. Ценов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2528954",
+   "date": "2026-11-21",
+   "time": "12:30",
+   "sport": "fut",
+   "comp": "Турска Първа лига",
+   "title": "İstanbulspor – Ankara Keçiörengücü",
+   "p": 1,
+   "venue": "Esenyurt Necmi Kadıoğlu Stadyumu",
+   "round": "кръг 15",
+   "provisional": false,
+   "note": "И. Илиев-младши"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2528958",
+   "date": "2026-11-21",
+   "time": "12:30",
+   "sport": "fut",
+   "comp": "Турска Първа лига",
+   "title": "Mardin 1969 – Bandırmaspor",
+   "p": 3,
+   "venue": "Mardin 21 Kasım Stadyumu",
+   "round": "кръг 15",
+   "provisional": false,
+   "note": "Здр. Димитров · треньор Ив. Петев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560643",
    "date": "2026-11-21",
@@ -1457,6 +1567,20 @@
    "venue": "",
    "round": "кръг 13",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2490319",
+   "date": "2026-11-21",
+   "time": "15:45",
+   "sport": "fut",
+   "comp": "Полска Екстракласа",
+   "title": "Cracovia – Jagiellonia Białystok",
+   "p": 3,
+   "venue": "Stadion Cracovii im Józefa Piłsudskiego",
+   "round": "кръг 15",
+   "provisional": false,
+   "note": "М. Минчев"
   },
   {
    "source": "football-data",
@@ -1615,6 +1739,20 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2420129",
+   "date": "2026-11-21",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Грузинска Еровнули лига",
+   "title": "Dinamo Batumi – Rustavi",
+   "p": 3,
+   "venue": "Adjarabet Arena",
+   "round": "кръг 33",
+   "provisional": false,
+   "note": "Ив. Турицов"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564751",
    "date": "2026-11-21",
@@ -1744,6 +1882,34 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2491298",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Сръбска Супер лига",
+   "title": "Crvena Zvezda – Radnik Surdulica",
+   "p": 3,
+   "venue": "Stadion Rajko Mitić",
+   "round": "кръг 16",
+   "provisional": false,
+   "note": "Кр. Балов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2553955",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "Полска ПлюсЛига",
+   "title": "Ślepsk Suwałki – Aluron CMC Warta Zawiercie",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 7",
+   "provisional": false,
+   "note": "А. Аспарухов"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560651",
    "date": "2026-11-21",
@@ -1781,6 +1947,34 @@
    "venue": "",
    "round": "кръг 10",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539995",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Kalamata – AEK Athens",
+   "p": 3,
+   "venue": "Kalamata Municipal Stadium",
+   "round": "кръг 11",
+   "provisional": false,
+   "note": "М. Георгиев"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2511840",
+   "date": "2026-11-21",
+   "time": "21:30",
+   "sport": "fut",
+   "comp": "Втора Бундеслига",
+   "title": "St Pauli – Bochum",
+   "p": 1,
+   "venue": "Millerntor-Stadion",
+   "round": "кръг 12",
+   "provisional": false,
+   "note": "Д. Митов"
   },
   {
    "source": "football-data",
@@ -1861,6 +2055,34 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2489175",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Нидерландска Ередивизи",
+   "title": "Groningen – Heerenveen",
+   "p": 3,
+   "venue": "Euroborg",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "Хр. Петров"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2489182",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Нидерландска Ередивизи",
+   "title": "Telstar – PEC Zwolle",
+   "p": 3,
+   "venue": "711 Stadion",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "Ф. Кръстев"
+  },
+  {
    "source": "fill",
    "extId": "sdb-2627206",
    "date": "2026-11-22",
@@ -1936,6 +2158,20 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2527829",
+   "date": "2026-11-22",
+   "time": "12:30",
+   "sport": "fut",
+   "comp": "Турска Супер лига",
+   "title": "Erzurumspor – Göztepe",
+   "p": 1,
+   "venue": "Kazım Karabekir Stadyumu",
+   "round": "кръг 12",
+   "provisional": false,
+   "note": "треньор Ст. Стоилов, Й. Арсов, Ц. Цветанов"
+  },
+  {
    "source": "fill",
    "extId": "sdb-2487373",
    "date": "2026-11-22",
@@ -1962,6 +2198,20 @@
    "venue": "",
    "round": "кръг 12",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2557698",
+   "date": "2026-11-22",
+   "time": "14:00",
+   "sport": "vol",
+   "comp": "Руска Суперлига (волейбол)",
+   "title": "Lokomotiv Novosibirsk – Yaroslavich Yaroslavl",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "треньор Пл. Константинов"
   },
   {
    "source": "football-data",
@@ -2087,6 +2337,34 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2481876",
+   "date": "2026-11-22",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Датска Суперлига",
+   "title": "Sønderjyske – Odense BK",
+   "p": 1,
+   "venue": "Sydbank Park",
+   "round": "кръг 15",
+   "provisional": false,
+   "note": "Ст. Велков"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2498401",
+   "date": "2026-11-22",
+   "time": "17:00",
+   "sport": "fut",
+   "comp": "Унгарска НБ I",
+   "title": "Nyíregyháza – Debrecen",
+   "p": 3,
+   "venue": "Városi Stadion Nyíregyháza",
+   "round": "кръг 14",
+   "provisional": false,
+   "note": "Пл. Андреев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564750",
    "date": "2026-11-22",
@@ -2208,6 +2486,20 @@
    "venue": "",
    "round": "кръг 13",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2539991",
+   "date": "2026-11-22",
+   "time": "19:30",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "PAOK – Kifisia",
+   "p": 3,
+   "venue": "Toumba Stadium",
+   "round": "кръг 11",
+   "provisional": false,
+   "note": "К. Десподов · Ал. Петков"
   },
   {
    "source": "football-data",
@@ -4796,5 +5088,6 @@
    "round": "кръг 15",
    "provisional": false
   }
- ]
+ ],
+ "lastWeeklyCheck": "2026-11-15"
 }
