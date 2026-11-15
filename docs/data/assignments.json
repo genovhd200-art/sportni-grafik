@@ -1,5 +1,5 @@
 {
- "publishedAt": "2026-11-15T19:57:16.443Z",
+ "publishedAt": "2026-11-15T19:58:17.285Z",
  "authors": {
   "mu5hec9gl0lio": {
    "id": "mu5hec9gl0lio",
@@ -5986,7 +5986,7 @@
    "format": ""
   },
   "bb-519724": {
-   "authorId": "mu5hfevsksxfp",
+   "authorId": "sh-стефан",
    "format": ""
   },
   "el-U2026_127": {
@@ -6027,6 +6027,78 @@
   },
   "f1-2026-21-Qualifying": {
    "authorId": "mu5hgiv07yguc",
+   "format": ""
+  },
+  "f1-2026-21-FirstPractice": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601887": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601888": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601889": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "f1-2026-21-SecondPractice": {
+   "authorId": "mu5hhjkrjukxq",
+   "format": ""
+  },
+  "sdb-2601875": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2601876": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2601877": {
+   "authorId": "mu5hec9gl0lio",
+   "format": ""
+  },
+  "sdb-2601871": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "sdb-2601872": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "sdb-2601862": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "sdb-2601863": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "sdb-2601864": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "bb-519729": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "bb-519728": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "bb-519727": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "bb-519726": {
+   "authorId": "sh-стефан",
+   "format": ""
+  },
+  "bb-519725": {
+   "authorId": "sh-стефан",
    "format": ""
   }
  },
