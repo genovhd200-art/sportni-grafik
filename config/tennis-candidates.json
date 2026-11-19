@@ -1,44 +1,5 @@
 [
  {
-  "extId": "ten-pmMfntejjQqMPJeywrYT",
-  "date": "2026-11-04",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Изабелла Шиникова — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-11-04"
- },
- {
-  "extId": "ten-CJOwehPInGFEzQuicXUP",
-  "date": "2026-11-04",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-11-04"
- },
- {
-  "extId": "ten-8JvXYaOK0mtgaquNKHNz",
-  "date": "2026-11-04",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "PARTNER Mercedes – Benz PARTNERS",
-  "p": 2,
-  "note": "TOURNAMENT NEWS Ningbo: Dates, who's playing, prize money and everything to know 2m read 2",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-11-04"
- },
- {
   "extId": "ten-kjXkhmR71n392q38AF89",
   "date": "2026-11-05",
   "time": "00:00",
@@ -297,5 +258,31 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-11-18"
+ },
+ {
+  "extId": "ten-PmOzcCBM2FRV1__x3XDB",
+  "date": "2027-07-19",
+  "time": "03:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": false,
+  "ok": null,
+  "foundAt": "2026-11-19"
+ },
+ {
+  "extId": "ten-DC3YfG77BAh6afRj5GsO",
+  "date": "2026-11-19",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-19"
  }
 ]

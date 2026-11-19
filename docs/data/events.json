@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-18T13:00:04.034Z",
+ "generatedAt": "2026-11-19T08:12:14.366Z",
  "from": "2026-11-18",
  "to": "2026-12-19",
  "timezone": "Europe/Sofia",
- "count": 427,
+ "count": 430,
  "events": [
   {
    "date": "2026-11-11",
@@ -558,6 +558,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519758",
+   "date": "2026-11-20",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "San Antonio Spurs – Los Angeles Clippers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-19"
+  },
+  {
+   "source": "fill",
    "extId": "f1-2026-21-SecondPractice",
    "date": "2026-11-20",
    "time": "06:00",
@@ -615,6 +630,36 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-10"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524608",
+   "date": "2026-11-20",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Yambol – Botev 2012",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-19"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217408",
+   "date": "2026-11-20",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Slaviya Sofia W – CPVC Volley W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-19"
   },
   {
    "source": "fill",
@@ -5814,5 +5859,6 @@
    "round": "кръг 17",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-19"
 }
