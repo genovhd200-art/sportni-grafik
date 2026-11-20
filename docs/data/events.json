@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-19T12:57:15.300Z",
+ "generatedAt": "2026-11-20T08:04:20.339Z",
  "from": "2026-11-19",
  "to": "2026-12-20",
  "timezone": "Europe/Sofia",
- "count": 431,
+ "count": 446,
  "events": [
   {
    "date": "2026-11-11",
@@ -500,6 +500,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-524608",
+   "date": "2026-11-20",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Yambol – Botev 2012",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
    "extId": "el-E2026_127",
    "date": "2026-11-20",
    "time": "19:30",
@@ -656,6 +671,96 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-10"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519762",
+   "date": "2026-11-21",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Detroit Pistons – Toronto Raptors",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519763",
+   "date": "2026-11-21",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Chicago Bulls – Washington Wizards",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519764",
+   "date": "2026-11-21",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Oklahoma City Thunder – New Orleans Pelicans",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519765",
+   "date": "2026-11-21",
+   "time": "04:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Utah Jazz – Phoenix Suns",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519766",
+   "date": "2026-11-21",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Denver Nuggets – Houston Rockets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519767",
+   "date": "2026-11-21",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Los Angeles Lakers – Sacramento Kings",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
   },
   {
    "source": "fill",
@@ -870,6 +975,21 @@
    "provisional": false
   },
   {
+   "source": "fill",
+   "extId": "vb-217409",
+   "date": "2026-11-21",
+   "time": "17:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Minyor Pernik W – Maritsa Plovdiv W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-20"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564751",
    "date": "2026-11-21",
@@ -914,6 +1034,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-524607",
+   "date": "2026-11-21",
+   "time": "17:30",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Levski – Beroe",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2611801",
    "date": "2026-11-21",
    "time": "18:00",
@@ -941,6 +1076,51 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-09"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524609",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Spartak Pleven – Botev Academic",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524611",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Polytechnica – Balkan",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524612",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "CSKA Sofia – Minyor",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
   },
   {
    "source": "football-data",
@@ -999,6 +1179,36 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "fill",
+   "extId": "vb-217485",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Neftohimic Burgas – Pernik",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-20"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217486",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Levski Sofia – Beroe",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-20"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560651",
    "date": "2026-11-21",
@@ -1036,6 +1246,21 @@
    "venue": "",
    "round": "кръг 10",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519768",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Philadelphia 76ers – Milwaukee Bucks",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-20"
   },
   {
    "source": "football-data",
@@ -5852,5 +6077,6 @@
    "round": "кръг 16",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-20"
 }
