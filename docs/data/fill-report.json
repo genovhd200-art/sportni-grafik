@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-11-20T08:04:20.339Z",
- "runDate": "2026-11-20",
+ "generatedAt": "2026-11-21T07:59:25.805Z",
+ "runDate": "2026-11-21",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-11-20",
+  "from": "2026-11-21",
   "to": "2026-11-29"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 111,
+   "count": 108,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "thesportsdb · Първа лига",
    "ok": true,
-   "count": 14,
+   "count": 13,
    "error": null
   },
   {
@@ -63,9 +63,9 @@
   },
   {
    "name": "thesportsdb · Лига на нациите",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "error": "Лига на нациите: Лига на нациите: изчерпан лимит (429)"
+   "error": null
   },
   {
    "name": "thesportsdb · Купа на африканските нации",
@@ -76,14 +76,14 @@
   {
    "name": "thesportsdb · НБА",
    "ok": true,
-   "count": 27,
+   "count": 9,
    "error": null
   },
   {
    "name": "thesportsdb · НБЛ",
-   "ok": false,
-   "count": 0,
-   "error": "НБЛ: НБЛ: изчерпан лимит (429)"
+   "ok": true,
+   "count": 5,
+   "error": null
   },
   {
    "name": "thesportsdb · Формула 2",
@@ -94,31 +94,31 @@
   {
    "name": "euroleague",
    "ok": true,
-   "count": 14,
+   "count": 10,
    "error": null
   },
   {
    "name": "jolpica · Формула 1",
    "ok": true,
-   "count": 10,
+   "count": 8,
    "error": null
   },
   {
    "name": "БФВ волейбол",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 19,
+   "count": 22,
    "error": null
   },
   {
    "name": "api-volleyball",
    "ok": true,
-   "count": 5,
+   "count": 7,
    "error": null
   },
   {
@@ -129,84 +129,12 @@
   }
  ],
  "totals": {
-  "fromSources": 248,
-  "added": 15,
-  "tennisNew": 1,
+  "fromSources": 229,
+  "added": 14,
+  "tennisNew": 2,
   "tennisPending": 23
  },
  "added": [
-  {
-   "extId": "bb-524608",
-   "date": "2026-11-20",
-   "time": "18:00",
-   "sport": "bas",
-   "comp": "NBL",
-   "title": "Yambol – Botev 2012",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519762",
-   "date": "2026-11-21",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Detroit Pistons – Toronto Raptors",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519763",
-   "date": "2026-11-21",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Chicago Bulls – Washington Wizards",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519764",
-   "date": "2026-11-21",
-   "time": "03:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Oklahoma City Thunder – New Orleans Pelicans",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519765",
-   "date": "2026-11-21",
-   "time": "04:30",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Utah Jazz – Phoenix Suns",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519766",
-   "date": "2026-11-21",
-   "time": "05:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Denver Nuggets – Houston Rockets",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "bb-519767",
-   "date": "2026-11-21",
-   "time": "05:00",
-   "sport": "bas",
-   "comp": "NBA",
-   "title": "Los Angeles Lakers – Sacramento Kings",
-   "via": "api-basketball"
-  },
-  {
-   "extId": "vb-217409",
-   "date": "2026-11-21",
-   "time": "17:00",
-   "sport": "vol",
-   "comp": "Superliga Women",
-   "title": "Minyor Pernik W – Maritsa Plovdiv W",
-   "via": "api-volleyball"
-  },
   {
    "extId": "bb-524607",
    "date": "2026-11-21",
@@ -262,50 +190,95 @@
    "via": "api-volleyball"
   },
   {
-   "extId": "bb-519768",
-   "date": "2026-11-21",
-   "time": "20:00",
+   "extId": "bb-519772",
+   "date": "2026-11-22",
+   "time": "03:00",
    "sport": "bas",
    "comp": "NBA",
-   "title": "Philadelphia 76ers – Milwaukee Bucks",
+   "title": "San Antonio Spurs – New Orleans Pelicans",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519773",
+   "date": "2026-11-22",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Sacramento Kings – Boston Celtics",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "vb-217410",
+   "date": "2026-11-22",
+   "time": "13:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "CSKA Sofia W – Stoychev-Kaziyski W",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "vb-217411",
+   "date": "2026-11-22",
+   "time": "13:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Dragoman W – Levski Sofia W",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "vb-217487",
+   "date": "2026-11-22",
+   "time": "17:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Lokomotiv Avia – Slaviya Sofia",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "bb-524613",
+   "date": "2026-11-22",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Lok. Plovdiv – Shumen",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "vb-217488",
+   "date": "2026-11-22",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Pirin Razlog – CSKA Sofia",
+   "via": "api-volleyball"
+  },
+  {
+   "extId": "bb-519774",
+   "date": "2026-11-22",
+   "time": "22:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Atlanta Hawks – Detroit Pistons",
    "via": "api-basketball"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-MoNnjFRn_JhMjflFvF75",
-   "date": "2026-11-20",
+   "extId": "ten-b1S1fv6KWgMG3T9UuMh2",
+   "date": "2026-11-21",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
+  },
+  {
+   "extId": "ten-qjPq9ON-fV1daDCF2N_b",
+   "date": "2026-11-21",
+   "time": "00:00",
+   "comp": "Тенис",
+   "title": "PARTNER Mercedes – Benz PARTNERS"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-11-20",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-11-20"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-11-20"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-11-20"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-11-20"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-11-20"
-    }
-   ]
-  },
   {
    "date": "2026-11-21",
    "links": [
