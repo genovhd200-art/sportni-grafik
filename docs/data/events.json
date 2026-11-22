@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-21T12:34:31.660Z",
+ "generatedAt": "2026-11-22T07:40:06.872Z",
  "from": "2026-11-21",
  "to": "2026-12-22",
  "timezone": "Europe/Sofia",
- "count": 406,
+ "count": 412,
  "events": [
   {
    "date": "2026-11-11",
@@ -949,6 +949,21 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "fill",
+   "extId": "vb-217487",
+   "date": "2026-11-22",
+   "time": "17:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Lokomotiv Avia – Slaviya Sofia",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-22"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564750",
    "date": "2026-11-22",
@@ -990,6 +1005,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-11"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-524613",
+   "date": "2026-11-22",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "NBL",
+   "title": "Lok. Plovdiv – Shumen",
+   "p": 3,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-22"
   },
   {
    "source": "football-data",
@@ -1059,6 +1089,21 @@
    "addedAt": "2026-11-09"
   },
   {
+   "source": "fill",
+   "extId": "vb-217488",
+   "date": "2026-11-22",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Pirin Razlog – CSKA Sofia",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-22"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564752",
    "date": "2026-11-22",
@@ -1125,6 +1170,21 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519775",
+   "date": "2026-11-23",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Miami Heat – Oklahoma City Thunder",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-22"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601908",
    "date": "2026-11-23",
    "time": "02:00",
@@ -1167,6 +1227,36 @@
    "provisional": true,
    "via": "thesportsdb",
    "addedAt": "2026-11-16"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519779",
+   "date": "2026-11-23",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "New York Knicks – Indiana Pacers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-22"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519780",
+   "date": "2026-11-23",
+   "time": "03:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Golden State Warriors – Boston Celtics",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-22"
   },
   {
    "source": "fill",
@@ -5485,5 +5575,6 @@
    "round": "кръг 16",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-22"
 }
