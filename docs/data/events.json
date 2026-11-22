@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-22T12:32:02.409Z",
+ "generatedAt": "2026-11-22T22:43:59.942Z",
  "from": "2026-11-22",
  "to": "2026-12-23",
  "timezone": "Europe/Sofia",
- "count": 363,
+ "count": 385,
  "events": [
   {
    "date": "2026-11-11",
@@ -2706,6 +2706,20 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2527834",
+   "date": "2026-11-30",
+   "time": "18:00",
+   "sport": "fut",
+   "comp": "Турска Супер лига",
+   "title": "Göztepe – Trabzonspor",
+   "p": 1,
+   "venue": "Gürsel Aksel Stadyumu",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "треньор Ст. Стоилов, Й. Арсов, Ц. Цветанов"
+  },
+  {
    "source": "football-data",
    "extId": "fd-558516",
    "date": "2026-11-30",
@@ -2717,6 +2731,20 @@
    "venue": "",
    "round": "кръг 13",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2490329",
+   "date": "2026-11-30",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Полска Екстракласа",
+   "title": "Korona Kielce – Cracovia",
+   "p": 3,
+   "venue": "EXBUD Arena",
+   "round": "кръг 16",
+   "provisional": false,
+   "note": "М. Минчев"
   },
   {
    "source": "football-data",
@@ -2743,6 +2771,34 @@
    "venue": "",
    "round": "кръг 14",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2493625",
+   "date": "2026-12-01",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Израелска Премиер лига",
+   "title": "Hapoel Be'er Sheva – Bnei Sakhnin",
+   "p": 3,
+   "venue": "Turner Stadium",
+   "round": "кръг 12",
+   "provisional": false,
+   "note": "Й. Стоянов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2493629",
+   "date": "2026-12-01",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Израелска Премиер лига",
+   "title": "Hapoel Tel-Aviv – Maccabi Netanya",
+   "p": 1,
+   "venue": "Bloomfield Stadium",
+   "round": "кръг 12",
+   "provisional": false,
+   "note": "А. Краев"
   },
   {
    "source": "football-data",
@@ -2888,6 +2944,20 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2573421",
+   "date": "2026-12-03",
+   "time": "16:45",
+   "sport": "fut",
+   "comp": "Саудитска Про лига",
+   "title": "Al-Taawoun – Abha",
+   "p": 3,
+   "venue": "King Abdullah Sports City Stadium",
+   "round": "кръг 14",
+   "provisional": false,
+   "note": "Марин Петков"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560662",
    "date": "2026-12-03",
@@ -2977,6 +3047,48 @@
    "venue": "",
    "round": "кръг 15",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2498412",
+   "date": "2026-12-05",
+   "time": "15:30",
+   "sport": "fut",
+   "comp": "Унгарска НБ I",
+   "title": "Debrecen – Kisvárda",
+   "p": 3,
+   "venue": "Nagyerdei Stadion",
+   "round": "кръг 16",
+   "provisional": false,
+   "note": "Пл. Андреев"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2626086",
+   "date": "2026-12-05",
+   "time": "15:30",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "İstanbul BB – Gebze Belediyespor",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "Г. Сеганов, Кр. Алексов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2490337",
+   "date": "2026-12-05",
+   "time": "15:45",
+   "sport": "fut",
+   "comp": "Полска Екстракласа",
+   "title": "Cracovia – Widzew Łódź",
+   "p": 3,
+   "venue": "Stadion Cracovii im Józefa Piłsudskiego",
+   "round": "кръг 17",
+   "provisional": false,
+   "note": "М. Минчев"
   },
   {
    "source": "football-data",
@@ -3122,6 +3234,20 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2626087",
+   "date": "2026-12-05",
+   "time": "17:30",
+   "sport": "vol",
+   "comp": "Турска Ефелер лига",
+   "title": "Ziraat Bankası – Halkbank Ankara",
+   "p": 3,
+   "venue": "",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "М. Казийски, Д. Бърдаров · треньор Р. Стойчев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-559606",
    "date": "2026-12-05",
@@ -3185,6 +3311,48 @@
    "venue": "",
    "round": "кръг 12",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2540003",
+   "date": "2026-12-05",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Olympiacos – AEK Athens",
+   "p": 3,
+   "venue": "Karaiskakis Stadium",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "М. Георгиев"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2493633",
+   "date": "2026-12-05",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Израелска Премиер лига",
+   "title": "Beitar Jerusalem – Hapoel Be'er Sheva",
+   "p": 3,
+   "venue": "Teddy Stadium",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "Й. Стоянов"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2493635",
+   "date": "2026-12-05",
+   "time": "20:00",
+   "sport": "fut",
+   "comp": "Израелска Премиер лига",
+   "title": "Bnei Sakhnin – Hapoel Tel-Aviv",
+   "p": 1,
+   "venue": "Doha Stadium",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "А. Краев"
   },
   {
    "source": "football-data",
@@ -3278,6 +3446,34 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2489196",
+   "date": "2026-12-05",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Нидерландска Ередивизи",
+   "title": "Fortuna Sittard – PEC Zwolle",
+   "p": 3,
+   "venue": "Fortuna Sittard Stadion",
+   "round": "кръг 15",
+   "provisional": false,
+   "note": "Ф. Кръстев"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2489197",
+   "date": "2026-12-06",
+   "time": "13:15",
+   "sport": "fut",
+   "comp": "Нидерландска Ередивизи",
+   "title": "Heerenveen – Cambuur",
+   "p": 3,
+   "venue": "Abe Lenstra Stadion",
+   "round": "кръг 15",
+   "provisional": false,
+   "note": "Хр. Петров"
+  },
+  {
    "source": "football-data",
    "extId": "fd-558499",
    "date": "2026-12-06",
@@ -3289,6 +3485,34 @@
    "venue": "",
    "round": "кръг 14",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2511857",
+   "date": "2026-12-06",
+   "time": "14:30",
+   "sport": "fut",
+   "comp": "Втора Бундеслига",
+   "title": "Darmstadt – Eintracht Braunschweig",
+   "p": 3,
+   "venue": "Merck-Stadion am Böllenfalltor",
+   "round": "кръг 14",
+   "provisional": false,
+   "note": "Ф. Нюрнбергер"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2511858",
+   "date": "2026-12-06",
+   "time": "14:30",
+   "sport": "fut",
+   "comp": "Втора Бундеслига",
+   "title": "St Pauli – Heidenheim",
+   "p": 1,
+   "venue": "Millerntor-Stadion",
+   "round": "кръг 14",
+   "provisional": false,
+   "note": "Д. Митов"
   },
   {
    "source": "football-data",
@@ -3356,6 +3580,34 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2540007",
+   "date": "2026-12-06",
+   "time": "16:00",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "Asteras Tripolis – Kifisia",
+   "p": 3,
+   "venue": "Theodoros Kolokotronis Stadium",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "Ал. Петков"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2554225",
+   "date": "2026-12-06",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Италианска СуперЛега",
+   "title": "Volley Lube – Trentino Volley",
+   "p": 2,
+   "venue": "",
+   "round": "кръг 9",
+   "provisional": false,
+   "note": "Ал. Николов, С. Николов"
+  },
+  {
    "source": "football-data",
    "extId": "fd-565876",
    "date": "2026-12-06",
@@ -3380,6 +3632,20 @@
    "venue": "",
    "round": "кръг 15",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2514050",
+   "date": "2026-12-06",
+   "time": "17:30",
+   "sport": "fut",
+   "comp": "Португалска Примейра",
+   "title": "Estrela Amadora – Gil Vicente",
+   "p": 3,
+   "venue": "Estádio José Gomes",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "Ат. Чернев"
   },
   {
    "source": "football-data",
@@ -3434,6 +3700,34 @@
    "provisional": false
   },
   {
+   "source": "thesportsdb",
+   "extId": "sdb-2528974",
+   "date": "2026-12-06",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Турска Първа лига",
+   "title": "İstanbulspor – Ümraniyespor",
+   "p": 1,
+   "venue": "Esenyurt Necmi Kadıoğlu Stadyumu",
+   "round": "кръг 17",
+   "provisional": false,
+   "note": "И. Илиев-младши"
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2528977",
+   "date": "2026-12-06",
+   "time": "19:00",
+   "sport": "fut",
+   "comp": "Турска Първа лига",
+   "title": "Mardin 1969 – Sarıyer",
+   "p": 3,
+   "venue": "Mardin 21 Kasım Stadyumu",
+   "round": "кръг 17",
+   "provisional": false,
+   "note": "Здр. Димитров · треньор Ив. Петев"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564774",
    "date": "2026-12-06",
@@ -3445,6 +3739,20 @@
    "venue": "",
    "round": "кръг 15",
    "provisional": false
+  },
+  {
+   "source": "thesportsdb",
+   "extId": "sdb-2540005",
+   "date": "2026-12-06",
+   "time": "19:30",
+   "sport": "fut",
+   "comp": "Гръцка Супер лига",
+   "title": "PAOK – Volos",
+   "p": 3,
+   "venue": "Toumba Stadium",
+   "round": "кръг 13",
+   "provisional": false,
+   "note": "К. Десподов"
   },
   {
    "source": "football-data",
@@ -4902,5 +5210,6 @@
    "round": "кръг 16",
    "provisional": false
   }
- ]
+ ],
+ "lastWeeklyCheck": "2026-11-23"
 }
