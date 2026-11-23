@@ -1,18 +1,5 @@
 [
  {
-  "extId": "ten-Q4go_UsbOrWMrXBwEN3C",
-  "date": "2026-11-08",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-11-08"
- },
- {
   "extId": "ten-EYJbjSWM-dLOyJaBNYyk",
   "date": "2026-11-09",
   "time": "00:00",
@@ -284,5 +271,31 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-11-22"
+ },
+ {
+  "extId": "ten-aq010rUFZHTCzHnU5OZL",
+  "date": "2026-11-23",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-23"
+ },
+ {
+  "extId": "ten-lP7FLNRx2d_mbtZRxrCA",
+  "date": "2026-11-23",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "PARTNER Mercedes – Benz PARTNERS",
+  "p": 2,
+  "note": "d Shriver make the case for andreeva and Svitolina at the FAGE WTA Finals 4m read 1w ago P",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-23"
  }
 ]
