@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-23T14:31:06.020Z",
+ "generatedAt": "2026-11-24T10:43:16.928Z",
  "from": "2026-11-23",
  "to": "2026-12-24",
  "timezone": "Europe/Sofia",
- "count": 383,
+ "count": 394,
  "events": [
   {
    "date": "2026-11-11",
@@ -2453,6 +2453,51 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2601961",
+   "date": "2026-12-01",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Charlotte Hornets – Washington Wizards",
+   "p": 2,
+   "venue": "Spectrum Center",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601962",
+   "date": "2026-12-01",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Detroit Pistons – Denver Nuggets",
+   "p": 2,
+   "venue": "Little Caesars Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601963",
+   "date": "2026-12-01",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Brooklyn Nets – Oklahoma City Thunder",
+   "p": 3,
+   "venue": "Barclays Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2625641",
    "date": "2026-12-01",
    "time": "19:00",
@@ -2539,6 +2584,51 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-23"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601968",
+   "date": "2026-12-02",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Cleveland Cavaliers – Indiana Pacers",
+   "p": 2,
+   "venue": "Rocket Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601969",
+   "date": "2026-12-02",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Philadelphia 76ers – Memphis Grizzlies",
+   "p": 2,
+   "venue": "Xfinity Mobile Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601970",
+   "date": "2026-12-02",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Miami Heat – Atlanta Hawks",
+   "p": 2,
+   "venue": "Kaseya Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
   },
   {
    "source": "fill",
@@ -2762,6 +2852,51 @@
   },
   {
    "source": "fill",
+   "extId": "sdb-2601976",
+   "date": "2026-12-03",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Detroit Pistons – Memphis Grizzlies",
+   "p": 2,
+   "venue": "Little Caesars Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601977",
+   "date": "2026-12-03",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Philadelphia 76ers – Denver Nuggets",
+   "p": 2,
+   "venue": "Xfinity Mobile Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601978",
+   "date": "2026-12-03",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Boston Celtics – Charlotte Hornets",
+   "p": 2,
+   "venue": "TD Garden",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
    "extId": "el-E2026_142",
    "date": "2026-12-03",
    "time": "19:30",
@@ -2877,6 +3012,36 @@
    "provisional": false,
    "via": "euroleague",
    "addedAt": "2026-11-23"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601985",
+   "date": "2026-12-04",
+   "time": "02:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Atlanta Hawks – Indiana Pacers",
+   "p": 2,
+   "venue": "State Farm Arena",
+   "round": "",
+   "provisional": true,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601986",
+   "date": "2026-12-04",
+   "time": "02:30",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Miami Heat – Washington Wizards",
+   "p": 2,
+   "venue": "Kaseya Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-24"
   },
   {
    "source": "fill",
@@ -5225,5 +5390,6 @@
    "round": "кръг 16",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-24"
 }
