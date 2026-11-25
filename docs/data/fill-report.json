@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-11-24T10:43:16.928Z",
- "runDate": "2026-11-24",
+ "generatedAt": "2026-11-25T09:25:57.586Z",
+ "runDate": "2026-11-25",
  "timezone": "Europe/Sofia",
  "window": {
-  "from": "2026-11-24",
+  "from": "2026-11-25",
   "to": "2026-12-06"
  },
  "sources": [
   {
    "name": "football-data",
    "ok": true,
-   "count": 123,
+   "count": 114,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "thesportsdb · Купа на краля",
    "ok": true,
-   "count": 0,
+   "count": 28,
    "error": null
   },
   {
@@ -51,21 +51,21 @@
   },
   {
    "name": "thesportsdb · Първа лига",
-   "ok": false,
-   "count": 0,
-   "error": "Първа лига: Първа лига: изчерпан лимит (429)"
-  },
-  {
-   "name": "thesportsdb · МЛС",
    "ok": true,
-   "count": 10,
+   "count": 15,
    "error": null
   },
   {
-   "name": "thesportsdb · Лига на нациите",
+   "name": "thesportsdb · МЛС",
    "ok": false,
    "count": 0,
-   "error": "Лига на нациите: Лига на нациите: изчерпан лимит (429)"
+   "error": "МЛС: МЛС: изчерпан лимит (429)"
+  },
+  {
+   "name": "thesportsdb · Лига на нациите",
+   "ok": true,
+   "count": 0,
+   "error": null
   },
   {
    "name": "thesportsdb · Купа на африканските нации",
@@ -75,26 +75,26 @@
   },
   {
    "name": "thesportsdb · НБА",
-   "ok": true,
-   "count": 17,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "НБА: НБА: изчерпан лимит (429)"
   },
   {
    "name": "thesportsdb · НБЛ",
-   "ok": false,
-   "count": 0,
-   "error": "НБЛ: НБЛ: изчерпан лимит (429)"
+   "ok": true,
+   "count": 6,
+   "error": null
   },
   {
    "name": "thesportsdb · Формула 2",
-   "ok": false,
-   "count": 0,
-   "error": "Формула 2: Формула 2: изчерпан лимит (429)"
+   "ok": true,
+   "count": 4,
+   "error": null
   },
   {
    "name": "euroleague",
    "ok": true,
-   "count": 20,
+   "count": 14,
    "error": null
   },
   {
@@ -112,7 +112,7 @@
   {
    "name": "api-basketball",
    "ok": true,
-   "count": 13,
+   "count": 12,
    "error": null
   },
   {
@@ -129,154 +129,399 @@
   }
  ],
  "totals": {
-  "fromSources": 242,
-  "added": 11,
+  "fromSources": 261,
+  "added": 41,
   "tennisNew": 2,
-  "tennisPending": 25
+  "tennisPending": 26
  },
  "added": [
   {
-   "extId": "sdb-2601961",
-   "date": "2026-12-01",
-   "time": "02:00",
+   "extId": "bb-519794",
+   "date": "2026-11-26",
+   "time": "00:00",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Charlotte Hornets – Washington Wizards",
-   "via": "thesportsdb"
+   "comp": "NBA",
+   "title": "Philadelphia 76ers – Miami Heat",
+   "via": "api-basketball"
   },
   {
-   "extId": "sdb-2601962",
-   "date": "2026-12-01",
-   "time": "02:00",
+   "extId": "bb-519798",
+   "date": "2026-11-26",
+   "time": "03:00",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Detroit Pistons – Denver Nuggets",
-   "via": "thesportsdb"
+   "comp": "NBA",
+   "title": "Memphis Grizzlies – Los Angeles Clippers",
+   "via": "api-basketball"
   },
   {
-   "extId": "sdb-2601963",
-   "date": "2026-12-01",
-   "time": "02:30",
+   "extId": "bb-519799",
+   "date": "2026-11-26",
+   "time": "03:00",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Brooklyn Nets – Oklahoma City Thunder",
-   "via": "thesportsdb"
+   "comp": "NBA",
+   "title": "Milwaukee Bucks – Brooklyn Nets",
+   "via": "api-basketball"
   },
   {
-   "extId": "sdb-2601968",
+   "extId": "bb-519800",
+   "date": "2026-11-26",
+   "time": "03:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Houston Rockets – Phoenix Suns",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519801",
+   "date": "2026-11-26",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Golden State Warriors – Sacramento Kings",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "bb-519802",
+   "date": "2026-11-26",
+   "time": "05:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Portland Trail Blazers – San Antonio Spurs",
+   "via": "api-basketball"
+  },
+  {
+   "extId": "sdb-2631248",
    "date": "2026-12-02",
-   "time": "02:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Cleveland Cavaliers – Indiana Pacers",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "CE Europa – Rayo Vallecano",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601969",
+   "extId": "sdb-2631249",
    "date": "2026-12-02",
-   "time": "02:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Philadelphia 76ers – Memphis Grizzlies",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Numancia – Athletic Bilbao",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601970",
+   "extId": "sdb-2631250",
    "date": "2026-12-02",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Miami Heat – Atlanta Hawks",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Albacete – Las Palmas",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601976",
+   "extId": "sdb-2631251",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Almería – Granada",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631252",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Cultural Leonesa – Castellón",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631253",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Huesca – Girona",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631254",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Real Zaragoza – Burgos",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631255",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Mirandés – Leganés",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631256",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Rayo Majadahonda – Mallorca",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631257",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Ponferradina – FC Andorra",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631258",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Cartagena – Elche",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631259",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Gimnástica de Torrelavega – Deportivo Alavés",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631260",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Real Jaén – Valencia",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631261",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Sant Andreu – Eibar",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631262",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Amorebieta – Osasuna",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631263",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Portugalete – Deportivo de A Coruña",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631264",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Sestao River – Villarreal",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631265",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Zamora – Real Valladolid",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631266",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Sabadell – Sporting de Gijón",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631267",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Arosa – Celta Vigo",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631268",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Eldense – Tenerife",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631269",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Real Ávila – Getafe",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631270",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Antequera – Levante",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631271",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Atlético Paso – Sevilla",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631272",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "CD Coria – Málaga",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631273",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Ceuta – Cádiz",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631274",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Reus FC Reddis – Racing de Santander",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2631275",
+   "date": "2026-12-02",
+   "time": "22:00",
+   "sport": "fut",
+   "comp": "Купа на краля",
+   "title": "Extremadura – Real Betis",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2487333",
    "date": "2026-12-03",
-   "time": "02:00",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Detroit Pistons – Memphis Grizzlies",
+   "time": "18:30",
+   "sport": "fut",
+   "comp": "Първа лига",
+   "title": "Levski Sofia – Ludogorets Razgrad",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601977",
+   "extId": "sdb-2611804",
    "date": "2026-12-03",
-   "time": "02:00",
+   "time": "18:30",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Philadelphia 76ers – Denver Nuggets",
+   "comp": "НБЛ",
+   "title": "BC Shumen – Polytechnica Dupnitsa",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601978",
-   "date": "2026-12-03",
-   "time": "02:30",
-   "sport": "bas",
-   "comp": "НБА",
-   "title": "Boston Celtics – Charlotte Hornets",
-   "via": "thesportsdb"
-  },
-  {
-   "extId": "sdb-2601985",
+   "extId": "sdb-2611805",
    "date": "2026-12-04",
-   "time": "02:00",
+   "time": "18:00",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Atlanta Hawks – Indiana Pacers",
+   "comp": "НБЛ",
+   "title": "BC Balkan Botevgrad – BC Rilski Sportist",
    "via": "thesportsdb"
   },
   {
-   "extId": "sdb-2601986",
-   "date": "2026-12-04",
-   "time": "02:30",
+   "extId": "sdb-2611806",
+   "date": "2026-12-05",
+   "time": "17:30",
    "sport": "bas",
-   "comp": "НБА",
-   "title": "Miami Heat – Washington Wizards",
+   "comp": "НБЛ",
+   "title": "BC Levski Sofia – Yambol",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611807",
+   "date": "2026-12-05",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Botev Vratsa – BC CSKA Sofia",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611808",
+   "date": "2026-12-05",
+   "time": "18:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Minyor 2015 – BC Spartak Pleven",
+   "via": "thesportsdb"
+  },
+  {
+   "extId": "sdb-2611809",
+   "date": "2026-12-05",
+   "time": "19:00",
+   "sport": "bas",
+   "comp": "НБЛ",
+   "title": "BC Beroe – BC Cherno More",
    "via": "thesportsdb"
   }
  ],
  "tennisNew": [
   {
-   "extId": "ten-JSh2F8QzZ9RSkve7WuBK",
-   "date": "2026-11-24",
+   "extId": "ten-F_tMsnxwCk2s026nXu07",
+   "date": "2026-11-25",
    "time": "00:00",
    "comp": "Тенис",
    "title": "Адриан Андреев — мач"
   },
   {
-   "extId": "ten-LosHbv2RjsEbLZIWpmqY",
-   "date": "2026-11-24",
+   "extId": "ten-3RkbuqShYrHL825VVDrB",
+   "date": "2026-11-25",
    "time": "00:00",
    "comp": "Тенис",
    "title": "PARTNER Mercedes – Benz PARTNERS"
   }
  ],
  "sofascore": [
-  {
-   "date": "2026-11-24",
-   "links": [
-    {
-     "sport": "football",
-     "url": "https://www.sofascore.com/football/2026-11-24"
-    },
-    {
-     "sport": "basketball",
-     "url": "https://www.sofascore.com/basketball/2026-11-24"
-    },
-    {
-     "sport": "volleyball",
-     "url": "https://www.sofascore.com/volleyball/2026-11-24"
-    },
-    {
-     "sport": "tennis",
-     "url": "https://www.sofascore.com/tennis/2026-11-24"
-    },
-    {
-     "sport": "motorsport",
-     "url": "https://www.sofascore.com/motorsport/2026-11-24"
-    }
-   ]
-  },
   {
    "date": "2026-11-25",
    "links": [
