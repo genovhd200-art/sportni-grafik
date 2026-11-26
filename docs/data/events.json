@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-25T14:15:03.793Z",
+ "generatedAt": "2026-11-26T09:12:50.441Z",
  "from": "2026-11-25",
  "to": "2026-12-26",
  "timezone": "Europe/Sofia",
- "count": 422,
+ "count": 426,
  "events": [
   {
    "date": "2026-11-11",
@@ -1261,6 +1261,36 @@
   },
   {
    "source": "fill",
+   "extId": "vb-217489",
+   "date": "2026-11-27",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Dunav – Neftohimic Burgas",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-26"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217490",
+   "date": "2026-11-27",
+   "time": "18:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Slaviya Sofia – Pirin Razlog",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-26"
+  },
+  {
+   "source": "fill",
    "extId": "f1-2026-22-SecondPractice",
    "date": "2026-11-27",
    "time": "19:00",
@@ -1288,6 +1318,21 @@
    "provisional": false,
    "via": "bvf",
    "addedAt": "2026-11-16"
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217491",
+   "date": "2026-11-27",
+   "time": "19:30",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "CSKA Sofia – Montana",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-26"
   },
   {
    "source": "football-data",
@@ -3285,6 +3330,21 @@
    "provisional": false,
    "via": "thesportsdb",
    "addedAt": "2026-11-24"
+  },
+  {
+   "source": "fill",
+   "extId": "sdb-2601987",
+   "date": "2026-12-04",
+   "time": "03:00",
+   "sport": "bas",
+   "comp": "НБА",
+   "title": "Chicago Bulls – Cleveland Cavaliers",
+   "p": 2,
+   "venue": "United Center",
+   "round": "",
+   "provisional": false,
+   "via": "thesportsdb",
+   "addedAt": "2026-11-26"
   },
   {
    "source": "fill",
@@ -5799,5 +5859,6 @@
    "round": "кръг 17",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-26"
 }

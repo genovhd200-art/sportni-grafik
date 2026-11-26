@@ -1,18 +1,5 @@
 [
  {
-  "extId": "ten-0UcSnG0x4RUvmckRmNh-",
-  "date": "2026-11-11",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-11-11"
- },
- {
   "extId": "ten-9UlJI85WF_W5HszbKR0E",
   "date": "2026-11-12",
   "time": "00:00",
@@ -310,5 +297,31 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-11-25"
+ },
+ {
+  "extId": "ten-Tke7RMtG5h6sQ5nV7JMf",
+  "date": "2026-11-26",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-26"
+ },
+ {
+  "extId": "ten-XSWiXOvsEws1ujCifrzA",
+  "date": "2026-11-26",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "PARTNER Mercedes – Benz PARTNERS",
+  "p": 2,
+  "note": "dominant FAGE WTA Finals title runs 3m read 1w ago TOURNAMENT NEWS How it happened: andree",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-26"
  }
 ]
