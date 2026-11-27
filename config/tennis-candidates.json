@@ -1,31 +1,5 @@
 [
  {
-  "extId": "ten-9UlJI85WF_W5HszbKR0E",
-  "date": "2026-11-12",
-  "time": "00:00",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "",
-  "provisional": true,
-  "ok": null,
-  "foundAt": "2026-11-12"
- },
- {
-  "extId": "ten-k0sjzzM5odsBluDBwNMs",
-  "date": "2026-11-12",
-  "time": "2:01",
-  "sport": "ten",
-  "comp": "Тенис",
-  "title": "Адриан Андреев — мач",
-  "p": 2,
-  "note": "(1) 7 4 10 Guo / Mladenovic (3) 6 5 6 5 Finished: 2:01 ROUND OF 32 INDIAN WELLS TENNIS GAR",
-  "provisional": false,
-  "ok": null,
-  "foundAt": "2026-11-12"
- },
- {
   "extId": "ten-A1T0lgRAFUeDpx4nvlDz",
   "date": "2026-11-13",
   "time": "00:00",
@@ -323,5 +297,31 @@
   "provisional": true,
   "ok": null,
   "foundAt": "2026-11-26"
+ },
+ {
+  "extId": "ten-iSRV7FC4mp6QJ31s74DT",
+  "date": "2026-11-27",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "Адриан Андреев — мач",
+  "p": 2,
+  "note": "",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-27"
+ },
+ {
+  "extId": "ten-eA3WVEimyyu7AftIds_u",
+  "date": "2026-11-27",
+  "time": "00:00",
+  "sport": "ten",
+  "comp": "Тенис",
+  "title": "PARTNER Mercedes – Benz PARTNERS",
+  "p": 2,
+  "note": "dominant FAGE WTA Finals title runs 3m read 1w ago TOURNAMENT NEWS How it happened: andree",
+  "provisional": true,
+  "ok": null,
+  "foundAt": "2026-11-27"
  }
 ]
