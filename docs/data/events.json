@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-27T13:48:05.822Z",
+ "generatedAt": "2026-11-28T08:41:48.370Z",
  "from": "2026-11-27",
  "to": "2026-12-28",
  "timezone": "Europe/Sofia",
- "count": 373,
+ "count": 382,
  "events": [
   {
    "date": "2026-11-11",
@@ -871,6 +871,21 @@
    "addedAt": "2026-11-16"
   },
   {
+   "source": "fill",
+   "extId": "vb-217492",
+   "date": "2026-11-28",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Pernik – Levski Sofia",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-28"
+  },
+  {
    "source": "football-data",
    "extId": "fd-560653",
    "date": "2026-11-28",
@@ -1004,6 +1019,36 @@
   },
   {
    "source": "fill",
+   "extId": "bb-519814",
+   "date": "2026-11-29",
+   "time": "00:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Washington Wizards – Orlando Magic",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-28"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519815",
+   "date": "2026-11-29",
+   "time": "01:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Charlotte Hornets – Brooklyn Nets",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-28"
+  },
+  {
+   "source": "fill",
    "extId": "sdb-2601948",
    "date": "2026-11-29",
    "time": "03:00",
@@ -1074,6 +1119,21 @@
    "venue": "",
    "round": "кръг 13",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217416",
+   "date": "2026-11-29",
+   "time": "13:30",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritsa Plovdiv W – Levski Sofia W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-28"
   },
   {
    "source": "football-data",
@@ -1156,6 +1216,21 @@
    "venue": "",
    "round": "кръг 12",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "vb-217413",
+   "date": "2026-11-29",
+   "time": "16:00",
+   "sport": "vol",
+   "comp": "Superliga Women",
+   "title": "Maritza 2022 W – Minyor Pernik W",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-28"
   },
   {
    "source": "football-data",
@@ -1333,6 +1408,21 @@
    "addedAt": "2026-11-16"
   },
   {
+   "source": "fill",
+   "extId": "vb-217493",
+   "date": "2026-11-29",
+   "time": "19:00",
+   "sport": "vol",
+   "comp": "SuperLiga",
+   "title": "Beroe – Deya Volley",
+   "p": 2,
+   "venue": "Bulgaria",
+   "round": "",
+   "provisional": false,
+   "via": "api-volleyball",
+   "addedAt": "2026-11-28"
+  },
+  {
    "source": "football-data",
    "extId": "fd-564758",
    "date": "2026-11-29",
@@ -1396,6 +1486,51 @@
    "venue": "",
    "round": "кръг 14",
    "provisional": false
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519826",
+   "date": "2026-11-29",
+   "time": "22:30",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Cleveland Cavaliers – Miami Heat",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-28"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519819",
+   "date": "2026-11-29",
+   "time": "23:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "Memphis Grizzlies – Los Angeles Lakers",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-28"
+  },
+  {
+   "source": "fill",
+   "extId": "bb-519820",
+   "date": "2026-11-29",
+   "time": "23:00",
+   "sport": "bas",
+   "comp": "NBA",
+   "title": "San Antonio Spurs – Boston Celtics",
+   "p": 2,
+   "venue": "USA",
+   "round": "",
+   "provisional": false,
+   "via": "api-basketball",
+   "addedAt": "2026-11-28"
   },
   {
    "source": "fill",
@@ -5076,5 +5211,6 @@
    "round": "кръг 17",
    "provisional": false
   }
- ]
+ ],
+ "lastFill": "2026-11-28"
 }
